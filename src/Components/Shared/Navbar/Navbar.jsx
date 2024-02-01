@@ -46,12 +46,12 @@ const handleourServiceMouseEnter = () => {
         px-4
         text-lg
         text-gray-700
-        backdrop-blur-md
         shadow-lg
         shadow-gray-800
         fixed
         z-10
         top-0
+        backdrop-blur-md
         "
       >
         <div>
@@ -170,20 +170,20 @@ const handleourServiceMouseEnter = () => {
               </a>
             </li>
             {/* contact option  */}
-            <li>
+            <li className="animate-pulse">
               <a
                 className="lg:flex md:hidden sm: hidden md:p-2 py-2  uppercase 
-                 hover:text-black hover:bg-gray-300 text-white bg-[#910A67] rounded-full"
+                 hover:text-black hover:bg-gray-300 text-white bg-[#910a668c] rounded-full"
                 href="#"
               >
                 Contact
               </a>
             </li>
             {/* sign up option */}
-            <li>
+            <li className="animate-pulse">
               <a
                 className="lg:flex md:hidden sm: hidden md:p-2  py-2 uppercase 
-                 hover:text-black hover:bg-gray-300 text-white bg-[#910A67] rounded-lg"
+                 hover:text-black hover:bg-gray-300 text-white bg-[#910a668c] rounded-lg"
                 href="/userLogin"
               >
                 Sign Up

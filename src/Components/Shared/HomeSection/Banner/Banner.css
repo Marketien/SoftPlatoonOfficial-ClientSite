@@ -1,0 +1,23 @@
+.typeAnimationSpan {
+    width: 170px;
+    height: 60px;
+    display: inline-block;
+    background: transparent;
+    backdrop-filter: blur(12px);
+    border: 1px solid white;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+    border-radius:5px;
+    position: relative;
+}
+.ActionSpan{
+    font-size: 14px;
+    position: absolute;
+    bottom: 47px;
+      left: 42%; 
+      transform: translateX(-50%);
+    backdrop-filter: blur(12px);
+    padding-right: 7px;
+    padding-left: 7px;
+}
