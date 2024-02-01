@@ -1,3 +1,10 @@
+.bannerInfo{
+    position: absolute; 
+    top: 0; 
+    left: 0;  
+    transform: translate(0%, 150%);
+     width: 100%;
+}
 .typeAnimationSpan {
     width: 170px;
     height: 60px;
