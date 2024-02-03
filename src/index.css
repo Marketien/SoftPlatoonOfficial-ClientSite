@@ -2,6 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-background-color:  #030637;
+body {
+  background-color: #030637;
+}
+
+
+
+/* defalut margin setting  */
+
+@media (min-width: 1024px) {
+  .default-margin {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+@media (min-width: 768px) {
+  .default-margin {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+.default-margin {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }

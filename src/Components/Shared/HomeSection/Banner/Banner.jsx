@@ -68,7 +68,7 @@ const Banner = () => {
         </p>
         <span
           style={{ fontFamily: "Open Sans,sans-serif" }}
-          className="ActionSpan font-light lg:bottom-[47px] sm: bottom-[84px]"
+          className="ActionSpan font-light lg:bottom-[47px] md:bottom-[47px] sm: bottom-[84px]"
         >
           Action
         </span>

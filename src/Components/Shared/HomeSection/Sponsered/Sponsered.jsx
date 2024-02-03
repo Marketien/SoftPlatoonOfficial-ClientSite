@@ -58,7 +58,7 @@ const Sponsered = () => {
       <div
         data-aos="fade-down"
         data-aos-duration="2000"
-        className="my-20 lg:mx-[80px] md:mx-[50px] sm: mx-[50px]"
+        className="default-margin"
       >
         <Slider ref={sliderRef} {...settings}>
           <img className=" sponseredLogo" src={logo1} alt="" />

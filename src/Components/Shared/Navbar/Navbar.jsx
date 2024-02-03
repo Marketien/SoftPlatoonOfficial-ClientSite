@@ -38,7 +38,8 @@ const handleourServiceMouseEnter = () => {
 
   return (
     <div>
-     <div className=" w-full flex justify-end -ms-[15px] gap-5 text-white top-0 fixed z-10 mb-2 backdrop-blur-md">
+      {/* contact info  */}
+     <div className=" w-full sm: hidden md:flex justify-end -ms-[15px] gap-5 text-white top-0 fixed z-10 mb-2 backdrop-blur-md">
         <p className="flex items-center">
            <span className="me-1"><CgMail size={20}/></span> <span>gmail@gmail.com</span>
         </p>
@@ -46,6 +47,7 @@ const handleourServiceMouseEnter = () => {
           <span className="me-1"><img className="w-[20px]" src={bangladesh} alt="" /></span><span>+1 214 306 68 37</span>
           </p>
       </div>
+      {/* navbar section  */}
       <nav
         className="
         flex flex-wrap
@@ -59,7 +61,9 @@ const handleourServiceMouseEnter = () => {
         shadow-lg
         shadow-gray-800
         fixed
-        top-6
+        lg:top-6
+        md:top-6
+        sm: top-0
         z-10
         backdrop-blur-md 
         "
@@ -182,27 +186,27 @@ const handleourServiceMouseEnter = () => {
             {/* contact option  */}
             <li className="animate-pulse">
               <a
-                className="lg:flex md:hidden sm: hidden md:p-2 py-2  uppercase 
-                 hover:text-black hover:bg-gray-300 text-white bg-[#910a668c] rounded-full"
-                href="#"
-              >
-                Contact
-              </a>
-            </li>
-            {/* sign up option */}
-            <li className="animate-pulse">
-              <a
                 className="lg:flex md:hidden sm: hidden md:p-2  py-2 uppercase 
                  hover:text-black hover:bg-gray-300 text-white bg-[#910a668c] rounded-lg"
                 href="/userLogin"
               >
-                Sign Up
+                Contact
               </a>
             </li>
             <li>
-              <a className="lg:hidden md:flex sm: flex md:p-4 py-2  hover:text-[#539ce6] text-purple-500"
-                href="#"> Sign Up
+              <a className="lg:hidden md:hiden sm: flex md:p-4 py-2 text-white bg-[#910a668c] w-[80px] items-center justify-center"
+                href="#">
+                   Contact
               </a>
+            </li>
+            {/* contact number  */}
+            <li className="lg:hidden md:hidden sm: flex gap-5 fixed -ms-[15px] mt-2 z-10 mb-2 w-full bg-[#910a668c] p-2">
+        <p className="flex items-center">
+           <span className="me-1"><CgMail size={20}/></span> <span>gmail@gmail.com</span>
+        </p>
+        <p  className="flex items-center">
+          <span className="me-1"><img className="w-[20px]" src={bangladesh} alt="" /></span><span>+1 214 306 68 37</span>
+          </p>
             </li>
           </ul>
         </div>
