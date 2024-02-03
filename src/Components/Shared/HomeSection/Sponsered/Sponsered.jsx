@@ -1,35 +1,78 @@
-import './Sponsered.css'
-import logo1 from '../../../../../public/Icons/Main Logo White-01.png';
-import logo2 from '../../../../../public/Icons/Main Logo-01.png';
-import { useEffect, useState } from 'react';
+import "./Sponsered.css";
+import logo1 from "../../../../../public/Icons/Main Logo White-01.png";
+import logo2 from "../../../../../public/Icons/Main Logo-01.png";
+import { useEffect, useRef } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Sponsered = () => {
+  Aos.init();
+  const sliderRef = useRef(null);
 
-    const logos = [logo1, logo2, logo1, logo2, logo1, logo2, logo1, logo2, logo1, logo2];
-    const [currentLogoIndex, setCurrentLogoIndex] = useState(0);
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      sliderRef.current.slickNext();
+    }, 2000);
 
-    useEffect(() => {
-        const intervalId = setInterval(() => {
-            // Increment the currentLogoIndex, and loop back to 0 if it exceeds the array length
-            setCurrentLogoIndex((prevIndex) => (prevIndex + 1) % logos.length);
-        }, 2000);
+    return () => clearInterval(intervalId);
+  }, []);
 
-        // Clear the interval on component unmount
-        return () => clearInterval(intervalId);
-    }, [logos.length]); 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
 
-    return (
-        <div className='parent-div grid lg:grid-cols-7 md:grid-cols-5 sm: grid-cols-3 gap-5'>
-           { logos.map((logo, index) => 
-              <img
-              key={index}
-              className={`sponseredLogo ${index === currentLogoIndex ? 'visible' : 'hidden'}`}
-              src={logo}
-              alt=""
-          />
-            )}
-        </div>
-    );
+  return (
+    <div>
+      <div
+        data-aos="fade-down"
+        data-aos-duration="2000"
+        className="my-20 lg:mx-[80px] md:mx-[50px] sm: mx-[50px]"
+      >
+        <Slider ref={sliderRef} {...settings}>
+          <img className=" sponseredLogo" src={logo1} alt="" />
+          <img className=" sponseredLogo" src={logo2} alt="" />
+          <img className=" sponseredLogo" src={logo1} alt="" />
+          <img className=" sponseredLogo" src={logo2} alt="" />
+          <img className=" sponseredLogo" src={logo1} alt="" />
+          <img className=" sponseredLogo" src={logo2} alt="" />
+          <img className=" sponseredLogo" src={logo1} alt="" />
+          <img className=" sponseredLogo" src={logo2} alt="" />
+        </Slider>
+      </div>
+    </div>
+  );
 };
 
 export default Sponsered;

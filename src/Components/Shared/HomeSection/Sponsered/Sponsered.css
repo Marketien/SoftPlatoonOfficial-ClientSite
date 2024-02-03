@@ -9,4 +9,20 @@
     padding-right: 10px;
     padding-left: 10px;
     border: 1px solid white;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+/* slick button  */
+.slick-prev {
+    border-radius: 100%;
+    text-align: center;
+    padding-top: 3px;
+    background-color: #25476a !important;
+}
+.slick-next {
+    border-radius: 100%;
+    text-align: center;
+    padding-top: 3px;
+    background-color: #25476a !important;
 }
