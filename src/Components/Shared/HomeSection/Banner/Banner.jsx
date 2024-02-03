@@ -18,48 +18,48 @@ const Banner = () => {
     return () => clearInterval(intervalId);
   }, [currentBanner]);
   return (
-    <div className="relative min-h-screen">
+    <div className="relative">
       {/* bannerImages section  */}
-      <div className="lg:mt-[80px] md:mt-[120px] sm: mt-[50px]">
+      <div className=" lg:mt-[80px] md:mt-[120px] sm: mt-[50px]">
         <img
-          className="lg:w-full lg:h-screen bg-[#720455]"
+          className=" lg:w-full lg:h-screen sm: h-[700px] bg-[#720455]"
           src={banner1}
           alt=""
           style={{ display: currentBanner === 1 ? "block" : "none" }}
         />
         <img
-          className="lg:w-full lg:h-screen bg-[#720455]"
+          className="lg:w-full lg:h-screen  sm: h-[700px] bg-[#720455]"
           src={banner2}
           alt=""
           style={{ display: currentBanner === 2 ? "block" : "none" }}
         />
         <img
-          className="lg:w-full lg:h-screen bg-[#720455]"
+          className="lg:w-full lg:h-screen  sm: h-[700px] bg-[#720455]"
           src={banner3}
           alt=""
           style={{ display: currentBanner === 3 ? "block" : "none" }}
         />
         <img
-          className="lg:w-full lg:h-screen bg-[#720455]"
+          className="lg:w-full lg:h-screen  sm: h-[700px] bg-[#720455]"
           src={banner4}
           alt=""
           style={{ display: currentBanner === 4 ? "block" : "none" }}
         />
       </div>
-      <div className="absolute inset-0 bg-gray-800 opacity-70" />
+      <div className="absolute inset-0 bg-black opacity-50" />
       {/* banner information section  */}
       <div className="bannerInfo text-white text-center w-full">
-        <h1 style={{ fontFamily: "Sumana,serif" }} className="text-4xl">
+        <h1 style={{ fontFamily: "Sumana,serif" }} className="h1">
           Software Consulting and Development
         </h1>
         <p
           style={{ fontFamily: "Open Sans,sans-serif" }}
-          className="text-2xl font-light mt-[20px]"
+          className="text-3xl  font-light mt-[20px]"
         >
           we
           <span className="typeAnimationSpan">
             <TypeAnimation
-              sequence={["One", 1500, "Two", 1500, "Three", 1500]}
+              sequence={["Drive", 1500, "Safeguard", 1500, "Encourage", 1500]}
               style={{ fontSize: "30px", width: "100%", height: "100%" }}
               repeat={Infinity}
             />
@@ -68,7 +68,7 @@ const Banner = () => {
         </p>
         <span
           style={{ fontFamily: "Open Sans,sans-serif" }}
-          className="ActionSpan font-light"
+          className="ActionSpan font-light lg:bottom-[47px] sm: bottom-[84px]"
         >
           Action
         </span>

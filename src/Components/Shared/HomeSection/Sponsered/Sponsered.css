@@ -1,0 +1,12 @@
+.parent-div{
+    margin: 0 50px;
+}
+
+.sponseredLogo{
+    width: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: 1px solid white;
+}

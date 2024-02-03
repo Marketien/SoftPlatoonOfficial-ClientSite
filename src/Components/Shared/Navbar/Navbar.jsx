@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 // import '../../Pages/Home/Nav.js'
 import homeLogo from "../../../../public/Icons/Main Logo White-01.png";
+import bangladesh from "../../../../public/Icons/Bangladesh.jpg";
 import { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
+import { CgMail } from "react-icons/cg";
 
 
 const Navbar = () => {
@@ -36,6 +38,14 @@ const handleourServiceMouseEnter = () => {
 
   return (
     <div>
+     <div className=" w-full flex justify-end -ms-[15px] gap-5 text-white top-0 fixed z-10 mb-2 backdrop-blur-md">
+        <p className="flex items-center">
+           <span className="me-1"><CgMail size={20}/></span> <span>gmail@gmail.com</span>
+        </p>
+        <p  className="flex items-center">
+          <span className="me-1"><img className="w-[20px]" src={bangladesh} alt="" /></span><span>+1 214 306 68 37</span>
+          </p>
+      </div>
       <nav
         className="
         flex flex-wrap
@@ -49,9 +59,9 @@ const handleourServiceMouseEnter = () => {
         shadow-lg
         shadow-gray-800
         fixed
+        top-6
         z-10
-        top-0
-        backdrop-blur-md
+        backdrop-blur-md 
         "
       >
         <div>
