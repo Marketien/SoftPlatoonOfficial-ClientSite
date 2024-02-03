@@ -8,7 +8,7 @@ const  Home = () => {
         <div>
             <Banner/>
             <h1  style={{ fontFamily: "Open Sans,sans-serif" }}
-             className=" text-white text-lg text-center default-margin"
+             className=" text-lg text-center default-margin"
              >Since 1989. For millions of users. We transform businesses with powerful and adaptable 
              <br /> digital solutions that satisfy the needs of today and unlock the opportunities of 
              <br />  tomorrow.</h1>

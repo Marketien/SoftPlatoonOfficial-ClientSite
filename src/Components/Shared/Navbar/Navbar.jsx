@@ -39,7 +39,7 @@ const handleourServiceMouseEnter = () => {
   return (
     <div>
       {/* contact info  */}
-     <div className=" w-full sm: hidden md:flex justify-end -ms-[15px] gap-5 text-white top-0 fixed z-10 mb-2 backdrop-blur-md">
+     <div className=" w-full sm: hidden md:flex justify-end -ms-[15px] gap-5  top-0 fixed z-10 mb-2 text-white bg-[#030637]">
         <p className="flex items-center">
            <span className="me-1"><CgMail size={20}/></span> <span>gmail@gmail.com</span>
         </p>
@@ -65,7 +65,7 @@ const handleourServiceMouseEnter = () => {
         md:top-6
         sm: top-0
         z-10
-        backdrop-blur-md 
+        bg-[#030637]
         "
       >
         <div>
@@ -130,7 +130,7 @@ const handleourServiceMouseEnter = () => {
               onMouseLeave={handleAboutUsMouseLeave}
                 className={`${
                 aboutUsDropDownOpen ? "block" : "hidden"
-                } bg-white text-[#3C0753] p-3 leading-10 absolute w-[200px] text-center z-50`}
+                } bg-[#2d053e] text-white p-3 leading-10 absolute w-[200px] text-center z-50`}
               >
                 <li className="hover:text-[#539ce6]">Our Steps & guidance</li>
                 <li className="hover:text-[#539ce6]">Our Team</li>
@@ -152,7 +152,7 @@ const handleourServiceMouseEnter = () => {
               onMouseLeave={handleourServiceMouseLeave}
                 className={`${
                     ourServiceDropDownOpen ? "block" : "hidden"
-                } bg-white text-[#3C0753] p-3 leading-10 absolute w-[200px] text-center z-40`}
+                } bg-[#2d053e] text-white p-3 leading-10 absolute w-[200px] text-center z-40`}
               >
                 <li className="hover:text-[#539ce6]">Student Visa </li>
                 <li className="hover:text-[#539ce6]">E-Ticketing</li>
