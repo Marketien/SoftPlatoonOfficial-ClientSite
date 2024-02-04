@@ -18,7 +18,7 @@ const TabPanelInfo2 = () => {
     );
 
     return (
-        <div>
+        <div className="bg-white">
         {testingAndQAInfo && (
           <div  style={{ fontFamily: "Open Sans,sans-serif" }}>
             <h2 className="font-bold text-2xl mt-8">

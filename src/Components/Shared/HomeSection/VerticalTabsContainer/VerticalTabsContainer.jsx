@@ -7,6 +7,7 @@ import Box from '@mui/material/Box';
 import './VerticalTabsContainer.css'
 import TabPanelInfo1 from '../TabPanelInfo/TabPanelInfo1';
 import TabPanelInfo2 from '../TabPanelInfo/TabPanelInfo2';
+import SliderSection from './SliderSection';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props; 
@@ -157,7 +158,7 @@ export default function VerticalTabs() {
     </div>
     {/* slider section for small device  */}
     <div className="lg:hidden md:hidden sm: flex">
-<h1>Tomma </h1>
+      <SliderSection/>
     </div>
 </div>
   );
