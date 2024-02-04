@@ -7,7 +7,7 @@ import Box from '@mui/material/Box';
 import './VerticalTabsContainer.css'
 
 function TabPanel(props) {
-  const { children, value, index, ...other } = props;
+  const { children, value, index, ...other } = props; 
 
   return (
     <div
@@ -65,31 +65,31 @@ export default function VerticalTabs() {
         orientation="vertical"
         variant="scrollable"
         value={value}
-        onChange={handleChange}
+        onChange={handleChange} 
         aria-label=""
         sx={{ borderRight: 1, 
           width:"500px", 
-        background: '#030637', 
+        background: '#05819a', 
         boxShadow: "5px 10px 10px rgba(0, 0, 0, 0.2)" ,
         marginTop:"-32px",
          marginBottom:"32px",
          marginLeft: "-32px",
         }}
       >
-  <Tab label="Item One" {...a11yProps(0)}
-   sx={{ width:"600px" ,color: "white", padding:"25px", marginTop:"30px", backgroundColor: value === 0 ? "#000568" : "transparent" , fontSize:"15px" }} />
+  <Tab label="Item One" {...a11yProps(0)} 
+   sx={{ width:"600px" ,color: "white", padding:"25px", marginTop:"30px", backgroundColor: value === 0 ? "#095868" : "transparent" , fontSize:"15px", }} />
   <Tab label="Item Two" {...a11yProps(1)}
-   sx={{ color: "white",padding:"25px", backgroundColor: value === 1 ? "#000568" : "transparent" }} />
+   sx={{ color: "white",padding:"25px", backgroundColor: value === 1 ? "#095868" : "transparent" }} />
   <Tab label="Item Three" {...a11yProps(2)}
-   sx={{ color: "white",padding:"25px", backgroundColor: value === 2 ? "#000568" : "transparent" }} />
+   sx={{ color: "white",padding:"25px", backgroundColor: value === 2 ? "#095868" : "transparent" }} />
   <Tab label="Item Four" {...a11yProps(3)}
-   sx={{ color: "white",padding:"25px", backgroundColor: value === 3 ? "#000568" : "transparent" }} />
+   sx={{ color: "white",padding:"25px", backgroundColor: value === 3 ? "#095868" : "transparent" }} />
   <Tab label="Item Five" {...a11yProps(4)} 
-  sx={{ color: "white",padding:"25px", backgroundColor: value === 4 ? "#000568" : "transparent" }} />
+  sx={{ color: "white",padding:"25px", backgroundColor: value === 4 ? "#095868" : "transparent" }} />
   <Tab label="Item Six" {...a11yProps(5)} 
-  sx={{ color: "white",padding:"25px", backgroundColor: value === 5 ? "#000568" : "transparent" }} />
+  sx={{ color: "white",padding:"25px", backgroundColor: value === 5 ? "#095868" : "transparent" }} />
   <Tab label="Item Seven" {...a11yProps(6)}
-   sx={{ color: "white",padding:"25px", backgroundColor: value === 6 ? "#000568" : "transparent" }} />
+   sx={{ color: "white",padding:"25px", backgroundColor: value === 6 ? "#095868" : "transparent" }} />
 </Tabs>
       <TabPanel className="tabPanel" value={value} index={0}>
         Item One

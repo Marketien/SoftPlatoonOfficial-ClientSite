@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 // import '../../Pages/Home/Nav.js'
-import homeLogo from "../../../../public/Icons/Main Logo White-01.png";
+import homeLogo from "../../../../public/Icons/Main Logo-01.png";
 import bangladesh from "../../../../public/Icons/Bangladesh.jpg";
 import { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
@@ -39,7 +39,7 @@ const handleourServiceMouseEnter = () => {
   return (
     <div>
       {/* contact info  */}
-     <div className=" w-full sm: hidden md:flex justify-end -ms-[15px] gap-5  top-0 fixed z-10 mb-2 text-white bg-[#030637]">
+     <div className=" w-full sm: hidden md:flex justify-end -ms-[15px] gap-5  top-0 fixed z-10 mb-2 text-white  backdrop-blur-md">
         <p className="flex items-center">
            <span className="me-1"><CgMail size={20}/></span> <span>gmail@gmail.com</span>
         </p>
@@ -65,12 +65,12 @@ const handleourServiceMouseEnter = () => {
         md:top-6
         sm: top-0
         z-10
-        bg-[#030637]
+        backdrop-blur-md
         "
       >
         <div>
           <Link to="/">
-            <img className="w-[100px]" src={homeLogo} alt="" />
+            <img className="w-[150px]" src={homeLogo} alt="" />
           </Link>
         </div>
 
@@ -187,14 +187,14 @@ const handleourServiceMouseEnter = () => {
             <li className="animate-pulse">
               <a
                 className="lg:flex md:hidden sm: hidden md:p-2  py-2 uppercase 
-                 hover:text-black hover:bg-gray-300 text-white bg-[#910a668c] rounded-lg"
+                 hover:text-black hover:bg-gray-300 text-white bg-[#095868] rounded-lg"
                 href="/userLogin"
               >
                 Contact
               </a>
             </li>
             <li>
-              <a className="lg:hidden md:hiden sm: flex md:p-4 py-2 text-white bg-[#910a668c] w-[80px] items-center justify-center"
+              <a className="lg:hidden md:hiden sm: flex md:p-4 py-2 text-white bg-[#095868] w-[80px] items-center justify-center"
                 href="#">
                    Contact
               </a>

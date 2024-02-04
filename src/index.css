@@ -3,13 +3,26 @@
 @tailwind utilities;
 
 body {
-  /* background-color: #030637; */
+  /* background-color: #0306376f; */
+  background-color: #05819a;
 }
 
 
+/* defalut text color setting */
+.default-text-color{
+  color: #323738;
+}
+/* defalut text heading setting */
+.dafault-heading{
+  display: flex;
+  justify-content: flex-start;
+  font-size: 40px;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 100px;
+}
 
 /* defalut margin setting  */
-
 @media (min-width: 1024px) {
   .default-margin {
     margin-left: 80px;

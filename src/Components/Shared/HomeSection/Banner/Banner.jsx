@@ -20,7 +20,7 @@ const Banner = () => {
   return (
     <div className="relative">
       {/* bannerImages section  */}
-      <div className=" lg:mt-[80px] md:mt-[120px] sm: mt-[50px]">
+      <div className=" lg:mt-[100px] md:mt-[120px] sm: mt-[50px]">
         <img
           className=" lg:w-full lg:h-screen sm: h-[700px] bg-[#720455]"
           src={banner1}
