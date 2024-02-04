@@ -10,3 +10,4 @@ blur effect :  backdrop-blur-md ;
 color -1: #323738 (dark black) ;
 color -2: #095868 (gradient One);
 color -4: #05819a (gradient Two);
+color -5 : bg-gradient-to-r from-teal-900 to-teal-500

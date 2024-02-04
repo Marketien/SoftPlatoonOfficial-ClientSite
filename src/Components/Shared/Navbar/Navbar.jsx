@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 // import '../../Pages/Home/Nav.js'
-import homeLogo from "../../../../public/Icons/Main Logo-01.png";
+import homeLogo from "../../../../public/Icons/Main Logo White-01.png";
+import scrolledLogo from "../../../../public/Icons/Main Logo-01.png";
 import bangladesh from "../../../../public/Icons/Bangladesh.jpg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { CgMail } from "react-icons/cg";
 
@@ -11,13 +12,11 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [aboutUsDropDownOpen, setAboutUsDropDownOpen] = useState(false);
   const [ourServiceDropDownOpen, setOurServiceDropDownOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
-//   const toggledropDown = () => {
-//     setAboutUsDropDownOpen(!AboutUsDropDownOpen);
-//   };
 
 //  about us handle dropdown ----------------
 const handleAboutUsMouseEnter = () => {
@@ -36,10 +35,31 @@ const handleourServiceMouseEnter = () => {
     setOurServiceDropDownOpen(false);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 0;
+      setScrolled(isScrolled);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div>
       {/* contact info  */}
-     <div className=" w-full sm: hidden md:flex justify-end -ms-[15px] gap-5  top-0 fixed z-10 mb-2 text-white  backdrop-blur-md">
+     <div 
+     className={`
+      w-full sm: hidden md:flex justify-end px-[10px]
+     gap-5  top-0
+      fixed z-10  mb-2
+      ${scrolled ? " text-black" : "text-white"}
+      ${scrolled ? " bg-white" : "bg-gradient-to-r from-[#095868] to-[#05819a]"}
+      `}
+     >
         <p className="flex items-center">
            <span className="me-1"><CgMail size={20}/></span> <span>gmail@gmail.com</span>
         </p>
@@ -49,12 +69,12 @@ const handleourServiceMouseEnter = () => {
       </div>
       {/* navbar section  */}
       <nav
-        className="
+        className={`
         flex flex-wrap
         items-center
         justify-between
         w-full
-        py-3
+        py-0
         px-4
         text-lg
         text-gray-700
@@ -65,12 +85,14 @@ const handleourServiceMouseEnter = () => {
         md:top-6
         sm: top-0
         z-10
-        backdrop-blur-md
-        "
+       ${scrolled ? " bg-white" : " bg-gradient-to-r from-[#095868] to-[#05819a]"}
+        `}
       >
         <div>
           <Link to="/">
-            <img className="w-[150px]" src={homeLogo} alt="" />
+            <img className="w-[150px]" 
+           src={scrolled ? scrolledLogo : homeLogo}
+            alt="" />
           </Link>
         </div>
 
@@ -99,12 +121,14 @@ const handleourServiceMouseEnter = () => {
           id="menu"
         >
           <ul
-            className="
-              text-sm text-white
+            className={`
+              text-sm
+              ${scrolled ? " text-black" : "text-white"}
               md:flex
               md:justify-between 
               md:items-center
-              gap-3"
+              gap-3
+              `}
           >
             <li>
               <a
@@ -130,7 +154,7 @@ const handleourServiceMouseEnter = () => {
               onMouseLeave={handleAboutUsMouseLeave}
                 className={`${
                 aboutUsDropDownOpen ? "block" : "hidden"
-                } bg-[#2d053e] text-white p-3 leading-10 absolute w-[200px] text-center z-50`}
+                }  bg-gradient-to-r from-[#05819a] to-[#095868] text-white p-3 leading-10 absolute w-[200px] text-center z-50`}
               >
                 <li className="hover:text-[#539ce6]">Our Steps & guidance</li>
                 <li className="hover:text-[#539ce6]">Our Team</li>
@@ -152,7 +176,7 @@ const handleourServiceMouseEnter = () => {
               onMouseLeave={handleourServiceMouseLeave}
                 className={`${
                     ourServiceDropDownOpen ? "block" : "hidden"
-                } bg-[#2d053e] text-white p-3 leading-10 absolute w-[200px] text-center z-40`}
+                }  bg-gradient-to-r from-[#05819a] to-[#095868] text-white p-3 leading-10 absolute w-[200px] text-center z-40`}
               >
                 <li className="hover:text-[#539ce6]">Student Visa </li>
                 <li className="hover:text-[#539ce6]">E-Ticketing</li>

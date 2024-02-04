@@ -10,7 +10,8 @@ body {
 
 /* defalut text color setting */
 .default-text-color{
-  color: #323738;
+  /* color: #323738; */
+  color: white;
 }
 /* defalut text heading setting */
 .dafault-heading{

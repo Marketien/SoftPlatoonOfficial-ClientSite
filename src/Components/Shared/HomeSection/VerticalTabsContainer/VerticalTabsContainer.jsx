@@ -69,7 +69,7 @@ export default function VerticalTabs() {
         aria-label=""
         sx={{ borderRight: 1, 
           width:"500px", 
-        background: '#05819a', 
+        background: 'linear-gradient(to right, #095868, #05819a)', 
         boxShadow: "5px 10px 10px rgba(0, 0, 0, 0.2)" ,
         marginTop:"-32px",
          marginBottom:"32px",
