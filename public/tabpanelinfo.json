@@ -1,0 +1,30 @@
+[
+  {
+    "SoftwareDevelopment": {
+      "title": "Software Development",
+      "paragraph": "A software development company with 34 years of business excellence, we can develop reliable, scalable and secure software solutions for any OS, browser and device. We bring together deep industry expertise and the latest IT advancements to deliver custom solutions and products that perfectly fit the needs and behavior of their users..",
+      "points": [
+        "Software consulting",
+        "Software development outsourcing",
+        "Team augmentation",
+        "Legacy software modernization",
+        "Custom software development",
+        "Software product development",
+        "Cloud application development"
+      ]
+    },
+    "TestingAndQA": {
+      "title": "Testing & QA",
+      "paragraph": "We offer full-range QA and testing outsourcing services, can help to develop your QA or enhance the existing one, assist you in TCoE setup and evolution. We perform end-to-end testing of mobile, web and desktop application at each stage of the development lifecycle.",
+      "points": [
+        "QA outsourcing",
+        "Security testing",
+        "Usability testing",
+        "Test automation",
+        "QA consulting",
+        "Functional testing",
+        "Performance testing"
+      ]
+    }
+  }
+]
