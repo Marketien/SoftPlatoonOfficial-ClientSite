@@ -157,7 +157,8 @@ export default function VerticalTabs() {
       </Box>
     </div>
     {/* slider section for small device  */}
-    <div className="lg:hidden md:hidden sm: flex">
+    <div className="lg:hidden md:hidden sm: flex sm: -mx-[40px] ">
+    {/* <div className='lg:flex md:flex sm: hidden'> */}
       <SliderSection/>
     </div>
 </div>
