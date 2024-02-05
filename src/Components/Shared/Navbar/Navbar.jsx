@@ -74,7 +74,9 @@ const handleourServiceMouseEnter = () => {
         items-center
         justify-between
         w-full
-        py-0
+        lg:py-0
+        md:py-0
+        sm: py-3
         px-4
         text-lg
         text-gray-700

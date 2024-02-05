@@ -60,7 +60,8 @@ export default function VerticalTabs() {
         flexDirection: 'row',
          background: 'white', 
          marginLeft:"3%",
-          width: '98%', 
+          width: '98%',
+          borderRadius:"5px",
           height: { lg: 600, md: 730, sm: 730 },
           boxShadow: "5px 10px 10px rgba(0, 0, 0, 0.2)",
         }}>
@@ -77,6 +78,7 @@ export default function VerticalTabs() {
         marginTop:"-32px",
          marginBottom:"32px",
          marginLeft: "-32px",
+         borderRadius:"5px",
         }}
       >
   <Tab label="Software Developement" 
