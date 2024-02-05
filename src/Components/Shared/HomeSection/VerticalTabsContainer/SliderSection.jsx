@@ -52,7 +52,7 @@ const SliderSection = () => {
           </div>
         </div>
       </div> */}
-            <Carousel className=" lg:w-full md:w-full sm: w-[350px] bg-white">
+            <Carousel className=" lg:w-full md:w-[700px] sm: w-[350px]">
                 <div>
                     <TabPanelInfo1/>
                 </div>

@@ -61,7 +61,7 @@ export default function VerticalTabs() {
          background: 'white', 
          marginLeft:"3%",
           width: '98%', 
-          height: 600 ,
+          height: { lg: 600, md: 730, sm: 730 },
           boxShadow: "5px 10px 10px rgba(0, 0, 0, 0.2)",
         }}>
 <Tabs
@@ -158,7 +158,7 @@ export default function VerticalTabs() {
     </div>
     {/* slider section for small device  */}
     <div className="lg:hidden md:hidden sm: flex sm: -mx-[40px] ">
-    {/* <div className='lg:flex md:flex sm: hidden'> */}
+    {/* <div className='lg:flex md:flex sm: hidden sm: -mx-[40px]'> */}
       <SliderSection/>
     </div>
 </div>
