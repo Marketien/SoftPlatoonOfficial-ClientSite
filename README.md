@@ -8,3 +8,8 @@ color -5 : bg-gradient-to-r from-teal-900 to-teal-500 ;
 blur effect :  backdrop-blur-md ;
 style={{ fontFamily: "Open Sans,sans-serif" }} ;
 style={{ fontFamily: "Sumana,serif" }} ;
+
+other classes: 
+default-text-color,
+dafault-heading,
+default-margin 

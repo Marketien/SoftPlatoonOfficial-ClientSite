@@ -2,6 +2,7 @@ import Banner from "../../Shared/HomeSection/Banner/Banner";
 import Section1 from "../../Shared/HomeSection/Section-1/Section1";
 import Section2 from "../../Shared/HomeSection/Section-2/Section2";
 import Section3 from "../../Shared/HomeSection/Section-3/Section3";
+import Section4 from "../../Shared/HomeSection/Section4/Section4";
 
 
 const  Home = () => {
@@ -16,6 +17,7 @@ const  Home = () => {
             <Section1/>
             <Section2/>
             <Section3/>
+            <Section4/>
         </div>
     );
 };

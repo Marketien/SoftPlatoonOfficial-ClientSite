@@ -4,7 +4,7 @@ import icon from "../../../../../public/Images/Dark analytics-amico.png";
 
 const Section3 = () => {
   return (
-    <div className="rounded-sm bg-[white] p-5 mt-20
+    <div  style={{ fontFamily: "Open Sans,sans-serif" }} className="rounded-sm bg-[white] p-5 mt-20
     grid lg:grid-cols-2 md:grid-cols-2 sm: grid-cols-1 gap-10 
     shadow-lg shadow-slate-500 lg:w-[90%] md:w-[90%] sm: w-[95%]
    lg:ms-[53px] sm: ms-[10px]

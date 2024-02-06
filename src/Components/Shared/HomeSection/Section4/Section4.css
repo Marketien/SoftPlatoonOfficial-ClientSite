@@ -1,0 +1,29 @@
+.section4Tabs {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.selectedTab {
+  border-top: none;
+  border-bottom: 5px solid #095868;
+  border-left: none;
+  border-right: none;
+  text-align: center;
+  text-align: center;
+}
+
+.section4TabList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.section4Tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+}
