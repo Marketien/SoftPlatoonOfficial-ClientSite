@@ -9,7 +9,6 @@ const TabPanelInfo1 = () => {
       .then((res) => res.json())
       .then((data) => setInfos(data));
   }, []);
-  console.log(tabInfos);
 
   const softwareDevelopmentInfo = tabInfos.find(
     (info) => "SoftwareDevelopment" in info

@@ -11,7 +11,6 @@ const TabPanelInfo2 = () => {
         .then((res) => res.json())
         .then((data) => setInfos(data));
     }, []);
-    console.log(tabInfos);
   
     const testingAndQAInfo = tabInfos.find(
       (info) => "TestingAndQA" in info

@@ -1,4 +1,4 @@
-import "./Sponsered.css";
+import "./Section1.css";
 import logo1 from "../../../../../public/Icons/Main Logo White-01.png";
 import logo2 from "../../../../../public/Icons/Main Logo-01.png";
 import { useEffect, useRef } from "react";
@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-const Sponsered = () => {
+const Section1 = () => {
   Aos.init();
   const sliderRef = useRef(null);
 
@@ -75,4 +75,4 @@ const Sponsered = () => {
   );
 };
 
-export default Sponsered;
+export default Section1;

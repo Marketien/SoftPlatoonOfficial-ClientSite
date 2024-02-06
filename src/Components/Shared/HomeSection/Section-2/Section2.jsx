@@ -1,7 +1,7 @@
 import VerticalTabs from "../VerticalTabsContainer/VerticalTabsContainer";
 
 
-const OurOffering = () => {
+const Section2 = () => {
     return (
         <div className=" bg-[#e7e7eb21] py-[1px]">
             <div className="default-margin">
@@ -16,4 +16,4 @@ const OurOffering = () => {
     );
 };
 
-export default OurOffering;
+export default Section2;

@@ -1,7 +1,7 @@
 import Banner from "../../Shared/HomeSection/Banner/Banner";
-import ITEcosystem from "../../Shared/HomeSection/ITEcosystem/ITEcosystem";
-import OurOffering from "../../Shared/HomeSection/OurOffering/OurOffering";
-import Sponsered from "../../Shared/HomeSection/Sponsered/Sponsered";
+import Section1 from "../../Shared/HomeSection/Section-1/Section1";
+import Section2 from "../../Shared/HomeSection/Section-2/Section2";
+import Section3 from "../../Shared/HomeSection/Section-3/Section3";
 
 
 const  Home = () => {
@@ -13,9 +13,9 @@ const  Home = () => {
              >Since 1989. For millions of users. We transform businesses with powerful and adaptable 
              <br /> digital solutions that satisfy the needs of today and unlock the opportunities of 
              <br />  tomorrow.</h1>
-            <Sponsered/>
-            <OurOffering/>
-            <ITEcosystem/>
+            <Section1/>
+            <Section2/>
+            <Section3/>
         </div>
     );
 };

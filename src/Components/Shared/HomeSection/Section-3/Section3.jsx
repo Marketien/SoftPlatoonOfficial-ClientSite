@@ -1,8 +1,8 @@
-import "./ITEcosystem.css";
+import "./Section3.css";
 import { BsCheckCircleFill } from "react-icons/bs";
 import icon from "../../../../../public/Images/Dark analytics-amico.png";
 
-const ITEcosystem = () => {
+const Section3 = () => {
   return (
     <div className="rounded-sm bg-[white] p-5 mt-20
     grid lg:grid-cols-2 md:grid-cols-2 sm: grid-cols-1 gap-10 
@@ -67,4 +67,4 @@ const ITEcosystem = () => {
   );
 };
 
-export default ITEcosystem;
+export default Section3;
