@@ -1,8 +1,9 @@
 import Banner from "../../Shared/HomeSection/Banner/Banner";
+import Section0 from "../../Shared/HomeSection/Section-0/Section0";
 import Section1 from "../../Shared/HomeSection/Section-1/Section1";
 import Section2 from "../../Shared/HomeSection/Section-2/Section2";
 import Section3 from "../../Shared/HomeSection/Section-3/Section3";
-import Section4 from "../../Shared/HomeSection/Section4/Section4";
+import Section4 from "../../Shared/HomeSection/Section-4/Section4";
 
 
 const  Home = () => {
@@ -15,6 +16,7 @@ const  Home = () => {
              <br /> digital solutions that satisfy the needs of today and unlock the opportunities of 
              <br />  tomorrow.</h1>
             <Section1/>
+            <Section0/>
             <Section2/>
             <Section3/>
             <Section4/>

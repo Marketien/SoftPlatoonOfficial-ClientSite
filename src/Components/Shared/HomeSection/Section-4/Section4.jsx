@@ -7,8 +7,9 @@ import { GiBrassEye } from "react-icons/gi";
 import { WiFire } from "react-icons/wi";
 import { SiChainlink } from "react-icons/si";
 import { FaCreativeCommonsRemix } from "react-icons/fa6";
-
-
+import TabPanelInfo1 from "../TabPanelInfo/TabPanelInfo1";
+import TabPanelInfo2 from "../TabPanelInfo/TabPanelInfo2";
+import SliderSection from "../VerticalTabsContainer/SliderSection";
 
 const Section4 = () => {
   return (
@@ -24,79 +25,95 @@ const Section4 = () => {
         tech capabilities to stay ahead of the curve
       </p>
 
-      {/* Tab section  */}
-      <div className="mt-10">
+      {/* Tab section fot large device */}
+      <div className="mt-10 lg:flex md:flex sm: hidden">
         <Tabs className="section4Tabs" selectedTabClassName="selectedTab">
           <TabList className="section4TabList">
             <Tab className="section4Tab">
               <p>
                 <span>
-                  <FaCubes size={50} />
+                  <FaCubes style={{ color: '#05819a'}} size={50} />
                 </span>
-                <span className="-ms-2 text-lg font-semibold">Big Data</span>
+                <span className="-ms-2 lg:text-lg md:text-xs sm: text-xs font-semibold">Big Data</span>
               </p>
             </Tab>
             <Tab className="section4Tab">
               <p>
                 <span>
-                  <BsRobot className="text-center ms-[65px]" size={50} />
+                  <BsRobot style={{ color: '#05819a'}} className="text-center lg:ms-[65px] md:ms-[35px]" size={50} />
                 </span>
-                <span className=" text-center text-lg font-semibold">Artificial Intelligence</span>
+                <span className=" text-center lg:text-lg md:text-xs sm: text-xs font-semibold">
+                  Artificial Intelligence
+                </span>
               </p>
             </Tab>
             <Tab className="section4Tab">
               <p>
                 <span>
-                  <GiBrassEye className="text-center ms-[45px]" size={50} />
+                  <GiBrassEye style={{ color: '#05819a'}} className="text-center lg:ms-[45px] md:ms-[22.5px]" size={50} />
                 </span>
-                <span className=" text-center text-lg font-semibold">Computer Vision</span>
+                <span className=" text-center lg:text-lg md:text-xs sm: text-xs  font-semibold">
+                  Computer Vision
+                </span>
               </p>
             </Tab>
             <Tab className="section4Tab">
               <p>
                 <span>
-                  <WiFire className="text-center ms-[40px]" size={50} />
+                  <WiFire style={{ color: '#05819a'}} className="text-center lg:ms-[40px] md:ms-[20px]" size={50} />
                 </span>
-                <span className="-ms-2 text-lg font-semibold">Internet Of Things</span>
+                <span className="-ms-2 lg:text-lg md:text-xs sm: text-xs  font-semibold">
+                  Internet Of Things
+                </span>
               </p>
             </Tab>
             <Tab className="section4Tab">
               <p>
                 <span>
-                  <SiChainlink className="text-center ms-[15px]" size={50} />
+                  <SiChainlink style={{ color: '#05819a'}} className="text-center lg:ms-[15px] md:ms-[0px]" size={50} />
                 </span>
-                <span className="-ms-2 text-lg font-semibold">BlockChain</span>
+                <span className="-ms-2 lg:text-lg md:text-xs sm: text-xs font-semibold">BlockChain</span>
               </p>
             </Tab>
             <Tab className="section4Tab">
               <p>
                 <span>
-                  <FaCreativeCommonsRemix className="text-center ms-[23px]" size={50} />
+                  <FaCreativeCommonsRemix
+                   style={{ color: '#05819a'}}
+                    className="text-center lg:ms-[23px] md:ms-[3px]"
+                    size={50}
+                  />
                 </span>
-                <span className="-ms-2 text-lg font-semibold">Mixed Reality</span>
+                <span className="-ms-2 lg:text-lg md:text-xs sm: text-xs  font-semibold">
+                  Mixed Reality
+                </span>
               </p>
             </Tab>
           </TabList>
 
           <TabPanel>
-            <h2>Any content 1</h2>
+            <TabPanelInfo1 />
           </TabPanel>
           <TabPanel>
-            <h2>Any content 2</h2>
+            <TabPanelInfo2 />
           </TabPanel>
           <TabPanel>
-            <h2>Any content 1</h2>
+            <TabPanelInfo1 />
           </TabPanel>
           <TabPanel>
-            <h2>Any content 2</h2>
+            <TabPanelInfo2 />
           </TabPanel>
           <TabPanel>
-            <h2>Any content 1</h2>
+            <TabPanelInfo1 />
           </TabPanel>
           <TabPanel>
-            <h2>Any content 2</h2>
+            <TabPanelInfo2 />
           </TabPanel>
         </Tabs>
+      </div>
+      {/* slider section for small device  */}
+      <div className="lg:hidden md:hidden sm: flex sm: -mx-[40px] ">
+        <SliderSection />
       </div>
     </div>
   );

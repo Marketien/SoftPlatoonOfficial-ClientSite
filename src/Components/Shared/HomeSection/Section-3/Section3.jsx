@@ -1,4 +1,3 @@
-import "./Section3.css";
 import { BsCheckCircleFill } from "react-icons/bs";
 import icon from "../../../../../public/Images/Dark analytics-amico.png";
 

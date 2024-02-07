@@ -48,7 +48,7 @@ export default function VerticalTabs() {
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
-  };
+  };  
 
   return (
 <div>
@@ -160,7 +160,6 @@ export default function VerticalTabs() {
     </div>
     {/* slider section for small device  */}
     <div className="lg:hidden md:hidden sm: flex sm: -mx-[40px] ">
-    {/* <div className='lg:flex md:flex sm: hidden sm: -mx-[40px]'> */}
       <SliderSection/>
     </div>
 </div>
