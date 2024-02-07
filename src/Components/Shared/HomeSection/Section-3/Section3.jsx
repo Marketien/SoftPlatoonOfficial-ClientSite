@@ -3,13 +3,19 @@ import icon from "../../../../../public/Images/Dark analytics-amico.png";
 
 const Section3 = () => {
   return (
-    <div  style={{ fontFamily: "Open Sans,sans-serif" }} className="rounded-sm bg-[white] p-5 mt-20
-    grid lg:grid-cols-2 md:grid-cols-2 sm: grid-cols-1 gap-10 
-    shadow-lg shadow-slate-500 lg:w-[90%] md:w-[90%] sm: w-[95%]
-   lg:ms-[53px] sm: ms-[10px]
+    <div className="flex justify-center">
+    <div 
+     style={{ fontFamily: "Open Sans,sans-serif" }}
+     className="lg:mx-[60px] md:mx-[30px] sm: mx-[5px] rounded-sm bg-[white] p-5 mt-20 gap-10 
+    shadow-lg shadow-slate-500 
+lg:w-[1100px]
+    lg:flex lg:justify-between lg:ms-[0px]
+    md:flex-wrap md:justify-around md:ms-[40px]
+    sm: flex-wrap sm:justify-around sm: ms-[10px]
     ">
       {/* information section */}
-      <div className="lg:absolute md:static sm: static lg:w-[700px] ">
+      <div className="lg:absolute md:static sm: static lg:w-[700px] mb-5">
+        <div >
         <h1 className=" text-3xl font-semibold mt-5">
           Every Part of Your IT Ecosystem. <br /> Taken Care Of.
         </h1>
@@ -44,24 +50,26 @@ const Section3 = () => {
             </li>
           </span>
         </p>
+        </div>
       </div>
       {/* icon section  */}
-      <div className="lg:relative md:relative sm: static
+      <div className="lg:relative md:static sm: static
        lg:bottom-[50px] md:bottom-[50px] lg:left-[643px] 
         rounded-sm bg-white 
        shadow-lg shadow-slate-500
         lg:w-[500px] lg:h-[400px]
-        md:w-[400px] md:h-[400px]
+        md:w-[650px] md:h-[400px]
         sm: w-[320px] sm: h-[400px]
        ">
         <img 
         className="
         lg:w-[500px] lg:h-[400px]
-        md:w-[400px] md:h-[400px]
+        md:w-[650px] md:h-[400px]
         sm: w-[320px] sm: h-[400px]
         " src={icon}
          alt="" />
       </div>
+    </div>
     </div>
   );
 };

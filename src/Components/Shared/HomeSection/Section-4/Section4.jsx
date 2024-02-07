@@ -13,9 +13,10 @@ import SliderSection from "../VerticalTabsContainer/SliderSection";
 
 const Section4 = () => {
   return (
+    <div className="flex justify-center">
     <div
       style={{ fontFamily: "Open Sans,sans-serif" }}
-      className="default-margin "
+      className="default-margin lg:w-[1150px]"
     >
       <h1 className="text-white text-3xl font-semibold mt-5">
         Improve and Innovate with the Tech Trends
@@ -115,6 +116,7 @@ const Section4 = () => {
       <div className="lg:hidden md:hidden sm: flex sm: -mx-[40px] ">
         <SliderSection />
       </div>
+    </div>
     </div>
   );
 };

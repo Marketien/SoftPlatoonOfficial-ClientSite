@@ -17,18 +17,22 @@ const Section0 = () => {
       </h2>
 
       {/* cards section  */}
-    <div className=" items-center mt-10 gap-5
-           lg:flex lg:justify-center lg:-ms-[0px]
-           md:flex-wrap md:justify-around md:-ms-[0px]
-           sm: flex-wrap sm:justify-around sm: -ms-[10px]
-      ">
+      <div
+        className=" items-center mt-10 gap-5
+         lg:flex lg:justify-center lg:-ms-[0px]
+           md:flex-wrap md:justify-around md:ms-[150px]
+           sm: flex-wrap sm:justify-around sm: -ms-[40px]
+      "
+      >
         {/* App Development  */}
-        <div style={{ boxShadow: "5px 10px 10px rgba(0, 0, 0, 0.2)" }}
-         className="card card-compact
+        <div
+          style={{ boxShadow: "5px 10px 10px rgba(0, 0, 0, 0.2)" }}
+          className="card card-compact
           lg:w-[360px] lg:h-[350px] 
           md:w-[340px] md:h-[350px] 
           sm: w-[340px] sm: h-[350px] 
-          bg-base-100 rounded-md px-4">
+          bg-base-100 rounded-md px-4"
+        >
           <div className="flex justify-start mt-5 ms-3">
             <img
               className=" w-[80px] "
@@ -44,22 +48,24 @@ const Section0 = () => {
               Far far away, behind the word moun far from the countries Vokalia
               Place supplies with regelialia.
             </p>
-            <p className="uppercase font-bold hover:text-[#05819a] flex items-center">
-              Read More{" "}
+            <a href="/"><p className="uppercase font-bold hover:text-[#05819a] flex items-center">
+             Read More
               <span className="ms-2">
                 <IoIosArrowRoundForward size={25} />
               </span>
-            </p>
+            </p></a> 
           </div>
         </div>
 
         {/* Design & Development  */}
-        <div style={{ boxShadow: "5px 10px 10px rgba(0, 0, 0, 0.2)" }} 
-        className="card card-compact
+        <div
+          style={{ boxShadow: "5px 10px 10px rgba(0, 0, 0, 0.2)" }}
+          className="card card-compact
         lg:w-[360px] lg:h-[350px] 
         md:w-[340px] md:h-[350px] 
         sm: w-[340px] sm: h-[350px] 
-        bg-base-100 rounded-md px-4">
+        bg-base-100 rounded-md px-4"
+        >
           <div className="flex  ms-3 mt-5">
             <img
               className="w-[80px]"
@@ -75,22 +81,24 @@ const Section0 = () => {
               Far far away, behind the word moun far from the countries Vokalia
               Place supplies with regelialia.
             </p>
-            <p className="uppercase font-bold hover:text-[#05819a] flex items-center">
-              Read More{" "}
+            <a href="/"><p className="uppercase font-bold hover:text-[#05819a] flex items-center">
+             Read More
               <span className="ms-2">
                 <IoIosArrowRoundForward size={25} />
               </span>
-            </p>
+            </p></a> 
           </div>
         </div>
 
         {/* Innovative Solutions  */}
-        <div style={{ boxShadow: "5px 10px 10px rgba(0, 0, 0, 0.2)" }} 
-        className="card card-compact 
+        <div
+          style={{ boxShadow: "5px 10px 10px rgba(0, 0, 0, 0.2)" }}
+          className="card card-compact 
         lg:w-[360px] lg:h-[350px] 
         md:w-[340px] md:h-[350px] 
         sm: w-[340px] sm: h-[350px] 
-         bg-base-100 rounded-md px-4 ">
+         bg-base-100 rounded-md px-4 "
+        >
           <div className="flex  ms-3 mt-5">
             <img
               className="w-[80px]"
@@ -106,12 +114,12 @@ const Section0 = () => {
               Far far away, behind the word moun far from the countries Vokalia
               Place supplies with regelialia.
             </p>
-            <p className="uppercase font-bold hover:text-[#05819a] flex items-center">
-              Read More{" "}
+            <a href="/"><p className="uppercase font-bold hover:text-[#05819a] flex items-center">
+             Read More
               <span className="ms-2">
                 <IoIosArrowRoundForward size={25} />
               </span>
-            </p>
+            </p></a> 
           </div>
         </div>
       </div>

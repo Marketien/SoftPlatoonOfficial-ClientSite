@@ -53,14 +53,14 @@ export default function VerticalTabs() {
   return (
 <div>
 {/* Tab section  for large device */}
-    <div className='lg:flex md:flex sm: hidden'>
+    <div className='lg:flex lg:justify-center md:flex sm: hidden'>
       <Box
       sx={{ 
         display: 'flex',
         flexDirection: 'row',
          background: 'white', 
          marginLeft:"3%",
-          width: '98%',
+          width: '1100px',
           borderRadius:"5px",
           height: { lg: 600, md: 730, sm: 730 },
           boxShadow: "5px 10px 10px rgba(0, 0, 0, 0.2)",
