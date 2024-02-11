@@ -6,12 +6,12 @@ const Section3 = () => {
     <div className="flex justify-center">
     <div 
      style={{ fontFamily: "Open Sans,sans-serif" }}
-     className="lg:mx-[60px] md:mx-[30px] sm: mx-[5px] rounded-sm bg-[white] p-5 mt-20 gap-10 
+     className="lg:mx-[60px] md:mx-[30px] sm: mx-[0px] rounded-sm bg-[white] p-5 mt-20 gap-10 
     shadow-lg shadow-slate-500 
 lg:w-[1100px]
     lg:flex lg:justify-between lg:ms-[0px]
     md:flex-wrap md:justify-around md:ms-[40px]
-    sm: flex-wrap sm:justify-around sm: ms-[10px]
+    sm: flex-wrap sm:justify-around 
     ">
       {/* information section */}
       <div className="lg:absolute md:static sm: static lg:w-[700px] mb-5">

@@ -1,0 +1,15 @@
+/* card-body  */
+.card{
+    padding: 20px;
+}
+
+/* choose Plan button  */
+.choosePlan{
+    text-transform: uppercase;
+    width: 200px;
+    height: 48px;
+    border-radius: 9999px;
+    background-color: #323738;
+    color: white;
+    font-weight: 600;
+}

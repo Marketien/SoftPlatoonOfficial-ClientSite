@@ -28,9 +28,9 @@ const Section0 = () => {
         <div
           style={{ boxShadow: "5px 10px 10px rgba(0, 0, 0, 0.2)" }}
           className="card card-compact
-          lg:w-[360px] lg:h-[350px] 
-          md:w-[340px] md:h-[350px] 
-          sm: w-[340px] sm: h-[350px] 
+          lg:w-[360px] lg:h-[350px] lg:mb-0
+          md:w-[340px] md:h-[350px] md:mb-5
+          sm: w-[340px] sm: h-[350px] sm: mb-5
           bg-base-100 rounded-md px-4"
         >
           <div className="flex justify-start mt-5 ms-3">
@@ -61,10 +61,10 @@ const Section0 = () => {
         <div
           style={{ boxShadow: "5px 10px 10px rgba(0, 0, 0, 0.2)" }}
           className="card card-compact
-        lg:w-[360px] lg:h-[350px] 
-        md:w-[340px] md:h-[350px] 
-        sm: w-[340px] sm: h-[350px] 
-        bg-base-100 rounded-md px-4"
+          lg:w-[360px] lg:h-[350px] lg:mb-0
+          md:w-[340px] md:h-[350px] md:mb-5
+          sm: w-[340px] sm: h-[350px] sm: mb-5
+          bg-base-100 rounded-md px-4"
         >
           <div className="flex  ms-3 mt-5">
             <img

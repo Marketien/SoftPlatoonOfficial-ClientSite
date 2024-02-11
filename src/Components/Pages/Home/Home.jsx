@@ -5,6 +5,7 @@ import Section2 from "../../Shared/HomeSection/Section-2/Section2";
 import Section3 from "../../Shared/HomeSection/Section-3/Section3";
 import Section4 from "../../Shared/HomeSection/Section-4/Section4";
 import Section5 from "../../Shared/HomeSection/Section-5/Section5";
+import Section6 from "../../Shared/HomeSection/Section-6/Section6";
 
 
 const  Home = () => {
@@ -22,6 +23,7 @@ const  Home = () => {
             <Section3/>
             <Section4/>
             <Section5/>
+            <Section6/>
         </div>
     );
 };
