@@ -7,7 +7,7 @@ const Section0 = () => {
   return (
     <div
       style={{ fontFamily: "Open Sans,sans-serif" }}
-      className="default-margin"
+      className=""
     >
       <h1 className="text-center text-white text-lg font-semibold mb-5">
         WHAT WE DO{" "}
@@ -17,14 +17,8 @@ const Section0 = () => {
       </h2>
 
       {/* cards section  */}
-      {/* <div
-        className=" items-center mt-10 gap-5
-         lg:flex lg:justify-center lg:-ms-[0px]
-           md:flex-wrap md:justify-around md:ms-[150px]
-           sm: flex-wrap sm:justify-around sm: -ms-[40px]
-      "
-      > */}
-      <div className="mx-tuto grid lg:grid-cols-3 md:grid-cols-2 sm: grid-cols-1 gap-5">
+      
+      <div className="my-[80px] mx-auto lg:max-w-5xl md:max-w-3xl sm: max-w-sm grid lg:grid-cols-3 md:grid-cols-2 sm: grid-cols-1 gap-5">
         {/* App Development  */}
         <div
           style={{ boxShadow: "5px 10px 10px rgba(0, 0, 0, 0.2)" }}
@@ -90,7 +84,7 @@ const Section0 = () => {
           className="card card-compact 
          bg-base-100 rounded-md px-4 "
         >
-          <div className="flex  ms-3 mt-5">
+          <div className="flex ms-3 mt-">
             <img
               className="w-[80px]"
               src={icon3}

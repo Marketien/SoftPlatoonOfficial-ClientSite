@@ -16,14 +16,11 @@ const Section5 = () => {
       {/* cards section  */}
       <div
         className="mt-10 gap-1 flex justify-center">
-          <div className="grid lg:grid-cols-4 md:grid-cols-2 sm: grid-cols-1 gap-5">
+          <div className="my-[80px] mx-auto lg:max-w-5xl md:max-w-3xl sm: max-w-sm grid lg:grid-cols-4 md:grid-cols-2 sm: grid-cols-1 gap-5">
         {/* Basic  */}
         <div
           style={{ boxShadow: "5px 10px 10px rgba(0, 0, 0, 0.2)" }}
           className="card card-compact py-[40px]
-            lg:w-[320px] lg:h-[450px] lg:mb-0
-            md:w-[320px] md:h-[450px] md:mb-5
-            sm: w-[320px] sm: h-[450px] sm: mb-5
             bg-base-100 rounded-none px-4
             hover:bg-[#095868]
             text-[#095868]
@@ -33,7 +30,7 @@ const Section5 = () => {
           <div className="card-body ">
             <h2 className="text-center font-semibold text-3xl mb-5">Basic</h2>
             <p className="text-5xl font-bold text-center relative">
-              <span className="text-[20px] absolute left-[35px] top-[10px]">
+              <span className="text-[20px] absolute lg:left-[-2px] md:left-[60px] sm: left-[60px]">
                 $
               </span>{" "}
               299
@@ -55,9 +52,6 @@ const Section5 = () => {
         <div
           style={{ boxShadow: "5px 10px 10px rgba(0, 0, 0, 0.2)" }}
           className="card card-compact py-[40px]
-          lg:w-[320px] lg:h-[450px] lg:mb-0
-          md:w-[320px] md:h-[450px] md:mb-5
-          sm: w-[320px] sm: h-[450px] sm: mb-5
           bg-base-100 rounded-none px-4
           hover:bg-[#095868]
           text-[#095868]
@@ -67,7 +61,7 @@ const Section5 = () => {
           <div className="card-body ">
             <h2 className="text-center font-semibold text-3xl mb-5">Startup</h2>
             <p className="text-5xl font-bold text-center relative">
-              <span className="text-[20px] absolute left-[35px] top-[10px]">
+              <span className="text-[20px] absolute lg:left-[-2px] md:left-[60px] sm: left-[60px]">
                 $
               </span>{" "}
               499
@@ -89,9 +83,6 @@ const Section5 = () => {
         <div
           style={{ boxShadow: "5px 10px 10px rgba(0, 0, 0, 0.2)" }}
           className="card card-compact py-[40px]
-            lg:w-[320px] lg:h-[450px] lg:mb-0
-            md:w-[320px] md:h-[450px] md:mb-5
-            sm: w-[320px] sm: h-[450px] sm: mb-5
             bg-base-100 rounded-none px-4
             hover:bg-[#095868]
             text-[#095868]
@@ -101,7 +92,7 @@ const Section5 = () => {
           <div className="card-body ">
             <h2 className="text-center font-semibold text-3xl mb-5">Enterprise</h2>
             <p className="text-5xl font-bold text-center relative">
-              <span className="text-[20px] absolute left-[35px] top-[10px]">
+              <span className="text-[20px] absolute lg:left-[-2px] md:left-[60px] sm: left-[60px]">
                 $
               </span>{" "}
               899
@@ -123,9 +114,6 @@ const Section5 = () => {
         <div
           style={{ boxShadow: "5px 10px 10px rgba(0, 0, 0, 0.2)" }}
           className="card card-compact py-[40px]
-            lg:w-[320px] lg:h-[450px] lg:mb-0
-            md:w-[320px] md:h-[450px] md:mb-5
-            sm: w-[320px] sm: h-[450px] sm: mb-5
             bg-base-100 rounded-none px-4
             hover:bg-[#095868]
             text-[#095868]
@@ -135,7 +123,7 @@ const Section5 = () => {
           <div className="card-body ">
             <h2 className="text-center font-semibold text-3xl mb-5">Professional</h2>
             <p className="text-5xl font-bold text-center relative">
-              <span className="text-[20px] absolute left-[35px] top-[10px]">
+              <span className="text-[20px] absolute lg:left-[-2px] md:left-[60px] sm: left-[60px] ">
                 $
               </span>{" "}
               999
