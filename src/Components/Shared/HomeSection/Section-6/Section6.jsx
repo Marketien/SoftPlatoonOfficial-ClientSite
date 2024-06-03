@@ -1,5 +1,7 @@
 import ratingImg from "../../../../../public/Icons/start-filled.svg";
-import bean from "../../../../../public/Images/bean.png";
+import user1 from "../../../../../public/Images/user-1.jpg";
+import user2 from "../../../../../public/Images/user-2.jpg";
+import user3 from "../../../../../public/Images/user-3.jpg";
 
 const Section6 = () => {
   return (
@@ -16,13 +18,13 @@ const Section6 = () => {
           <div className="flex gap-3 mt-5">
             <div className="border  w-[80px] h-[80px]  rounded-full">
               <img
-                className="w-[80px] h-[80px] rounded-full bg-red-300 p-1"
-                src={bean}
+                className="w-[80px] h-[80px] rounded-full bg-gradient-to-r from-[#5A287F] via-[#84207E]  to-[#723988] p-1"
+                src={user1}
                 alt=""
               />
             </div>
             <div>
-              <h1 className="font-bold text-xl">Md Ali</h1>
+              <h1 className="font-bold text-xl">Alexander</h1>
               <p className="text-xs font-semibold text-gray-500">
               Naqwee.
               </p>
@@ -51,13 +53,13 @@ const Section6 = () => {
           <div className="flex gap-3 mt-5">
             <div className="border  w-[80px] h-[80px]  rounded-full">
               <img
-                className="w-[80px] h-[80px] rounded-full bg-blue-300 p-1"
-                src={bean}
+                className="w-[80px] h-[80px] rounded-full bg-gradient-to-r from-[#5A287F] via-[#84207E]  to-[#723988] p-1"
+                src={user2}
                 alt=""
               />
             </div>
             <div>
-              <h1 className="font-bold text-xl">Md Arif</h1>
+              <h1 className="font-bold text-xl">Vince</h1>
               <p className="text-xs font-semibold text-gray-500">
                 OPal-primium living.
               </p>
@@ -86,13 +88,13 @@ const Section6 = () => {
           <div className="flex gap-3 mt-5">
             <div className="border  w-[80px] h-[80px]  rounded-full">
               <img
-                className="w-[80px] h-[80px] rounded-full bg-green-300 p-1"
-                src={bean}
+                className="w-[80px] h-[80px] rounded-full bg-gradient-to-r from-[#5A287F] via-[#84207E]  to-[#723988] p-1"
+                src={user3}
                 alt=""
               />
             </div>
             <div>
-              <h1 className="font-bold text-xl">Md Arafat</h1>
+              <h1 className="font-bold text-xl">Stephanie </h1>
               <p className="text-xs font-semibold text-gray-500">
               Blu Eyes.
               </p>

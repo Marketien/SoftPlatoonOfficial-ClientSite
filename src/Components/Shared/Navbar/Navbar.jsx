@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 // import '../../Pages/Home/Nav.js'
 // import homeLogo from "../../../../public/Icons/Main Logo White-01.png";
 // import scrolledLogo from "../../../../public/Icons/Main Logo-01.png";
+import homeLogo from "../../../../public/Icons/Untitled-4-02.png";
+import scrolledLogo from "../../../../public/Icons/Untitled-4-01.png";
 import bangladesh from "../../../../public/Icons/Bangladesh.jpg";
 import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
@@ -58,14 +60,14 @@ const handleourServiceMouseEnter = () => {
      gap-5  top-0
       fixed z-10  mb-2
       ${scrolled ? " text-black" : "text-white"}
-      ${scrolled ? " bg-white" : "bg-gradient-to-r from-[#2D4159] to-[#31708E]"}
+      ${scrolled ? " bg-white" : "bg-gradient-to-r from-[#5A287F] via-[#84207E]  to-[#723988]"}
       `}
      >
         <p className="flex items-center">
-           <span className="me-1"><CgMail size={20}/></span> <span>gmail@gmail.com</span>
+           <span className="me-1"><CgMail size={20}/></span> <span>tarekw85@gmail.com</span>
         </p>
         <p  className="flex items-center">
-          <span className="me-1"><img className="w-[20px]" src={bangladesh} alt="" /></span><span>+1 214 306 68 37</span>
+          <span className="me-1"><img className="w-[20px]" src={bangladesh} alt="" /></span><span>+880 1995 893483</span>
           </p>
       </div>
       {/* navbar section  */}
@@ -88,17 +90,15 @@ const handleourServiceMouseEnter = () => {
         md:top-6
         sm: top-0
         z-10
-       ${scrolled ? " bg-white" : " bg-gradient-to-r from-[#2D4159] to-[#31708E]"}
+       ${scrolled ? " bg-white" : "bg-gradient-to-r from-[#5A287F] via-[#84207E]  to-[#723988]"}
         `}
       >
         <div>
           <Link to="/">
-            {/* <img className="w-[150px]" 
+            <img className="w-[150px]" 
            src={scrolled ? scrolledLogo : homeLogo}
-            alt="" /> */}
-            {scrolled ?  <p className="text-black">SoftPlatoon</p> : <p className="text-white">SoftPlatoon</p>}
-           
-            
+            alt="" />
+ 
           </Link>
         </div>
 
@@ -160,7 +160,7 @@ const handleourServiceMouseEnter = () => {
               onMouseLeave={handleAboutUsMouseLeave}
                 className={`${
                 aboutUsDropDownOpen ? "block" : "hidden"
-                }  bg-gradient-to-r from-[#05819a] to-[#095868] text-white p-3 leading-10 absolute w-[200px] text-center z-50`}
+                }  bg-gradient-to-r from-[#5A287F] via-[#84207E]  to-[#723988] text-white p-3 leading-10 absolute w-[200px] text-center z-50`}
               >
                 <li className="hover:text-[#539ce6]">Our Steps & guidance</li>
                 <li className="hover:text-[#539ce6]">Our Team</li>
@@ -182,7 +182,7 @@ const handleourServiceMouseEnter = () => {
               onMouseLeave={handleourServiceMouseLeave}
                 className={`${
                     ourServiceDropDownOpen ? "block" : "hidden"
-                }  bg-gradient-to-r from-[#05819a] to-[#095868] text-white p-3 leading-10 absolute w-[200px] text-center z-40`}
+                }  bg-gradient-to-r from-[#5A287F] via-[#84207E]  to-[#723988] text-white p-3 leading-10 absolute w-[200px] text-center z-40`}
               >
                 <li className="hover:text-[#539ce6]">Student Visa </li>
                 <li className="hover:text-[#539ce6]">E-Ticketing</li>
@@ -217,7 +217,7 @@ const handleourServiceMouseEnter = () => {
             <li className="animate-pulse">
               <a
                 className="lg:flex md:hidden sm: hidden md:p-2  py-2 uppercase 
-                 hover:text-black hover:bg-gray-300 text-white bg-[#095868] rounded-lg"
+                 hover:text-black hover:bg-gray-300 text-white bg-[#501b79] rounded-lg"
                 href="/userLogin"
               >
                 Contact

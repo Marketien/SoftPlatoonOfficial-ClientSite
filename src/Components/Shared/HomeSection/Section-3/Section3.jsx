@@ -26,27 +26,27 @@ const Section3 = () => {
         <p className="mt-5 flex items-center gap-5">
           <span className="">
             <li className="flex items-center text-lg mb-2">
-              <BsCheckCircleFill className="me-2 text-[#095868]" /> Consulting
+              <BsCheckCircleFill className="me-2 text-[#5A287F]" /> Consulting
             </li>
             <li className="flex items-center text-lg mb-2">
-              <BsCheckCircleFill className="me-2 text-[#095868]" />{" "}
+              <BsCheckCircleFill className="me-2 text-[#5A287F]" />{" "}
               Implementation
             </li>
             <li className="flex items-center text-lg">
-              <BsCheckCircleFill className="me-2 text-[#095868]" /> Management
+              <BsCheckCircleFill className="me-2 text-[#5A287F]" /> Management
               and support
             </li>
           </span>
           <span>
             <li className="flex items-center text-lg mb-2">
-              <BsCheckCircleFill className="me-2 text-[#095868]" /> Security
+              <BsCheckCircleFill className="me-2 text-[#5A287F]" /> Security
             </li>
             <li className="flex items-center text-lg mb-2">
-              <BsCheckCircleFill className="me-2 text-[#095868]" /> Help desk
+              <BsCheckCircleFill className="me-2 text-[#5A287F]" /> Help desk
               services
             </li>
             <li className="flex items-center text-lg">
-              <BsCheckCircleFill className="me-2 text-[#095868]" /> Migration
+              <BsCheckCircleFill className="me-2 text-[#5A287F]" /> Migration
             </li>
           </span>
         </p>

@@ -35,7 +35,7 @@ const Section4 = () => {
               <Tab className=" section4Tab">
                 <p>
                   <span>
-                    <FaCubes style={{ color: "#05819a" }} size={50} />
+                    <FaCubes style={{ color: "#5A287F" }} size={50} />
                   </span>
                   <span className="-ms-2 lg:text-lg md:text-xs sm: text-xs font-semibold">
                     Big Data
@@ -46,7 +46,7 @@ const Section4 = () => {
                 <p>
                   <span>
                     <BsRobot
-                      style={{ color: "#05819a" }}
+                      style={{ color: "#5A287F" }}
                       className="text-center lg:ms-[65px] md:ms-[35px]"
                       size={50}
                     />
@@ -60,7 +60,7 @@ const Section4 = () => {
                 <p>
                   <span>
                     <GiBrassEye
-                      style={{ color: "#05819a" }}
+                      style={{ color: "#5A287F" }}
                       className="text-center lg:ms-[45px] md:ms-[22.5px]"
                       size={50}
                     />
@@ -74,7 +74,7 @@ const Section4 = () => {
                 <p>
                   <span>
                     <WiFire
-                      style={{ color: "#05819a" }}
+                      style={{ color: "#5A287F" }}
                       className="text-center lg:ms-[40px] md:ms-[20px]"
                       size={50}
                     />
@@ -88,7 +88,7 @@ const Section4 = () => {
                 <p>
                   <span>
                     <SiChainlink
-                      style={{ color: "#05819a" }}
+                      style={{ color: "#5A287F" }}
                       className="text-center lg:ms-[15px] md:ms-[0px]"
                       size={50}
                     />
@@ -102,7 +102,7 @@ const Section4 = () => {
                 <p>
                   <span>
                     <FaCreativeCommonsRemix
-                      style={{ color: "#05819a" }}
+                      style={{ color: "#5A287F" }}
                       className="text-center lg:ms-[23px] md:ms-[3px]"
                       size={50}
                     />

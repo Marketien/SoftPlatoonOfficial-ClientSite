@@ -31,7 +31,7 @@ const TabPanelInfo2 = () => {
             <ul className="font-medium text-lg leading-10 mt-5">
               {testingAndQAInfo.TestingAndQA.points.map(
                 (point, index) => (
-                  <li className="flex items-center" key={index}> <BsCheckCircleFill className="me-2 text-[#095868]"/> {point}</li>
+                  <li className="flex items-center" key={index}> <BsCheckCircleFill className="me-2 text-[#5A287F]"/> {point}</li>
                 )
               )}
             </ul>
