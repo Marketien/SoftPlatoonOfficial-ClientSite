@@ -4,7 +4,7 @@ const Section5 = () => {
   return (
     <div
       style={{ fontFamily: "Open Sans,sans-serif" }}
-      className="default-margin"
+      className=""
     >
       <h1 className="text-center text-white text-lg font-semibold mb-5">
         PRICING PLAN
@@ -15,11 +15,8 @@ const Section5 = () => {
 
       {/* cards section  */}
       <div
-        className="mt-10 gap-1
-        lg:flex lg:justify-center lg:-ms-[0px]
-        md:flex-wrap md:justify-around md:ms-[175px]
-        sm: flex-wrap sm:justify-around sm: -ms-[30px]
-        ">
+        className="mt-10 gap-1 flex justify-center">
+          <div className="grid lg:grid-cols-4 md:grid-cols-2 sm: grid-cols-1 gap-5">
         {/* Basic  */}
         <div
           style={{ boxShadow: "5px 10px 10px rgba(0, 0, 0, 0.2)" }}
@@ -155,6 +152,7 @@ const Section5 = () => {
             </div>
           </div>
         </div>
+          </div>
 
       </div>
       

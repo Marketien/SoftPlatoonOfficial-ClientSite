@@ -5,11 +5,10 @@ const Section6 = () => {
   return (
     <div
       style={{ fontFamily: "Open Sans,sans-serif" }}
-      className="my-[150px] gap-5
-        lg:flex lg:justify-center lg:-ms-[0px]
-        md:flex-wrap md:justify-around md:ms-[200px]
-        sm: flex-wrap sm:justify-around sm: ms-[5px]"
+      className="my-[150px] gap-5 flex justify-center"
     >
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 sm: grid-cols-1 gap-5">
+
       {/* card -1 */}
       <div className="p-[10px] w-[350px] h-[250px] bg-base-100 rounded-xl shadow-xl mb-5">
         <div className="flex justify-between">
@@ -31,11 +30,11 @@ const Section6 = () => {
           </div>
           {/* rating  */}
           <div className="flex gap-2 justify-start -mt-[35px]">
-            <img src={ratingImg} alt="rating star" />
-            <img src={ratingImg} alt="rating star" />
-            <img src={ratingImg} alt="rating star" />
-            <img src={ratingImg} alt="rating star" />
-            <img src={ratingImg} alt="rating star" />
+            <img src={ratingImg} className="w-[12px]" alt="rating star" />
+            <img src={ratingImg} className="w-[12px]" alt="rating star" />
+            <img src={ratingImg} className="w-[12px]" alt="rating star" />
+            <img src={ratingImg} className="w-[12px]" alt="rating star" />
+            <img src={ratingImg} className="w-[12px]" alt="rating star" />
           </div>
         </div>
         {/* paragraph  */}
@@ -64,13 +63,13 @@ const Section6 = () => {
               </p>
             </div>
           </div>
-          {/* rating  */}
-          <div className="flex gap-2 justify-start -mt-[35px]">
-            <img src={ratingImg} alt="rating star" />
-            <img src={ratingImg} alt="rating star" />
-            <img src={ratingImg} alt="rating star" />
-            <img src={ratingImg} alt="rating star" />
-            <img src={ratingImg} alt="rating star" />
+           {/* rating  */}
+           <div className="flex gap-2 justify-start -mt-[35px]">
+            <img src={ratingImg} className="w-[12px]" alt="rating star" />
+            <img src={ratingImg} className="w-[12px]" alt="rating star" />
+            <img src={ratingImg} className="w-[12px]" alt="rating star" />
+            <img src={ratingImg} className="w-[12px]" alt="rating star" />
+            <img src={ratingImg} className="w-[12px]" alt="rating star" />
           </div>
         </div>
         {/* paragraph  */}
@@ -99,13 +98,13 @@ const Section6 = () => {
               </p>
             </div>
           </div>
-          {/* rating  */}
-          <div className="flex gap-2 justify-start -mt-[35px]">
-            <img src={ratingImg} alt="rating star" />
-            <img src={ratingImg} alt="rating star" />
-            <img src={ratingImg} alt="rating star" />
-            <img src={ratingImg} alt="rating star" />
-            <img src={ratingImg} alt="rating star" />
+           {/* rating  */}
+           <div className="flex gap-2 justify-start -mt-[35px]">
+            <img src={ratingImg} className="w-[12px]" alt="rating star" />
+            <img src={ratingImg} className="w-[12px]" alt="rating star" />
+            <img src={ratingImg} className="w-[12px]" alt="rating star" />
+            <img src={ratingImg} className="w-[12px]" alt="rating star" />
+            <img src={ratingImg} className="w-[12px]" alt="rating star" />
           </div>
         </div>
         {/* paragraph  */}
@@ -113,6 +112,7 @@ const Section6 = () => {
           Behind the woed mountains from the countries Vokalia and Consonantia
           ,there live the blind texts. Separated they.
         </p>
+      </div>
       </div>
     </div>
   );

@@ -17,12 +17,19 @@ const  Home = () => {
              >Since 1989. For millions of users. We transform businesses with powerful and adaptable 
              <br /> digital solutions that satisfy the needs of today and unlock the opportunities of 
              <br />  tomorrow.</h1>
+             {/* Slider section  */}
             <Section1/>
+            {/* WHAT WE DO */}
             <Section0/>
+            {/* Explore Our Offering */}
             <Section2/>
+            {/* Every Part of Your IT Ecosystem. */}
             <Section3/>
+            {/* Improve and Innovate */}
             <Section4/>
+            {/* PRICING PLAN */}
             <Section5/>
+            {/* review  */}
             <Section6/>
         </div>
     );

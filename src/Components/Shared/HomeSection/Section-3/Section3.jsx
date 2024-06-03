@@ -3,14 +3,14 @@ import icon from "../../../../../public/Images/Dark analytics-amico.png";
 
 const Section3 = () => {
   return (
-    <div className="flex justify-center">
+    <div className="">
     <div 
      style={{ fontFamily: "Open Sans,sans-serif" }}
-     className="lg:mx-[60px] md:mx-[30px] sm: mx-[0px] rounded-sm bg-[white] p-5 mt-20 gap-10 
+     className=" rounded-sm bg-[white] p-5 mt-20 gap-10 mx-auto my-[80px]
     shadow-lg shadow-slate-500 
-lg:w-[1100px]
-    lg:flex lg:justify-between lg:ms-[0px]
-    md:flex-wrap md:justify-around md:ms-[40px]
+    lg:max-w-5xl md:max-w-3xl sm: max-w-sm
+    lg:flex lg:justify-between 
+    md:flex-wrap md:justify-around
     sm: flex-wrap sm:justify-around 
     ">
       {/* information section */}
@@ -56,16 +56,13 @@ lg:w-[1100px]
       <div className="lg:relative md:static sm: static
        lg:bottom-[50px] md:bottom-[50px] lg:left-[643px] 
         rounded-sm bg-white 
-       shadow-lg shadow-slate-500
-        lg:w-[500px] lg:h-[400px]
-        md:w-[650px] md:h-[400px]
-        sm: w-[320px] sm: h-[400px]
-       ">
+       shadow-lg shadow-slate-500">
         <img 
         className="
-        lg:w-[500px] lg:h-[400px]
-        md:w-[650px] md:h-[400px]
-        sm: w-[320px] sm: h-[400px]
+        lg:w-[400px] lg:h-[300px]
+        md:w-[500px] md:h-[400px]
+        sm:w-[320px] sm:h-[256px]
+        w-full h-auto
         " src={icon}
          alt="" />
       </div>

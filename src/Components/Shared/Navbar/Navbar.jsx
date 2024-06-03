@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 // import '../../Pages/Home/Nav.js'
-import homeLogo from "../../../../public/Icons/Main Logo White-01.png";
-import scrolledLogo from "../../../../public/Icons/Main Logo-01.png";
+// import homeLogo from "../../../../public/Icons/Main Logo White-01.png";
+// import scrolledLogo from "../../../../public/Icons/Main Logo-01.png";
 import bangladesh from "../../../../public/Icons/Bangladesh.jpg";
 import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
@@ -9,6 +9,7 @@ import { CgMail } from "react-icons/cg";
 
 
 const Navbar = () => {
+  
   const [menuOpen, setMenuOpen] = useState(false);
   const [aboutUsDropDownOpen, setAboutUsDropDownOpen] = useState(false);
   const [ourServiceDropDownOpen, setOurServiceDropDownOpen] = useState(false);
@@ -57,7 +58,7 @@ const handleourServiceMouseEnter = () => {
      gap-5  top-0
       fixed z-10  mb-2
       ${scrolled ? " text-black" : "text-white"}
-      ${scrolled ? " bg-white" : "bg-gradient-to-r from-[#095868] to-[#05819a]"}
+      ${scrolled ? " bg-white" : "bg-gradient-to-r from-[#2D4159] to-[#31708E]"}
       `}
      >
         <p className="flex items-center">
@@ -87,14 +88,17 @@ const handleourServiceMouseEnter = () => {
         md:top-6
         sm: top-0
         z-10
-       ${scrolled ? " bg-white" : " bg-gradient-to-r from-[#095868] to-[#05819a]"}
+       ${scrolled ? " bg-white" : " bg-gradient-to-r from-[#2D4159] to-[#31708E]"}
         `}
       >
         <div>
           <Link to="/">
-            <img className="w-[150px]" 
+            {/* <img className="w-[150px]" 
            src={scrolled ? scrolledLogo : homeLogo}
-            alt="" />
+            alt="" /> */}
+            {scrolled ?  <p className="text-black">SoftPlatoon</p> : <p className="text-white">SoftPlatoon</p>}
+           
+            
           </Link>
         </div>
 
@@ -103,7 +107,7 @@ const handleourServiceMouseEnter = () => {
           xmlns="http://www.w3.org/2000/svg"
           id="menu-button"
           onClick={toggleMenu}
-          className="h-6 w-6 cursor-pointer md:hidden block text-white"
+          className={`h-6 w-6 cursor-pointer md:hidden block ${scrolled ? " text-black" : "text-white"}`}
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"

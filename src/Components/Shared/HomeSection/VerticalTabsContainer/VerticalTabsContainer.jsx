@@ -7,7 +7,10 @@ import Box from '@mui/material/Box';
 import './VerticalTabsContainer.css'
 import TabPanelInfo1 from '../TabPanelInfo/TabPanelInfo1';
 import TabPanelInfo2 from '../TabPanelInfo/TabPanelInfo2';
-import SliderSection from './SliderSection';
+// import "react-responsive-carousel/lib/styles/carousel.min.css";
+// import { Carousel } from 'react-responsive-carousel';
+// import TabPanelInfo1 from "../TabPanelInfo/FakePanelInfo1";
+// import TabPanelInfo2 from "../TabPanelInfo/FakePanelInfo2";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props; 
@@ -51,16 +54,18 @@ export default function VerticalTabs() {
   };  
 
   return (
-<div>
+<div className='my-[80px] mx-auto lg:max-w-5xl md:max-w-3xl sm: max-w-sm'>
 {/* Tab section  for large device */}
-    <div className='lg:flex lg:justify-center md:flex sm: hidden'>
+    {/* <div className='lg:flex md:flex sm: overflow-x-auto justify-center'> */}
+    <div className='lg:overflow-x-hidden md:overflow-x-hidden sm: overflow-x-auto'>
+    <h1 className="dafault-heading">Explore Our Offering</h1>
       <Box
       sx={{ 
+       width: "100%" ,
         display: 'flex',
         flexDirection: 'row',
          background: 'white', 
          marginLeft:"3%",
-          width: '1100px',
           borderRadius:"5px",
           height: { lg: 600, md: 730, sm: 730 },
           boxShadow: "5px 10px 10px rgba(0, 0, 0, 0.2)",
@@ -73,7 +78,8 @@ export default function VerticalTabs() {
         aria-label=""
         sx={{ borderRight: 1, 
           width:"500px", 
-        background: 'linear-gradient(to right, #095868, #05819a)', 
+        // background: 'linear-gradient(to right, #095868, #05819a)', 
+        background: 'linear-gradient(to right, #2D4159 , #31708E )', 
         boxShadow: "5px 10px 10px rgba(0, 0, 0, 0.2)" ,
         marginTop:"-32px",
          marginBottom:"32px",
@@ -159,9 +165,16 @@ export default function VerticalTabs() {
       </Box>
     </div>
     {/* slider section for small device  */}
-    <div className="lg:hidden md:hidden sm: flex sm: -mx-[45px]">
-      <SliderSection/>
-    </div>
+      {/* <div className='lg:hidden md:hidden sm: flex'>
+    <Carousel className="lg:hidden md:hidden sm: flex">
+                <div>
+                    <TabPanelInfo1/>
+                </div>
+                <div>
+                    <TabPanelInfo2/>
+                </div>
+            </Carousel>
+      </div> */}
 </div>
   );
 }
