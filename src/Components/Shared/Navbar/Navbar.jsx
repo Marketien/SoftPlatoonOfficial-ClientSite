@@ -21,21 +21,14 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
-//  about us handle dropdown ----------------
-const handleAboutUsMouseEnter = () => {
-    setAboutUsDropDownOpen(true);
+  const toggleAboutUsDropDown = () => {
+    setAboutUsDropDownOpen(!aboutUsDropDownOpen);
+    setOurServiceDropDownOpen(false); 
   };
 
-  const handleAboutUsMouseLeave = () => {
+  const toggleOurServiceDropDown = () => {
+    setOurServiceDropDownOpen(!ourServiceDropDownOpen);
     setAboutUsDropDownOpen(false);
-  };
-//   our service handle dropdown ----------------
-const handleourServiceMouseEnter = () => {
-    setOurServiceDropDownOpen(true);
-  };
-
-  const handleourServiceMouseLeave = () => {
-    setOurServiceDropDownOpen(false);
   };
 
   useEffect(() => {
@@ -146,9 +139,7 @@ const handleourServiceMouseEnter = () => {
             </li>
             <li>
               <a
-                // onClick={toggledropDown}
-                onMouseEnter={handleAboutUsMouseEnter}
-                onMouseLeave={handleAboutUsMouseLeave}
+                onClick={toggleAboutUsDropDown}
                 className="md:p-4 py-2 uppercase  hover:text-[#539ce6] flex items-center relative "
                 href="#"
               >
@@ -156,10 +147,8 @@ const handleourServiceMouseEnter = () => {
               </a>
               {/* about us ul li ------- */}
               <ul
-              onMouseEnter={handleAboutUsMouseEnter}
-              onMouseLeave={handleAboutUsMouseLeave}
                 className={`${
-                aboutUsDropDownOpen ? "block" : "hidden"
+                  aboutUsDropDownOpen ? "block" : "hidden"
                 }  bg-gradient-to-r from-[#5A287F] via-[#84207E]  to-[#723988] text-white p-3 leading-10 absolute w-[200px] text-center z-50`}
               >
                 <li className="hover:text-[#539ce6]">Our Steps & guidance</li>
@@ -169,8 +158,7 @@ const handleourServiceMouseEnter = () => {
             </li>
             <li>
               <a
-               onMouseEnter={handleourServiceMouseEnter}
-               onMouseLeave={handleourServiceMouseLeave}
+              onClick={toggleOurServiceDropDown}
                 className="md:p-4 py-2 uppercase hover:text-[#539ce6] flex items-center relative"
                 href="#"
               >
@@ -178,10 +166,8 @@ const handleourServiceMouseEnter = () => {
               </a>
                {/* OUr Service ul li ------- */}
                <ul
-              onMouseEnter={handleourServiceMouseEnter}
-              onMouseLeave={handleourServiceMouseLeave}
                 className={`${
-                    ourServiceDropDownOpen ? "block" : "hidden"
+                  ourServiceDropDownOpen ? "block" : "hidden"
                 }  bg-gradient-to-r from-[#5A287F] via-[#84207E]  to-[#723988] text-white p-3 leading-10 absolute w-[200px] text-center z-40`}
               >
                 <li className="hover:text-[#539ce6]">Student Visa </li>
