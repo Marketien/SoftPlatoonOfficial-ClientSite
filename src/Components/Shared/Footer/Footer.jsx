@@ -1,4 +1,4 @@
-import logo from "../../../../public/Icons/Gradient Logo Mark-01.png";
+import logo from "../../../../public/Icons/LogoSoftPlatoonjpg-removebg-preview.png";
 import facebookLogo from "../../../../public/Icons/facebook.png";
 import instagramLogo from "../../../../public/Icons/instagram.png";
 import linkedinLogo from "../../../../public/Icons/linkedin.png";
@@ -32,8 +32,8 @@ const Footer = () => {
 </footer> 
 <footer className="footer px-10 py-4 border-t  text-base-content border-base-300">
   <aside className="items-center grid-flow-col">
-    <a href="" target="_blank"><img className="w-[30px] h-[30px]" src={logo} alt="" /></a>
-    <p className="font-bold">Marketien. <br/>Providing reliable tech since 2022</p>
+    <a href="" target="_blank"><img className="w-[50px] h-[50px]" src={logo} alt="" /></a>
+    <p className="font-bold">SoftPlatoon. <br/>Providing reliable tech since 2022</p>
   </aside> 
 
   <nav className="md:place-self-center md:justify-self-end">

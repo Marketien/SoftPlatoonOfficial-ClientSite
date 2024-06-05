@@ -9,12 +9,11 @@ import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { CgMail } from "react-icons/cg";
 
-
 const Navbar = () => {
-  
   const [menuOpen, setMenuOpen] = useState(false);
   const [aboutUsDropDownOpen, setAboutUsDropDownOpen] = useState(false);
   const [ourServiceDropDownOpen, setOurServiceDropDownOpen] = useState(false);
+  const [demoDropDownOpen, setDemoDropDownOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   const toggleMenu = () => {
@@ -23,12 +22,19 @@ const Navbar = () => {
 
   const toggleAboutUsDropDown = () => {
     setAboutUsDropDownOpen(!aboutUsDropDownOpen);
-    setOurServiceDropDownOpen(false); 
+    setOurServiceDropDownOpen(false);
+    setDemoDropDownOpen(false);
   };
 
   const toggleOurServiceDropDown = () => {
     setOurServiceDropDownOpen(!ourServiceDropDownOpen);
     setAboutUsDropDownOpen(false);
+    setDemoDropDownOpen(false);
+  };
+  const toggleDemoDropDown = () => {
+    setDemoDropDownOpen(!demoDropDownOpen);
+    setAboutUsDropDownOpen(false);
+    setOurServiceDropDownOpen(false);
   };
 
   useEffect(() => {
@@ -47,21 +53,31 @@ const Navbar = () => {
   return (
     <div>
       {/* contact info  */}
-     <div 
-     className={`
+      <div
+        className={`
       w-full sm: hidden md:flex justify-end px-[10px]
      gap-5  top-0
       fixed z-10  mb-2
       ${scrolled ? " text-black" : "text-white"}
-      ${scrolled ? " bg-white" : "bg-gradient-to-r from-[#5A287F] via-[#84207E]  to-[#723988]"}
+      ${
+        scrolled
+          ? " bg-white"
+          : "bg-gradient-to-r from-[#5A287F] via-[#84207E]  to-[#723988]"
+      }
       `}
-     >
+      >
         <p className="flex items-center">
-           <span className="me-1"><CgMail size={20}/></span> <span>tarekw85@gmail.com</span>
+          <span className="me-1">
+            <CgMail size={20} />
+          </span>{" "}
+          <span>tarekw85@gmail.com</span>
         </p>
-        <p  className="flex items-center">
-          <span className="me-1"><img className="w-[20px]" src={bangladesh} alt="" /></span><span>+880 1995 893483</span>
-          </p>
+        <p className="flex items-center">
+          <span className="me-1">
+            <img className="w-[20px]" src={bangladesh} alt="" />
+          </span>
+          <span>+880 1995 893483</span>
+        </p>
       </div>
       {/* navbar section  */}
       <nav
@@ -83,24 +99,31 @@ const Navbar = () => {
         md:top-6
         sm: top-0
         z-10
-       ${scrolled ? " bg-white" : "bg-gradient-to-r from-[#5A287F] via-[#84207E]  to-[#723988]"}
+       ${
+         scrolled
+           ? " bg-white"
+           : "bg-gradient-to-r from-[#5A287F] via-[#84207E]  to-[#723988]"
+       }
         `}
       >
         <div>
           <Link to="/">
-            <img className="w-[150px]" 
-           src={scrolled ? scrolledLogo : homeLogo}
-            alt="" />
- 
+            <img
+              className="w-[150px]"
+              src={scrolled ? scrolledLogo : homeLogo}
+              alt=""
+            />
           </Link>
         </div>
 
-{/* menu button  */}
+        {/* menu button  */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           id="menu-button"
           onClick={toggleMenu}
-          className={`h-6 w-6 cursor-pointer md:hidden block ${scrolled ? " text-black" : "text-white"}`}
+          className={`h-6 w-6 cursor-pointer md:hidden block ${
+            scrolled ? " text-black" : "text-white"
+          }`}
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -158,14 +181,14 @@ const Navbar = () => {
             </li>
             <li>
               <a
-              onClick={toggleOurServiceDropDown}
+                onClick={toggleOurServiceDropDown}
                 className="md:p-4 py-2 uppercase hover:text-[#539ce6] flex items-center relative"
                 href="#"
               >
                 Our Services <IoIosArrowDown className="ms-2" />
               </a>
-               {/* OUr Service ul li ------- */}
-               <ul
+              {/* OUr Service ul li ------- */}
+              <ul
                 className={`${
                   ourServiceDropDownOpen ? "block" : "hidden"
                 }  bg-gradient-to-r from-[#5A287F] via-[#84207E]  to-[#723988] text-white p-3 leading-10 absolute w-[200px] text-center z-40`}
@@ -175,14 +198,31 @@ const Navbar = () => {
                 <li className="hover:text-[#539ce6]">Visit Visa</li>
               </ul>
             </li>
+
+            {/* Demo  */}
             <li>
               <a
-                className="md:p-4 py-2 block uppercase hover:text-[#539ce6]"
+                onClick={toggleDemoDropDown}
+                className="md:p-4 py-2 uppercase hover:text-[#539ce6] flex items-center relative"
                 href="#"
               >
-                Successful Applicants
+                Demo <IoIosArrowDown className="ms-2" />
               </a>
+              {/* Demo ul li ------- */}
+              <ul
+                className={`${
+                  demoDropDownOpen ? "block" : "hidden"
+                }  bg-gradient-to-r from-[#5A287F] via-[#84207E]  to-[#723988] text-white p-3 leading-10 absolute w-[200px] text-center z-40`}
+              >
+                <a target="blank" href="https://school.softplatoon.com/">
+                  <li className="hover:text-[#539ce6]">School Management </li>
+                </a>
+                <a target="blank" href="https://restaurant.softplatoon.com/">
+                  <li className="hover:text-[#539ce6]">Restaurant </li>
+                </a>
+              </ul>
             </li>
+
             <li>
               <a
                 className="md:p-4 py-2 block uppercase hover:text-[#539ce6]"
@@ -210,19 +250,27 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a className="lg:hidden md:hiden sm: flex md:p-4 py-2 text-white bg-[#095868] w-[80px] items-center justify-center"
-                href="#">
-                   Contact
+              <a
+                className="lg:hidden md:hiden sm: flex md:p-4 py-2 text-white bg-[#095868] w-[80px] items-center justify-center"
+                href="#"
+              >
+                Contact
               </a>
             </li>
             {/* contact number  */}
             <li className="lg:hidden md:hidden sm: flex gap-5 fixed -ms-[15px] mt-2 z-10 mb-2 w-full bg-[#910a668c] p-2">
-        <p className="flex items-center">
-           <span className="me-1"><CgMail size={20}/></span> <span>gmail@gmail.com</span>
-        </p>
-        <p  className="flex items-center">
-          <span className="me-1"><img className="w-[20px]" src={bangladesh} alt="" /></span><span>+1 214 306 68 37</span>
-          </p>
+              <p className="flex items-center">
+                <span className="me-1">
+                  <CgMail size={20} />
+                </span>{" "}
+                <span>gmail@gmail.com</span>
+              </p>
+              <p className="flex items-center">
+                <span className="me-1">
+                  <img className="w-[20px]" src={bangladesh} alt="" />
+                </span>
+                <span>+1 214 306 68 37</span>
+              </p>
             </li>
           </ul>
         </div>
