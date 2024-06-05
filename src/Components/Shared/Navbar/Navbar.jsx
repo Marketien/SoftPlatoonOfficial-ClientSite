@@ -70,13 +70,13 @@ const Navbar = () => {
           <span className="me-1">
             <CgMail size={20} />
           </span>{" "}
-          <span>tarekw85@gmail.com</span>
+          <span>softplatoon@gmail.com</span>
         </p>
         <p className="flex items-center">
           <span className="me-1">
             <img className="w-[20px]" src={bangladesh} alt="" />
           </span>
-          <span>+880 1995 893483</span>
+          <span>+1408 785 9959</span>
         </p>
       </div>
       {/* navbar section  */}
@@ -164,7 +164,7 @@ const Navbar = () => {
               <a
                 onClick={toggleAboutUsDropDown}
                 className="md:p-4 py-2 uppercase  hover:text-[#539ce6] flex items-center relative "
-                href="#"
+                
               >
                 About Us <IoIosArrowDown className="ms-2" />
               </a>
@@ -183,7 +183,7 @@ const Navbar = () => {
               <a
                 onClick={toggleOurServiceDropDown}
                 className="md:p-4 py-2 uppercase hover:text-[#539ce6] flex items-center relative"
-                href="#"
+                
               >
                 Our Services <IoIosArrowDown className="ms-2" />
               </a>
@@ -204,7 +204,7 @@ const Navbar = () => {
               <a
                 onClick={toggleDemoDropDown}
                 className="md:p-4 py-2 uppercase hover:text-[#539ce6] flex items-center relative"
-                href="#"
+                
               >
                 Demo <IoIosArrowDown className="ms-2" />
               </a>
@@ -226,7 +226,7 @@ const Navbar = () => {
             <li>
               <a
                 className="md:p-4 py-2 block uppercase hover:text-[#539ce6]"
-                href="#"
+               
               >
                 Blog
               </a>
@@ -234,7 +234,7 @@ const Navbar = () => {
             <li>
               <a
                 className="md:p-4 py-2 block uppercase hover:text-[#539ce6]"
-                href="#"
+                
               >
                 Event
               </a>
@@ -252,7 +252,7 @@ const Navbar = () => {
             <li>
               <a
                 className="lg:hidden md:hiden sm: flex md:p-4 py-2 text-white bg-[#095868] w-[80px] items-center justify-center"
-                href="#"
+                
               >
                 Contact
               </a>
