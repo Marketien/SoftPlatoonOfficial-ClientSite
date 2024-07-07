@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import homeLogo from "../../../../public/Icons/Untitled-4-02.png";
 import scrolledLogo from "../../../../public/Icons/Untitled-4-01.png";
 import bangladesh from "../../../../public/Icons/Bangladesh.jpg";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { CgMail } from "react-icons/cg";
 
@@ -15,6 +15,7 @@ const Navbar = () => {
   const [ourServiceDropDownOpen, setOurServiceDropDownOpen] = useState(false);
   const [demoDropDownOpen, setDemoDropDownOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const navRef = useRef(null) ;
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -43,10 +44,22 @@ const Navbar = () => {
       setScrolled(isScrolled);
     };
 
+    const handleClickOutside = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        // Clicked outside of the nav, close all dropdowns
+        setMenuOpen(false);
+        setAboutUsDropDownOpen(false);
+        setOurServiceDropDownOpen(false);
+        setDemoDropDownOpen(false);
+      }
+    };
+
     window.addEventListener("scroll", handleScroll);
+    document.addEventListener("mousedown", handleClickOutside);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
@@ -71,6 +84,7 @@ const Navbar = () => {
             <CgMail size={20} />
           </span>{" "}
           <span>softplatoon@gmail.com</span>
+          
         </p>
         <p className="flex items-center">
           <span className="me-1">
@@ -81,6 +95,7 @@ const Navbar = () => {
       </div>
       {/* navbar section  */}
       <nav
+      ref={navRef}
         className={`
         flex flex-wrap
         items-center
