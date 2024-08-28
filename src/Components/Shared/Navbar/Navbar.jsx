@@ -67,15 +67,16 @@ const Navbar = () => {
     <div>
       {/* contact info  */}
       <div
+      style={{ fontFamily: "Open Sans,sans-serif" }}
         className={`
       w-full sm: hidden md:flex justify-end px-[10px]
      gap-5  top-0
       fixed z-10  mb-2
-      ${scrolled ? " text-black" : "text-white"}
+      ${scrolled ? "text-white" : "text-black"}
       ${
         scrolled
-          ? " bg-white"
-          : "bg-gradient-to-r from-[#5A287F] via-[#84207E]  to-[#723988]"
+          ? "bg-gradient-to-r from-[#5A287F] via-[#84207E]  to-[#723988]"
+          : "bg-white"
       }
       `}
       >
@@ -116,8 +117,8 @@ const Navbar = () => {
         z-10
        ${
          scrolled
-           ? " bg-white"
-           : "bg-gradient-to-r from-[#5A287F] via-[#84207E]  to-[#723988]"
+           ? "bg-gradient-to-r from-[#5A287F] via-[#84207E]  to-[#723988]"
+           : "bg-white"
        }
         `}
       >
@@ -125,7 +126,7 @@ const Navbar = () => {
           <Link to="/">
             <img
               className="w-[150px]"
-              src={scrolled ? scrolledLogo : homeLogo}
+              src={scrolled ? homeLogo :  scrolledLogo}
               alt=""
             />
           </Link>
@@ -137,7 +138,7 @@ const Navbar = () => {
           id="menu-button"
           onClick={toggleMenu}
           className={`h-6 w-6 cursor-pointer md:hidden block ${
-            scrolled ? " text-black" : "text-white"
+            scrolled ? "text-white " : " text-black"
           }`}
           fill="none"
           viewBox="0 0 24 24"
@@ -160,7 +161,7 @@ const Navbar = () => {
           <ul
             className={`
               text-sm
-              ${scrolled ? " text-black" : "text-white"}
+              ${scrolled ? " text-white" : "text-black "}
               md:flex
               md:justify-between 
               md:items-center
@@ -258,7 +259,7 @@ const Navbar = () => {
             <li className="animate-pulse">
               <a
                 className="lg:flex md:hidden sm: hidden md:p-2  py-2 uppercase 
-                 hover:text-black hover:bg-gray-300 text-white bg-[#501b79] rounded-lg"
+                 hover:text-black hover:bg-gray-300 text-white bg-[#501b79] rounded-sm"
                 href="/userLogin"
               >
                 Contact
@@ -273,7 +274,9 @@ const Navbar = () => {
               </a>
             </li>
             {/* contact number  */}
-            <li className="lg:hidden md:hidden sm: flex gap-5 fixed -ms-[15px] mt-2 z-10 mb-2 w-full bg-[#910a668c] p-2">
+            <li
+            style={{ fontFamily: "Open Sans,sans-serif" }}
+            className="lg:hidden md:hidden sm: flex gap-5 fixed -ms-[15px] mt-2 z-10 mb-2 w-full bg-[#ffffff8c] p-2">
               <p className="flex items-center">
                 <span className="me-1">
                   <CgMail size={20} />

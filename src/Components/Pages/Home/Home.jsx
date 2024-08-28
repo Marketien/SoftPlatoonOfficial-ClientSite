@@ -13,7 +13,7 @@ const Home = () => {
       <Banner />
       <h1
         style={{ fontFamily: "Open Sans,sans-serif" }}
-        className=" default-margin default-text-color text-lg text-center"
+        className=" default-margin default-text-color text-lg text-center leading-8"
       >
         Since 1989. For millions of users. We transform businesses with powerful
         and adaptable

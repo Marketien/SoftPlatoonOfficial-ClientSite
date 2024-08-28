@@ -3,15 +3,14 @@
 @tailwind utilities;
 
 body {
-  /* background-color: #31708E; */
   background: linear-gradient(to right, #5d3080, #862880, #76448a);
 }
 
 
 /* defalut text color setting */
 .default-text-color{
-  /* color: #323738; */
-  color: white;
+  /* color: white; */
+  color: black;
 }
 /* defalut text heading setting */
 .dafault-heading{
