@@ -11,9 +11,11 @@ const Home = () => {
   return (
     <>
       <Banner />
+    <div className="lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-auto sm: mx-4
+    ">
       <h1
         style={{ fontFamily: "Open Sans,sans-serif" }}
-        className=" default-margin default-text-color text-lg text-center leading-8"
+        className="my-[80px] text-lg text-center leading-8"
       >
         Since 1989. For millions of users. We transform businesses with powerful
         and adaptable
@@ -36,6 +38,7 @@ const Home = () => {
       <Section5 />
       {/* review  */}
       <Section6 />
+    </div>
     </>
   );
 };

@@ -4,6 +4,7 @@
 
 body {
   /* background: linear-gradient(to right, #5d3080, #862880, #76448a); */
+  background: #e6e6eb;
 }
 
 
@@ -17,7 +18,6 @@ body {
   display: flex;
   justify-content: flex-start;
   font-size: 40px;
-  color: white;
   font-weight: 700;
   margin-bottom: 100px;
 }

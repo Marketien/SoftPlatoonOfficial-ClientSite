@@ -7,26 +7,27 @@ const Section3 = () => {
     <div 
      style={{ fontFamily: "Open Sans,sans-serif" }}
      className=" rounded-sm bg-[white] p-5 mt-20 gap-10 mx-auto my-[80px]
-    shadow-lg shadow-slate-500 
-    lg:max-w-5xl md:max-w-3xl sm: max-w-sm
+    shadow-lg
+     lg:max-w-5xl md:max-w-3xl sm: max-w-sm
     lg:flex lg:justify-between 
     md:flex-wrap md:justify-around
     sm: flex-wrap sm:justify-around 
     ">
       {/* information section */}
-      <div className="lg:absolute md:static sm: static lg:w-[700px] mb-5">
+      <div className="lg:absolute md:static sm: static lg:pe-[0px] mb-5">
         <div >
         <h1 className=" text-3xl font-semibold mt-5">
           Every Part of Your IT Ecosystem. <br /> Taken Care Of.
         </h1>
         <p className="text-xl  font-normal mt-5">
-          Comprehensive care of your cloud or on-premises infrastructure and
+          Comprehensive care of your cloud or on-premises infrastructure <br /> and
           applications :
         </p>
         <p className="mt-5 flex items-center gap-5">
           <span className="">
             <li className="flex items-center text-lg mb-2">
-              <BsCheckCircleFill className="me-2 text-[#5A287F]" /> Consulting
+              <BsCheckCircleFill className="me-2 text-[#5A287F]" /> 
+              Consulting
             </li>
             <li className="flex items-center text-lg mb-2">
               <BsCheckCircleFill className="me-2 text-[#5A287F]" />{" "}
@@ -54,16 +55,14 @@ const Section3 = () => {
       </div>
       {/* icon section  */}
       <div className="lg:relative md:static sm: static
-       lg:bottom-[50px] md:bottom-[50px] lg:left-[643px] 
+       lg:bottom-[50px] md:bottom-[50px] lg:left-[630px] 
         rounded-sm bg-white 
-       shadow-lg shadow-slate-500">
+       shadow-lg shadow-[#e6e6eb]">
         <img 
-        className="
-        lg:w-[400px] lg:h-[300px]
+        className="lg:w-[430px] lg:h-[360px]
         md:w-[500px] md:h-[400px]
         sm:w-[320px] sm:h-[256px]
-        w-full h-auto
-        " src={icon}
+        w-full h-auto" src={icon}
          alt="" />
       </div>
     </div>

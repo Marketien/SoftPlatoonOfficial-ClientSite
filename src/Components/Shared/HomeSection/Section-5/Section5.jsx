@@ -3,20 +3,21 @@ import "./Section5.css";
 const Section5 = () => {
   return (
     <div style={{ fontFamily: "Open Sans,sans-serif" }} className="">
-      <h1 className="text-center text-white text-lg font-semibold mb-5">
+      <h1 className="text-center text-lg font-semibold mb-5">
         PRICING PLAN
       </h1>
-      <h2 className=" text-center text-4xl font-bold leading-[50px] text-white mb-5">
+      <h2 className=" text-center text-4xl font-bold leading-[50px] mb-5">
         Choose Pricing Plan
       </h2>
 
       {/* cards section  */}
       <div className="mt-10 gap-1 flex justify-center">
-        <div className="my-[80px] mx-auto lg:max-w-5xl md:max-w-3xl sm: max-w-sm grid lg:grid-cols-4 md:grid-cols-2 sm: grid-cols-1 gap-5">
+        <div className="my-[80px] grid lg:grid-cols-4 md:grid-cols-2 sm: grid-cols-1 gap-5">
           {/* Basic  */}
           <div
             style={{ boxShadow: "5px 10px 10px rgba(0, 0, 0, 0.2)" }}
             className="card card-compact py-[40px]
+            h-[450px]
             bg-base-100 rounded-none px-4
             hover:bg-[#5A287F]
             text-[#5A287F]
@@ -26,7 +27,7 @@ const Section5 = () => {
             <div className="card-body ">
               <h2 className="text-center font-semibold text-3xl mb-5">Basic</h2>
               <p className="text-5xl font-bold text-center relative">
-                <span className="text-[20px] absolute lg:left-[-2px] md:left-[60px] sm: left-[60px]">
+                <span className="text-[20px] absolute lg:left-[12px] md:left-[60px] sm: left-[50px]">
                   $
                 </span>{" "}
                 299
@@ -37,7 +38,7 @@ const Section5 = () => {
               </p>
               {/* choose Plan button  */}
               <div className="flex justify-center">
-                <button className="choosePlan hover:text-[#05819a] hover:bg-white">
+                <button className="choosePlan hover:text-[#84207E] hover:bg-white">
                   <a href="/">Choose Plan</a>
                 </button>
               </div>
@@ -48,6 +49,7 @@ const Section5 = () => {
           <div
             style={{ boxShadow: "5px 10px 10px rgba(0, 0, 0, 0.2)" }}
             className="card card-compact py-[40px]
+            h-[450px]
           bg-base-100 rounded-none px-4
           hover:bg-[#5A287F]
           text-[#5A287F]
@@ -59,7 +61,7 @@ const Section5 = () => {
                 Startup
               </h2>
               <p className="text-5xl font-bold text-center relative">
-                <span className="text-[20px] absolute lg:left-[-2px] md:left-[60px] sm: left-[60px]">
+                <span className="text-[20px] absolute lg:left-[12px] md:left-[60px] sm: left-[50px]">
                   $
                 </span>{" "}
                 499
@@ -70,7 +72,7 @@ const Section5 = () => {
               </p>
               {/* choose Plan button  */}
               <div className="flex justify-center">
-                <button className="choosePlan hover:text-[#05819a] hover:bg-white">
+                <button className="choosePlan hover:text-[#84207E] hover:bg-white">
                   <a href="/">Choose Plan</a>
                 </button>
               </div>
@@ -81,6 +83,7 @@ const Section5 = () => {
           <div
             style={{ boxShadow: "5px 10px 10px rgba(0, 0, 0, 0.2)" }}
             className="card card-compact py-[40px]
+            h-[450px]
             bg-base-100 rounded-none px-4
             hover:bg-[#5A287F]
             text-[#5A287F]
@@ -92,7 +95,7 @@ const Section5 = () => {
                 Enterprise
               </h2>
               <p className="text-5xl font-bold text-center relative">
-                <span className="text-[20px] absolute lg:left-[-2px] md:left-[60px] sm: left-[60px]">
+                <span className="text-[20px] absolute lg:left-[12px] md:left-[60px] sm: left-[50px]">
                   $
                 </span>{" "}
                 899
@@ -103,7 +106,7 @@ const Section5 = () => {
               </p>
               {/* choose Plan button  */}
               <div className="flex justify-center">
-                <button className="choosePlan hover:text-[#05819a] hover:bg-white">
+                <button className="choosePlan hover:text-[#84207E] hover:bg-white">
                   <a href="/">Choose Plan</a>
                 </button>
               </div>
@@ -114,6 +117,7 @@ const Section5 = () => {
           <div
             style={{ boxShadow: "5px 10px 10px rgba(0, 0, 0, 0.2)" }}
             className="card card-compact py-[40px]
+            h-[450px]
             bg-base-100 rounded-none px-4
             hover:bg-[#5A287F]
             text-[#5A287F]
@@ -125,7 +129,7 @@ const Section5 = () => {
                 Professional
               </h2>
               <p className="text-5xl font-bold text-center relative">
-                <span className="text-[20px] absolute lg:left-[-2px] md:left-[60px] sm: left-[60px] ">
+                <span className="text-[20px] absolute lg:left-[12px] md:left-[60px] sm: left-[50px] ">
                   $
                 </span>{" "}
                 999
@@ -136,7 +140,7 @@ const Section5 = () => {
               </p>
               {/* choose Plan button  */}
               <div className="flex justify-center">
-                <button className="choosePlan hover:text-[#05819a] hover:bg-white">
+                <button className="choosePlan hover:text-[#84207E] hover:bg-white">
                   <a href="/">Choose Plan</a>
                 </button>
               </div>

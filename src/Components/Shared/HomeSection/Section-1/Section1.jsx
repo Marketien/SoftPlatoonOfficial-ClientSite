@@ -57,7 +57,7 @@ const Section1 = () => {
       <div
         data-aos="fade-down"
         data-aos-duration="2000"
-        className="default-margin "
+        className=""
       >
         <Slider ref={sliderRef} {...settings}>
           <img className=" sponseredLogo .logoFiterimg" src={logo1} alt="" />

@@ -7,7 +7,7 @@ const Section6 = () => {
   return (
     <div
       style={{ fontFamily: "Open Sans,sans-serif" }}
-      className="my-[150px] gap-5 flex justify-center"
+      className="my-[80px] gap-5 flex justify-center"
     >
       <div className="grid lg:grid-cols-3 md:grid-cols-2 sm: grid-cols-1 gap-5">
 

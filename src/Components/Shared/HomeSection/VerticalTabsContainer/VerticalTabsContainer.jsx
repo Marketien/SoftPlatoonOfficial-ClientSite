@@ -4,7 +4,6 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import './VerticalTabsContainer.css'
 import TabPanelInfo1 from '../TabPanelInfo/TabPanelInfo1';
 import TabPanelInfo2 from '../TabPanelInfo/TabPanelInfo2';
 // import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -54,21 +53,20 @@ export default function VerticalTabs() {
   };  
 
   return (
-<div className='my-[80px] mx-auto lg:max-w-5xl md:max-w-3xl sm: max-w-sm'>
+<div className='my-[80px]'>
 {/* Tab section  for large device */}
     {/* <div className='lg:flex md:flex sm: overflow-x-auto justify-center'> */}
-    <div className='lg:overflow-x-hidden md:overflow-x-hidden sm: overflow-x-auto'>
+    <div className='lg:overflow-x-hidden md:overflow-x-hidden sm: overflow-x-auto px-5'>
     <h1 className="dafault-heading">Explore Our Offering</h1>
       <Box
       sx={{ 
        width: "100%" ,
         display: 'flex',
         flexDirection: 'row',
-         background: 'white', 
+        background: 'white',
          marginLeft:"3%",
           borderRadius:"5px",
           height: { lg: 600, md: 730, sm: 730 },
-          boxShadow: "5px 10px 10px rgba(0, 0, 0, 0.2)",
         }}>
 <Tabs
         orientation="vertical"
@@ -80,7 +78,7 @@ export default function VerticalTabs() {
           width:"500px", 
         // background: 'linear-gradient(to right, #095868, #05819a)', 
         background: 'linear-gradient(to right, #4a2665, #6b2066, #593468)', 
-        boxShadow: "5px 10px 10px rgba(0, 0, 0, 0.2)" ,
+        boxShadow: "5px 10px 10px #2d253447" ,
         marginTop:"-32px",
          marginBottom:"32px",
          marginLeft: "-32px",
@@ -89,7 +87,7 @@ export default function VerticalTabs() {
       >
   <Tab label="Software Developement" 
   {...a11yProps(0)} 
-   sx={{ width:"600px" ,color: "white", 
+   sx={{ width:"600px" ,color: "white",
    padding:"25px", marginTop:"30px", 
    backgroundColor: value === 0 ? "#FBF9F1" : "transparent" , 
    fontSize:"15px", }} 
@@ -131,35 +129,35 @@ export default function VerticalTabs() {
    />
   <Tab label="Cybersecurity Services"
    {...a11yProps(8)}
-   sx={{ color: "white",padding:"25px", 
+   sx={{ color: "white",padding:"25px", border:"1px solid black" ,
    backgroundColor: value === 6 ? "#FBF9F1" : "transparent" }} 
    />
 </Tabs>
-      <TabPanel className="tabPanel" value={value} index={0}>
+      <TabPanel value={value} index={0}>
        <TabPanelInfo1/>
       </TabPanel>
-      <TabPanel className="tabPanel" value={value} index={1}>
+      <TabPanel value={value} index={1}>
        <TabPanelInfo2/>
       </TabPanel>
-      <TabPanel className="tabPanel" value={value} index={2}>
+      <TabPanel value={value} index={2}>
         Item Three
       </TabPanel>
-      <TabPanel className="tabPanel" value={value} index={3}>
+      <TabPanel value={value} index={3}>
         Item Four
       </TabPanel>
-      <TabPanel className="tabPanel" value={value} index={4}>
+      <TabPanel value={value} index={4}>
         Item Five
       </TabPanel>
-      <TabPanel className="tabPanel" value={value} index={5}>
+      <TabPanel value={value} index={5}>
         Item Six
       </TabPanel>
-      <TabPanel className="tabPanel" value={value} index={6}>
+      <TabPanel value={value} index={6}>
         Item Seven
       </TabPanel>
-      <TabPanel className="tabPanel" value={value} index={7}>
+      <TabPanel value={value} index={7}>
         Item Seven
       </TabPanel>
-      <TabPanel className="tabPanel" value={value} index={8}>
+      <TabPanel value={value} index={8}>
         Item Seven
       </TabPanel>
       </Box>

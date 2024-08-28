@@ -18,9 +18,9 @@ const Section4 = () => {
   return (
       <div
         style={{ fontFamily: "Open Sans,sans-serif" }}
-        className="my-[80px] mx-auto lg:max-w-5xl md:max-w-3xl sm: max-w-sm"
+        className="my-[80px]"
       >
-        <h1 className=" text-white text-3xl font-semibold mt-5">
+        <h1 className=" text-3xl font-semibold mt-5">
           Improve and Innovate with the Tech Trends
         </h1>
         <p className="default-text-color text-lg mt-5">
