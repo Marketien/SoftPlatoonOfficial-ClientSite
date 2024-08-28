@@ -36,11 +36,11 @@ const Section0 = () => {
       </h2>
 
       {/* cards section */}
-      <div className="my-[80px] mx-auto lg:max-w-5xl md:max-w-3xl sm:max-w-sm grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5">
+      <div className="my-[80px] mx-auto lg:max-w-5xl md:max-w-3xl sm:max-w-sm grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 ">
         {section0Data.map(({ icon, title, description }) => (
           <div
             key={title}
-            className="card card-compact bg-base-100 rounded-md px-4 mb-3"
+            className="card card-compact bg-white shadow-lg shadow-[#5A287F] rounded-md px-4 mb-3"
           >
             <div className="flex justify-start mt-5 ms-3">
               <img className="icnonFiterimg" src={icon} alt={title} />

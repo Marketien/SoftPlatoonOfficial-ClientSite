@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background: linear-gradient(to right, #5d3080, #862880, #76448a);
+  /* background: linear-gradient(to right, #5d3080, #862880, #76448a); */
 }
 
 

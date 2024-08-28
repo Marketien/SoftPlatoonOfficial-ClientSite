@@ -1,6 +1,5 @@
 import "./Section1.css";
 import logo1 from "../../../../../public/Icons/Untitled-4-01.png";
-import logo2 from "../../../../../public/Icons/Untitled-4-02.png";
 import { useEffect, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -61,14 +60,14 @@ const Section1 = () => {
         className="default-margin "
       >
         <Slider ref={sliderRef} {...settings}>
-          <img className=" sponseredLogo" src={logo1} alt="" />
-          <img className=" sponseredLogo" src={logo1} alt="" />
-          <img className=" sponseredLogo" src={logo1} alt="" />
-          <img className=" sponseredLogo" src={logo1} alt="" />
-          <img className=" sponseredLogo" src={logo1} alt="" />
-          <img className=" sponseredLogo" src={logo1} alt="" />
-          <img className=" sponseredLogo" src={logo1} alt="" />
-          <img className=" sponseredLogo" src={logo1} alt="" />
+          <img className=" sponseredLogo .logoFiterimg" src={logo1} alt="" />
+          <img className=" sponseredLogo .logoFiterimg" src={logo1} alt="" />
+          <img className=" sponseredLogo .logoFiterimg" src={logo1} alt="" />
+          <img className=" sponseredLogo .logoFiterimg" src={logo1} alt="" />
+          <img className=" sponseredLogo .logoFiterimg" src={logo1} alt="" />
+          <img className=" sponseredLogo .logoFiterimg" src={logo1} alt="" />
+          <img className=" sponseredLogo .logoFiterimg" src={logo1} alt="" />
+          <img className=" sponseredLogo .logoFiterimg" src={logo1} alt="" />
         </Slider>
       </div>
     </div>
