@@ -35,7 +35,7 @@ const Home = () => {
       {/* Improve and Innovate */}
       <Section4 />
       {/* PRICING PLAN */}
-      <Section5 />
+      {/* <Section5 /> */}
       {/* review  */}
       <Section6 />
     </div>

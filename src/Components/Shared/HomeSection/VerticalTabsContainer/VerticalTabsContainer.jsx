@@ -87,50 +87,58 @@ export default function VerticalTabs() {
       >
   <Tab label="Software Developement" 
   {...a11yProps(0)} 
-   sx={{ width:"600px" ,color: "white",
+   sx={{color: "white",
    padding:"25px", marginTop:"30px", 
    backgroundColor: value === 0 ? "#FBF9F1" : "transparent" , 
    fontSize:"15px", }} 
    />
   <Tab label="Testing & QA"
    {...a11yProps(1)}
-   sx={{ color: "white",padding:"25px",
-    backgroundColor: value === 1 ? "#FBF9F1" : "transparent" }}
+   sx={{color: "white",
+    padding:"25px", backgroundColor: value === 1 ? "#FBF9F1" : "transparent" , 
+    fontSize:"15px", }} 
     />
   <Tab label="Application Service"
    {...a11yProps(2)}
-   sx={{ color: "white",padding:"25px",
-    backgroundColor: value === 2 ? "#FBF9F1" : "transparent" }} 
+   sx={{color: "white",
+    padding:"25px", backgroundColor: value === 2 ? "#FBF9F1" : "transparent" , 
+    fontSize:"15px", }} 
    />
   <Tab label="UX/UI Design"
   {...a11yProps(3)}
-   sx={{ color: "white",padding:"25px", 
-   backgroundColor: value === 3 ? "#FBF9F1" : "transparent" }} 
+  sx={{color: "white",
+    padding:"25px", backgroundColor: value === 3 ? "#FBF9F1" : "transparent" , 
+    fontSize:"15px", }}  
    />
   <Tab label="IT Consulting" 
   {...a11yProps(4)} 
-  sx={{ color: "white",padding:"25px",
-   backgroundColor: value === 4 ? "#FBF9F1" : "transparent" }} 
+  sx={{color: "white",
+    padding:"25px", backgroundColor: value === 4 ? "#FBF9F1" : "transparent" , 
+    fontSize:"15px", }} 
   />
   <Tab label="Data Analytics" 
   {...a11yProps(5)} 
-  sx={{ color: "white",padding:"25px", 
-  backgroundColor: value === 5 ? "#FBF9F1" : "transparent" }} 
+  sx={{color: "white",
+    padding:"25px", backgroundColor: value === 5 ? "#FBF9F1" : "transparent" , 
+    fontSize:"15px", }} 
   />
   <Tab label="Help Desk Services"
    {...a11yProps(6)}
-   sx={{ color: "white",padding:"25px", 
-   backgroundColor: value === 6 ? "#FBF9F1" : "transparent" }} 
+   sx={{color: "white",
+    padding:"25px", backgroundColor: value === 6 ? "#FBF9F1" : "transparent" , 
+    fontSize:"15px", }} 
    />
   <Tab label="Infrastucture Services"
    {...a11yProps(7)}
-   sx={{ color: "white",padding:"25px", 
-   backgroundColor: value === 6 ? "#FBF9F1" : "transparent" }} 
+   sx={{color: "white",
+    padding:"25px", backgroundColor: value === 7 ? "#FBF9F1" : "transparent" , 
+    fontSize:"15px", }}  
    />
   <Tab label="Cybersecurity Services"
    {...a11yProps(8)}
-   sx={{ color: "white",padding:"25px", border:"1px solid black" ,
-   backgroundColor: value === 6 ? "#FBF9F1" : "transparent" }} 
+   sx={{color: "white",
+    padding:"25px", backgroundColor: value === 1 ? "#FBF9F1" : "transparent" , 
+    fontSize:"15px", }}  
    />
 </Tabs>
       <TabPanel value={value} index={0}>

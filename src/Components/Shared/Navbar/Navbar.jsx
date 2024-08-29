@@ -267,7 +267,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                className="lg:hidden md:hiden sm: flex md:p-4 py-2 text-white bg-[#095868] w-[80px] items-center justify-center"
+                className="lg:hidden md:hiden sm: flex md:p-4 py-2 text-white bg-[#501b79] w-[80px] items-center justify-center my-2"
                 
               >
                 Contact
@@ -276,7 +276,7 @@ const Navbar = () => {
             {/* contact number  */}
             <li
             style={{ fontFamily: "Open Sans,sans-serif" }}
-            className="lg:hidden md:hidden sm: flex gap-5 fixed -ms-[15px] mt-2 z-10 mb-2 w-full bg-[#ffffff8c] p-2">
+            className="lg:hidden md:hidden sm: flex gap-5 fixed -ms-[20px] mt-2 z-10 mb-2 w-full bg-[#ffffff] p-2">
               <p className="flex items-center">
                 <span className="me-1">
                   <CgMail size={20} />

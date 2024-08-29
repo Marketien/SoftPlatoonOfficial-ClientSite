@@ -1,5 +1,5 @@
 import { BsCheckCircleFill } from "react-icons/bs";
-import icon from "../../../../../public/Images/Dark analytics-amico.png";
+import icon from "../../../../../public/Images/3d presentation.jpeg";
 
 const Section3 = () => {
   return (

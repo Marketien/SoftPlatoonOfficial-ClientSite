@@ -49,7 +49,9 @@ const Section0 = () => {
               <h2 style={{ fontFamily: "Ubuntu,sans-serif" }} className=" text-2xl text-[#323738]">{title}</h2>
               <p className="text-lg text-[#095868]">{description}</p>
               <a href="/">
-                <p className="uppercase font-bold hover:text-[#84207E] flex items-center">
+                <p 
+                style={{ fontFamily: "Ubuntu,sans-serif" }}
+                className="uppercase font-bold hover:text-[#84207E] flex items-center">
                   Read More
                   <span className="ms-2">
                     <IoIosArrowRoundForward size={25} />

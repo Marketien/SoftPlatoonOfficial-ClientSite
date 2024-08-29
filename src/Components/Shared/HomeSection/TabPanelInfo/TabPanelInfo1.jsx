@@ -18,7 +18,7 @@ const TabPanelInfo1 = () => {
     <div className="bg-white  lg:h-full md:h-full sm:h-[850px] lg:p-0 md:p-0 sm: p-5">
       {softwareDevelopmentInfo && (
         <div style={{ fontFamily: "Open Sans,sans-serif" }}>
-          <h2 className="font-bold text-2xl mt-8">
+          <h2 style={{ fontFamily: "Ubuntu,sans-serif" }} className="font-bold text-2xl mt-8">
             {softwareDevelopmentInfo.SoftwareDevelopment.title}
           </h2>
           <p 

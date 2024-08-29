@@ -1,9 +1,9 @@
 import "./Banner.css";
 import { useEffect, useState } from "react";
-import banner1 from "../../../../../public/Images/Banner-1.jpg";
-import banner2 from "../../../../../public/Images/Banner-2.jpg";
-import banner3 from "../../../../../public/Images/Banner-3.jpg";
-import banner4 from "../../../../../public/Images/Banner-4.jpg";
+import banner1 from "../../../../../public/Images/a-3d-render-of-a-software-development-environment--4IjFUU9vR0KpGIE3cXgQMg-fLOzlBifRIWgg1V0nkGmAQ.jpeg";
+import banner2 from "../../../../../public/Images/a-3d-render-of-a-software-development-scene-there--2MQ1-NpBSLWeevz8VVtm_w-fLOzlBifRIWgg1V0nkGmAQ.jpeg";
+import banner3 from "../../../../../public/Images/a-3d-render-of-a-software-development-workspace-th-7mWCpoyrQL-TzcfSkq0QDQ-fLOzlBifRIWgg1V0nkGmAQ.jpeg";
+import banner4 from "../../../../../public/Images/a-3d-render-of-a-software-development-workspace-th-YuEotx1cSk-ZREBRjRxXwg-fLOzlBifRIWgg1V0nkGmAQ.jpeg";
 import { TypeAnimation } from "react-type-animation";
 
 const Banner = () => {
@@ -48,7 +48,7 @@ const Banner = () => {
       </div>
       <div className="absolute inset-0 bg-black opacity-50" />
       {/* banner information section  */}
-      <div className="bannerInfo text-white text-center w-full">
+      <div className="bannerInfo text-white text-center w-full lg:top-[35%] md:top-[35%] sm: top-[0%]">
         <h1 style={{ fontFamily: "Sumana,serif" }} className="h1">
           Software Consulting and Development
         </h1>

@@ -9,10 +9,12 @@ import { SiChainlink } from "react-icons/si";
 import { FaCreativeCommonsRemix } from "react-icons/fa6";
 import TabPanelInfo1 from "../TabPanelInfo/TabPanelInfo1";
 import TabPanelInfo2 from "../TabPanelInfo/TabPanelInfo2";
-// import FakePanelInfo1 from "../TabPanelInfo/FakePanelInfo1";
-// import FakePanelInfo2 from "../TabPanelInfo/FakePanelInfo2";
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
-// import { Carousel } from "react-responsive-carousel";
+import icon1 from '../../../../../public/Icons/cubel (1).png' ;
+import icon2 from '../../../../../public/Icons/artificial-intelligence.png' ;
+import icon3 from '../../../../../public/Icons/vision.png' ;
+import icon4 from '../../../../../public/Icons/innovation.png' ;
+import icon5 from '../../../../../public/Icons/blockchain.png' ;
+import icon6 from '../../../../../public/Icons/virtual-support.png' ;
 
 const Section4 = () => {
   return (
@@ -35,7 +37,8 @@ const Section4 = () => {
               <Tab className=" section4Tab">
                 <p>
                   <span>
-                    <FaCubes style={{ color: "#5A287F" }} size={50} />
+                    {/* <FaCubes style={{ color: "#5A287F" }} size={50} /> */}
+                    <img className="dFilter w-[50px] " src={icon1} alt="icon" />
                   </span>
                   <span className="-ms-2 lg:text-lg md:text-xs sm: text-xs font-semibold">
                     Big Data
@@ -45,11 +48,12 @@ const Section4 = () => {
               <Tab className="section4Tab">
                 <p>
                   <span>
-                    <BsRobot
+                    {/* <BsRobot
                       style={{ color: "#5A287F" }}
                       className="text-center lg:ms-[65px] md:ms-[35px]"
                       size={50}
-                    />
+                    /> */}
+                    <img className="dFilter w-[50px]  text-center lg:ms-[65px] md:ms-[35px]" src={icon2} alt="icon" />
                   </span>
                   <span className=" text-center lg:text-lg md:text-xs sm: text-xs font-semibold">
                     Artificial Intelligence
@@ -59,11 +63,12 @@ const Section4 = () => {
               <Tab className="section4Tab">
                 <p>
                   <span>
-                    <GiBrassEye
+                    {/* <GiBrassEye
                       style={{ color: "#5A287F" }}
                       className="text-center lg:ms-[45px] md:ms-[22.5px]"
                       size={50}
-                    />
+                    /> */}
+                    <img className="dFilter w-[50px]  text-center lg:ms-[45px] md:ms-[22.5px]" src={icon3} alt="icon" />
                   </span>
                   <span className=" text-center lg:text-lg md:text-xs sm: text-xs  font-semibold">
                     Computer Vision
@@ -73,11 +78,12 @@ const Section4 = () => {
               <Tab className="section4Tab">
                 <p>
                   <span>
-                    <WiFire
+                    {/* <WiFire
                       style={{ color: "#5A287F" }}
                       className="text-center lg:ms-[40px] md:ms-[20px]"
                       size={50}
-                    />
+                    /> */}
+                    <img className="dFilter w-[50px]  text-center lg:ms-[40px] md:ms-[20px]" src={icon4} alt="icon" />
                   </span>
                   <span className="-ms-2 lg:text-lg md:text-xs sm: text-xs  font-semibold">
                     Internet Of Things
@@ -87,11 +93,12 @@ const Section4 = () => {
               <Tab className="section4Tab">
                 <p>
                   <span>
-                    <SiChainlink
+                    {/* <SiChainlink
                       style={{ color: "#5A287F" }}
                       className="text-center lg:ms-[15px] md:ms-[0px]"
                       size={50}
-                    />
+                    /> */}
+                    <img className="dFilter w-[50px]  text-center lg:ms-[15px] md:ms-[0px]" src={icon5} alt="icon" />
                   </span>
                   <span className="-ms-2 lg:text-lg md:text-xs sm: text-xs font-semibold">
                     BlockChain
@@ -101,11 +108,12 @@ const Section4 = () => {
               <Tab className="section4Tab">
                 <p>
                   <span>
-                    <FaCreativeCommonsRemix
+                    {/* <FaCreativeCommonsRemix
                       style={{ color: "#5A287F" }}
                       className="text-center lg:ms-[23px] md:ms-[3px]"
                       size={50}
-                    />
+                    /> */}
+                    <img className="dFilter w-[50px]  text-center lg:ms-[23px] md:ms-[3px]" src={icon6} alt="icon" />
                   </span>
                   <span className="-ms-2 lg:text-lg md:text-xs sm: text-xs  font-semibold">
                     Mixed Reality
@@ -134,17 +142,6 @@ const Section4 = () => {
             </TabPanel>
           </Tabs>
         </div>
-        {/* slider section for small device  */}
-        {/* <div>
-          <Carousel className="lg:hidden md:hidden sm: flex">
-            <div>
-              <TabPanelInfo1 />
-            </div>
-            <div>
-              <TabPanelInfo2 />
-            </div>
-          </Carousel>
-        </div> */}
       </div>
   );
 };

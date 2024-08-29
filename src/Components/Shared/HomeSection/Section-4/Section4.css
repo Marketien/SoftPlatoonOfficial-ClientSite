@@ -1,7 +1,7 @@
 .section4Tabs {
   background-color: white;
   border-radius: 5px;
-  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 10px 10px #cacace;
   padding: 25px;
 }
 
@@ -10,14 +10,17 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
-  width: 100% ;
+  width: 100%;
   padding-left: 25px;
   padding-right: 25px;
 }
 
-.selectedTab{
-color: #05819a;
-  border-bottom: 5px solid #095868;
+.selectedTab {
+  color: #723988;
+  border-top: 5px solid #84207d00;
+  border-bottom: 5px solid #84207e;
+  border-right: 0px solid #84207d00;
+  border-left: 5px solid #84207d00;
 }
 
 .section4Tab {
@@ -29,4 +32,7 @@ color: #05819a;
   border-left: none;
   border-right: none;
   text-align: center;
+}
+.dFilter {
+  filter: drop-shadow(1px 1px 1px #5a287f);
 }

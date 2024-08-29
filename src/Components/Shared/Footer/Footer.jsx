@@ -10,21 +10,21 @@ const Footer = () => {
       style={{ fontFamily: "Open Sans,sans-serif" }} className="bg-white" >
 <footer className="footer p-10  text-base-content">
   <nav>
-    <h6 className="footer-title text-[#095868] text-xl">Services</h6> 
+    <h6 className="footer-title text-[#84207E] text-xl">Services</h6> 
     <a className="link link-hover">Branding</a>
     <a className="link link-hover">Design</a>
     <a className="link link-hover">Marketing</a>
     <a className="link link-hover">Advertisement</a>
   </nav> 
   <nav>
-    <h6 className="footer-title text-[#095868] text-xl">Company</h6> 
+    <h6 className="footer-title text-[#84207E] text-xl">Company</h6> 
     <a className="link link-hover">About us</a>
     <a className="link link-hover">Contact</a>
     <a className="link link-hover">Jobs</a>
     <a className="link link-hover">Press kit</a>
   </nav> 
   <nav>
-    <h6 className="footer-title text-[#095868] text-xl">Legal</h6> 
+    <h6 className="footer-title text-[#84207E] text-xl">Legal</h6> 
     <a className="link link-hover">Terms of use</a>
     <a className="link link-hover">Privacy policy</a>
     <a className="link link-hover">Cookie policy</a>
