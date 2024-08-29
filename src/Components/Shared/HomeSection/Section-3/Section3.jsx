@@ -8,7 +8,9 @@ const Section3 = () => {
   Aos.init();
 
   return (
-    <div  data-aos="fade-left" data-aos-duration="2000">
+    <div className="bg-gray-100  py-[20px]">
+      <div data-aos="fade-left" data-aos-duration="2000"
+       className="lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-auto sm: mx-4">
     <div 
      style={{ fontFamily: "Open Sans,sans-serif" }}
      className=" rounded-sm bg-[white] p-5 mt-20 gap-10 mx-auto my-[80px]
@@ -19,9 +21,9 @@ const Section3 = () => {
     sm: flex-wrap sm:justify-around 
     ">
       {/* information section */}
-      <div className="lg:absolute md:static sm: static lg:pe-[0px] mb-5">
+      <div className="lg:absolute md:static sm: static lg:pe-[0px] mb-5 ps-5">
         <div >
-        <h1 className=" text-3xl font-semibold mt-5">
+        <h1 className=" text-3xl font-semibold mt-5 ">
           Every Part of Your IT Ecosystem. <br /> Taken Care Of.
         </h1>
         <p className="text-xl  font-normal mt-5">
@@ -71,6 +73,7 @@ const Section3 = () => {
          alt="" />
       </div>
     </div>
+      </div>
     </div>
   );
 };

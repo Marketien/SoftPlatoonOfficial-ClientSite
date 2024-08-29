@@ -52,7 +52,7 @@ export default function VerticalTabs() {
   };  
 
   return (
-<div className='my-[80px]'>
+<div className='my-[80px] '>
 {/* Tab section  for large device */}
     {/* <div className='lg:flex md:flex sm: overflow-x-auto justify-center'> */}
     <div className='lg:overflow-x-hidden md:overflow-x-hidden sm: overflow-x-auto px-5'>

@@ -56,7 +56,7 @@ const Section1 = () => {
     <div>
       <div
         data-aos="fade-down" data-aos-duration="2000"
-        className=""
+        className="mb-[80px]"
       >
         <Slider ref={sliderRef} {...settings}>
           <img className=" sponseredLogo .logoFiterimg" src={logo1} alt="" />

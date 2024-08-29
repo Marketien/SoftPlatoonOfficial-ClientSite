@@ -26,7 +26,7 @@ const Section4 = () => {
       <div
        data-aos="fade-down" data-aos-duration="2000"
         style={{ fontFamily: "Open Sans,sans-serif" }}
-        className="my-[80px]"
+        className="my-[80px] lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-auto sm: mx-4"
       >
         <h1 className=" text-3xl font-semibold mt-5">
           Improve and Innovate with the Tech Trends
@@ -44,7 +44,7 @@ const Section4 = () => {
                 <p>
                   <span>
                     {/* <FaCubes style={{ color: "#5A287F" }} size={50} /> */}
-                    <img className="dFilter w-[50px] " src={icon1} alt="icon" />
+                    <img className=" w-[50px] " src={icon1} alt="icon" />
                   </span>
                   <span className="-ms-2 lg:text-lg md:text-xs sm: text-xs font-semibold">
                     Big Data
@@ -59,7 +59,7 @@ const Section4 = () => {
                       className="text-center lg:ms-[65px] md:ms-[35px]"
                       size={50}
                     /> */}
-                    <img className="dFilter w-[50px]  text-center lg:ms-[65px] md:ms-[35px]" src={icon2} alt="icon" />
+                    <img className=" w-[50px]  text-center lg:ms-[65px] md:ms-[35px]" src={icon2} alt="icon" />
                   </span>
                   <span className=" text-center lg:text-lg md:text-xs sm: text-xs font-semibold">
                     Artificial Intelligence
@@ -74,7 +74,7 @@ const Section4 = () => {
                       className="text-center lg:ms-[45px] md:ms-[22.5px]"
                       size={50}
                     /> */}
-                    <img className="dFilter w-[50px]  text-center lg:ms-[45px] md:ms-[22.5px]" src={icon3} alt="icon" />
+                    <img className=" w-[50px]  text-center lg:ms-[45px] md:ms-[22.5px]" src={icon3} alt="icon" />
                   </span>
                   <span className=" text-center lg:text-lg md:text-xs sm: text-xs  font-semibold">
                     Computer Vision
@@ -89,7 +89,7 @@ const Section4 = () => {
                       className="text-center lg:ms-[40px] md:ms-[20px]"
                       size={50}
                     /> */}
-                    <img className="dFilter w-[50px]  text-center lg:ms-[40px] md:ms-[20px]" src={icon4} alt="icon" />
+                    <img className=" w-[50px]  text-center lg:ms-[40px] md:ms-[20px]" src={icon4} alt="icon" />
                   </span>
                   <span className="-ms-2 lg:text-lg md:text-xs sm: text-xs  font-semibold">
                     Internet Of Things
@@ -104,7 +104,7 @@ const Section4 = () => {
                       className="text-center lg:ms-[15px] md:ms-[0px]"
                       size={50}
                     /> */}
-                    <img className="dFilter w-[50px]  text-center lg:ms-[15px] md:ms-[0px]" src={icon5} alt="icon" />
+                    <img className=" w-[50px]  text-center lg:ms-[15px] md:ms-[0px]" src={icon5} alt="icon" />
                   </span>
                   <span className="-ms-2 lg:text-lg md:text-xs sm: text-xs font-semibold">
                     BlockChain
@@ -119,7 +119,7 @@ const Section4 = () => {
                       className="text-center lg:ms-[23px] md:ms-[3px]"
                       size={50}
                     /> */}
-                    <img className="dFilter w-[50px]  text-center lg:ms-[23px] md:ms-[3px]" src={icon6} alt="icon" />
+                    <img className=" w-[50px]  text-center lg:ms-[23px] md:ms-[3px]" src={icon6} alt="icon" />
                   </span>
                   <span className="-ms-2 lg:text-lg md:text-xs sm: text-xs  font-semibold">
                     Mixed Reality

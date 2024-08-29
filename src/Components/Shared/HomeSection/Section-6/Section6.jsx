@@ -13,12 +13,12 @@ const Section6 = () => {
     <div
      data-aos="fade-down" data-aos-duration="2000"
       style={{ fontFamily: "Open Sans,sans-serif" }}
-      className="my-[80px] gap-5 flex justify-center"
+      className="my-[80px] gap-5 flex justify-center lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-auto sm: mx-4"
     >
       <div className="grid lg:grid-cols-3 md:grid-cols-2 sm: grid-cols-1 gap-5">
 
       {/* card -1 */}
-      <div className="p-[10px]  h-[250px] bg-base-100 rounded-md shadow-xl mb-5">
+      <div className="p-[10px]  h-[250px] bg-base-100 rounded-md shadow-xl mb-5 px-5">
         <div className="flex justify-between">
           {/* review   */}
           <div className="flex gap-3 mt-5">
@@ -53,7 +53,7 @@ const Section6 = () => {
       </div>
 
       {/* card -2 */}
-      <div className="p-[10px]  h-[250px] bg-base-100 rounded-md shadow-xl mb-5">
+      <div className="p-[10px]  h-[250px] bg-base-100 rounded-md shadow-xl mb-5 px-5">
         <div className="flex justify-between">
           {/* review   */}
           <div className="flex gap-3 mt-5">
@@ -88,7 +88,7 @@ const Section6 = () => {
       </div>
 
       {/* card -3 */}
-      <div className="p-[10px]  h-[250px] bg-base-100 rounded-md shadow-xl mb-5">
+      <div className="p-[10px]  h-[250px] bg-base-100 rounded-md shadow-xl mb-5 px-5">
         <div className="flex justify-between">
           {/* review   */}
           <div className="flex gap-3 mt-5">

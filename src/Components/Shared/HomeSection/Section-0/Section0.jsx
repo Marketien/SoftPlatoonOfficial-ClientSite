@@ -31,7 +31,8 @@ const Section0 = () => {
   ];
 
   return (
-    <div style={{ fontFamily: "Open Sans, sans-serif" }}>
+    <div  className=" bg-gray-100  py-[20px]">
+    <div style={{ fontFamily: "Open Sans, sans-serif" }} className="lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-auto sm: mx-4">
       <h1 className="text-center text-lg font-semibold mb-5 mt-[100px]">
         WHAT WE DO
       </h1>
@@ -48,7 +49,7 @@ const Section0 = () => {
             className="card card-compact bg-white shadow-lg shadow-[#2d253447] rounded-md px-4 mb-3"
           >
             <div className="flex justify-start mt-5 ms-3">
-              <img className="icnonFiterimg" src={icon} alt={title} />
+              <img className="w-[80px]" src={icon} alt={title} />
             </div>
             <div className="card-body">
               <h2 style={{ fontFamily: "Ubuntu,sans-serif" }} className=" text-2xl text-[#323738]">{title}</h2>
@@ -67,6 +68,7 @@ const Section0 = () => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };
