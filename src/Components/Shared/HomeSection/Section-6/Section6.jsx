@@ -11,7 +11,7 @@ const Section6 = () => {
 
   return (
     <div
-     data-aos="fade-up" data-aos-duration="2000"
+     data-aos="fade-down" data-aos-duration="2000"
       style={{ fontFamily: "Open Sans,sans-serif" }}
       className="my-[80px] gap-5 flex justify-center"
     >
