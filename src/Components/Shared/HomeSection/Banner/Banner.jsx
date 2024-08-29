@@ -22,25 +22,25 @@ const Banner = () => {
       {/* bannerImages section  */}
       <div className=" lg:mt-[75px] md:mt-[120px] sm: mt-[50px]">
         <img
-          className=" lg:w-full lg:h-screen sm: h-[700px] bg-[#720455]"
+          className=" lg:w-full lg:h-screen sm: h-[700px] bg-[#5A287F]"
           src={banner1}
           alt=""
           style={{ display: currentBanner === 1 ? "block" : "none" }}
         />
         <img
-          className="lg:w-full lg:h-screen  sm: h-[700px] bg-[#720455]"
+          className="lg:w-full lg:h-screen  sm: h-[700px] bg-[#5A287F]"
           src={banner2}
           alt=""
           style={{ display: currentBanner === 2 ? "block" : "none" }}
         />
         <img
-          className="lg:w-full lg:h-screen  sm: h-[700px] bg-[#720455]"
+          className="lg:w-full lg:h-screen  sm: h-[700px] bg-[#5A287F]"
           src={banner3}
           alt=""
           style={{ display: currentBanner === 3 ? "block" : "none" }}
         />
         <img
-          className="lg:w-full lg:h-screen  sm: h-[700px] bg-[#720455]"
+          className="lg:w-full lg:h-screen  sm: h-[700px] bg-[#5A287F]"
           src={banner4}
           alt=""
           style={{ display: currentBanner === 4 ? "block" : "none" }}
