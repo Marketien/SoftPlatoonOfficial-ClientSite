@@ -53,10 +53,9 @@ const Section1 = () => {
   };
 
   return (
-    <div>
+    <div data-aos="fade-down" data-aos-duration="2000">
       <div
-        data-aos="fade-down" data-aos-duration="2000"
-        className="mb-[80px]"
+        className="mb-[80px] lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-auto sm: mx-4"
       >
         <Slider ref={sliderRef} {...settings}>
           <img className=" sponseredLogo .logoFiterimg" src={logo1} alt="" />

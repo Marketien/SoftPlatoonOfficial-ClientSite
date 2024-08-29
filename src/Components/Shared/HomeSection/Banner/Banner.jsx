@@ -46,7 +46,7 @@ const Banner = () => {
           style={{ display: currentBanner === 4 ? "block" : "none" }}
         />
       </div>
-      <div className="absolute inset-0 bg-black opacity-30" />
+      <div className="absolute inset-0 bg-black opacity-10" />
       {/* banner information section  */}
       <div className="bannerInfo text-white text-center w-full lg:top-[35%] md:top-[35%] sm: top-[0%]">
         <h1 style={{ fontFamily: "Sumana,serif" }} className="h1">

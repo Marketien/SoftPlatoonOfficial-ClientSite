@@ -84,14 +84,14 @@ const Navbar = () => {
           <span className="me-1">
             <CgMail size={20} />
           </span>{" "}
-          <span>softplatoon@gmail.com</span>
+          <span>sales@softplatoon.com</span>
           
         </p>
         <p className="flex items-center">
           <span className="me-1">
             <img className="w-[20px]" src={bangladesh} alt="" />
           </span>
-          <span>+1408 785 9959</span>
+          <span>+8801333836300</span>
         </p>
       </div>
       {/* navbar section  */}
@@ -281,13 +281,13 @@ const Navbar = () => {
                 <span className="me-1">
                   <CgMail size={20} />
                 </span>{" "}
-                <span>gmail@gmail.com</span>
+                <span>sales@softplatoon.com</span>
               </p>
               <p className="flex items-center">
                 <span className="me-1">
                   <img className="w-[20px]" src={bangladesh} alt="" />
                 </span>
-                <span>+1 214 306 68 37</span>
+                <span>+8801333836300</span>
               </p>
             </li>
           </ul>
