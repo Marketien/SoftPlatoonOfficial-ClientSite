@@ -3,8 +3,12 @@ import icon1 from "../../../../../public/Icons/a1.png";
 import icon2 from "../../../../../public/Icons/a2.png";
 import icon3 from "../../../../../public/Icons/a4.png";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Section0 = () => {
+  Aos.init();
+
   const section0Data = [
     {
       icon: icon1,
@@ -36,7 +40,8 @@ const Section0 = () => {
       </h2>
 
       {/* cards section */}
-      <div className="my-[80px] grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 ">
+      <div  data-aos="fade-down"
+        data-aos-duration="2000" className="my-[80px] grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 ">
         {section0Data.map(({ icon, title, description }) => (
           <div
             key={title}

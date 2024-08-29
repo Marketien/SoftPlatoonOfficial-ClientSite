@@ -6,13 +6,12 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import TabPanelInfo1 from '../TabPanelInfo/TabPanelInfo1';
 import TabPanelInfo2 from '../TabPanelInfo/TabPanelInfo2';
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
-// import { Carousel } from 'react-responsive-carousel';
-// import TabPanelInfo1 from "../TabPanelInfo/FakePanelInfo1";
-// import TabPanelInfo2 from "../TabPanelInfo/FakePanelInfo2";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props; 
+  Aos.init();
 
   return (
     <div
@@ -67,7 +66,7 @@ export default function VerticalTabs() {
          marginLeft:"3%",
           borderRadius:"5px",
           height: { lg: 600, md: 730, sm: 730 },
-        }}>
+        }}  data-aos="fade-right" data-aos-duration="2000">
 <Tabs
         orientation="vertical"
         variant="scrollable"

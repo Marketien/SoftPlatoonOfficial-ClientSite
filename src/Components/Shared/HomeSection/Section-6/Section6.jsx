@@ -1,18 +1,24 @@
 import ratingImg from "../../../../../public/Icons/start-filled.svg";
 import user1 from "../../../../../public/Images/user-1.jpg";
 import user2 from "../../../../../public/Images/user-2.jpg";
-import user3 from "../../../../../public/Images/user-3.jpg";
+import Aos from "aos";
+import "aos/dist/aos.css";import user3 from "../../../../../public/Images/user-3.jpg";
+
 
 const Section6 = () => {
+
+  Aos.init();
+
   return (
     <div
+     data-aos="fade-up" data-aos-duration="2000"
       style={{ fontFamily: "Open Sans,sans-serif" }}
       className="my-[80px] gap-5 flex justify-center"
     >
       <div className="grid lg:grid-cols-3 md:grid-cols-2 sm: grid-cols-1 gap-5">
 
       {/* card -1 */}
-      <div className="p-[10px] w-[350px] h-[250px] bg-base-100 rounded-xl shadow-xl mb-5">
+      <div className="p-[10px]  h-[250px] bg-base-100 rounded-md shadow-xl mb-5">
         <div className="flex justify-between">
           {/* review   */}
           <div className="flex gap-3 mt-5">
@@ -47,7 +53,7 @@ const Section6 = () => {
       </div>
 
       {/* card -2 */}
-      <div className="p-[10px] w-[350px] h-[250px] bg-base-100 rounded-xl shadow-xl mb-5">
+      <div className="p-[10px]  h-[250px] bg-base-100 rounded-md shadow-xl mb-5">
         <div className="flex justify-between">
           {/* review   */}
           <div className="flex gap-3 mt-5">
@@ -82,7 +88,7 @@ const Section6 = () => {
       </div>
 
       {/* card -3 */}
-      <div className="p-[10px] w-[350px] h-[250px] bg-base-100 rounded-xl shadow-xl mb-5">
+      <div className="p-[10px]  h-[250px] bg-base-100 rounded-md shadow-xl mb-5">
         <div className="flex justify-between">
           {/* review   */}
           <div className="flex gap-3 mt-5">

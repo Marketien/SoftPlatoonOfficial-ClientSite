@@ -15,10 +15,16 @@ import icon3 from '../../../../../public/Icons/vision.png' ;
 import icon4 from '../../../../../public/Icons/innovation.png' ;
 import icon5 from '../../../../../public/Icons/blockchain.png' ;
 import icon6 from '../../../../../public/Icons/virtual-support.png' ;
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Section4 = () => {
+
+  Aos.init();
+
   return (
       <div
+       data-aos="fade-up" data-aos-duration="2000"
         style={{ fontFamily: "Open Sans,sans-serif" }}
         className="my-[80px]"
       >

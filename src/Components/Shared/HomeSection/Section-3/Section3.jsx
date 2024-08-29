@@ -1,9 +1,14 @@
 import { BsCheckCircleFill } from "react-icons/bs";
 import icon from "../../../../../public/Images/3d presentation.jpeg";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Section3 = () => {
+
+  Aos.init();
+
   return (
-    <div className="">
+    <div  data-aos="fade-left" data-aos-duration="2000">
     <div 
      style={{ fontFamily: "Open Sans,sans-serif" }}
      className=" rounded-sm bg-[white] p-5 mt-20 gap-10 mx-auto my-[80px]

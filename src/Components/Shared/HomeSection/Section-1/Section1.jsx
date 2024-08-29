@@ -55,8 +55,7 @@ const Section1 = () => {
   return (
     <div>
       <div
-        data-aos="fade-down"
-        data-aos-duration="2000"
+        data-aos="fade-down" data-aos-duration="2000"
         className=""
       >
         <Slider ref={sliderRef} {...settings}>
