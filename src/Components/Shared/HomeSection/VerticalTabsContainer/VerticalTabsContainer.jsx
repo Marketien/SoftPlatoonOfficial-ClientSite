@@ -169,17 +169,6 @@ export default function VerticalTabs() {
       </TabPanel>
       </Box>
     </div>
-    {/* slider section for small device  */}
-      {/* <div className='lg:hidden md:hidden sm: flex'>
-    <Carousel className="lg:hidden md:hidden sm: flex">
-                <div>
-                    <TabPanelInfo1/>
-                </div>
-                <div>
-                    <TabPanelInfo2/>
-                </div>
-            </Carousel>
-      </div> */}
 </div>
   );
 }

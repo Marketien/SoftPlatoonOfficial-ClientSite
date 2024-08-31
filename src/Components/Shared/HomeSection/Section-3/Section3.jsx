@@ -9,8 +9,6 @@ const Section3 = () => {
 
   return (
     <div className="bg-gray-100  py-[20px]">
-      <div data-aos="fade-left" data-aos-duration="2000"
-       className="lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-auto sm: mx-4">
     <div 
      style={{ fontFamily: "Open Sans,sans-serif" }}
      className=" rounded-sm bg-[white] p-5 mt-20 gap-10 mx-auto my-[80px]
@@ -22,7 +20,7 @@ const Section3 = () => {
     ">
       {/* information section */}
       <div className="lg:absolute md:static sm: static lg:pe-[0px] mb-5 ps-5">
-        <div >
+        <div>
         <h1 className=" text-3xl font-semibold mt-5 ">
           Every Part of Your IT Ecosystem. <br /> Taken Care Of.
         </h1>
@@ -61,19 +59,19 @@ const Section3 = () => {
         </div>
       </div>
       {/* icon section  */}
-      <div className="lg:relative md:static sm: static
+      <div 
+      
+      className="lg:relative md:static sm: static
        lg:bottom-[50px] md:bottom-[50px] lg:left-[630px] 
-        rounded-sm bg-white 
-       shadow-lg shadow-[#e6e6eb]">
+        rounded-sm bg-white md:flex md:justify-center
+       ">
         <img 
         className="lg:w-[430px] lg:h-[360px]
         md:w-[500px] md:h-[400px]
-        sm:w-[320px] sm:h-[256px]
-        w-full h-auto" src={icon}
+        sm:w-[320px] sm:h-[256px] shadow-lg shadow-[#e6e6eb]" src={icon}
          alt="" />
       </div>
     </div>
-      </div>
     </div>
   );
 };
