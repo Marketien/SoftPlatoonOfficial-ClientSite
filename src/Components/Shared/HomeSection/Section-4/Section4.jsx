@@ -26,7 +26,7 @@ const Section4 = () => {
       <div
        data-aos="fade-down" data-aos-duration="2000"
         style={{ fontFamily: "Open Sans,sans-serif" }}
-        className="my-[80px] lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-auto sm: mx-4"
+        className="my-[80px] lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4"
       >
         <h1 className=" text-3xl font-semibold mt-5">
           Improve and Innovate with the Tech Trends

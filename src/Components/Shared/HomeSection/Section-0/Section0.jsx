@@ -32,7 +32,8 @@ const Section0 = () => {
 
   return (
     <div  className=" bg-gray-100  py-[20px]">
-    <div style={{ fontFamily: "Open Sans, sans-serif" }} className="lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-auto sm: mx-4">
+    <div style={{ fontFamily: "Open Sans, sans-serif" }}
+     className="lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4">
       <h1 className="text-center text-lg font-semibold mb-5 mt-[100px]">
         WHAT WE DO
       </h1>

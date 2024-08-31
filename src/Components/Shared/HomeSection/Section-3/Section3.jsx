@@ -11,9 +11,10 @@ const Section3 = () => {
     <div className="bg-gray-100  py-[20px]">
     <div 
      style={{ fontFamily: "Open Sans,sans-serif" }}
-     className=" rounded-sm bg-[white] p-5 mt-20 gap-10 mx-auto my-[80px]
+     className=" rounded-sm bg-[white] p-5 mt-20 gap-10 my-[80px]
     shadow-lg
-     lg:max-w-5xl md:max-w-3xl sm: max-w-sm
+     lg:max-w-5xl md:max-w-3xl sm: max-w-sm 
+     lg:mx-auto md:mx-7 sm: mx-4 
     lg:flex lg:justify-between 
     md:flex-wrap md:justify-around
     sm: flex-wrap sm:justify-around 
