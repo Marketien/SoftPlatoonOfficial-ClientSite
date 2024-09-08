@@ -8,8 +8,10 @@ import bangladesh from "../../../../public/Icons/Bangladesh.jpg";
 import { useEffect, useRef, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { CgMail } from "react-icons/cg";
+import { PiArrowFatLineUpFill  } from "react-icons/pi";
 
 const Navbar = () => {
+  const [isVisible, setIsVisible] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [aboutUsDropDownOpen, setAboutUsDropDownOpen] = useState(false);
   const [ourServiceDropDownOpen, setOurServiceDropDownOpen] = useState(false);
@@ -20,7 +22,37 @@ const Navbar = () => {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+// ------------------------- handlescrool start -----------------------------------
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+    if (window.scrollY > 600) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+    // Close all dropdowns on scroll
+    setAboutUsDropDownOpen(false);
+    setOurServiceDropDownOpen(false);
+    setDemoDropDownOpen(false);
+  };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
+  
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+// ------------------------- handlescrool end  -----------------------------------
   const toggleAboutUsDropDown = () => {
     setAboutUsDropDownOpen(!aboutUsDropDownOpen);
     setOurServiceDropDownOpen(false);
@@ -64,6 +96,7 @@ const Navbar = () => {
   }, []);
 
   return (
+    <>
     <div>
       {/* contact info  */}
       <div
@@ -96,7 +129,7 @@ const Navbar = () => {
       </div>
       {/* navbar section  */}
       <nav
-      ref={navRef}
+      
         className={`
         flex flex-wrap
         items-center
@@ -153,6 +186,7 @@ const Navbar = () => {
         </svg>
 
         <div
+        ref={navRef}
           className={`${
             menuOpen ? "block" : "hidden"
           } w-full md:flex md:items-center md:w-auto`}
@@ -294,6 +328,20 @@ const Navbar = () => {
         </div>
       </nav>
     </div>
+     {/* go top button  */}
+     {isVisible && (
+        <div
+          onClick={scrollToTop}
+          title="slide button"
+          className="fixed bottom-4 right-4 
+        flex items-center justify-center
+        shadow-lg shadow-purple-900 z-50
+         rounded-full w-[40px] h-[40px] border-2 bg-purple-900 border-border-white  text-white hover:text-gray-300"
+        >
+          <PiArrowFatLineUpFill size={30} />
+        </div>
+      )}
+    </>
   );
 };
 
