@@ -64,7 +64,7 @@ const Navbar = () => {
     setAboutUsDropDownOpen(false);
     setDemoDropDownOpen(false);
   };
-  const toggleDemoDropDown = () => {
+  const toggleProductsDropDown = () => {
     setDemoDropDownOpen(!demoDropDownOpen);
     setAboutUsDropDownOpen(false);
     setOurServiceDropDownOpen(false);
@@ -204,7 +204,7 @@ const Navbar = () => {
           >
             <li>
               <a
-                className="md:p-4 py-2 block uppercase hover:text-[#539ce6] "
+                className="md:p-4 py-2 block uppercase hover:text-blue-500 "
                 href="/"
               >
                 Home
@@ -213,7 +213,7 @@ const Navbar = () => {
             <li>
               <a
                 onClick={toggleAboutUsDropDown}
-                className="md:p-4 py-2 uppercase  hover:text-[#539ce6] flex items-center relative "
+                className="md:p-4 py-2 uppercase  hover:text-blue-500 flex items-center relative "
                 
               >
                 About Us <IoIosArrowDown className="ms-2" />
@@ -224,15 +224,15 @@ const Navbar = () => {
                   aboutUsDropDownOpen ? "block" : "hidden"
                 }  bg-gradient-to-r from-[#5A287F] via-[#84207E]  to-[#723988] text-white p-3 leading-10 absolute w-[200px] text-center z-50`}
               >
-                <li className="hover:text-[#539ce6]">Our Steps & guidance</li>
-                <li className="hover:text-[#539ce6]">Our Team</li>
-                <li className="hover:text-[#539ce6]">Photo Gallery</li>
+                <li className="hover:text-black hover:bg-white">Our Steps & guidance</li>
+                <li className="hover:text-black hover:bg-white">Our Team</li>
+                <li className="hover:text-black hover:bg-white">Photo Gallery</li>
               </ul>
             </li>
             <li>
               <a
                 onClick={toggleOurServiceDropDown}
-                className="md:p-4 py-2 uppercase hover:text-[#539ce6] flex items-center relative"
+                className="md:p-4 py-2 uppercase hover:text-blue-500 flex items-center relative"
                 
               >
                 Our Services <IoIosArrowDown className="ms-2" />
@@ -243,39 +243,58 @@ const Navbar = () => {
                   ourServiceDropDownOpen ? "block" : "hidden"
                 }  bg-gradient-to-r from-[#5A287F] via-[#84207E]  to-[#723988] text-white p-3 leading-10 absolute w-[200px] text-center z-40`}
               >
-                <li className="hover:text-[#539ce6]">Student Visa </li>
-                <li className="hover:text-[#539ce6]">E-Ticketing</li>
-                <li className="hover:text-[#539ce6]">Visit Visa</li>
+                <li className="hover:text-black hover:bg-white">Web App</li>
+                <li className="hover:text-black hover:bg-white">Mobile App </li>
+                <li className="hover:text-black hover:bg-white">Software</li>
+                <li className="hover:text-black hover:bg-white">ERP</li>
               </ul>
             </li>
 
-            {/* Demo  */}
+            {/* Products  */}
             <li>
               <a
-                onClick={toggleDemoDropDown}
-                className="md:p-4 py-2 uppercase hover:text-[#539ce6] flex items-center relative"
+                onClick={toggleProductsDropDown}
+                className="md:p-4 py-2 uppercase hover:text-blue-500 flex items-center relative"
                 
               >
-                Demo <IoIosArrowDown className="ms-2" />
+                Products <IoIosArrowDown className="ms-2" />
               </a>
               {/* Demo ul li ------- */}
               <ul
                 className={`${
                   demoDropDownOpen ? "block" : "hidden"
-                }  bg-gradient-to-r from-[#5A287F] via-[#84207E]  to-[#723988] text-white p-3 leading-10 absolute w-[200px] text-center z-40`}
+                }  bg-gradient-to-r from-[#5A287F] via-[#84207E]  to-[#723988] text-white p-3 leading-10 absolute w-[250px] text-center z-40`}
               >
                 <a target="blank" href="https://school.softplatoon.com/">
-                  <li className="hover:text-[#539ce6]">School Management </li>
+                  <li className="hover:text-black hover:bg-white">Demo_School </li>
                 </a>
                 <a target="blank" href="https://restaurant.softplatoon.com/">
-                  <li className="hover:text-[#539ce6]">Restaurant </li>
+                  <li className="hover:text-black hover:bg-white">Demo_Restaurant</li>
+                </a>
+                <a target="blank" href="">
+                  <li className="hover:text-black hover:bg-white">Demo_Movies</li>
+                </a>
+                <a target="blank" href="">
+                  <li className="hover:text-black hover:bg-white">Demo_POS</li>
+                </a>
+                <a target="blank" href="">
+                  <li className="hover:text-black hover:bg-white">Demo_Accounting</li>
+                </a>
+                <a target="blank" href="">
+                  <li className="hover:text-black hover:bg-white">Demo_EA account</li>
+                </a>
+                <a target="blank" href="">
+                  <li className="hover:text-black hover:bg-white">Demo_Account Management/Main</li>
+                </a>
+                <a target="blank" href="">
+                  <li className="hover:text-black hover:bg-white">Demo_Account Management/User</li>
                 </a>
               </ul>
             </li>
 
             <li>
               <a
-                className="md:p-4 py-2 block uppercase hover:text-[#539ce6]"
+                className="md:p-4 py-2 block uppercase hover:text-blue-500"
                
               >
                 Blog
@@ -283,7 +302,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                className="md:p-4 py-2 block uppercase hover:text-[#539ce6]"
+                className="md:p-4 py-2 block uppercase hover:text-blue-500"
                 
               >
                 Event
