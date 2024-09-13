@@ -82,10 +82,12 @@ const Navbar = () => {
 
   const toggleWebAppSubMenu = () => {
     setWebAppSubMenuOpen(!webAppSubMenuOpen);
+    setSoftwareSubMenuOpen(false);''
   };
 
   const toggleSoftwareSubMenu = () => {
     setSoftwareSubMenuOpen(!softwareSubMenuOpen);
+    setWebAppSubMenuOpen(false);
   };
 
   useEffect(() => {
@@ -317,7 +319,7 @@ const Navbar = () => {
               >
                 Products <IoIosArrowDown className="ms-2" />
               </a>
-              {/* Demo ul li ------- */}
+              {/* Products ul li ------- */}
               <ul
                 className={`${
                   demoDropDownOpen ? "block" : "hidden"
@@ -331,9 +333,6 @@ const Navbar = () => {
                 </Link>
                 <Link target="blank" to="https://parkwayhealthcareltd.com/">
                   <li className="hover:text-black hover:bg-white">Demo_Hospital</li>
-                </Link>
-                <Link target="blank" to="https://movies.slashsofttech.xyz/admin/dashboard">
-                  <li className="hover:text-black hover:bg-white">Demo_Movies</li>
                 </Link>
                 
               </ul>
