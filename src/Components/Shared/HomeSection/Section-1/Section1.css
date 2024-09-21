@@ -2,3 +2,9 @@
     width: 150px !important;
     height: 120px;
 }
+.slick-dots li button{
+    visibility: hidden ;
+}
+.slick-prev, .slick-next{
+    visibility: hidden ;
+}

@@ -244,7 +244,9 @@ const Navbar = () => {
               <ul
                 className={`${
                   aboutUsDropDownOpen ? "block" : "hidden"
-                }  bg-gradient-to-r from-[#5A287F] via-[#84207E]  to-[#723988] text-white p-3 leading-10 absolute w-[200px] text-center z-50`}
+                }  bg-gradient-to-r from-[#5A287F] via-[#84207E]  to-[#723988]
+                 text-white shadow-md shadow-gray-500 rounded-sm
+                  p-3 leading-10 absolute w-[200px] text-center z-50`}
               >
                 <li className="hover:text-black hover:bg-white">Our Steps & guidance</li>
                 <li className="hover:text-black hover:bg-white">Our Team</li>
@@ -260,12 +262,16 @@ const Navbar = () => {
                 Our Services <IoIosArrowDown className="ms-2" />
               </a>
               {/* OUr Service ul li ------- */}
-              <ul className={`${ourServiceDropDownOpen ? "block" : "hidden"} bg-gradient-to-r from-[#5A287F] via-[#84207E] to-[#723988] text-white p-3 leading-10 absolute w-[200px] text-center z-40`}>
+              <ul className={`${ourServiceDropDownOpen ? "block" : "hidden"} bg-gradient-to-r from-[#5A287F] via-[#84207E] to-[#723988]
+               text-white shadow-md shadow-gray-500 rounded-sm
+                p-3 leading-10 absolute w-[200px] text-center z-40`}>
                   <li>
                     <a onClick={toggleWebAppSubMenu} className="ps-[55px] flex items-center hover:text-black hover:bg-white">
                       Web App <IoIosArrowDown className="ms-2" />
                     </a>
-                    <ul className={`${webAppSubMenuOpen ? "block" : "hidden"} bg-gray-400 text-white p-3 leading-10 absolute w-[200px] text-center z-30`}>
+                    <ul className={`${webAppSubMenuOpen ? "block" : "hidden"} bg-gray-400
+                     text-white shadow-md shadow-gray-500 rounded-sm
+                      p-3 leading-10 absolute w-[200px] text-center z-30`}>
                     <Link target="blank" to="https://school.softplatoon.com/">
                   <li className="hover:text-black hover:bg-white">Demo_School </li>
                 </Link>
@@ -274,6 +280,9 @@ const Navbar = () => {
                 </Link>
                 <Link target="blank" to="https://parkwayhealthcareltd.com/">
                   <li className="hover:text-black hover:bg-white">Demo_Hospital</li>
+                </Link>
+                <Link target="blank" to="/">
+                  <li className="hover:text-black hover:bg-white">Demo_Consultancy</li>
                 </Link>
                 <Link target="blank" to="https://movies.slashsofttech.xyz/admin/dashboard">
                   <li className="hover:text-black hover:bg-white">Demo_Movies</li>
@@ -284,7 +293,9 @@ const Navbar = () => {
                   <a onClick={toggleSoftwareSubMenu} className="ps-[55px] flex items-center hover:text-black hover:bg-white">
                   Software <IoIosArrowDown className="ms-2" />
                   </a>
-                  <ul className={`${softwareSubMenuOpen ? "block" : "hidden"} bg-gray-400 text-white p-3 leading-10 absolute w-[200px] text-center z-30`}>
+                  <ul className={`${softwareSubMenuOpen ? "block" : "hidden"} bg-gray-400
+                   text-white shadow-md shadow-gray-500 rounded-sm
+                    p-3 leading-10 absolute w-[200px] text-center z-30`}>
                   <Link target="blank" to="https://pos.linkshotnerbd.site/home">
                   <li className="hover:text-black hover:bg-white">Demo_POS</li>
                 </Link>
@@ -323,7 +334,9 @@ const Navbar = () => {
               <ul
                 className={`${
                   demoDropDownOpen ? "block" : "hidden"
-                }  bg-gradient-to-r from-[#5A287F] via-[#84207E]  to-[#723988] text-white p-3 leading-10 absolute w-[250px] text-center z-40`}
+                }  bg-gradient-to-r from-[#5A287F] via-[#84207E]  to-[#723988]
+                 text-white shadow-md shadow-gray-500 rounded-sm
+                  p-3 leading-10 absolute w-[250px] text-center z-40`}
               >
                 <Link target="blank" to="https://school.softplatoon.com/">
                   <li className="hover:text-black hover:bg-white">Demo_School </li>
@@ -331,8 +344,11 @@ const Navbar = () => {
                 <Link target="blank" to="https://restaurant.softplatoon.com/">
                   <li className="hover:text-black hover:bg-white">Demo_Restaurant</li>
                 </Link>
-                <Link target="blank" to="https://parkwayhealthcareltd.com/">
+                <Link target="blank" to="/">
                   <li className="hover:text-black hover:bg-white">Demo_Hospital</li>
+                </Link>
+                <Link target="blank" to="https://parkwayhealthcareltd.com/">
+                  <li className="hover:text-black hover:bg-white">Demo_Consultancy</li>
                 </Link>
                 
               </ul>
