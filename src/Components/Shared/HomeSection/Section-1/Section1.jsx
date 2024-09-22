@@ -14,7 +14,7 @@ import logo12 from "../../../../../public/Client Logo File/12Parkway Logo-01.png
 import logo13 from "../../../../../public/Client Logo File/13Logo-GLobal Knowledge-01.png";
 import logo14 from "../../../../../public/Client Logo File/14Logo-Golden Hotel Group-01.png";
 import logo15 from "../../../../../public/Client Logo File/15Logo-OJ Meat & Fish-01.png";
-import logo16 from "../../../../../public/Client Logo File/16Logo-Prescription Point-01.png";
+// import logo16 from "../../../../../public/Client Logo File/16Logo-Prescription Point-01.png";
 import logo17 from "../../../../../public/Client Logo File/17Logo-South Indian FOod.png";
 import logo18 from "../../../../../public/Client Logo File/18Logo-Titanium Holdings-01.png";
 import logo19 from "../../../../../public/Client Logo File/19Logo-Yours-01.png";
@@ -91,7 +91,6 @@ const Section1 = () => {
           <img className=" sponseredLogo" src={logo13} alt="" />
           <img className=" sponseredLogo" src={logo14} alt="" />
           <img className=" sponseredLogo" src={logo15} alt="" />
-          <img className=" sponseredLogo" src={logo16} alt="" />
           <img className=" sponseredLogo" src={logo17} alt="" />
           <img className=" sponseredLogo" src={logo18} alt="" />
           <img className=" sponseredLogo" src={logo19} alt="" />
