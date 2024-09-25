@@ -281,8 +281,11 @@ const Navbar = () => {
                 <Link target="blank" to="https://parkwayhealthcareltd.com/">
                   <li className="hover:text-black hover:bg-white">Demo_Hospital</li>
                 </Link>
-                <Link target="blank" to="/">
+                <Link target="blank" to="https://consultant.softplatoon.com/">
                   <li className="hover:text-black hover:bg-white">Demo_Consultancy</li>
+                </Link>
+                <Link target="blank" to="https://ecom.softplatoon.com/">
+                  <li className="hover:text-black hover:bg-white">Demo_ECommerce</li>
                 </Link>
                 <Link target="blank" to="https://movies.slashsofttech.xyz/admin/dashboard">
                   <li className="hover:text-black hover:bg-white">Demo_Movies</li>
@@ -344,11 +347,14 @@ const Navbar = () => {
                 <Link target="blank" to="https://restaurant.softplatoon.com/">
                   <li className="hover:text-black hover:bg-white">Demo_Restaurant</li>
                 </Link>
-                <Link target="blank" to="/">
+                <Link target="blank" to="https://parkwayhealthcareltd.com/">
                   <li className="hover:text-black hover:bg-white">Demo_Hospital</li>
                 </Link>
-                <Link target="blank" to="https://parkwayhealthcareltd.com/">
+                <Link target="blank" to="https://consultant.softplatoon.com/">
                   <li className="hover:text-black hover:bg-white">Demo_Consultancy</li>
+                </Link>
+                <Link target="blank" to="https://ecom.softplatoon.com/">
+                  <li className="hover:text-black hover:bg-white">Demo_ECommerce</li>
                 </Link>
                 
               </ul>
