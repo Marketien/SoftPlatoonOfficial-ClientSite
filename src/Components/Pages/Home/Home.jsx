@@ -11,17 +11,7 @@ const Home = () => {
   return (
     <>
       <Banner />
-      <h1
-        style={{ fontFamily: "Open Sans,sans-serif" }}
-        className="py-[80px] text-lg text-center leading-8"
-      >
-        Since 1989. For millions of users. We transform businesses with powerful
-        and adaptable
-        <br /> digital solutions that satisfy the needs of today and unlock the
-        opportunities of
-        <br />
-        tomorrow.
-      </h1>
+     
       {/* ---------------Slider section --------------- */}
       <Section1 />
       {/*----------------- WHAT WE DO -----------------*/}

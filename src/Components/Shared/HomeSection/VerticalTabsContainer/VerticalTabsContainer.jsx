@@ -56,7 +56,7 @@ export default function VerticalTabs() {
 {/* Tab section  for large device */}
     {/* <div className='lg:flex md:flex sm: overflow-x-auto justify-center'> */}
     <div className='lg:overflow-x-hidden md:overflow-x-hidden sm: overflow-x-auto px-5'>
-    <h1 className="dafault-heading">Explore Our Offering</h1>
+    <h1 className="dafault-heading">Explore Our <span className='text-purple-900 ms-2 '> Offering</span></h1>
       <Box
       sx={{ 
        width: "100%" ,

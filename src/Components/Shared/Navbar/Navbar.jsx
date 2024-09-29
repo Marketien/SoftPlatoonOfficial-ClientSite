@@ -11,8 +11,8 @@ import { CgMail } from "react-icons/cg";
 import { PiArrowFatLineUpFill  } from "react-icons/pi";
 
 const Navbar = () => {
-  const [isVisible, setIsVisible] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
   const [aboutUsDropDownOpen, setAboutUsDropDownOpen] = useState(false);
   const [ourServiceDropDownOpen, setOurServiceDropDownOpen] = useState(false);
   const [demoDropDownOpen, setDemoDropDownOpen] = useState(false);
@@ -124,7 +124,7 @@ const Navbar = () => {
       <div
       style={{ fontFamily: "Open Sans,sans-serif" }}
         className={`
-      w-full sm: hidden md:flex justify-end px-[10px]
+      w-full sm: hidden md:flex justify-end px-[20px] py-4
      gap-5  top-0
       fixed z-10  mb-2
       ${scrolled ? "text-white" : "text-black"}
@@ -166,8 +166,8 @@ const Navbar = () => {
         shadow-lg
         shadow-gray-800
         fixed
-        lg:top-6
-        md:top-6
+        lg:top-[50px]
+        md:top-[55px]
         sm: top-0
         z-10
        ${
@@ -192,7 +192,7 @@ const Navbar = () => {
           xmlns="http://www.w3.org/2000/svg"
           id="menu-button"
           onClick={toggleMenu}
-          className={`h-6 w-6 cursor-pointer md:hidden block ${
+          className={`h-6 w-6 cursor-pointer lg:hidden md:block sm: block ${
             scrolled ? "text-white " : " text-black"
           }`}
           fill="none"
@@ -211,16 +211,16 @@ const Navbar = () => {
         ref={navRef}
           className={`${
             menuOpen ? "block" : "hidden"
-          } w-full md:flex md:items-center md:w-auto`}
+          } w-full lg:flex lg:items-center lg:w-auto`}
           id="menu"
         >
           <ul
             className={`
               text-sm
               ${scrolled ? " text-white" : "text-black "}
-              md:flex
-              md:justify-between 
-              md:items-center
+              lg:flex
+              lg:justify-between 
+              lg:items-center
               gap-3
               `}
           >
@@ -383,15 +383,15 @@ const Navbar = () => {
                  hover:text-black hover:bg-gray-300 text-white bg-[#501b79] rounded-sm"
                 href="/userLogin"
               >
-                Contact
+                Get Proposal
               </a>
             </li>
             <li>
               <a
-                className="lg:hidden md:hiden sm: flex md:p-4 py-2 text-white bg-[#501b79] w-[80px] items-center justify-center my-2"
+                className="lg:hidden md:hiden sm: flex md:p-4 py-2 text-white bg-[#501b79] w-[150px] items-center justify-center my-2"
                 
               >
-                Contact
+                Get Proposal
               </a>
             </li>
             {/* contact number  */}
@@ -412,6 +412,7 @@ const Navbar = () => {
               </p>
             </li>
           </ul>
+
         </div>
       </nav>
     </div>

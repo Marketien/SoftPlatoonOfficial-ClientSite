@@ -10,11 +10,28 @@ const Section6 = () => {
   Aos.init();
 
   return (
+    <div className="mt-[200px]">
+      <h1 className="text-center text-4xl font-bold mb-5">Our 
+        <span className='text-purple-900'> Clients</span>
+        </h1>
+ <h1
+        style={{ fontFamily: "Open Sans,sans-serif" }}
+        className=" text-xl text-center leading-8 font-semibold "
+      >
+        Since 1989. For millions of users. We transform businesses with powerful
+        and adaptable
+        <br /> digital solutions that satisfy the needs of today and unlock the
+        opportunities of
+        <br />
+        tomorrow.
+      </h1>
+
     <div
      data-aos="fade-down" data-aos-duration="2000"
       style={{ fontFamily: "Open Sans,sans-serif" }}
-      className="my-[80px] gap-5 flex justify-center lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4"
+      className=" mt-[40px] gap-5 flex justify-center lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4"
     >
+
       <div className="grid lg:grid-cols-3 md:grid-cols-2 sm: grid-cols-1 gap-5">
 
       {/* card -1 */}
@@ -122,6 +139,7 @@ const Section6 = () => {
         </p>
       </div>
       </div>
+    </div>
     </div>
   );
 };

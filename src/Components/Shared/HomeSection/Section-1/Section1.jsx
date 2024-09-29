@@ -41,7 +41,7 @@ const Section1 = () => {
     dots: true,
     infinite: true,
     speed: 300,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     responsive: [
       {
@@ -73,7 +73,7 @@ const Section1 = () => {
   return (
     <div data-aos="fade-down" data-aos-duration="2000">
       <div
-        className="mb-[80px] lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4"
+        className=" my-[120px] lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4"
       >
         <Slider ref={sliderRef} {...settings}>
           <img className=" sponseredLogo" src={logo1} alt="" />

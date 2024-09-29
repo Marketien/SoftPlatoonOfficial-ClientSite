@@ -28,8 +28,9 @@ const Section4 = () => {
         style={{ fontFamily: "Open Sans,sans-serif" }}
         className="my-[80px] lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4"
       >
-        <h1 className=" text-3xl font-semibold mt-5">
-          Improve and Innovate with the Tech Trends
+        <h1 className="text-4xl font-bold mt-5 ">
+        <span className='text-purple-900 me-2 '>Improve and Innovate</span> with the
+         <br />Tech Trends
         </h1>
         <p className="default-text-color text-lg mt-5">
           Our team can assist you in transforming your business with the latest

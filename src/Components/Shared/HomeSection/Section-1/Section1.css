@@ -6,5 +6,5 @@
     visibility: hidden ;
 }
 .slick-prev, .slick-next{
-    visibility: hidden ;
+    /* visibility: hidden ; */
 }
