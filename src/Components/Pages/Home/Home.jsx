@@ -12,9 +12,7 @@ const Home = () => {
     <>
       <Banner />
      
-      {/* ---------------Slider section --------------- */}
-      <Section1 />
-      {/*----------------- WHAT WE DO -----------------*/}
+      {/*----------------- Explore Our Popular Service -----------------*/}
       <Section0 />
       {/* ---------------Explore Our Offering -------------*/}
      <Section2 />
@@ -26,6 +24,8 @@ const Home = () => {
       {/* <Section5 /> */}
       {/*---------------review----------------  */}
       <Section6 />
+      {/* ---------------Slider section --------------- */}
+      <Section1 />
     </>
   );
 };

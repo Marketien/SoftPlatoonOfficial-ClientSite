@@ -1,28 +1,27 @@
-# Demo Site : 
+# Demo Site :
 
 color -1: #5A287F ;
 color -2: #84207E ;
 color -3: #723988 ;
 bg-color : #e6e6eb ;
+Transparent-color : #59287f1c ;
 
 font 1: style={{ fontFamily: "Open Sans,sans-serif" }}
-font 2:  style={{ fontFamily: "Ubuntu,sans-serif" }} 
+font 2: style={{ fontFamily: "Ubuntu,sans-serif" }}
 
-other classes: 
+other classes:
 default-text-color,
 dafault-heading,
-default-margin 
-
-
+default-margin
 
 <li>
-              <a
-                onClick={toggleOurServiceDropDown}
-                className="md:p-4 py-2 uppercase hover:text-blue-500 flex items-center relative"
+<a
+ onClick={toggleOurServiceDropDown}
+className="md:p-4 py-2 uppercase hover:text-blue-500 flex items-center relative"
                 
-              >
+ >
                 Our Services <IoIosArrowDown className="ms-2" />
-              </a>
+</a>
               {/* OUr Service ul li ------- */}
               <ul className={`${ourServiceDropDownOpen ? "block" : "hidden"} bg-gradient-to-r from-[#5A287F] via-[#84207E] to-[#723988]
                text-white shadow-md shadow-gray-500 rounded-sm
@@ -85,6 +84,3 @@ default-margin
                 <li className="hover:text-black hover:bg-white">ERP</li>
               </ul>
             </li>
-
-
-

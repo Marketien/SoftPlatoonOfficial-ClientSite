@@ -1,8 +1,9 @@
 import "./Section0.css";
-import icon1 from "../../../../../public/Icons/a1.png";
-import icon2 from "../../../../../public/Icons/a2.png";
-import icon3 from "../../../../../public/Icons/a4.png";
-import { IoIosArrowRoundForward } from "react-icons/io";
+import icon1 from "../../../../../public/Icons/web page-01.png";
+import icon2 from "../../../../../public/Icons/web page-02.png";
+import icon3 from "../../../../../public/Icons/web page-03.png";
+import icon4 from "../../../../../public/Icons/web page-05.png";
+import icon5 from "../../../../../public/Icons/web page-04.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -12,21 +13,28 @@ const Section0 = () => {
   const section0Data = [
     {
       icon: icon1,
-      title: "App Development",
-      description:
-        "Far far away, behind the word moun far from the countries Vokalia Place supplies with regelialia.",
+      title: "Website",
+      disc: "Design"
     },
     {
       icon: icon2,
-      title: "Design & Development",
-      description:
-        "Far far away, behind the word moun far from the countries Vokalia Place supplies with regelialia.",
+      title: "Website",
+      disc: "Development"
     },
     {
       icon: icon3,
-      title: "Innovative Solutions",
-      description:
-        "Far far away, behind the word moun far from the countries Vokalia Place supplies with regelialia.",
+      title: "UX/UI",
+      disc: "Design"
+    },
+    {
+      icon: icon4,
+      title: "Graphics",
+      disc: "Design"
+    },
+    {
+      icon: icon5,
+      title: "Digital",
+      disc: "Marketing"
     },
   ];
 
@@ -34,37 +42,23 @@ const Section0 = () => {
     <div  className=" bg-gray-100  py-[20px]">
     <div style={{ fontFamily: "Open Sans, sans-serif" }}
      className="lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4">
-      <h1 className="text-center text-lg font-semibold mb-5 mt-[100px]">
-        WHAT WE DO
-      </h1>
-      <h2 className="text-center text-4xl font-bold leading-[50px]  mb-5">
-        Don't be afraid to give up the good <br /> to go for the great
-      </h2>
+       <h1 className="dafault-heading">Explore
+       <span className="-ms-[150px]"> <br />  Our Popular <span className='text-purple-900'> Service</span> </span></h1>
 
       {/* cards section */}
       <div  data-aos="fade-down"
-        data-aos-duration="2000" className="my-[80px] grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 ">
-        {section0Data.map(({ icon, title, description }) => (
+        data-aos-duration="2000" className="my-[80px] grid lg:grid-cols-5 md:grid-cols-2 sm:grid-cols-1 gap-5 ">
+        {section0Data.map(({ icon, title, disc }) => (
           <div
             key={title}
-            className="card card-compact bg-white shadow-lg shadow-[#2d253447] rounded-md px-4 mb-3"
+            className="card card-compact bg-[#59287f1c] shadow-lg shadow-[#2d253447] rounded-md px-4 mb-3"
           >
-            <div className="flex justify-start mt-5 ms-3">
+            <div className="flex justify-center mt-5 ms-3">
               <img className="w-[80px]" src={icon} alt={title} />
             </div>
             <div className="card-body">
-              <h2 style={{ fontFamily: "Ubuntu,sans-serif" }} className=" text-2xl text-[#323738]">{title}</h2>
-              <p className="text-lg text-[#095868]">{description}</p>
-              <a href="/">
-                <p 
-                style={{ fontFamily: "Ubuntu,sans-serif" }}
-                className="uppercase font-bold hover:text-[#84207E] flex items-center">
-                  Read More
-                  <span className="ms-2">
-                    <IoIosArrowRoundForward size={25} />
-                  </span>
-                </p>
-              </a>
+              <h2 style={{ fontFamily: "Ubuntu,sans-serif" }} className="text-center text-xl text-[#323738]">{title}</h2>
+              <h2 style={{ fontFamily: "Ubuntu,sans-serif" }} className="text-center text-xl text-[#323738]">{disc}</h2>
             </div>
           </div>
         ))}
