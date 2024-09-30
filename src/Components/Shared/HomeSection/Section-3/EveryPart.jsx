@@ -12,20 +12,20 @@ const EveryPart = () => {
         <div className="flex justify-between">
           <div></div>
           <div>
-            <img className="w-[750px]" src={bgImg} alt="" />
+            <img className="w-[1050px] h-[850px]" src={bgImg} alt="" />
           </div>
         </div>
         {/* information section */}
         <div className="absolute md:top-[250px] lg:left-[445px] sm: top-0  lg:mx-0 md:mx-6 sm: mx-4">
           <div>
-            <h1 className=" text-3xl font-semibold mt-5 ">
+            <h1 className=" text-4xl font-bold mt-5 ">
               Every Part of Your IT Ecosystem. <br /> Taken Care Of.
             </h1>
-            <p className="text-xl  font-normal mt-5">
+            <p className="text-xl font-semibold mt-5">
               Comprehensive care of your cloud or on-premises infrastructure{" "}
               <br /> and applications :
             </p>
-            <p className="mt-5 flex items-center gap-5">
+            <p className="mt-5 flex items-center font-semibold gap-5">
               <span className="">
                 <li className="flex items-center text-lg mb-2">
                   <BsCheckCircleFill className="me-2 text-[#5A287F]" />

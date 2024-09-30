@@ -54,7 +54,7 @@ const Section0 = () => {
         {section0Data.map(({ icon, title, disc }) => (
           <div
             key={title}
-            className="card card-compact bg-[#59287f1c] shadow-lg shadow-[#2d253447] rounded-md px-4 mb-3"
+            className="card card-compact bg-[#59287f1c] shadow-lg shadow-[#2d253447] font-semibold rounded-md px-4 mb-3"
           >
             <div className="flex justify-center mt-5 ms-3">
               <img className="w-[80px]" src={icon} alt={title} />
