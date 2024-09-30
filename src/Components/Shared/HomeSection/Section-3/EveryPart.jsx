@@ -3,8 +3,10 @@ import { BsCheckCircleFill } from "react-icons/bs";
 
 const EveryPart = () => {
   return (
-    <div className="bg-gray-100 py-[20px]">
-        <div className="relative md:block sm: hidden">
+    <div className="lg:block md:flex md:justify-center bg-gray-100 py-[20px]">
+    <div className="">
+      {/* for medium and large device  */}
+        <div className="relative lg:block md:hiden sm: hidden">
       <div className="relative">
         {/* image div  */}
         <div className="flex justify-between">
@@ -56,6 +58,57 @@ const EveryPart = () => {
         </div>
       </div>
         </div>
+        {/*-------------------------- for small device ------------------------- */}
+        <div className="relative lg:hidden md:block sm: block">
+      <div className="relative">
+        {/* information section */}
+        <div className="lg:mx-0 md:mx-6 sm: mx-4">
+          <div>
+            <h1 className=" text-3xl font-semibold mt-5 ">
+              Every Part of Your IT Ecosystem. <br /> Taken Care Of.
+            </h1>
+            <p className="text-xl  font-normal mt-5">
+              Comprehensive care of your cloud or on-premises infrastructure{" "}
+              <br /> and applications :
+            </p>
+            <p className="mt-5 flex items-center gap-5">
+              <span className="">
+                <li className="flex items-center text-lg mb-2">
+                  <BsCheckCircleFill className="me-2 text-[#5A287F]" />
+                  Consulting
+                </li>
+                <li className="flex items-center text-lg mb-2">
+                  <BsCheckCircleFill className="me-2 text-[#5A287F]" />{" "}
+                  Implementation
+                </li>
+                <li className="flex items-center text-lg">
+                  <BsCheckCircleFill className="me-2 text-[#5A287F]" />{" "}
+                  Management and support
+                </li>
+              </span>
+              <span>
+                <li className="flex items-center text-lg mb-2">
+                  <BsCheckCircleFill className="me-2 text-[#5A287F]" /> Security
+                </li>
+                <li className="flex items-center text-lg mb-2">
+                  <BsCheckCircleFill className="me-2 text-[#5A287F]" /> Help
+                  desk services
+                </li>
+                <li className="flex items-center text-lg">
+                  <BsCheckCircleFill className="me-2 text-[#5A287F]" />{" "}
+                  Migration
+                </li>
+              </span>
+            </p>
+          </div>
+        </div>
+         {/* image div  */}
+          <div>
+            <img className="w-[750px]" src={bgImg} alt="" />
+          </div>
+      </div>
+        </div>
+    </div>
     </div>
   );
 };
