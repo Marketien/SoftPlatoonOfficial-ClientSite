@@ -39,7 +39,7 @@ const Section0 = () => {
   ];
 
   return (
-    <div  className=" bg-gray-100  py-[20px]">
+    <div  className=" bg-gray-100 pt-[100px] py-[20px]">
     <div style={{ fontFamily: "Open Sans, sans-serif" }}
      className="lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4">
        <h1 className="dafault-heading">Explore
@@ -47,7 +47,7 @@ const Section0 = () => {
 
       {/* cards section */}
       <div  data-aos="fade-down"
-        data-aos-duration="2000" className="my-[80px] grid lg:grid-cols-5 md:grid-cols-2 sm:grid-cols-1 gap-5 ">
+        data-aos-duration="2000" className="-mt-[60px] mb-[80px] grid lg:grid-cols-5 md:grid-cols-2 sm:grid-cols-1 gap-5 ">
         {section0Data.map(({ icon, title, disc }) => (
           <div
             key={title}
