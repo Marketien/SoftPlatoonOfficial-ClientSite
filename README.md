@@ -5,6 +5,7 @@ color -2: #84207E ;
 color -3: #723988 ;
 bg-color : #e6e6eb ;
 Transparent-color : #59287f1c ;
+linear-gradient(to right, #4a2665, #6b2066, #593468)
 
 font 1: style={{ fontFamily: "Open Sans,sans-serif" }}
 font 2: style={{ fontFamily: "Ubuntu,sans-serif" }}

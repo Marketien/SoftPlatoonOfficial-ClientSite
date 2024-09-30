@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { BsCheckCircleFill } from "react-icons/bs";
+import image from "../../../../../public/Icons/web page-06.png";
 
 const TabPanelInfo1 = () => {
   const [tabInfos, setInfos] = useState([]);
@@ -18,20 +19,30 @@ const TabPanelInfo1 = () => {
     <div className="bg-white  lg:h-full md:h-full sm:h-[850px] lg:p-0 md:p-0 sm: p-5 ">
       {softwareDevelopmentInfo && (
         <div className="px-5" style={{ fontFamily: "Open Sans,sans-serif" }}>
-          <h2 style={{ fontFamily: "Ubuntu,sans-serif" }} className="font-bold text-2xl mt-8">
+          <h2
+            style={{ fontFamily: "Ubuntu,sans-serif" }}
+            className="font-bold text-2xl mt-8 text-purple-900"
+          >
             {softwareDevelopmentInfo.SoftwareDevelopment.title}
           </h2>
-          <p 
-            className="font-medium text-lg leading-8 mt-5"
-          >
+          <p className="font-medium text-lg leading-8 mt-5">
             {softwareDevelopmentInfo.SoftwareDevelopment.paragraph}
           </p>
-          <ul className="font-medium text-lg leading-10 mt-5">
-            {softwareDevelopmentInfo.SoftwareDevelopment.points.map(
-              (point, index) => (
-                <li className="flex items-center" key={index}> <BsCheckCircleFill className="me-2 text-[#5A287F]"/> {point}</li>
-              )
-            )}
+          <ul className="flex justify-between items-center font-medium text-lg leading-10 mt-5">
+            <li>
+              {softwareDevelopmentInfo.SoftwareDevelopment.points.map(
+                (point, index) => (
+                  <li className="flex items-center" key={index}>
+                    {" "}
+                    <BsCheckCircleFill className="me-2 text-[#5A287F]" />{" "}
+                    {point}
+                  </li>
+                )
+              )}
+            </li>
+            <li>
+              <img className="w-[250px] -mt-[50px]" src={image} alt="" />
+            </li>
           </ul>
         </div>
       )}
