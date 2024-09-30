@@ -10,7 +10,7 @@ const Section6 = () => {
   Aos.init();
 
   return (
-    <div className="mt-[200px]">
+    <div className="mt-[200px] bg-white py-[80px]">
       <h1 className="text-center text-4xl font-bold mb-5">Our 
         <span className='text-purple-900'> Clients</span>
         </h1>
@@ -27,7 +27,7 @@ const Section6 = () => {
       </h1>
 
     <div
-     data-aos="fade-down" data-aos-duration="2000"
+     data-aos="zoom-in" data-aos-duration="2000"
       style={{ fontFamily: "Open Sans,sans-serif" }}
       className=" mt-[40px] gap-5 flex justify-center lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4"
     >

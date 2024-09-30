@@ -1,7 +1,12 @@
 import bgImg from "../../../../../public/Images/web page-08.png";
 import { BsCheckCircleFill } from "react-icons/bs";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const EveryPart = () => {
+
+  Aos.init();
+
   return (
     <div className="lg:block md:flex md:justify-center bg-gray-100 py-[20px]">
     <div className="">
@@ -16,7 +21,10 @@ const EveryPart = () => {
           </div>
         </div>
         {/* information section */}
-        <div className="absolute md:top-[250px] lg:left-[445px] sm: top-0  lg:mx-0 md:mx-6 sm: mx-4">
+        <div 
+         data-aos="fade-right"
+      data-aos-duration="2000"
+        className="absolute md:top-[250px] lg:left-[445px] sm: top-0  lg:mx-0 md:mx-6 sm: mx-4">
           <div>
             <h1 className=" text-4xl font-bold mt-5 ">
               Every Part of Your IT Ecosystem. <br /> Taken Care Of.
@@ -62,7 +70,10 @@ const EveryPart = () => {
         <div className="relative lg:hidden md:block sm: block">
       <div className="relative">
         {/* information section */}
-        <div className="lg:mx-0 md:mx-6 sm: mx-4">
+        <div 
+         data-aos="fade-down"
+      data-aos-duration="2000" 
+      className="lg:mx-0 md:mx-6 sm: mx-4">
           <div>
             <h1 className=" text-3xl font-semibold mt-5 ">
               Every Part of Your IT Ecosystem. <br /> Taken Care Of.

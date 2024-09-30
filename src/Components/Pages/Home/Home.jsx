@@ -7,6 +7,7 @@ import EveryPart from "../../Shared/HomeSection/Section-3/EveryPart";
 import Section4 from "../../Shared/HomeSection/Section-4/Section4";
 // import Section5 from "../../Shared/HomeSection/Section-5/Section5";
 import Section6 from "../../Shared/HomeSection/Section-6/Section6";
+import TestingQA from "../../Shared/Navbar/TestingQA/TestingQA";
 
 const Home = () => {
   return (
@@ -24,7 +25,9 @@ const Home = () => {
       <Section4 />
       {/*----------------- PRICING PLAN------------- */}
       {/* <Section5 /> */}
-      {/*---------------review----------------  */}
+      {/*---------------Testing & QA----------------  */}
+      <TestingQA/>
+      {/*---------------our client----------------  */}
       <Section6 />
       {/* ---------------Slider section --------------- */}
       <Section1 />
