@@ -50,12 +50,14 @@ const Section4 = () => {
 
   return (
     <div
-      data-aos="fade-down"
-      data-aos-duration="2000"
       style={{ fontFamily: "Open Sans,sans-serif" }}
       className="my-[80px] lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4"
     >
-      <h1 className="text-4xl font-bold mt-5 ">
+      <div 
+       data-aos="fade-right"
+      data-aos-duration="2000">
+      <h1
+      className="text-4xl font-bold mt-5 ">
         <span className="text-purple-900 me-2 ">Improve and Innovate</span> with
         the
         <br />
@@ -65,9 +67,13 @@ const Section4 = () => {
         Our team can assist you in transforming your business with the <br />{" "}
         latest tech capabilities to stay ahead of the curve
       </p>
+      </div>
 
       {/* Tab section fot large device */}
-      <div className="mt-32 grid lg:grid-cols-6 md:grid-cols-3 sm: grid-cols-1 gap-4">
+      <div
+       data-aos="fade-left"
+      data-aos-duration="2000"
+      className="mt-32 grid lg:grid-cols-6 md:grid-cols-3 sm: grid-cols-1 gap-4">
         {/*---------------------- title 1 ------------------ */}
         <div className="relative">
           {/* title div  */}

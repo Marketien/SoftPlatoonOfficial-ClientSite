@@ -39,7 +39,7 @@ const Section0 = () => {
   ];
 
   return (
-    <div  className=" bg-gray-100 pt-[100px] py-[20px]">
+    <div  className=" bg-gray-100 pt-[100px] py-[20px] ">
     <div style={{ fontFamily: "Open Sans, sans-serif" }}
      className="lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4">
        <h1 
@@ -49,7 +49,8 @@ const Section0 = () => {
        <span className="-ms-[150px]"> <br />  Our Popular <span className='text-purple-900'> Service</span> </span></h1>
 
       {/* cards section */}
-      <div data-aos="fade-down"
+      <div
+       data-aos="fade-left"
         data-aos-duration="1000" className="-mt-[60px] mb-[80px] grid lg:grid-cols-5 md:grid-cols-2 sm:grid-cols-1 gap-5 ">
         {section0Data.map(({ icon, title, disc }) => (
           <div

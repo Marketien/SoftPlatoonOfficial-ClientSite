@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div
       style={{ fontFamily: "Open Sans,sans-serif" }} className="bg-white" >
-        <div className="mt-[200px] lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-auto sm: mx-4">
+        <div className="mt-[80px] lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-auto sm: mx-4">
 <footer className="footer p-10  text-base-content">
   <nav>
     <h6 className="footer-title text-[#84207E] text-xl">Services</h6> 

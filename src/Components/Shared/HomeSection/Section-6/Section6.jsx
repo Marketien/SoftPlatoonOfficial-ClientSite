@@ -11,10 +11,15 @@ const Section6 = () => {
 
   return (
     <div className="mt-[200px] bg-white py-[80px]">
-      <h1 className="text-center text-4xl font-bold mb-5">Our 
+      <h1
+      data-aos="fade-down"
+      data-aos-duration="1000"
+      className="text-center text-4xl font-bold mb-5">Our 
         <span className='text-purple-900'> Clients</span>
         </h1>
  <h1
+       data-aos="fade-down"
+      data-aos-duration="1000"
         style={{ fontFamily: "Open Sans,sans-serif" }}
         className=" text-xl text-center leading-8 font-semibold "
       >
