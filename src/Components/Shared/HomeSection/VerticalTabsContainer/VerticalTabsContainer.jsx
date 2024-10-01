@@ -68,7 +68,7 @@ export default function VerticalTabs() {
          marginLeft:"3%",
           borderRadius:"5px",
           height: { lg: 600, md: 730, sm: 730 },
-        }}  data-aos="fade-left" data-aos-duration="1000">
+        }}  data-aos="fade-right" data-aos-duration="1000">
 <Tabs
         orientation="vertical"
         variant="scrollable"

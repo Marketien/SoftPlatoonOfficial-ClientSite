@@ -71,7 +71,7 @@ const Section4 = () => {
 
       {/* Tab section fot large device */}
       <div
-       data-aos="fade-left"
+       data-aos="fade-right"
       data-aos-duration="2000"
       className="mt-32 grid lg:grid-cols-6 md:grid-cols-3 sm: grid-cols-1 gap-4">
         {/*---------------------- title 1 ------------------ */}

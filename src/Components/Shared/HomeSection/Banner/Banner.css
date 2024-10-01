@@ -10,10 +10,15 @@
     transform: scale(1);
   }
 }
+.relative {
+  position: relative; 
+  overflow: hidden; 
+}
 
 .bannerImage {
   animation: zoomIn 6s ease-in-out infinite;
   transition: transform 0.5s;
+  object-fit: cover; 
 }
 
 .bannerInfo {

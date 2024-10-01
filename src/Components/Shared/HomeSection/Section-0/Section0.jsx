@@ -50,7 +50,7 @@ const Section0 = () => {
 
       {/* cards section */}
       <div
-       data-aos="fade-left"
+       data-aos="fade-right"
         data-aos-duration="1000" className="-mt-[60px] mb-[80px] grid lg:grid-cols-5 md:grid-cols-2 sm:grid-cols-1 gap-5 ">
         {section0Data.map(({ icon, title, disc }) => (
           <div
