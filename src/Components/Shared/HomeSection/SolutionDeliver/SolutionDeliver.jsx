@@ -62,7 +62,8 @@ const SolutionDeliver = () => {
         <h1
           data-aos="fade-right"
           data-aos-duration="1000"
-          className="font-bold text-4xl mb-5"
+          style={{ fontFamily: "Sumana,serif" }}
+          className="font-bold text-5xl mb-5"
         >
           Solutions We <span className="text-purple-900 ms-2 "> Deliver</span>
         </h1>
@@ -75,9 +76,14 @@ const SolutionDeliver = () => {
           operations.
         </p>
 
-        <div className="mt-10 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 gap-8">
+        <div 
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        className="mt-10 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 gap-8">
           {data.map(({ title }, index) => (
-            <div key={index} className="relative group">
+            <div
+             key={index} 
+             className="relative group">
               <div className="relative bg-[#59287f1c] font-semibold text-center py-10 shadow-md hover:shadow-lg">
                 {title}
               </div>

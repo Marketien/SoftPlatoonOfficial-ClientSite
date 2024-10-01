@@ -57,13 +57,13 @@ const Section4 = () => {
        data-aos="fade-right"
       data-aos-duration="2000">
       <h1
-      className="text-4xl font-bold mt-5 ">
+      style={{ fontFamily: "Sumana,serif" }}
+      className="text-5xl font-bold mt-5 ">
         <span className="text-purple-900 me-2 ">Improve and Innovate</span> with
-        the
         <br />
-        Tech Trends
+        The Tech Trends
       </h1>
-      <p className="default-text-color text-lg mt-5">
+      <p style={{ fontFamily: "Ubuntu,sans-serif" }} className="default-text-color  text-xl mt-5">
         Our team can assist you in transforming your business with the <br />{" "}
         latest tech capabilities to stay ahead of the curve
       </p>
@@ -73,12 +73,13 @@ const Section4 = () => {
       <div
        data-aos="fade-right"
       data-aos-duration="2000"
+      style={{ fontFamily: "Ubuntu,sans-serif" }}
       className="mt-32 grid lg:grid-cols-6 md:grid-cols-3 sm: grid-cols-1 gap-4">
         {/*---------------------- title 1 ------------------ */}
         <div className="relative">
           {/* title div  */}
           <div
-            className="relative flex justify-center items-center bg-[#7774791c] font-semibold py-[70px] text-xl shadow-lg rounded-md 
+            className="relative flex justify-center items-center bg-[#7774791c] py-[70px] text-xl shadow-lg rounded-md 
             lg:mb-0 md:mb-[55px] sm: mb-[55px] lg:mx-0 md:mx-0 sm: mx-14"
           >
             <h1>
@@ -95,7 +96,7 @@ const Section4 = () => {
         <div className="relative">
           {/* title div  */}
           <div
-            className="relative flex justify-center items-center bg-[#7774791c] font-semibold py-14 text-xl shadow-lg rounded-md 
+            className="relative flex justify-center items-center bg-[#7774791c] py-14 text-xl shadow-lg rounded-md 
             lg:mb-0 md:mb-[55px] sm: mb-[55px] lg:mx-0 md:mx-0 sm: mx-14"
           >
             <h1 className="text-center">
@@ -112,7 +113,7 @@ const Section4 = () => {
         <div className="relative">
           {/* title div  */}
           <div
-            className="relative flex justify-center items-center bg-[#7774791c] font-semibold py-14 text-xl shadow-lg rounded-md 
+            className="relative flex justify-center items-center bg-[#7774791c] py-14 text-xl shadow-lg rounded-md 
             lg:mb-0 md:mb-[55px] sm: mb-[55px] lg:mx-0 md:mx-0 sm: mx-14"
           >
             <h1 className="text-center">
@@ -129,7 +130,7 @@ const Section4 = () => {
         <div className="relative">
           {/* title div  */}
           <div
-            className="relative flex justify-center items-center bg-[#7774791c] font-semibold py-14 text-xl shadow-lg rounded-md 
+            className="relative flex justify-center items-center bg-[#7774791c] py-14 text-xl shadow-lg rounded-md 
             lg:mb-0 md:mb-[55px] sm: mb-[55px] lg:mx-0 md:mx-0 sm: mx-14"
           >
             <h1 className="text-center">
@@ -146,7 +147,7 @@ const Section4 = () => {
         <div className="relative">
           {/* title div  */}
           <div
-            className="relative flex justify-center items-center bg-[#7774791c] font-semibold py-[70px] text-xl shadow-lg rounded-md 
+            className="relative flex justify-center items-center bg-[#7774791c] py-[70px] text-xl shadow-lg rounded-md 
             lg:mb-0 md:mb-[55px] sm: mb-[55px] lg:mx-0 md:mx-0 sm: mx-14"
           >
             <h1>
@@ -163,7 +164,7 @@ const Section4 = () => {
         <div className="relative">
           {/* title div  */}
           <div
-            className="relative flex justify-center items-center bg-[#7774791c] font-semibold py-[70px] text-xl shadow-lg rounded-md 
+            className="relative flex justify-center items-center bg-[#7774791c] py-[70px] text-xl shadow-lg rounded-md 
             lg:mb-0 md:mb-[55px] sm: mb-[55px] lg:mx-0 md:mx-0 sm: mx-14"
           >
             <h1>

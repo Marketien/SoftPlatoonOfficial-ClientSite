@@ -12,7 +12,8 @@ const TestingQA = () => {
       <h1 
       data-aos="fade-down"
         data-aos-duration="1000"
-      className="font-bold text-4xl text-center">
+        style={{ fontFamily: "Sumana,serif" }}
+      className="font-bold text-5xl text-center">
         Testing <span className="text-purple-900"> & QA</span>
       </h1>
       {/* infomation div  */}

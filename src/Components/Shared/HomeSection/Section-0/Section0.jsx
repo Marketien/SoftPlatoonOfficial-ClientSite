@@ -45,8 +45,9 @@ const Section0 = () => {
        <h1 
         data-aos="fade-right"
         data-aos-duration="1000"
+        style={{ fontFamily: "Sumana,serif" }}
        className="dafault-heading">Explore
-       <span className="-ms-[150px]"> <br />  Our Popular <span className='text-purple-900'> Service</span> </span></h1>
+       <span className="-ms-[150px]"> <br />  Our Popular <span className='text-purple-900'> Services</span> </span></h1>
 
       {/* cards section */}
       <div
@@ -55,14 +56,14 @@ const Section0 = () => {
         {section0Data.map(({ icon, title, disc }) => (
           <div
             key={title}
-            className="card card-compact bg-[#59287f1c] shadow-lg shadow-[#2d253447] font-semibold rounded-md px-4 mb-3"
+            className="card card-compact bg-[#59287f1c] shadow-lg shadow-[#2d253447]  rounded-md px-4 mb-3"
           >
             <div className="flex justify-center mt-5 ms-3">
               <img className="w-[80px]" src={icon} alt={title} />
             </div>
-            <div className="card-body">
-              <h2 style={{ fontFamily: "Ubuntu,sans-serif" }} className="text-center text-xl text-[#323738]">{title}</h2>
-              <h2 style={{ fontFamily: "Ubuntu,sans-serif" }} className="text-center text-xl text-[#323738]">{disc}</h2>
+            <div style={{ fontFamily: "Ubuntu,sans-serif" }} className="card-body">
+              <h2 className="text-center text-xl text-[#323738]">{title}</h2>
+              <h2 className="text-center text-xl text-[#323738]">{disc}</h2>
             </div>
           </div>
         ))}

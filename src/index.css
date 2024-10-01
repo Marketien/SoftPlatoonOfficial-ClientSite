@@ -17,7 +17,7 @@ body {
 .dafault-heading{
   display: flex;
   justify-content: flex-start;
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 700;
   margin-bottom: 100px;
 }

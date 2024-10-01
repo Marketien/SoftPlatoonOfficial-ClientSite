@@ -9,6 +9,7 @@ linear-gradient(to right, #4a2665, #6b2066, #593468)
 
 font 1: style={{ fontFamily: "Open Sans,sans-serif" }}
 font 2: style={{ fontFamily: "Ubuntu,sans-serif" }}
+font 2: style={{ fontFamily: "Sumana,serif" }}
 
 other classes:
 default-text-color,

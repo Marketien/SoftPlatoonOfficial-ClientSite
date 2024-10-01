@@ -14,7 +14,8 @@ const Section6 = () => {
       <h1
       data-aos="fade-down"
       data-aos-duration="1000"
-      className="text-center text-4xl font-bold mb-5">Our 
+      style={{ fontFamily: "Sumana,serif" }}
+      className="text-center text-5xl font-bold mb-5">Our 
         <span className='text-purple-900'> Clients</span>
         </h1>
  <h1

@@ -8,28 +8,28 @@ const HomeCountUp = () => {
     >
       <div className="grid lg:grid-cols-4 md:grid-cols-2 sm: grid-cols-1 gap-5">
         <div className="lg:border-r-2 border-purple-300">
-            <span className=" text-4xl text-purple-900">
+            <span className=" text-5xl font-semibold text-purple-900">
                 <span><CountUp start={0} end={4} duration={2}/></span><span>+</span>
             </span>
-          <h1 className="font-semibold text-lg">Years of Expertise</h1>
+          <h1 style={{ fontFamily: "Ubuntu,sans-serif" }}  className="text-xl text-gray-500 mt-2">Years of Expertise</h1>
         </div>
         <div className="lg:border-r-2 border-purple-300">
-            <span className="text-4xl text-purple-900">
+            <span className="text-5xl font-semibold text-purple-900">
                 <span><CountUp start={0} end={20} duration={2}/></span><span>+</span>
             </span>
-          <h1 className="font-semibold text-lg">IT Professionals</h1>
+          <h1 style={{ fontFamily: "Ubuntu,sans-serif" }} className="text-xl text-gray-500 mt-2">IT Professionals</h1>
         </div>
         <div className="lg:border-r-2 border-purple-300">
-            <span className="text-4xl text-purple-900">
+            <span className="text-5xl font-semibold text-purple-900">
                 <span><CountUp start={0} end={230} duration={2}/></span><span>+</span>
             </span>
-          <h1 className="font-semibold text-lg">Success Stories</h1>
+          <h1 style={{ fontFamily: "Ubuntu,sans-serif" }} className="text-xl text-gray-500 mt-2">Success Stories</h1>
         </div>
         <div>
-            <span className="text-4xl text-purple-900">
+            <span className="text-5xl font-semibold text-purple-900">
                 <span><CountUp start={0} end={15} duration={2}/></span><span>+</span>
             </span>
-          <h1 className="font-semibold text-lg">Industries Covered</h1>
+          <h1 style={{ fontFamily: "Ubuntu,sans-serif" }} className="text-xl text-gray-500 mt-2">Industries Covered</h1>
         </div>
       </div>
     </div>
