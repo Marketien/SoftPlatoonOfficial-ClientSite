@@ -18,7 +18,7 @@ const Banner = () => {
     return () => clearInterval(intervalId);
   }, [currentBanner]);
   return (
-    <div className="relative">
+    <div className="parent-banner">
       {/* bannerImages section  */}
       <div className=" lg:mt-[75px] md:mt-[120px] sm: mt-[50px]">
         <img

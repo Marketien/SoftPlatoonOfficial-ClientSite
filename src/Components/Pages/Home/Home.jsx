@@ -6,6 +6,7 @@ import Section2 from "../../Shared/HomeSection/Section-2/Section2";
 import EveryPart from "../../Shared/HomeSection/Section-3/EveryPart";
 import Section4 from "../../Shared/HomeSection/Section-4/Section4";
 import Section6 from "../../Shared/HomeSection/Section-6/Section6";
+import SolutionDeliver from "../../Shared/HomeSection/SolutionDeliver/SolutionDeliver";
 import TestingQA from "../../Shared/Navbar/TestingQA/TestingQA";
 
 const Home = () => {
@@ -19,6 +20,8 @@ const Home = () => {
       <Section0 />
       {/* ---------------Explore Our Offering -------------*/}
      <Section2 />
+      {/* ---------------Solution We Deliver -------------*/}
+      <SolutionDeliver/>
       {/*--------------- Every Part of Your IT Ecosystem.----------------- */}
       {/* <Section3 /> */}
       <EveryPart/>

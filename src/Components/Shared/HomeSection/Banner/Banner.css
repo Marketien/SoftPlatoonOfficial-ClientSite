@@ -10,7 +10,7 @@
     transform: scale(1);
   }
 }
-.relative {
+.parent-banner {
   position: relative; 
   overflow: hidden; 
 }
