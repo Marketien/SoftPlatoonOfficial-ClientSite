@@ -1,5 +1,6 @@
 import Banner from "../../Shared/HomeSection/Banner/Banner";
 import HomeCountUp from "../../Shared/HomeSection/HomeCountUp/HomeCountUp";
+import HomeTechnologies from "../../Shared/HomeSection/HomeTechnologies/HomeTechnologies";
 import IndustryExpertise from "../../Shared/HomeSection/IndustryExpertise/IndustryExpertise";
 import Section0 from "../../Shared/HomeSection/Section-0/Section0";
 import Section1 from "../../Shared/HomeSection/Section-1/Section1";
@@ -29,6 +30,8 @@ const Home = () => {
       {/*--------------- Every Part of Your IT Ecosystem.----------------- */}
       {/* <Section3 /> */}
       <EveryPart/>
+      {/*--------------- Technologies and Platforms We Work With.----------------- */}
+      <HomeTechnologies/>
       {/* ---------------Secure the Success -------------*/}
       <SecureSuccess/>
       {/*---------------- Improve and Innovate ------------------*/}

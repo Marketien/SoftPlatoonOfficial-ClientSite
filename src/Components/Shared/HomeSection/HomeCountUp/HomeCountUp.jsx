@@ -1,8 +1,16 @@
 import CountUp from "react-countup";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 
 const HomeCountUp = () => {
+
+  Aos.init();
+
   return (
     <div
+    data-aos="fade-down"
+          data-aos-duration="1000"
       style={{ fontFamily: "Open Sans, sans-serif" }}
       className="py-[80px] lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4"
     >
