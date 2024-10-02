@@ -1,14 +1,11 @@
 import { Link } from "react-router-dom";
-// import '../../Pages/Home/Nav.js'
-// import homeLogo from "../../../../public/Icons/Main Logo White-01.png";
-// import scrolledLogo from "../../../../public/Icons/Main Logo-01.png";
 import homeLogo from "../../../../public/Icons/Untitled-4-02.png";
 import scrolledLogo from "../../../../public/Icons/Untitled-4-01.png";
 import bangladesh from "../../../../public/Icons/Bangladesh.jpg";
 import { useEffect, useRef, useState } from "react";
-import { IoIosArrowDown } from "react-icons/io";
 import { CgMail } from "react-icons/cg";
-import { PiArrowFatLineUpFill } from "react-icons/pi";
+// import { PiArrowFatLineUpFill } from "react-icons/pi";
+import whatsAppLogo from "../../../../public/Icons/whatsapp.png";
 
 const NewNavbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -229,7 +226,7 @@ const NewNavbar = () => {
         </nav>
       </div>
       {/* go top button  */}
-      {isVisible && (
+      {/* {isVisible && (
         <div
           onClick={scrollToTop}
           title="slide button"
@@ -240,7 +237,14 @@ const NewNavbar = () => {
         >
           <PiArrowFatLineUpFill size={30} />
         </div>
-      )}
+      )} */}
+        <Link to=""
+        className="fixed bottom-5 right-5 
+          flex items-center justify-center
+          shadow-lg shadow-green-500 z-50
+           rounded-full w-[60px] border-2 bg-green-500 border-border-white  text-white hover:text-gray-300">
+            <img className="" src={whatsAppLogo} alt="" />
+            </Link>
     </>
   );
 };

@@ -1,13 +1,11 @@
 import { Link } from "react-router-dom";
-// import '../../Pages/Home/Nav.js'
-// import homeLogo from "../../../../public/Icons/Main Logo White-01.png";
-// import scrolledLogo from "../../../../public/Icons/Main Logo-01.png";
 import homeLogo from "../../../../public/Icons/Untitled-4-02.png";
 import scrolledLogo from "../../../../public/Icons/Untitled-4-01.png";
 import bangladesh from "../../../../public/Icons/Bangladesh.jpg";
 import { useEffect, useRef, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { CgMail } from "react-icons/cg";
+
 import { PiArrowFatLineUpFill  } from "react-icons/pi";
 
 const Navbar = () => {
@@ -429,6 +427,7 @@ const Navbar = () => {
           <PiArrowFatLineUpFill size={30} />
         </div>
       )}
+     
     </>
   );
 };
