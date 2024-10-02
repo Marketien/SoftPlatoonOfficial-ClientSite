@@ -1,5 +1,6 @@
 import Banner from "../../Shared/HomeSection/Banner/Banner";
 import HomeCountUp from "../../Shared/HomeSection/HomeCountUp/HomeCountUp";
+import IndustryExpertise from "../../Shared/HomeSection/IndustryExpertise/IndustryExpertise";
 import Section0 from "../../Shared/HomeSection/Section-0/Section0";
 import Section1 from "../../Shared/HomeSection/Section-1/Section1";
 import Section2 from "../../Shared/HomeSection/Section-2/Section2";
@@ -22,6 +23,8 @@ const Home = () => {
      <Section2 />
       {/* ---------------Solution We Deliver -------------*/}
       <SolutionDeliver/>
+      {/* ---------------Our Industry Expertiser -------------*/}
+      <IndustryExpertise/>
       {/*--------------- Every Part of Your IT Ecosystem.----------------- */}
       {/* <Section3 /> */}
       <EveryPart/>

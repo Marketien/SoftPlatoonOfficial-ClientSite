@@ -84,7 +84,7 @@ const SolutionDeliver = () => {
             <div
              key={index} 
              className="relative group">
-              <div className="relative bg-[#59287f1c] font-semibold text-center py-10 shadow-md hover:shadow-lg">
+              <div className="relative bg-white font-semibold text-center py-10 shadow-md hover:shadow-lg">
                 {title}
               </div>
               <div className="absolute bottom-1 right-2 rotate-45 transition-transform duration-300 group-hover:rotate-[-2deg]">
