@@ -1,8 +1,5 @@
 import "./Section4.css";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-import TabPanelInfo1 from "../TabPanelInfo/TabPanelInfo1";
-import TabPanelInfo2 from "../TabPanelInfo/TabPanelInfo2";
 import icon1 from "../../../../../public/Icons/cubel (1).png";
 import icon2 from "../../../../../public/Icons/artificial-intelligence.png";
 import icon3 from "../../../../../public/Icons/vision.png";
@@ -15,38 +12,38 @@ import "aos/dist/aos.css";
 const Section4 = () => {
   Aos.init();
 
-  const data = [
-    {
-      icon: icon1,
-      title: "Big Data",
-      disc: "",
-    },
-    {
-      icon: icon2,
-      title: "Artificial ",
-      disc: "Intelligence",
-    },
-    {
-      icon: icon3,
-      title: "Computer ",
-      disc: "Vision",
-    },
-    {
-      icon: icon4,
-      title: "Internet ",
-      disc: "Of Things",
-    },
-    {
-      icon: icon5,
-      title: "BlockChain",
-      disc: "",
-    },
-    {
-      icon: icon6,
-      title: "Mixed Reality",
-      disc: "",
-    },
-  ];
+  // const data = [
+  //   {
+  //     icon: icon1,
+  //     title: "Big Data",
+  //     disc: "",
+  //   },
+  //   {
+  //     icon: icon2,
+  //     title: "Artificial ",
+  //     disc: "Intelligence",
+  //   },
+  //   {
+  //     icon: icon3,
+  //     title: "Computer ",
+  //     disc: "Vision",
+  //   },
+  //   {
+  //     icon: icon4,
+  //     title: "Internet ",
+  //     disc: "Of Things",
+  //   },
+  //   {
+  //     icon: icon5,
+  //     title: "BlockChain",
+  //     disc: "",
+  //   },
+  //   {
+  //     icon: icon6,
+  //     title: "Mixed Reality",
+  //     disc: "",
+  //   },
+  // ];
 
   return (
     <div
@@ -79,7 +76,7 @@ const Section4 = () => {
         <div className="relative">
           {/* title div  */}
           <div
-            className="relative flex justify-center items-center bg-[#7774791c] py-[70px] text-xl shadow-lg rounded-md 
+            className="relative flex justify-center items-center bg-white py-[70px] text-xl shadow-lg rounded-md 
             lg:mb-0 md:mb-[55px] sm: mb-[55px] lg:mx-0 md:mx-0 sm: mx-14"
           >
             <h1>
@@ -96,7 +93,7 @@ const Section4 = () => {
         <div className="relative">
           {/* title div  */}
           <div
-            className="relative flex justify-center items-center bg-[#7774791c] py-14 text-xl shadow-lg rounded-md 
+            className="relative flex justify-center items-center bg-white py-14 text-xl shadow-lg rounded-md 
             lg:mb-0 md:mb-[55px] sm: mb-[55px] lg:mx-0 md:mx-0 sm: mx-14"
           >
             <h1 className="text-center">
@@ -113,7 +110,7 @@ const Section4 = () => {
         <div className="relative">
           {/* title div  */}
           <div
-            className="relative flex justify-center items-center bg-[#7774791c] py-14 text-xl shadow-lg rounded-md 
+            className="relative flex justify-center items-center bg-white py-14 text-xl shadow-lg rounded-md 
             lg:mb-0 md:mb-[55px] sm: mb-[55px] lg:mx-0 md:mx-0 sm: mx-14"
           >
             <h1 className="text-center">
@@ -130,7 +127,7 @@ const Section4 = () => {
         <div className="relative">
           {/* title div  */}
           <div
-            className="relative flex justify-center items-center bg-[#7774791c] py-14 text-xl shadow-lg rounded-md 
+            className="relative flex justify-center items-center bg-white py-14 text-xl shadow-lg rounded-md 
             lg:mb-0 md:mb-[55px] sm: mb-[55px] lg:mx-0 md:mx-0 sm: mx-14"
           >
             <h1 className="text-center">
@@ -147,7 +144,7 @@ const Section4 = () => {
         <div className="relative">
           {/* title div  */}
           <div
-            className="relative flex justify-center items-center bg-[#7774791c] py-[70px] text-xl shadow-lg rounded-md 
+            className="relative flex justify-center items-center bg-white py-[70px] text-xl shadow-lg rounded-md 
             lg:mb-0 md:mb-[55px] sm: mb-[55px] lg:mx-0 md:mx-0 sm: mx-14"
           >
             <h1>
@@ -164,7 +161,7 @@ const Section4 = () => {
         <div className="relative">
           {/* title div  */}
           <div
-            className="relative flex justify-center items-center bg-[#7774791c] py-[70px] text-xl shadow-lg rounded-md 
+            className="relative flex justify-center items-center bg-white py-[70px] text-xl shadow-lg rounded-md 
             lg:mb-0 md:mb-[55px] sm: mb-[55px] lg:mx-0 md:mx-0 sm: mx-14"
           >
             <h1>
