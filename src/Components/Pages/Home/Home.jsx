@@ -9,13 +9,13 @@ import Section4 from "../../Shared/HomeSection/Section-4/Section4";
 import Section6 from "../../Shared/HomeSection/Section-6/Section6";
 import SecureSuccess from "../../Shared/HomeSection/SecureSuccess/SecureSuccess";
 import SolutionDeliver from "../../Shared/HomeSection/SolutionDeliver/SolutionDeliver";
-import TestingQA from "../../Shared/Navbar/TestingQA/TestingQA";
+import TestingQA from "../../Shared/HomeSection/TestingQA/TestingQA";
 
 const Home = () => {
+
   return (
     <>
-      <Banner />
-     
+        <Banner />
       {/*----------------- Home CountUp Section  -----------------*/}
       <HomeCountUp/>
       {/*----------------- Explore Our Popular Service -----------------*/}
