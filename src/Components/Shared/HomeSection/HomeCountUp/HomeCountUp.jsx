@@ -9,12 +9,12 @@ const HomeCountUp = () => {
 
   return (
     <div
-    data-aos="fade-down"
-          data-aos-duration="1000"
       style={{ fontFamily: "Open Sans, sans-serif" }}
       className="py-[80px] lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4"
     >
-      <div className="grid lg:grid-cols-4 md:grid-cols-2 sm: grid-cols-1 gap-5">
+      <div
+      data-aos="fade-right"
+      className="grid lg:grid-cols-4 md:grid-cols-2 sm: grid-cols-1 gap-5">
         <div className="lg:border-r-2 border-purple-300">
             <span className=" text-5xl font-semibold text-purple-900">
                 <span><CountUp start={0} end={4} duration={2}/></span><span>+</span>

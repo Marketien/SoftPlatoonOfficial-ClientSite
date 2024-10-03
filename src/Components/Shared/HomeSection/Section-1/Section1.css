@@ -1,6 +1,6 @@
 .sponseredLogo{
     width: 150px !important;
-    height: 120px;
+    /* height: 120px; */
 }
 .slick-dots li button{
     visibility: hidden ;

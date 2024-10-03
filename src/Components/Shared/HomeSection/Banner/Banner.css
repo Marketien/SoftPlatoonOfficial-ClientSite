@@ -19,6 +19,7 @@
   animation: zoomIn 6s ease-in-out infinite;
   transition: transform 0.5s;
   object-fit: cover; 
+  background-color: black !important;
 }
 
 .bannerInfo {

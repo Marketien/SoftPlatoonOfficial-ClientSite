@@ -254,7 +254,6 @@ const HomeTechnologies = () => {
       >
         <h1
           data-aos="fade-right"
-          data-aos-duration="1000"
           style={{ fontFamily: "Sumana,serif" }}
           className="font-bold text-5xl mb-5"
         >
@@ -264,7 +263,6 @@ const HomeTechnologies = () => {
 
         <div
           data-aos="fade-right"
-          data-aos-duration="1000"
           style={{ fontFamily: "Sumana,serif" }}
           className="mt-10 bg-gray-100 py-10"
         >

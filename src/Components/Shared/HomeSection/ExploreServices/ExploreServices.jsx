@@ -40,17 +40,18 @@ const ExploreServices = () => {
          className="lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4">
            <h1 
            data-aos="fade-right"
-            data-aos-duration="1000"
             style={{ fontFamily: "Sumana,serif" }}
            className="dafault-heading">Explore
            <span className="-ms-[150px]"> <br />  Our Popular <span className='text-purple-900'> Services</span> </span></h1>
     
           {/* cards section */}
-          <div className="-mt-[60px] mb-[80px] grid lg:grid-cols-5 md:grid-cols-2 sm:grid-cols-1 gap-5 ">
+          <div
+           data-aos="fade-right"
+          className="-mt-[60px] mb-[80px] grid lg:grid-cols-5 md:grid-cols-2 sm:grid-cols-1 gap-5 ">
             {
             ExploreServicesData.map(({ icon, title, disc }) => (
               <div
-              data-aos="fade-right"
+             
                 key={title}
                 className=" bg-[#59287f1c] shadow-lg shadow-[#2d253447]  rounded-md px-4 mb-3"
               >

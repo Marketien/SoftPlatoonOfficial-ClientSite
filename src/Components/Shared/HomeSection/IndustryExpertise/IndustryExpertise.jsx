@@ -53,7 +53,6 @@ const IndustryExpertise = () => {
       >
         <h1
           data-aos="fade-right"
-          data-aos-duration="1000"
           style={{ fontFamily: "Sumana,serif" }}
           className="font-bold text-5xl mb-5"
         >
@@ -61,7 +60,6 @@ const IndustryExpertise = () => {
         </h1>
         <p
           data-aos="fade-right"
-          data-aos-duration="1000"
           className="text-xl font-semibold"
         >
           We’ve excelled our experience in a wide range of industries to bring
@@ -71,7 +69,6 @@ const IndustryExpertise = () => {
 
         <div
           data-aos="fade-right"
-          data-aos-duration="1000"
           className="mt-10 grid lg:grid-cols-4 md:grid-cols-3 sm: grid-cols-1 gap-8"
         >
           {data.map(({ icon, title }, index) => (

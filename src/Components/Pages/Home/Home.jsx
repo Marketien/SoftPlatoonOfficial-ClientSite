@@ -1,5 +1,7 @@
 import Banner from "../../Shared/HomeSection/Banner/Banner";
 import ExploreServices from "../../Shared/HomeSection/ExploreServices/ExploreServices";
+import FeaturedInsights from "../../Shared/HomeSection/FeaturedInsights/FeaturedInsights";
+import HomeContact from "../../Shared/HomeSection/HomeContact/HomeContact";
 import HomeCountUp from "../../Shared/HomeSection/HomeCountUp/HomeCountUp";
 import HomeTechnologies from "../../Shared/HomeSection/HomeTechnologies/HomeTechnologies";
 import IndustryExpertise from "../../Shared/HomeSection/IndustryExpertise/IndustryExpertise";
@@ -32,6 +34,8 @@ const Home = () => {
       <EveryPart/>
       {/*--------------- Technologies and Platforms We Work With.----------------- */}
       <HomeTechnologies/>
+      {/* ---------------Featured Insights -------------*/}
+      <FeaturedInsights />
       {/* ---------------Secure the Success -------------*/}
       <SecureSuccess/>
       {/*---------------- Improve and Innovate ------------------*/}
@@ -44,6 +48,8 @@ const Home = () => {
       <Section6 />
       {/* ---------------Slider section --------------- */}
       <Section1 />
+      {/* --------------- Contact Us --------------- */}
+      <HomeContact/>
     </>
   );
 };

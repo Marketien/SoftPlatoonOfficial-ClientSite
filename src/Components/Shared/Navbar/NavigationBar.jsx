@@ -1,3 +1,4 @@
+import './Navbar.css'
 import { Link } from "react-router-dom";
 import homeLogo from "../../../../public/Icons/Untitled-4-02.png";
 import scrolledLogo from "../../../../public/Icons/Untitled-4-01.png";
@@ -264,7 +265,7 @@ const NavigationBar = () => {
       {/* Whats AppLogo section  */}
       <Link
         to=""
-        className="fixed bottom-5 right-5 
+        className="bounce fixed bottom-5 right-5 
             flex items-center justify-center
             shadow-lg shadow-green-500 z-50
              rounded-full w-[55px] hover:w-[60px] border-2 bg-green-500 border-border-white  text-white hover:text-gray-300"
