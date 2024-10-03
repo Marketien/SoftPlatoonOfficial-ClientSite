@@ -16,7 +16,11 @@ import icon12 from '../../../../../public/TechIcons/10.VueJs.png' ;
 // MobileIcon-------------------------------------------------------------------
 import icon13 from '../../../../../public/TechIcons/11.Ios.png' ;
 import icon14 from '../../../../../public/TechIcons/12.Android.png' ;
-import icon15 from '../../../../../public/TechIcons/13.flutter.png' ;
+import icon15 from '../../../../../public/TechIcons/12.1React Native.png' ;
+import icon16 from '../../../../../public/TechIcons/13.flutter.png' ;
+// DesktopIcon-------------------------------------------------------------------
+import icon17 from '../../../../../public/TechIcons/14.CSharp.png' ;
+import icon18 from '../../../../../public/TechIcons/15.ElectronJs.png';
 
 
 const HomeTechnologies = () => {
@@ -83,9 +87,27 @@ const MobileIcon =[
     icon: icon14
   },
   {
-    title:"Flutter",
+    title:"React Native",
     icon:icon15
+  },
+  {
+    title:"Flutter",
+    icon:icon16
   }
+]
+const DesktopIcon =[
+  {
+    title:"C++",
+    icon: icon3
+  },
+  {
+    title:"C#",
+    icon: icon17
+  },
+  {
+    title:"ElectronJs",
+    icon:icon18
+  },
 ]
 
     return (
@@ -111,7 +133,7 @@ const MobileIcon =[
           {/*---------------------------------- Web Icon Section-----------------------------------  */}
             <div className='px-3 py-3 mb-10'>
               <h1 style={{ fontFamily: "Ubuntu,sans-serif" }} className="font-semibold text-3xl mb-7">Web</h1>
-              <p style={{ fontFamily: "Ubuntu,sans-serif" }} className=" text-lg uppercase mb-2">Back end</p>
+              <p style={{ fontFamily: "Ubuntu,sans-serif" }} className=" text-sm uppercase mb-3">Back end</p>
               <div className='lg:flex md:grid md:grid-cols-4 sm: grid sm: grid-cols-3 gap-2 mb-5'>
                 {
                   BackEndIcon.map(({icon , title}, index) =>(
@@ -121,7 +143,7 @@ const MobileIcon =[
                   ))
                 }
               </div>
-              <p style={{ fontFamily: "Ubuntu,sans-serif" }} className=" text-lg uppercase mb-2">Front end</p>
+              <p style={{ fontFamily: "Ubuntu,sans-serif" }} className=" text-sm uppercase mb-3">Front end</p>
               <div className='lg:flex md:grid md:grid-cols-4 sm: grid sm: grid-cols-3 gap-2 '>
                 {
                   FrontEndIcon.map(({icon , title}, index) =>(
@@ -133,13 +155,26 @@ const MobileIcon =[
               </div>
             </div>
           {/*---------------------------------- Web Icon Section-----------------------------------  */}
-            <div className='px-3 py-3 mb-10'>
+            <div className='px-3 py-3 '>
               <h1 style={{ fontFamily: "Ubuntu,sans-serif" }} className="font-semibold text-3xl mb-2">Mobile</h1>
-              <div className='lg:flex md:grid md:grid-cols-4 sm: grid sm: grid-cols-3 gap-2 mb-5'>
+              <div className='lg:flex md:grid md:grid-cols-4 sm: grid sm: grid-cols-3 gap-2'>
                 {
                   MobileIcon.map(({icon , title}, index) =>(
                     <div title={title} key={index} className='flex justify-start items-center gap-5 bg-white hover:bg-[#59287f1c]'>
-                      <img className='w-[100px] p-5' src={icon} alt="" />
+                      <img className='w-[100px] p-2' src={icon} alt="" />
+                    </div>
+                  ))
+                }
+              </div>
+              </div>
+          {/*---------------------------------- Desktop Icon Section-----------------------------------  */}
+            <div className='px-3 py-3 mb-10'>
+              <h1 style={{ fontFamily: "Ubuntu,sans-serif" }} className="font-semibold text-3xl mb-2">Desktop</h1>
+              <div className='lg:flex md:grid md:grid-cols-4 sm: grid sm: grid-cols-3 gap-2'>
+                {
+                  DesktopIcon.map(({icon , title}, index) =>(
+                    <div title={title} key={index} className='flex justify-start items-center gap-5 bg-white hover:bg-[#59287f1c]'>
+                      <img className='w-[100px] p-2' src={icon} alt="" />
                     </div>
                   ))
                 }
