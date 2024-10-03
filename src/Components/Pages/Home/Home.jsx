@@ -1,8 +1,8 @@
 import Banner from "../../Shared/HomeSection/Banner/Banner";
+import ExploreServices from "../../Shared/HomeSection/ExploreServices/ExploreServices";
 import HomeCountUp from "../../Shared/HomeSection/HomeCountUp/HomeCountUp";
 import HomeTechnologies from "../../Shared/HomeSection/HomeTechnologies/HomeTechnologies";
 import IndustryExpertise from "../../Shared/HomeSection/IndustryExpertise/IndustryExpertise";
-import Section0 from "../../Shared/HomeSection/Section-0/Section0";
 import Section1 from "../../Shared/HomeSection/Section-1/Section1";
 import Section2 from "../../Shared/HomeSection/Section-2/Section2";
 import EveryPart from "../../Shared/HomeSection/Section-3/EveryPart";
@@ -20,7 +20,7 @@ const Home = () => {
       {/*----------------- Home CountUp Section  -----------------*/}
       <HomeCountUp/>
       {/*----------------- Explore Our Popular Service -----------------*/}
-      <Section0 />
+<ExploreServices/>
       {/* ----------------Explore Our Offering -------------*/}
      <Section2 />
       {/* ---------------Solution We Deliver -------------*/}
