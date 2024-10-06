@@ -399,21 +399,6 @@ const HomeTechnologies = () => {
               ))}
             </div>
           </div>
-          {/*---------------------------------- DevOps Icon Section-----------------------------------  */}
-          <div className="px-3 py-3">
-            <h1 className="font-semibold text-3xl mb-2">DevOps</h1>
-            <div className="lg:flex md:grid md:grid-cols-4 sm: grid sm: grid-cols-3 gap-2">
-              {DevOpsIcon.map(({ icon, title }, index) => (
-                <div
-                  title={title}
-                  key={index}
-                  className="flex justify-start items-center gap-5 bg-white hover:bg-[#59287f1c]"
-                >
-                  <img className="w-[100px] p-2" src={icon} alt="" />
-                </div>
-              ))}
-            </div>
-          </div>
           {/*---------------------------------- Information Security Icon Section-----------------------------------  */}
           <div className="px-3 py-3">
             <h1 className="font-semibold text-3xl mb-2">Information Security</h1>
