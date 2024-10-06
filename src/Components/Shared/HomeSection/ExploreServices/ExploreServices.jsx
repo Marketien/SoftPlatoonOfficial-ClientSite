@@ -36,17 +36,17 @@ const ExploreServices = () => {
 
     return (
         <div className=" bg-gray-100 pt-[100px] py-[20px] ">
-        <div style={{ fontFamily: "Open Sans, sans-serif" }}
+        <div
+         data-aos="fade-right"
+        style={{ fontFamily: "Open Sans, sans-serif" }}
          className="lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4">
            <h1 
-           data-aos="fade-right"
             style={{ fontFamily: "Sumana,serif" }}
            className="dafault-heading">Explore
            <span className="-ms-[150px]"> <br />  Our Popular <span className='text-purple-900'> Services</span> </span></h1>
     
           {/* cards section */}
           <div
-           data-aos="fade-right"
           className="-mt-[60px] mb-[80px] grid lg:grid-cols-5 md:grid-cols-2 sm:grid-cols-1 gap-5 ">
             {
             ExploreServicesData.map(({ icon, title, disc }) => (

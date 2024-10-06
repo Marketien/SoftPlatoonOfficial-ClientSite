@@ -13,6 +13,7 @@ import Section4 from "../../Shared/HomeSection/Section-4/Section4";
 import Section6 from "../../Shared/HomeSection/Section-6/Section6";
 import SecureSuccess from "../../Shared/HomeSection/SecureSuccess/SecureSuccess";
 import SolutionDeliver from "../../Shared/HomeSection/SolutionDeliver/SolutionDeliver";
+import SuccessStories from "../../Shared/HomeSection/SuccessStories/SuccessStories";
 import TestingQA from "../../Shared/HomeSection/TestingQA/TestingQA";
 
 const Home = () => {
@@ -39,6 +40,8 @@ const Home = () => {
       <FeaturedInsights />
       {/* ---------------Secure the Success -------------*/}
       <SecureSuccess/>
+      {/* ---------------Success Stories -------------*/}
+      <SuccessStories/>
       {/*---------------- Improve and Innovate ------------------*/}
       <Section4 />
       {/*---------------- PRICING PLAN------------- */}
