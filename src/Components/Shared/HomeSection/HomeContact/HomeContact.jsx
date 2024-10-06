@@ -91,7 +91,7 @@ const HomeContact = () => {
               />
             </div>
             <div className='flex justify-center'>
-              <button className='my-8 px-5 py-2 uppercase hover:text-black hover:bg-gray-300 text-white bg-[#501b79] rounded-sm'>Send</button>
+              <button className='my-8 px-8 py-3 uppercase hover:text-black hover:bg-gray-300 text-white bg-[#501b79] rounded-sm'>Send</button>
             </div>
 
           </form>

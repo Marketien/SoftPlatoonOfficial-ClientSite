@@ -1,5 +1,6 @@
 import Banner from "../../Shared/HomeSection/Banner/Banner";
 import ExploreServices from "../../Shared/HomeSection/ExploreServices/ExploreServices";
+import QuestionAnswer from "../../Shared/HomeSection/FAQ/QuestionAnswer";
 import FeaturedInsights from "../../Shared/HomeSection/FeaturedInsights/FeaturedInsights";
 import HomeContact from "../../Shared/HomeSection/HomeContact/HomeContact";
 import HomeCountUp from "../../Shared/HomeSection/HomeCountUp/HomeCountUp";
@@ -48,6 +49,8 @@ const Home = () => {
       <Section6 />
       {/* ---------------Slider section --------------- */}
       <Section1 />
+      {/* --------------- Frequently Asked Questions --------------- */}
+      <QuestionAnswer/>
       {/* --------------- Contact Us --------------- */}
       <HomeContact/>
     </>
