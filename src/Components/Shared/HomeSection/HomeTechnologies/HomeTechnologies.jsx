@@ -264,24 +264,27 @@ const HomeTechnologies = () => {
         <div
           data-aos="fade-right"
           style={{ fontFamily: "Sumana,serif" }}
-          className="mt-10 bg-gray-100 py-10"
+          className="mt-10 bg-white py-10 text-center"
         >
+          <div>
           {/*---------------------------------- Web Icon Section-----------------------------------  */}
           <div className="px-3 py-3 mb-10">
             <h1 className="font-semibold text-3xl mb-7">Web</h1>
-            <p className=" text-lg text-gray-500 uppercase mb-3">Back end</p>
+            <div className="flex justify-center">
+            <div>
+            <p className=" text-xl text-gray-500 uppercase mb-3">Back end</p>
             <div className="lg:flex md:grid md:grid-cols-4 sm: grid sm: grid-cols-3 gap-2 mb-5">
               {BackEndIcon.map(({ icon, title }, index) => (
                 <div
                   title={title}
                   key={index}
-                  className="flex justify-start items-center gap-5 bg-white hover:bg-[#59287f1c]"
+                  className="flex justify-center items-center gap-5 bg-white hover:bg-[#59287f1c]"
                 >
                   <img className="w-[100px] p-1" src={icon} alt="" />
                 </div>
               ))}
             </div>
-            <p className=" text-lg text-gray-500 uppercase mb-3">Front end</p>
+            <p className=" text-xl text-gray-500 uppercase mb-3">Front end</p>
             <div className="lg:flex md:grid md:grid-cols-4 sm: grid sm: grid-cols-3 gap-2 ">
               {FrontEndIcon.map(({ icon, title }, index) => (
                 <div
@@ -293,11 +296,13 @@ const HomeTechnologies = () => {
                 </div>
               ))}
             </div>
+            </div>
+            </div>
           </div>
-          {/*---------------------------------- Web Icon Section-----------------------------------  */}
-          <div className="px-3 py-3 ">
+          {/*---------------------------------- Mobile Icon Section-----------------------------------  */}
+          <div className="px-3 py-3 mb-10">
             <h1 className="font-semibold text-3xl mb-2">Mobile</h1>
-            <div className="lg:flex md:grid md:grid-cols-4 sm: grid sm: grid-cols-3 gap-2">
+            <div className="lg:flex lg:justify-center md:grid md:grid-cols-4 sm: grid sm: grid-cols-3 gap-2">
               {MobileIcon.map(({ icon, title }, index) => (
                 <div
                   title={title}
@@ -310,9 +315,9 @@ const HomeTechnologies = () => {
             </div>
           </div>
           {/*---------------------------------- Desktop Icon Section-----------------------------------  */}
-          <div className="px-3 py-3">
+          <div className="px-3 py-3 mb-10">
             <h1 className="font-semibold text-3xl mb-2">Desktop</h1>
-            <div className="lg:flex md:grid md:grid-cols-4 sm: grid sm: grid-cols-3 gap-2">
+            <div className="lg:flex lg:justify-center md:grid md:grid-cols-4 sm: grid sm: grid-cols-3 gap-2">
               {DesktopIcon.map(({ icon, title }, index) => (
                 <div
                   title={title}
@@ -325,9 +330,9 @@ const HomeTechnologies = () => {
             </div>
           </div>
           {/*---------------------------------- Cloud Icon Section-----------------------------------  */}
-          <div className="px-3 py-3">
+          <div className="px-3 py-3 mb-10">
             <h1 className="font-semibold text-3xl mb-2">Clouds</h1>
-            <div className="lg:flex md:grid md:grid-cols-4 sm: grid sm: grid-cols-3 gap-2">
+            <div className="lg:flex lg:justify-center md:grid md:grid-cols-4 sm: grid sm: grid-cols-3 gap-2">
               {CloudIcon.map(({ icon, title }, index) => (
                 <div
                   title={title}
@@ -342,7 +347,7 @@ const HomeTechnologies = () => {
           {/*---------------------------------- Database Icon Section-----------------------------------  */}
           <div className="px-3 py-3 mb-10">
             <h1 className="font-semibold text-3xl mb-2">Database</h1>
-            <div className="lg:flex md:grid md:grid-cols-4 sm: grid sm: grid-cols-3 gap-2">
+            <div className="lg:flex lg:justify-center md:grid md:grid-cols-4 sm: grid sm: grid-cols-3 gap-2">
               {DataBaseIcon.map(({ icon, title }, index) => (
                 <div
                   title={title}
@@ -360,7 +365,7 @@ const HomeTechnologies = () => {
             <p className=" text-lg text-gray-500 uppercase mb-3">
               Programming languages
             </p>
-            <div className="lg:flex md:grid md:grid-cols-4 sm: grid sm: grid-cols-3 gap-2 mb-5">
+            <div className="lg:flex lg:justify-center md:grid md:grid-cols-4 sm: grid sm: grid-cols-3 gap-2 mb-5">
               {LanguageIcon.map(({ icon, title }, index) => (
                 <div
                   title={title}
@@ -372,7 +377,7 @@ const HomeTechnologies = () => {
               ))}
             </div>
             <p className=" text-lg text-gray-500 uppercase mb-3">Frameworks</p>
-            <div className="lg:flex md:grid md:grid-cols-4 sm: grid sm: grid-cols-3 gap-2 ">
+            <div className="lg:flex lg:justify-center md:grid md:grid-cols-4 sm: grid sm: grid-cols-3 gap-2 ">
               {FrameworkIcon.map(({ icon, title }, index) => (
                 <div
                   title={title}
@@ -385,9 +390,9 @@ const HomeTechnologies = () => {
             </div>
           </div>
           {/*---------------------------------- DevOps Icon Section-----------------------------------  */}
-          <div className="px-3 py-3">
-            <h1 className="font-semibold text-3xl mb-2">DevOps</h1>
-            <div className="lg:flex md:grid md:grid-cols-4 sm: grid sm: grid-cols-3 gap-2">
+          <div className="px-3 py-3 mb-10">
+            <h1 className="font-semibold text-3xl mb-8">DevOps</h1>
+            <div className="lg:flex lg:justify-center md:grid md:grid-cols-4 sm: grid sm: grid-cols-3 gap-2">
               {DevOpsIcon.map(({ icon, title }, index) => (
                 <div
                   title={title}
@@ -401,8 +406,8 @@ const HomeTechnologies = () => {
           </div>
           {/*---------------------------------- Information Security Icon Section-----------------------------------  */}
           <div className="px-3 py-3">
-            <h1 className="font-semibold text-3xl mb-2">Information Security</h1>
-            <div className="lg:flex md:grid md:grid-cols-4 sm: grid sm: grid-cols-3 gap-2">
+            <h1 className="font-semibold text-3xl mb-8">Information Security</h1>
+            <div className="lg:flex lg:justify-center md:grid md:grid-cols-4 sm: grid sm: grid-cols-3 gap-2">
               {SecurityIcon.map(({ icon, title }, index) => (
                 <div
                   title={title}
@@ -413,6 +418,7 @@ const HomeTechnologies = () => {
                 </div>
               ))}
             </div>
+          </div>
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ const TestingQA = () => {
     Aos.init();
 
   return (
-    <div style={{ fontFamily: "Open Sans,sans-serif" }} className="pu-[80px] ">
+    <div style={{ fontFamily: "Open Sans,sans-serif" }} className="bg-gray-100 py-[80px] ">
       <h1 
       data-aos="fade-down"
         style={{ fontFamily: "Sumana,serif" }}

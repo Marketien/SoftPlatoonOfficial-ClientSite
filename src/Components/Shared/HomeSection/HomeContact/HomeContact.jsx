@@ -1,4 +1,4 @@
-import './HomeContact.css'
+import './HomeContact.css';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Aos from "aos";
@@ -8,6 +8,7 @@ import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 
 const HomeContact = () => {
+
   Aos.init();
   const fileInputRef = useRef(null);
 
@@ -22,7 +23,7 @@ const HomeContact = () => {
   };
 
   return (
-    <div className=" py-[80px] lg:mx-auto md:mx-7 sm: mx-4 ">
+    <div className="bg-gray-100 py-[80px] lg:mx-auto md:mx-7 sm: mx-4 ">
       <div
         style={{ fontFamily: "Open Sans, sans-serif" }}
         className=" lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4"

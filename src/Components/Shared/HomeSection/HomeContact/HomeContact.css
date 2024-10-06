@@ -1,4 +1,5 @@
-.react-tel-input .form-control {
+
+.react-tel-input .form-control  {
     position: relative;
     font-size: 14px;
     letter-spacing: .01rem;
@@ -9,13 +10,22 @@
     border: 1px solid #CACACA;
     border-radius: 0px;
     line-height: 25px;
-    height: 42px;
-    width: 552px;
+    height: 42px !important;
+    width: 552px !important;
     outline: none;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .react-tel-input .form-control {
-        width: 272px;
+        height: 42px !important;
+        width: 300px !important;
     }
-  }
+}
+
+/* For small devices */
+@media (max-width: 576px) {
+    .react-tel-input .form-control {
+        height: 42px !important;
+        width: 272px !important;
+    }
+}

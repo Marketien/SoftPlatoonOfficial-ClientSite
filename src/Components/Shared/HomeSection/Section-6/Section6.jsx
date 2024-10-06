@@ -10,7 +10,7 @@ const Section6 = () => {
   Aos.init();
 
   return (
-    <div className="mt-[200px] bg-white py-[80px]">
+    <div className="mt-[200px] py-[80px]">
       <h1
       data-aos="fade-down"
       style={{ fontFamily: "Sumana,serif" }}
