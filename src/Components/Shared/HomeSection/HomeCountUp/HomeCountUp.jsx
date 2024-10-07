@@ -10,7 +10,7 @@ const HomeCountUp = () => {
   return (
     <div
       style={{ fontFamily: "Open Sans, sans-serif" }}
-      className="py-[80px] lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4"
+      className="my-[180px] lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4"
     >
       <div
       data-aos="fade-right"

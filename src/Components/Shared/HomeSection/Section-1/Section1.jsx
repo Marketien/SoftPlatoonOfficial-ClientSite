@@ -71,7 +71,7 @@ const Section1 = () => {
   };
 
   return (
-    <div data-aos="fade-down" className="bg-gray-100 py-[80px]">
+    <div data-aos="fade-down" className="bg-gray-100 py-[50px]">
       <div
         className=" my-[120px] lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4"
       >

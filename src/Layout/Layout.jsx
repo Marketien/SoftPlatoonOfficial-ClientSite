@@ -1,16 +1,14 @@
 import { Outlet } from "react-router-dom";
-// import Navbar from "../Components/Shared/Navbar/Navbar";
 import Footer from "../Components/Shared/Footer/Footer";
-// import NavigationBar from "../Components/Shared/Navbar/NavigationBar";
-import ResNavBar from "../Components/Shared/Navbar/ResNavBar";
+import NavigationBar from "../Components/Shared/Navbar/NavigationBar";
+// import ResNavBar from "../Components/Shared/Navbar/ResNavBar";
 
 
 const Layout = () => {
     return (
         <div>
-            {/* <Navbar/> */}
-            {/* <NavigationBar/> */}
-            <ResNavBar/>
+             <NavigationBar/> *   {/* no dropdown   */}
+            {/* <ResNavBar/> */}
             <Outlet/>
             <Footer/>
         </div>

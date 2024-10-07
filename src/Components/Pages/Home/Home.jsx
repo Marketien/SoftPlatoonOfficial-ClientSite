@@ -30,7 +30,7 @@ const Home = () => {
       {/* ---------------Solution We Deliver -------------*/}
       <SolutionDeliver/>
       {/* --------------- Our Industry Expertiser -------------*/}
-      <IndustryExpertise/>
+      <IndustryExpertise href="#industries"/>
       {/*--------------- Every Part of Your IT Ecosystem.----------------- */}
       {/* <Section3 /> */}
       <EveryPart/>
@@ -55,7 +55,7 @@ const Home = () => {
       {/* --------------- Frequently Asked Questions --------------- */}
       <QuestionAnswer/>
       {/* --------------- Contact Us --------------- */}
-      <HomeContact/>
+      <HomeContact href="#contact"/>
     </>
   );
 };

@@ -52,13 +52,13 @@ export default function VerticalTabs() {
   };
 
   return (
-    <div className="my-[80px] ">
+    <div className="my-[180px] ">
       {/* Tab section  for large device */}
       {/* <div className='lg:flex md:flex sm: overflow-x-auto justify-center'> */}
       <div className=" md:overflow-x-hidden sm: overflow-x-auto px-5">
         <h1
           data-aos="fade-right"
-          style={{ fontFamily: "Sumana,serif" }}
+          style={{ fontFamily: "Sumana,sans-serif" }}
           className="dafault-heading"
         >
           Explore Our <span className="text-purple-900 ms-2 "> Offering</span>

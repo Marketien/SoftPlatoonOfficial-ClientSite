@@ -18,6 +18,7 @@ const NavigationBar = () => {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+
   // ------------------------- handlescrool start -----------------------------------
   const handleScroll = () => {
     if (window.scrollY > 100) {
@@ -157,12 +158,12 @@ const NavigationBar = () => {
               </Link>
             </li>
             <li>
-              <Link
-                to="/"
+              <a
+                href="#industries"
                 className="md:p-4 py-2 uppercase  hover:text-purple-500 flex items-center relative "
               >
                 Industries
-              </Link>
+              </a>
             </li>
 
             <li>
@@ -174,12 +175,12 @@ const NavigationBar = () => {
               </Link>
             </li>
             <li>
-              <Link
-                to="/"
+              <a
+                href="#contact"
                 className="md:p-4 py-2 block uppercase hover:text-purple-500"
               >
                 Contact
-              </Link>
+              </a>
             </li>
             {/* contact option  */}
             <li className="animate-pulse">
@@ -204,12 +205,12 @@ const NavigationBar = () => {
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/"
+                <a
+                  href="#industries"
                   className="r:text-purple-500 "
                 >
                   Industries
-                </Link>
+                </a>
               </li>
 
               <li>
@@ -221,12 +222,12 @@ const NavigationBar = () => {
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/"
+                <a
+                 href="#contact"
                   className=" hover:text-purple-500"
                 >
                   Contact
-                </Link>
+                </a>
               </li>
               {/* contact option  */}
               <li className="animate-pulse">

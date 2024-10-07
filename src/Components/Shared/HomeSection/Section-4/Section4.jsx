@@ -48,12 +48,12 @@ const Section4 = () => {
   return (
     <div
       style={{ fontFamily: "Open Sans,sans-serif" }}
-      className="my-[80px] lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4"
+      className="my-[180px] lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4"
     >
       <div 
        data-aos="fade-right">
       <h1
-      style={{ fontFamily: "Sumana,serif" }}
+      style={{ fontFamily: "Sumana,sans-serif" }}
       className="text-5xl font-bold mt-5 ">
         <span className="text-purple-900 me-2 ">Improve and Innovate</span> with
         <br />

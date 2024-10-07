@@ -26,9 +26,9 @@ const EveryPart = () => {
         className="absolute md:top-[250px] lg:left-[445px] sm: top-0  lg:mx-0 md:mx-6 sm: mx-4">
           <div>
             <h1 
-            style={{ fontFamily: "Sumana,serif" }}
-            className=" text-5xl font-bold mt-5 ">
-              Every Part of Your IT Ecosystem. <br /> Taken Care Of.
+            style={{ fontFamily: "Sumana,sans-serif" }}
+            className=" text-5xl font-bold mt-5 leading-[60px]">
+              Every Part of Your IT Ecosystem. <br /> <span className="text-purple-900 "> Taken Care Of.</span>
             </h1>
             <p className="text-xl font-semibold mt-5">
               Comprehensive care of your cloud or on-premises infrastructure{" "}

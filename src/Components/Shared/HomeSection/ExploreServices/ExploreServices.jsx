@@ -35,15 +35,15 @@ const ExploreServices = () => {
     ];
 
     return (
-        <div className=" bg-gray-100 pt-[100px] py-[20px] ">
+        <div className=" bg-gray-100 py-[180px] ">
         <div
          data-aos="fade-right"
         style={{ fontFamily: "Open Sans, sans-serif" }}
          className="lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4">
            <h1 
-            style={{ fontFamily: "Sumana,serif" }}
+            style={{ fontFamily: "Sumana,sans-serif" }}
            className="dafault-heading">Explore
-           <span className="-ms-[150px]"> <br />  Our Popular <span className='text-purple-900'> Services</span> </span></h1>
+           <span className="-ms-[170px]"> <br />  Our Popular <span className='text-purple-900'> Services</span> </span></h1>
     
           {/* cards section */}
           <div

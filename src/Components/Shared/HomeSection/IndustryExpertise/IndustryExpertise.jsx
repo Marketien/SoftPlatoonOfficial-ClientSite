@@ -46,14 +46,14 @@ const IndustryExpertise = () => {
   ];
 
   return (
-    <div className=" py-[80px] lg:mx-auto md:mx-7 sm: mx-4 ">
+    <div id="industries" className=" py-[180px] lg:mx-auto md:mx-7 sm: mx-4 ">
       <div
         style={{ fontFamily: "Open Sans, sans-serif" }}
         className=" lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4"
       >
         <h1
           data-aos="fade-right"
-          style={{ fontFamily: "Sumana,serif" }}
+          style={{ fontFamily: "Sumana,sans-serif" }}
           className="font-bold text-5xl mb-5"
         >
           Our Industry <span className="text-purple-900 ms-2 "> Expertise</span>

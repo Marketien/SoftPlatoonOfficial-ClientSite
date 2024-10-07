@@ -10,10 +10,10 @@ const Section6 = () => {
   Aos.init();
 
   return (
-    <div className="mt-[200px] py-[80px]">
+    <div className=" my-[180px]">
       <h1
       data-aos="fade-down"
-      style={{ fontFamily: "Sumana,serif" }}
+      style={{ fontFamily: "Sumana,sans-serif" }}
       className="text-center text-5xl font-bold mb-5">Our 
         <span className='text-purple-900'> Clients</span>
         </h1>
