@@ -1,4 +1,5 @@
 import img1 from "../../../../public/Images/ourService.png";
+import Testimonials from "../../Shared/HomeSection/Testimonials/Testimonials";
 import OSFullScale from "./OSFullScale";
 import OSProvide from "./OSProvide";
 
@@ -41,6 +42,8 @@ const OurServices = () => {
       <div className="lg:mx-32 md:mx-10 sm: mx-5 py-20">
         {/* ************************** Provide Section *************************************** */}
        <OSProvide/>
+        {/* ************************** Testimonial Section *************************************** */}
+        <Testimonials/>
         {/* ************************** FUll Scale Section *************************************** */}
         <OSFullScale/>
       </div>
