@@ -35,7 +35,7 @@ const Footer = () => {
 <footer className="footer px-10 py-4 border-t  text-base-content border-base-300">
   <aside className="items-center grid-flow-col">
     <a href="" target="_blank"><img className="w-[50px] h-[50px]" src={logo} alt="" /></a>
-    <p className="font-bold">SoftPlatoon. <br/>Providing reliable tech since 2022</p>
+    <p className="font-bold">SoftPlatoon. <br/>Providing reliable tech since 2020</p>
   </aside> 
 
   <nav className="md:place-self-center md:justify-self-end">

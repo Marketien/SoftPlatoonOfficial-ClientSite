@@ -11,7 +11,7 @@ const TestingQA = () => {
     <div style={{ fontFamily: "Open Sans,sans-serif" }} className="bg-gray-100 py-[180px] ">
       <h1 
       data-aos="fade-down"
-        style={{ fontFamily: "Sumana,sans-serif" }}
+        style={{ fontFamily: "Sumana,serif" }}
       className="font-bold text-5xl text-center">
         Testing <span className="text-purple-900"> & QA</span>
       </h1>

@@ -159,7 +159,7 @@ const ResNavBar = () => {
             px-4
             text-lg
             text-gray-700
-            shadow-lg
+            shadow-md
             shadow-gray-800
             fixed
             top-[50px]

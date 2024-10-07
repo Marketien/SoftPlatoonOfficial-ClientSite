@@ -58,7 +58,7 @@ export default function VerticalTabs() {
       <div className=" md:overflow-x-hidden sm: overflow-x-auto px-5">
         <h1
           data-aos="fade-right"
-          style={{ fontFamily: "Sumana,sans-serif" }}
+          style={{ fontFamily: "Sumana,serif" }}
           className="dafault-heading"
         >
           Explore Our <span className="text-purple-900 ms-2 "> Offering</span>

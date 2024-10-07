@@ -53,7 +53,7 @@ const Section4 = () => {
       <div 
        data-aos="fade-right">
       <h1
-      style={{ fontFamily: "Sumana,sans-serif" }}
+      style={{ fontFamily: "Sumana,serif" }}
       className="text-5xl font-bold mt-5 ">
         <span className="text-purple-900 me-2 ">Improve and Innovate</span> with
         <br />

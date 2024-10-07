@@ -13,7 +13,7 @@ const Section6 = () => {
     <div className=" my-[180px]">
       <h1
       data-aos="fade-down"
-      style={{ fontFamily: "Sumana,sans-serif" }}
+      style={{ fontFamily: "Sumana,serif" }}
       className="text-center text-5xl font-bold mb-5">Our 
         <span className='text-purple-900'> Clients</span>
         </h1>

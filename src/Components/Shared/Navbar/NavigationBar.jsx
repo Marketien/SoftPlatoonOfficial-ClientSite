@@ -109,7 +109,7 @@ const NavigationBar = () => {
           px-4
           text-lg
           text-gray-700
-          shadow-lg
+          shadow-md
           shadow-gray-800
           fixed
           top-[50px]
@@ -151,7 +151,7 @@ const NavigationBar = () => {
           >
             <li>
               <Link
-                to="/"
+                to="/ourServices"
                 className="md:p-4 py-2 block uppercase hover:text-purple-500 "
               >
                 Our Services
@@ -168,7 +168,7 @@ const NavigationBar = () => {
 
             <li>
               <Link
-                to="/"
+                to="/aboutUs"
                 className="md:p-4 py-2 block uppercase hover:text-purple-500"
               >
                 About Us
@@ -198,7 +198,7 @@ const NavigationBar = () => {
             <ul className={` ${scrolled ? " text-white" : "text-black "} text-sm text-black text-center gap-3 leading-[100px] uppercase`}>
               <li>
                 <Link
-                  to="/"
+                  to="/ourServices"
                   className=" hover:text-purple-500 "
                 >
                   Our Services
@@ -215,7 +215,7 @@ const NavigationBar = () => {
 
               <li>
                 <Link
-                  to="/"
+                  to="/aboutUs"
                   className=" hover:text-purple-500"
                 >
                   About Us

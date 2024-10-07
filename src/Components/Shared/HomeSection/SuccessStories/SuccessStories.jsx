@@ -51,7 +51,7 @@ const SuccessStories = () => {
       >
         <h1
           data-aos="fade-right"
-          style={{ fontFamily: "Sumana,sans-serif" }}
+          style={{ fontFamily: "Sumana,serif" }}
           className="font-bold text-5xl mb-5"
         >
           Success

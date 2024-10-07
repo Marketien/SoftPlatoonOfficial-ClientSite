@@ -53,7 +53,7 @@ const IndustryExpertise = () => {
       >
         <h1
           data-aos="fade-right"
-          style={{ fontFamily: "Sumana,sans-serif" }}
+          style={{ fontFamily: "Sumana, serif" }}
           className="font-bold text-5xl mb-5"
         >
           Our Industry <span className="text-purple-900 ms-2 "> Expertise</span>
