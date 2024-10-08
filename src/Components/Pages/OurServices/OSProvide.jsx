@@ -3,7 +3,7 @@ import icon2 from "../../../../public/OurServices/provideIcons/software.png";
 import icon3 from "../../../../public/OurServices/provideIcons/erp.png";
 import { IoIosArrowDown } from "react-icons/io";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 // const serviceData = [
 //   {
@@ -29,6 +29,15 @@ const OSProvide = () => {
     const [openWebApp, setOpenWebApp] = useState(false);
     const [openSoftware, setOpenSoftware] = useState(false);
     const [openErp, setOpenErp] = useState(false);
+
+const handleScroll =() =>{
+  if(window.scrollY > 100){
+    setOpenWebApp(false);
+    setOpenSoftware(false);
+      setOpenErp(false);
+  }
+}
+
     const toggleWebApp = () => {
       setOpenWebApp(!openWebApp);
       setOpenSoftware(false);
@@ -44,6 +53,12 @@ const OSProvide = () => {
       setOpenWebApp(false);
       setOpenSoftware(false);
     };
+
+useEffect(()=> {
+window.addEventListener("scroll", handleScroll);
+return() => window.removeEventListener("scroll", handleScroll) ;
+},[])
+
 
     return (
         <div className="mt-10">
