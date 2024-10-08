@@ -185,7 +185,7 @@ const NavigationBar = () => {
             {/* contact option  */}
             <li className="animate-pulse">
               <Link
-                to="/"
+                to="/getProposal"
                 className="flex px-2 py-2 uppercase hover:text-black hover:bg-gray-300 text-white bg-[#501b79] rounded-sm"
               >
                 Get Proposal

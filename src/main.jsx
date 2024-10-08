@@ -10,6 +10,7 @@ import ErrorPage from './Components/Pages/ErrorPage/ErrorPage';
 import Home from './Components/Pages/Home/Home';
 import OurServices from './Components/Pages/OurServices/OurServices';
 import AboutUs from './Components/Pages/AboutUs/AboutUs';
+import GetProposal from './Components/Pages/GetProposal/GetProposal';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "/aboutUs",
         element: < AboutUs/>,
+      },
+      {
+        path: "/getProposal",
+        element: < GetProposal/>,
       },
     ],
   },
