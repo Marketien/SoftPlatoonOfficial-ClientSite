@@ -83,7 +83,7 @@ const HomeContact = () => {
                 type="email"
                 name=""
                 id=""
-                placeholder="work Emanil"
+                placeholder="Email"
               />
               <PhoneInput
                 country={"us"} 

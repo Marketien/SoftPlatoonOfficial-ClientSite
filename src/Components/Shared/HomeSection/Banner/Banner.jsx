@@ -1,9 +1,10 @@
 import "./Banner.css";
 import { useEffect, useState } from "react";
-import banner1 from "../../../../../public/Images/a-3d-render-of-a-software-development-environment--4IjFUU9vR0KpGIE3cXgQMg-fLOzlBifRIWgg1V0nkGmAQ.jpeg";
-import banner2 from "../../../../../public/Images/a-3d-render-of-a-software-development-scene-there--2MQ1-NpBSLWeevz8VVtm_w-fLOzlBifRIWgg1V0nkGmAQ.jpeg";
-import banner3 from "../../../../../public/Images/a-3d-render-of-a-software-development-workspace-th-7mWCpoyrQL-TzcfSkq0QDQ-fLOzlBifRIWgg1V0nkGmAQ.jpeg";
-import banner4 from "../../../../../public/Images/a-3d-render-of-a-software-development-workspace-th-YuEotx1cSk-ZREBRjRxXwg-fLOzlBifRIWgg1V0nkGmAQ.jpeg";
+// import banner1 from "../../../../../public/Images/a-3d-render-of-a-software-development-environment--4IjFUU9vR0KpGIE3cXgQMg-fLOzlBifRIWgg1V0nkGmAQ.jpeg";
+// import banner2 from "../../../../../public/Images/a-3d-render-of-a-software-development-scene-there--2MQ1-NpBSLWeevz8VVtm_w-fLOzlBifRIWgg1V0nkGmAQ.jpeg";
+// import banner3 from "../../../../../public/Images/a-3d-render-of-a-software-development-workspace-th-7mWCpoyrQL-TzcfSkq0QDQ-fLOzlBifRIWgg1V0nkGmAQ.jpeg";
+// import banner4 from "../../../../../public/Images/a-3d-render-of-a-software-development-workspace-th-YuEotx1cSk-ZREBRjRxXwg-fLOzlBifRIWgg1V0nkGmAQ.jpeg";
+import BannerVideo from '../../../../../public/Images/bannerVIdeo.mp4'
 import { TypeAnimation } from "react-type-animation";
 
 const Banner = () => {
@@ -20,8 +21,8 @@ const Banner = () => {
   return (
     <div className="parent-banner">
       {/* bannerImages section  */}
-      <div className="lg:mt-[75px] md:mt-[120px] sm: mt-[50px]">
-        <img
+      <div className="lg:mt-[75px] md:mt-[90px] sm: mt-[110px]">
+        {/* <img
           className="bannerImage lg:w-full lg:h-screen sm: h-[700px] bg-[#5A287F]"
           src={banner1}
           alt=""
@@ -44,7 +45,13 @@ const Banner = () => {
           src={banner4}
           alt=""
           style={{ display: currentBanner === 4 ? "block" : "none" }}
-        />
+        /> */}
+        <video className="banner-video" 
+      autoPlay muted loop>
+        <source src={BannerVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div className="overlay" />
       </div>
       <div className="absolute inset-0 bg-black opacity-10" />
       {/* banner information section  */}

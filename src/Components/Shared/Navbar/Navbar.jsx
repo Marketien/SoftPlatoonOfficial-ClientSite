@@ -151,7 +151,7 @@ const Navbar = () => {
       <nav
       
         className={`
-        flex flex-wrap
+        flex
         items-center
         justify-between
         w-full
@@ -170,8 +170,8 @@ const Navbar = () => {
         z-10
        ${
          scrolled
-           ? "bg-gradient-to-r from-[#5A287F] via-[#84207E]  to-[#723988]"
-           : "bg-white"
+           ? "bg-gradient-to-r from-[#5A287F] via-[#84207E]  to-[#723988] transition-colors duration-500 ease-in-out"
+           : "bg-white "
        }
         `}
       >
