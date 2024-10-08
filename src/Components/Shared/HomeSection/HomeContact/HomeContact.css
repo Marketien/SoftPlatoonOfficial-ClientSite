@@ -11,14 +11,14 @@
     border-radius: 0px;
     line-height: 25px;
     height: 42px !important;
-    width: 552px !important;
+    width: 525px !important;
     outline: none;
 }
 
 @media (max-width: 768px) {
     .react-tel-input .form-control {
         height: 42px !important;
-        width: 300px !important;
+        width: 332px !important;
     }
 }
 
@@ -26,6 +26,6 @@
 @media (max-width: 576px) {
     .react-tel-input .form-control {
         height: 42px !important;
-        width: 272px !important;
+        width: 304px !important;
     }
 }

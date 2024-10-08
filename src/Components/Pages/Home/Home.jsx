@@ -17,45 +17,44 @@ import SuccessStories from "../../Shared/HomeSection/SuccessStories/SuccessStori
 import TestingQA from "../../Shared/HomeSection/TestingQA/TestingQA";
 
 const Home = () => {
-
   return (
     <>
-        <Banner />
+      <Banner />
       {/*----------------- Home CountUp Section  -----------------*/}
-      <HomeCountUp/>
+      <HomeCountUp />
       {/*----------------- Explore Our Popular Service -----------------*/}
-<ExploreServices/>
+      <ExploreServices />
       {/* ----------------Explore Our Offering -------------*/}
-     <Section2 />
+      <Section2 />
       {/* ---------------Solution We Deliver -------------*/}
-      <SolutionDeliver/>
+      <SolutionDeliver />
       {/* --------------- Our Industry Expertiser -------------*/}
-      <IndustryExpertise href="#industries"/>
+      <IndustryExpertise href="#industries" />
       {/*--------------- Every Part of Your IT Ecosystem.----------------- */}
       {/* <Section3 /> */}
-      <EveryPart/>
+      <EveryPart />
       {/*--------------- Technologies and Platforms We Work With.----------------- */}
-      <HomeTechnologies/>
+      <HomeTechnologies />
       {/* ---------------Featured Insights -------------*/}
       <FeaturedInsights />
       {/* ---------------Secure the Success -------------*/}
-      <SecureSuccess/>
+      <SecureSuccess />
       {/* ---------------Success Stories -------------*/}
-      <SuccessStories/>
+      <SuccessStories />
       {/*---------------- Improve and Innovate ------------------*/}
       <Section4 />
       {/*---------------- PRICING PLAN------------- */}
       {/* <Section5 /> */}
       {/*---------------Testing & QA----------------  */}
-      <TestingQA/>
+      <TestingQA />
       {/*---------------our client----------------  */}
       <Section6 />
       {/* ---------------Slider section --------------- */}
       <Section1 />
       {/* --------------- Frequently Asked Questions --------------- */}
-      <QuestionAnswer/>
+      <QuestionAnswer />
       {/* --------------- Contact Us --------------- */}
-      <HomeContact href="#contact"/>
+      <HomeContact href="#contact" />
     </>
   );
 };

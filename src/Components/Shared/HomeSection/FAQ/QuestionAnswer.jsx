@@ -55,7 +55,7 @@ const toggleAccordion = (index) => {
             <div key={index} className="mb-2">
               <button
                 onClick={() => toggleAccordion(index)}
-                className="flex justify-between items-center w-full text-left bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold py-4 px-6 rounded-lg focus:outline-none"
+                className="flex justify-between items-center w-full text-left bg-white hover:bg-gray-100 text-gray-800 font-semibold py-4 px-6 rounded-lg focus:outline-none"
               >
                 {item.question}
               <IoIosArrowDown />

@@ -14,7 +14,7 @@ const HomeCountUp = () => {
     >
       <div
       data-aos="fade-right"
-      className="grid lg:grid-cols-4 md:grid-cols-2 sm: grid-cols-1 md:text-center sm: text-center
+      className="grid lg:grid-cols-4 md:grid-cols-2 sm: grid-cols-1 lg:text-start md:text-center sm: text-center
         lg:gap-5 md:gap-20 sm: gap-20">
         <div className="lg:border-r-2 border-purple-300">
             <span className=" text-5xl font-semibold text-purple-900">

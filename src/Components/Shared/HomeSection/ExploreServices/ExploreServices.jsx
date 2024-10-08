@@ -35,7 +35,7 @@ const ExploreServices = () => {
     ];
 
     return (
-        <div className=" bg-gray-100 py-[180px] ">
+        <div className=" bg-white py-[180px] ">
         <div
          data-aos="fade-right"
          className="lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4">

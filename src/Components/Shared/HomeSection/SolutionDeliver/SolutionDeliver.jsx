@@ -54,7 +54,7 @@ const SolutionDeliver = () => {
   ];
 
   return (
-    <div className="bg-gray-100 py-[180px]  ">
+    <div className="bg-white py-[180px]  ">
       <div
         style={{ fontFamily: "Open Sans, sans-serif" }}
         className=" lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:px-7 sm: px-4"
@@ -81,7 +81,7 @@ const SolutionDeliver = () => {
             <div
              key={index} 
              className="relative group">
-              <div className="relative bg-white font-semibold text-center py-10 shadow-md hover:shadow-lg">
+              <div className="relative bg-gray-100 font-semibold text-center py-10 shadow-md hover:shadow-lg">
                 {title}
               </div>
               <div className="absolute bottom-1 right-2 rotate-45 transition-transform duration-300 group-hover:rotate-[-2deg]">

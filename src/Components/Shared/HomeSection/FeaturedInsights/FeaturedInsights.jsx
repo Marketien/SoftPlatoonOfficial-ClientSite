@@ -60,7 +60,7 @@ const FeaturedInsights = () => {
   };
 
   return (
-    <div className="bg-gray-100 py-[180px] ">
+    <div className="bg-white py-[180px] ">
       <div
         style={{ fontFamily: "Open Sans, sans-serif" }}
         className=" lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:px-7 sm: px-4"
@@ -83,7 +83,7 @@ const FeaturedInsights = () => {
             <div
               key={index}
               style={{ fontFamily: "Ubuntu,sans-serif" }}
-              className="relative bg-white px-3 py-3 rounded-sm shadow-lg hover:shadow-xl"
+              className="relative bg-gray-100 px-3 py-3 rounded-sm shadow-lg hover:shadow-xl"
             >
               <div className="mb-5">
                 <img src={image} alt="" />

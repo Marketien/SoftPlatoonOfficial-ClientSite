@@ -8,7 +8,7 @@ const EveryPart = () => {
   Aos.init();
 
   return (
-    <div className="lg:block md:flex md:justify-center bg-gray-100 py-[20px]">
+    <div className="lg:block md:flex md:justify-center bg-white py-[20px]">
     <div className="">
       {/* for medium and large device  */}
         <div className="relative lg:block md:hiden sm: hidden">

@@ -44,7 +44,7 @@ const SuccessStories = () => {
     }
 
   return (
-    <div className="bg-gray-100 py-[180px]  ">
+    <div className="bg-white py-[180px]  ">
       <div
         style={{ fontFamily: "Open Sans, sans-serif" }}
         className=" lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:px-7 sm: px-4"
@@ -65,8 +65,8 @@ const SuccessStories = () => {
         >
 {
 story.slice(0, showAllData).map(({image, title}, index) =>(
-        <div key={index} className=' bg-white rounded-sm'>
-            <div className='overflow-hidden h-[200px]'>
+        <div key={index} className='relative bg-white rounded-sm shadow-md hover:shadow-lg pb-8'>
+            <div className='relative overflow-hidden h-[200px]'>
             <figure className="zoom-effect">
             <img className='fiterimg w-full h-[200px]' src={image} alt="" />
             </figure>
@@ -74,7 +74,7 @@ story.slice(0, showAllData).map(({image, title}, index) =>(
             <div className='px-3 pb-3'>
             <h1 className="text-2xl my-5 ">{title}</h1>
             <button
-              className="flex items-center gap-1 border-2 border-purple-900 hover:border-purple-500 
+              className="absolute bottom-2 left-2 flex items-center gap-1 border-2 border-purple-900 hover:border-purple-500 
             text-white hover:text-purple-500 bg-purple-900 hover:bg-gray-100
             rounded-sm px-8 py-1 text-lg font-semibold uppercase"
             >
