@@ -7,7 +7,7 @@ import img6 from "../../../../../public/Images/is6.png";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 const featuredData = [
   {
     image: img1,
@@ -52,7 +52,9 @@ const featuredData = [
 ];
 
 const FeaturedInsights = () => {
-  Aos.init();
+  useEffect(() => {
+    Aos.init({ duration: 1000 }); 
+  }, []);
   const [showData, setShowData] = useState(3);
 
   const handleLoadMore = () => {

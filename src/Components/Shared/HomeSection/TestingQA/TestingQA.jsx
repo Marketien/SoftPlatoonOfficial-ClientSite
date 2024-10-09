@@ -1,11 +1,14 @@
 import { BsCheckCircleFill } from "react-icons/bs";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 
 const TestingQA = () => {
 
-    Aos.init();
+  useEffect(() => {
+    Aos.init({ duration: 1000 }); 
+  }, []);
 
   return (
     <div style={{ fontFamily: "Open Sans,sans-serif" }} className="bg-white py-[180px] ">

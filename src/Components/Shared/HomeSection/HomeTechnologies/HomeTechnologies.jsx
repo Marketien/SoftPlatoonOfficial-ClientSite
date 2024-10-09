@@ -53,6 +53,7 @@ import icon41 from "../../../../../public/TechIcons/37.NMap.png";
 import icon42 from "../../../../../public/TechIcons/38.WireShark.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { useEffect } from "react";
 const BackEndIcon = [
   {
     title: "NodeJs",
@@ -249,7 +250,9 @@ const SecurityIcon = [
 
 const HomeTechnologies = () => {
 
-  Aos.init();
+  useEffect(() => {
+    Aos.init({ duration: 1000 }); 
+  }, []);
 
   return (
     <div className=" py-[180px] lg:mx-auto md:mx-7 sm: mx-4 ">

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -28,11 +28,13 @@ const questions = [
 
   
 const QuestionAnswer = () => {
-  Aos.init();
-const [openIndex, setOpenIndex] = useState(null) ;
-const toggleAccordion = (index) => {
+  const [openIndex, setOpenIndex] = useState(null) ;
+  const toggleAccordion = (index) => {
     setOpenIndex(openIndex ===index ? null : index) ;
-}
+  }
+  useEffect(() => {
+    Aos.init({ duration: 1000 }); 
+  }, []);
 
     return (
         <div className=" py-[180px] lg:mx-auto md:mx-7 sm: mx-4 ">

@@ -2,10 +2,13 @@ import bgImg from "../../../../../public/Images/web page-08.png";
 import { BsCheckCircleFill } from "react-icons/bs";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const EveryPart = () => {
 
-  Aos.init();
+  useEffect(() => {
+    Aos.init({ duration: 1000 }); 
+  }, []);
 
   return (
     <div className="lg:block md:flex md:justify-center bg-white py-[20px]">

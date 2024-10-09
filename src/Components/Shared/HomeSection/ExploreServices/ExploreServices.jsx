@@ -3,36 +3,42 @@ import icon2 from "../../../../../public/Images/web page-02.png";
 import icon3 from "../../../../../public/Images/web page-03.png";
 import icon4 from "../../../../../public/Images/web page-05.png";
 import icon5 from "../../../../../public/Images/web page-04.png"; 
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
+const ExploreServicesData = [
+  {
+    icon: icon1,
+    title: "Website",
+    disc: "Design"
+  },
+  {
+    icon: icon2,
+    title: "Website",
+    disc: "Development"
+  },
+  {
+    icon: icon3,
+    title: "UX/UI",
+    disc: "Design"
+  },
+  {
+    icon: icon4,
+    title: "Graphics",
+    disc: "Design"
+  },
+  {
+    icon: icon5,
+    title: "Digital",
+    disc: "Marketing"
+  },
+];
 const ExploreServices = () => {
 
-    const ExploreServicesData = [
-      {
-        icon: icon1,
-        title: "Website",
-        disc: "Design"
-      },
-      {
-        icon: icon2,
-        title: "Website",
-        disc: "Development"
-      },
-      {
-        icon: icon3,
-        title: "UX/UI",
-        disc: "Design"
-      },
-      {
-        icon: icon4,
-        title: "Graphics",
-        disc: "Design"
-      },
-      {
-        icon: icon5,
-        title: "Digital",
-        disc: "Marketing"
-      },
-    ];
+  useEffect(() => {
+    Aos.init({ duration: 1000 }); 
+  }, []);
 
     return (
         <div className=" bg-white py-[180px] ">

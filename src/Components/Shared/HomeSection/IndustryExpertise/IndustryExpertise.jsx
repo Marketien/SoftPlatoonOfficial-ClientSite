@@ -8,42 +8,49 @@ import icon7 from "../../../../../public/industry_icons/Logistics & Transporatio
 import icon8 from "../../../../../public/industry_icons/Business Automation.png";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import './IndustryExpertise.css'
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
+const data = [
+  {
+    icon: icon1,
+    title: "HealthCare",
+  },
+  {
+    icon: icon2,
+    title: "E Commerce",
+  },
+  {
+    icon: icon3,
+    title: "Education",
+  },
+  {
+    icon: icon4,
+    title: "Hospitality",
+  },
+  {
+    icon: icon5,
+    title: "Automative",
+  },
+  {
+    icon: icon6,
+    title: "Professional Services",
+  },
+  {
+    icon: icon7,
+    title: "Logistics & Transporation",
+  },
+  {
+    icon: icon8,
+    title: "Business Automation",
+  },
+];
 const IndustryExpertise = () => {
-  const data = [
-    {
-      icon: icon1,
-      title: "HealthCare",
-    },
-    {
-      icon: icon2,
-      title: "E Commerce",
-    },
-    {
-      icon: icon3,
-      title: "Education",
-    },
-    {
-      icon: icon4,
-      title: "Hospitality",
-    },
-    {
-      icon: icon5,
-      title: "Automative",
-    },
-    {
-      icon: icon6,
-      title: "Professional Services",
-    },
-    {
-      icon: icon7,
-      title: "Logistics & Transporation",
-    },
-    {
-      icon: icon8,
-      title: "Business Automation",
-    },
-  ];
+
+  useEffect(() => {
+    Aos.init({ duration: 1000 }); 
+  }, []);
 
   return (
     <div id="industries" className=" py-[180px] lg:mx-auto md:mx-7 sm: mx-4 ">

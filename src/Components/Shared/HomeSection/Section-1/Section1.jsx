@@ -16,7 +16,11 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 const Section1 = () => {
-  Aos.init();
+
+  useEffect(() => {
+    Aos.init({ duration: 1000 }); 
+  }, []);
+
   const sliderRef = useRef(null);
 
   useEffect(() => {

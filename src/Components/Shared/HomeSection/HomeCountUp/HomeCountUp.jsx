@@ -1,11 +1,14 @@
 import CountUp from "react-countup";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 
 const HomeCountUp = () => {
 
-  Aos.init();
+  useEffect(() => {
+    Aos.init({ duration: 1000 }); 
+  }, []);
 
   return (
     <div

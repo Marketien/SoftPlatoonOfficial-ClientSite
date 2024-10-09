@@ -1,5 +1,6 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { useEffect } from "react";
 const data = [
   {
     title: "Scoping",
@@ -37,7 +38,9 @@ const data = [
 
 const SecureSuccess = () => {
 
-  Aos.init();
+  useEffect(() => {
+    Aos.init({ duration: 1000 }); 
+  }, []);
 
   return (
     <div className=" py-[180px] lg:mx-auto md:mx-7 sm: mx-4 ">

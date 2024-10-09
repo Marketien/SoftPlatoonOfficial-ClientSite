@@ -8,42 +8,49 @@ import icon5 from "../../../../../public/Icons/blockchain.png";
 import icon6 from "../../../../../public/Icons/virtual-support.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { useEffect } from "react";
+
+// const data = [
+//   {
+//     icon: icon1,
+//     title: "Big Data",
+//     disc: "",
+//   },
+//   {
+//     icon: icon2,
+//     title: "Artificial ",
+//     disc: "Intelligence",
+//   },
+//   {
+//     icon: icon3,
+//     title: "Computer ",
+//     disc: "Vision",
+//   },
+//   {
+//     icon: icon4,
+//     title: "Internet ",
+//     disc: "Of Things",
+//   },
+//   {
+//     icon: icon5,
+//     title: "BlockChain",
+//     disc: "",
+//   },
+//   {
+//     icon: icon6,
+//     title: "Mixed Reality",
+//     disc: "",
+//   },
+// ];
+
 
 const Section4 = () => {
-  Aos.init();
 
-  // const data = [
-  //   {
-  //     icon: icon1,
-  //     title: "Big Data",
-  //     disc: "",
-  //   },
-  //   {
-  //     icon: icon2,
-  //     title: "Artificial ",
-  //     disc: "Intelligence",
-  //   },
-  //   {
-  //     icon: icon3,
-  //     title: "Computer ",
-  //     disc: "Vision",
-  //   },
-  //   {
-  //     icon: icon4,
-  //     title: "Internet ",
-  //     disc: "Of Things",
-  //   },
-  //   {
-  //     icon: icon5,
-  //     title: "BlockChain",
-  //     disc: "",
-  //   },
-  //   {
-  //     icon: icon6,
-  //     title: "Mixed Reality",
-  //     disc: "",
-  //   },
-  // ];
+  
+  useEffect(() => {
+    Aos.init({ duration: 1000 }); 
+  }, []);
+
 
   return (
     <div

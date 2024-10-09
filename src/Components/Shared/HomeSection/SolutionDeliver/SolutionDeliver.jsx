@@ -1,58 +1,64 @@
 import { IoIosArrowRoundForward } from "react-icons/io";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+const data = [
+  {
+    title: "Enterprise Applications",
+  },
+  {
+    title: "ERP",
+  },
+  {
+    title: "Financial Management",
+  },
+  {
+    title: "Supplly Chain Management",
+  },
+  {
+    title: "Assest Management",
+  },
+  {
+    title: "Fleet Management",
+  },
+  {
+    title: "HR Software",
+  },
+  {
+    title: "E Learning Software",
+  },
+  {
+    title: "E Commerce",
+  },
+  {
+    title: "Mobile Apps",
+  },
+  {
+    title: "Content Management",
+  },
+  {
+    title: "Documewnt Management",
+  },
+  {
+    title: "CRM",
+  },
+  {
+    title: "Marketing & Advertising",
+  },
+  {
+    title: "Web Portals",
+  },
+  {
+    title: "Data Analytics",
+  },
+];
 
 const SolutionDeliver = () => {
-  const data = [
-    {
-      title: "Enterprise Applications",
-    },
-    {
-      title: "ERP",
-    },
-    {
-      title: "Financial Management",
-    },
-    {
-      title: "Supplly Chain Management",
-    },
-    {
-      title: "Assest Management",
-    },
-    {
-      title: "Fleet Management",
-    },
-    {
-      title: "HR Software",
-    },
-    {
-      title: "E Learning Software",
-    },
-    {
-      title: "E Commerce",
-    },
-    {
-      title: "Mobile Apps",
-    },
-    {
-      title: "Content Management",
-    },
-    {
-      title: "Documewnt Management",
-    },
-    {
-      title: "CRM",
-    },
-    {
-      title: "Marketing & Advertising",
-    },
-    {
-      title: "Web Portals",
-    },
-    {
-      title: "Data Analytics",
-    },
-  ];
 
+  useEffect(() => {
+    Aos.init({ duration: 1000 }); 
+  }, []);
+  
   return (
     <div className="bg-white py-[180px]  ">
       <div

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import user3 from "../../../../../public/Images/user-3.jpg";
@@ -106,7 +106,11 @@ const companies = [
 ];
 
 const Section6 = () => {
-  Aos.init();
+
+  useEffect(() => {
+    Aos.init({ duration: 1000 }); 
+  }, []);
+
   const [showAllData, setShowAllData] = useState(6);
 
   const handleLoadMore = () => {

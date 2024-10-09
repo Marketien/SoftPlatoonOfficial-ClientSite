@@ -6,7 +6,7 @@ import img4 from  '../../../../../public/Images/story4.png' ;
 import img5 from  '../../../../../public/Images/story5.png' ;
 import img6 from  '../../../../../public/Images/story6.png' ;
 import { IoIosArrowRoundForward } from "react-icons/io";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -38,7 +38,9 @@ const story =[
 ]
 
 const SuccessStories = () => {
-  Aos.init();
+  useEffect(() => {
+    Aos.init({ duration: 1000 }); 
+  }, []);
     const [showAllData , setShowAllData] = useState(4);
 
     const handleLoadMore =() =>{

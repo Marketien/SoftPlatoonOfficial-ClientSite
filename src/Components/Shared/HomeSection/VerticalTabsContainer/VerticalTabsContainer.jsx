@@ -8,10 +8,14 @@ import TabPanelInfo1 from "../TabPanelInfo/TabPanelInfo1";
 import TabPanelInfo2 from "../TabPanelInfo/TabPanelInfo2";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
-  Aos.init();
+
+ useEffect(() => {
+    Aos.init({ duration: 1000 }); 
+  }, []);
 
   return (
     <div

@@ -3,25 +3,27 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 
 const HomeContact = () => {
-
-  Aos.init();
   const fileInputRef = useRef(null);
-
+  
   const handleClick = () => {
     fileInputRef.current.click();
   };
-
+  
   const handleFileChange = (event) => {
     const files = event.target.files;
     // Handle the files as needed
     console.log(files);
   };
-
+  
+  useEffect(() => {
+    Aos.init({ duration: 1000 }); 
+  }, []);
+  
   return (
     <div id='contact' className="bg-gray-100 py-[180px] ">
       <div
