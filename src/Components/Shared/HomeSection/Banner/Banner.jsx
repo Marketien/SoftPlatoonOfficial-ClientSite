@@ -21,7 +21,7 @@ const Banner = () => {
   return (
     <div className="parent-banner">
       {/* bannerImages section  */}
-      <div className="lg:mt-[75px] md:mt-[90px] sm: mt-[110px]">
+      <div className="lg:mt-[75px] md:mt-[90px] sm: mt-[85px]">
         {/* <img
           className="bannerImage lg:w-full lg:h-screen sm: h-[700px] bg-[#5A287F]"
           src={banner1}

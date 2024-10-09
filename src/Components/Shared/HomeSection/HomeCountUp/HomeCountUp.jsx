@@ -13,7 +13,7 @@ const HomeCountUp = () => {
       className="my-[180px] lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4"
     >
       <div
-      data-aos="fade-right"
+      data-aos="fade-up"
       className="grid lg:grid-cols-4 md:grid-cols-2 sm: grid-cols-1 lg:text-start md:text-center sm: text-center
         lg:gap-5 md:gap-20 sm: gap-20">
         <div className="lg:border-r-2 border-purple-300">

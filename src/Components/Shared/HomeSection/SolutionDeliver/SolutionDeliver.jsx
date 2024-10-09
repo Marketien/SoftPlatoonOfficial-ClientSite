@@ -60,14 +60,14 @@ const SolutionDeliver = () => {
         className=" lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:px-7 sm: px-4"
       >
         <h1
-          data-aos="fade-right"
+          data-aos="fade-up"
           style={{ fontFamily: "Sumana,serif" }}
           className="font-bold text-5xl mb-5"
         >
           Solutions We <span className="text-purple-900 ms-2 "> Deliver</span>
         </h1>
         <p
-          data-aos="fade-right"
+          data-aos="fade-up"
           className="text-xl font-semibold"
         >
           We IT-enable all kinds of B2B, B2C interactions and internal

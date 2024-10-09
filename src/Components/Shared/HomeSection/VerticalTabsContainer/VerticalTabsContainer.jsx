@@ -57,7 +57,7 @@ export default function VerticalTabs() {
       {/* <div className='lg:flex md:flex sm: overflow-x-auto justify-center'> */}
       <div className=" md:overflow-x-hidden sm: overflow-x-auto px-5">
         <h1
-          data-aos="fade-right"
+          data-aos="fade-up"
           style={{ fontFamily: "Sumana,serif" }}
           className="dafault-heading"
         >
@@ -73,7 +73,7 @@ export default function VerticalTabs() {
             borderRadius: "5px",
             height: { lg: 600, md: 730, sm: 730 },
           }}
-          data-aos="fade-right"
+          data-aos="fade-up"
         >
           <Tabs
             orientation="vertical"

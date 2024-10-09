@@ -7,6 +7,8 @@ import img5 from  '../../../../../public/Images/story5.png' ;
 import img6 from  '../../../../../public/Images/story6.png' ;
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { useState } from 'react';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const story =[
     {
@@ -36,7 +38,7 @@ const story =[
 ]
 
 const SuccessStories = () => {
-
+  Aos.init();
     const [showAllData , setShowAllData] = useState(4);
 
     const handleLoadMore =() =>{
@@ -50,7 +52,7 @@ const SuccessStories = () => {
         className=" lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:px-7 sm: px-4"
       >
         <h1
-          data-aos="fade-right"
+          data-aos="fade-up"
           style={{ fontFamily: "Sumana,serif" }}
           className="font-bold text-5xl mb-5"
         >
@@ -59,7 +61,7 @@ const SuccessStories = () => {
         </h1>
         {/* accordion div  */}
         <div
-          data-aos="fade-right"
+          data-aos="fade-up"
           style={{ fontFamily: "Ubuntu,serif" }}
           className="mt-10 grid lg:grid-cols-2 md:grid-cols-2 sm: grid-cols-1 gap-5"
         >

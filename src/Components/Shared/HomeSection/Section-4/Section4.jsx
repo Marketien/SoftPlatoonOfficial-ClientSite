@@ -51,7 +51,7 @@ const Section4 = () => {
       className="my-[180px] lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4"
     >
       <div 
-       data-aos="fade-right">
+       data-aos="fade-down">
       <h1
       style={{ fontFamily: "Sumana,serif" }}
       className="text-5xl font-bold mt-5 ">
@@ -67,7 +67,7 @@ const Section4 = () => {
 
       {/* Tab section fot large device */}
       <div
-       data-aos="fade-right"
+       data-aos="fade-down"
       style={{ fontFamily: "Ubuntu,sans-serif" }}
       className="mt-32 grid lg:grid-cols-6 md:grid-cols-3 sm: grid-cols-1 gap-4">
         {/*---------------------- title 1 ------------------ */}

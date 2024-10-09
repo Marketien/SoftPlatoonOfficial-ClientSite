@@ -51,200 +51,205 @@ import icon39 from "../../../../../public/TechIcons/35.CloudFlare.png";
 import icon40 from "../../../../../public/TechIcons/36.Siege.png";
 import icon41 from "../../../../../public/TechIcons/37.NMap.png";
 import icon42 from "../../../../../public/TechIcons/38.WireShark.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
+const BackEndIcon = [
+  {
+    title: "NodeJs",
+    icon: icon1,
+  },
+  {
+    title: "Php",
+    icon: icon2,
+  },
+  {
+    title: "C++",
+    icon: icon3,
+  },
+  {
+    title: "Express Js",
+    icon: icon4,
+  },
+  {
+    title: "Laravel",
+    icon: icon5,
+  },
+];
+const FrontEndIcon = [
+  {
+    title: "Html",
+    icon: icon6,
+  },
+  {
+    title: "Css",
+    icon: icon7,
+  },
+  {
+    title: "JavaSctipt",
+    icon: icon8,
+  },
+  {
+    title: "TypeScript",
+    icon: icon9,
+  },
+  {
+    title: "React",
+    icon: icon10,
+  },
+  {
+    title: "NextJs",
+    icon: icon11,
+  },
+  {
+    title: "VueJs",
+    icon: icon12,
+  },
+];
+const MobileIcon = [
+  {
+    title: "IOS",
+    icon: icon13,
+  },
+  {
+    title: "Android",
+    icon: icon14,
+  },
+  {
+    title: "React Native",
+    icon: icon15,
+  },
+  {
+    title: "Flutter",
+    icon: icon16,
+  },
+];
+const DesktopIcon = [
+  {
+    title: "C++",
+    icon: icon3,
+  },
+  {
+    title: "C#",
+    icon: icon17,
+  },
+  {
+    title: "ElectronJs",
+    icon: icon18,
+  },
+];
+const CloudIcon = [
+  {
+    title: "Amazon Web Service",
+    icon: icon19,
+  },
+  {
+    title: "GoogleCloud",
+    icon: icon20,
+  },
+  {
+    title: "Hostinger",
+    icon: icon21,
+  },
+  {
+    title: "NameCheap",
+    icon: icon22,
+  },
+  {
+    title: "Cpanel",
+    icon: icon23,
+  },
+];
+const DataBaseIcon = [
+  {
+    title: "microsoft Sql Server",
+    icon: icon24,
+  },
+  {
+    title: "My Sql Database",
+    icon: icon25,
+  },
+  {
+    title: "Azure Sql Database",
+    icon: icon26,
+  },
+  {
+    title: "SQ Lite",
+    icon: icon27,
+  },
+  {
+    title: "Mongo Db",
+    icon: icon28,
+  },
+];
+const LanguageIcon = [
+  {
+    title: "Phython",
+    icon: icon29,
+  },
+  {
+    title: "Mat Lab",
+    icon: icon30,
+  },
+];
+const FrameworkIcon = [
+  {
+    title: "Mx Net",
+    icon: icon31,
+  },
+  {
+    title: "Tensor Flow",
+    icon: icon32,
+  },
+  {
+    title: "Keras",
+    icon: icon33,
+  },
+  {
+    title: "OpenCv",
+    icon: icon34,
+  },
+];
+const DevOpsIcon = [
+  {
+    title: "docker",
+    icon: icon35,
+  },
+  {
+    title: "Aws Developer Tools",
+    icon: icon36,
+  },
+  {
+    title: "Google Developer Tools",
+    icon: icon37,
+  },
+  {
+    title: "Firebase",
+    icon: icon38,
+  },
+];
+const SecurityIcon = [
+  {
+    title: "Cloud Flare",
+    icon: icon39,
+  },
+  {
+    title: "Siege",
+    icon: icon40,
+  },
+  {
+    title: "NMap",
+    icon: icon41,
+  },
+  {
+    title: "Wire Shark",
+    icon: icon42,
+  },
+];
+
 
 const HomeTechnologies = () => {
-  const BackEndIcon = [
-    {
-      title: "NodeJs",
-      icon: icon1,
-    },
-    {
-      title: "Php",
-      icon: icon2,
-    },
-    {
-      title: "C++",
-      icon: icon3,
-    },
-    {
-      title: "Express Js",
-      icon: icon4,
-    },
-    {
-      title: "Laravel",
-      icon: icon5,
-    },
-  ];
-  const FrontEndIcon = [
-    {
-      title: "Html",
-      icon: icon6,
-    },
-    {
-      title: "Css",
-      icon: icon7,
-    },
-    {
-      title: "JavaSctipt",
-      icon: icon8,
-    },
-    {
-      title: "TypeScript",
-      icon: icon9,
-    },
-    {
-      title: "React",
-      icon: icon10,
-    },
-    {
-      title: "NextJs",
-      icon: icon11,
-    },
-    {
-      title: "VueJs",
-      icon: icon12,
-    },
-  ];
-  const MobileIcon = [
-    {
-      title: "IOS",
-      icon: icon13,
-    },
-    {
-      title: "Android",
-      icon: icon14,
-    },
-    {
-      title: "React Native",
-      icon: icon15,
-    },
-    {
-      title: "Flutter",
-      icon: icon16,
-    },
-  ];
-  const DesktopIcon = [
-    {
-      title: "C++",
-      icon: icon3,
-    },
-    {
-      title: "C#",
-      icon: icon17,
-    },
-    {
-      title: "ElectronJs",
-      icon: icon18,
-    },
-  ];
-  const CloudIcon = [
-    {
-      title: "Amazon Web Service",
-      icon: icon19,
-    },
-    {
-      title: "GoogleCloud",
-      icon: icon20,
-    },
-    {
-      title: "Hostinger",
-      icon: icon21,
-    },
-    {
-      title: "NameCheap",
-      icon: icon22,
-    },
-    {
-      title: "Cpanel",
-      icon: icon23,
-    },
-  ];
-  const DataBaseIcon = [
-    {
-      title: "microsoft Sql Server",
-      icon: icon24,
-    },
-    {
-      title: "My Sql Database",
-      icon: icon25,
-    },
-    {
-      title: "Azure Sql Database",
-      icon: icon26,
-    },
-    {
-      title: "SQ Lite",
-      icon: icon27,
-    },
-    {
-      title: "Mongo Db",
-      icon: icon28,
-    },
-  ];
-  const LanguageIcon = [
-    {
-      title: "Phython",
-      icon: icon29,
-    },
-    {
-      title: "Mat Lab",
-      icon: icon30,
-    },
-  ];
-  const FrameworkIcon = [
-    {
-      title: "Mx Net",
-      icon: icon31,
-    },
-    {
-      title: "Tensor Flow",
-      icon: icon32,
-    },
-    {
-      title: "Keras",
-      icon: icon33,
-    },
-    {
-      title: "OpenCv",
-      icon: icon34,
-    },
-  ];
-  const DevOpsIcon = [
-    {
-      title: "docker",
-      icon: icon35,
-    },
-    {
-      title: "Aws Developer Tools",
-      icon: icon36,
-    },
-    {
-      title: "Google Developer Tools",
-      icon: icon37,
-    },
-    {
-      title: "Firebase",
-      icon: icon38,
-    },
-  ];
-  const SecurityIcon = [
-    {
-      title: "Cloud Flare",
-      icon: icon39,
-    },
-    {
-      title: "Siege",
-      icon: icon40,
-    },
-    {
-      title: "NMap",
-      icon: icon41,
-    },
-    {
-      title: "Wire Shark",
-      icon: icon42,
-    },
-  ];
+
+  Aos.init();
 
   return (
     <div className=" py-[180px] lg:mx-auto md:mx-7 sm: mx-4 ">
@@ -253,7 +258,7 @@ const HomeTechnologies = () => {
         className=" lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4"
       >
         <h1
-          data-aos="fade-right"
+          data-aos="fade-up"
           style={{ fontFamily: "Sumana,serif" }}
           className="font-bold text-5xl mb-5 leading-[60px]"
         >
@@ -262,7 +267,7 @@ const HomeTechnologies = () => {
         </h1>
 
         <div
-          data-aos="fade-right"
+          data-aos="fade-up"
           style={{ fontFamily: "Sumana,serif" }}
           className="mt-10 bg-white py-10 text-center"
         >

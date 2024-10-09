@@ -14,9 +14,4 @@
     animation: bounce 2s infinite;
   }
   
-
-  nav {
-    transition: background-color 0.5s ease, color 0.5s ease;
-  }
-
   

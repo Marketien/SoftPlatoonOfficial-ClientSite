@@ -23,6 +23,8 @@ const NavigationBar = () => {
   const handleScroll = () => {
     if (window.scrollY > 100) {
       setIsVisible(true);
+      setMenuOpen(false) ;
+
     } else {
       setIsVisible(false);
     }
@@ -70,7 +72,7 @@ const NavigationBar = () => {
 
   return (
     <>
-      <div>
+      <div className='sm: -ms-[10px] '>
         {/* contact info  */}
         <div
           style={{ fontFamily: "Open Sans,sans-serif" }}
@@ -97,15 +99,13 @@ const NavigationBar = () => {
           </p>
         </div>
         {/* navbar section  */}
-        <nav
-          className={`
+        <nav 
+        className={`
           flex flex-wrap
           items-center
           justify-between
           w-full
-          lg:py-0
-          md:py-0
-          sm: py-3
+          sm: py-2
           px-4
           text-lg
           text-gray-700
@@ -124,7 +124,7 @@ const NavigationBar = () => {
           <div>
             <Link to="/">
               <img
-                className="w-[150px]"
+                className="md:w-[150px] sm: w-[100px]"
                 src={scrolled ? homeLogo : scrolledLogo}
                 alt=""
               />
@@ -195,7 +195,7 @@ const NavigationBar = () => {
           {/* ------------------------------ menu for medium & small  device ----------------------------------------- */}
           {menuOpen ? (
             <div className= "w-full h-screen flex justify-center">
-            <ul className={` ${scrolled ? " text-white" : "text-black "} text-sm text-black text-center gap-3 leading-[100px] uppercase`}>
+            <ul className={` ${scrolled ? " text-white" : "text-black "} text-sm text-black text-center gap-3 leading-[70px] uppercase} `}>
               <li>
                 <Link
                   to="/ourServices"
@@ -263,10 +263,11 @@ const NavigationBar = () => {
           )}
         </nav>
       </div>
+
       {/* Whats AppLogo section  */}
       <Link
         to=""
-        className="bounce fixed bottom-5 right-5 
+        className=" bounce fixed bottom-5 right-5 
             flex items-center justify-center z-50 rounded-full w-[55px] hover:w-[60px] border-2 bg-green-500 border-border-white  text-white hover:text-gray-300"
       >
         <img className="" src={whatsAppLogo} alt="" />

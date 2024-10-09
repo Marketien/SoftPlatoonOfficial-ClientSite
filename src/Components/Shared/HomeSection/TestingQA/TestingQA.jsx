@@ -18,7 +18,7 @@ const TestingQA = () => {
       {/* infomation div  */}
       <div className="mt-14 lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4">
         <h1 
-       data-aos="fade-right"
+       data-aos="fade-down"
         className="text-center text-xl font-semibold">
           We offer full-range testing outsourcing services, can help to develop
           you QA or enhance the existing one, assist you in TCOE setup and

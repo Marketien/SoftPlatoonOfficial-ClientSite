@@ -52,14 +52,14 @@ const IndustryExpertise = () => {
         className=" lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4"
       >
         <h1
-          data-aos="fade-right"
+          data-aos="fade-up"
           style={{ fontFamily: "Sumana, serif" }}
           className="font-bold text-5xl mb-5"
         >
           Our Industry <span className="text-purple-900 ms-2 "> Expertise</span>
         </h1>
         <p
-          data-aos="fade-right"
+          data-aos="fade-up"
           className="text-xl font-semibold"
         >
           We’ve excelled our experience in a wide range of industries to bring

@@ -22,7 +22,7 @@ const EveryPart = () => {
         </div>
         {/* information section */}
         <div 
-         data-aos="fade-right"
+         data-aos="fade-up"
         className="absolute md:top-[250px] lg:left-[445px] sm: top-0  lg:mx-0 md:mx-6 sm: mx-4">
           <div>
             <h1 
@@ -72,7 +72,7 @@ const EveryPart = () => {
       <div className="relative">
         {/* information section */}
         <div 
-         data-aos="fade-down"
+         data-aos="fade-up"
       className="lg:mx-0 md:mx-6 sm: mx-4">
           <div>
             <h1 className=" text-3xl font-semibold mt-5 ">
