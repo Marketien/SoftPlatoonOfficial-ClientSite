@@ -5,16 +5,16 @@ import "aos/dist/aos.css";
 
 const questions = [
     {
-      question: "Does ScienceSoft cover all stages of the SDLC??",
+      question: "Does SoftPlatoon cover all stages of the SDLC??",
       answer: "Yes, depending on the project size, we might be able to get your MVP delivered in 2 weeks – 4 months. Subsequently, we can ensure releases of new functionality every 2–6 weeks. Get in touch, and we'll work out a way to meet your needs.."
     },
     {
-      question: "Can ScienceSoft speed up the delivery of projects?",
+      question: "Can SoftPlatoon speed up the delivery of projects?",
       answer: "Yes, depending on the project size, we might be able to get your MVP delivered in 2 weeks – 4 months. Subsequently, we can ensure releases of new functionality every 2–6 weeks. Get in touch, and we'll work out a way to meet your needs."
     },
     {
       question: "What's the cost for your software development services?",
-      answer: "Software development costs for a medium/large application may range from $50,000 to $1,000,000. The total amount mainly depends on the number and complexity of software features, the number of platforms supported (web, mobile, desktop), and the type of development (custom, low-code, or platform-based). The UI design uniqueness and complexity, the number of integrations with other software systems, as well as availability, security, and performance requirements also play an important part.You can request free project cost calculation from ScienceSoft or find more details about software development costs in our recent guide."
+      answer: "Software development costs for a medium/large application may range from $50,000 to $1,000,000. The total amount mainly depends on the number and complexity of software features, the number of platforms supported (web, mobile, desktop), and the type of development (custom, low-code, or platform-based). The UI design uniqueness and complexity, the number of integrations with other software systems, as well as availability, security, and performance requirements also play an important part.You can request free project cost calculation from SoftPlatoon or find more details about software development costs in our recent guide."
     },
     {
       question: "What’s your post-launch policy?",

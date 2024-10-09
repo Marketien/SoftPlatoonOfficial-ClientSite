@@ -43,7 +43,7 @@ const ExploreServices = () => {
     return (
         <div className=" bg-white py-[180px] ">
         <div
-         data-aos="fade-up"
+         data-aos="fade-down"
          className="lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4">
            <h1 
             style={{ fontFamily: "Sumana,serif" }}

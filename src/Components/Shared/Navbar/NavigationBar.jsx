@@ -72,7 +72,7 @@ const NavigationBar = () => {
 
   return (
     <>
-      <div className='sm: -ms-[10px] '>
+      <div className=''>
         {/* contact info  */}
         <div
           style={{ fontFamily: "Open Sans,sans-serif" }}

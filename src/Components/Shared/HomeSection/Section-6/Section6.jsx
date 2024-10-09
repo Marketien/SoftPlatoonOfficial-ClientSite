@@ -132,7 +132,7 @@ const Section6 = () => {
         style={{ fontFamily: "Open Sans,sans-serif" }}
         className=" text-xl text-center leading-8 font-semibold "
       >
-        Since 1989. For millions of users. We transform businesses with powerful
+        Since 2019. For millions of users. We transform businesses with powerful
         and adaptable
         <br /> digital solutions that satisfy the needs of today and unlock the
         opportunities of

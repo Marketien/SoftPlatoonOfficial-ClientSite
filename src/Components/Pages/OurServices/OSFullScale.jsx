@@ -62,7 +62,7 @@ const OSFullScale = () => {
         <span className="text-purple-800">SoftPlatoon</span>
       </h1>
       <p style={{ fontFamily: "Ubuntu,sans-serif" }} className="text-lg my-5">
-        Throughout all web development services, ScienceSoft adheres to a
+        Throughout all web development services, SoftPlatoon adheres to a
         quality-first approach based on ISO 9001-certified quality management
         system. <br /> Our comprehensive security management program with robust
         security controls, <br /> policies and technologies is compliant with

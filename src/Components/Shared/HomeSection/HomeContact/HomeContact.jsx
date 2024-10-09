@@ -1,6 +1,4 @@
 import './HomeContact.css';
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useRef } from "react";
@@ -16,10 +14,9 @@ const HomeContact = () => {
   
   const handleFileChange = (event) => {
     const files = event.target.files;
-    // Handle the files as needed
     console.log(files);
   };
-  
+
   useEffect(() => {
     Aos.init({ duration: 1000 }); 
   }, []);
@@ -100,7 +97,6 @@ const HomeContact = () => {
           </form>
         </div>
       </div>
-      <ToastContainer />
     </div>
   );
 };
