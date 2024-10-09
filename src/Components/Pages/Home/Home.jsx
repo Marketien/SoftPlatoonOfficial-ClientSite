@@ -29,7 +29,7 @@ const Home = () => {
       {/* ---------------Solution We Deliver -------------*/}
       <SolutionDeliver />
       {/* --------------- Our Industry Expertiser -------------*/}
-      <IndustryExpertise href="#industries" />
+      <IndustryExpertise  />
       {/*--------------- Every Part of Your IT Ecosystem.----------------- */}
       {/* <Section3 /> */}
       <EveryPart />

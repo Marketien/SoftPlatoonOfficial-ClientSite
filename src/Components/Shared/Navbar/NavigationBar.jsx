@@ -159,7 +159,7 @@ const NavigationBar = () => {
             </li>
             <li>
               <a
-                href="#industries"
+                href="/industries"
                 className="md:p-4 py-2 uppercase  hover:text-purple-500 flex items-center relative "
               >
                 Industries
@@ -206,7 +206,7 @@ const NavigationBar = () => {
               </li>
               <li>
                 <a
-                  href="#industries"
+                  href="/industries"
                   className="r:text-purple-500 "
                 >
                   Industries

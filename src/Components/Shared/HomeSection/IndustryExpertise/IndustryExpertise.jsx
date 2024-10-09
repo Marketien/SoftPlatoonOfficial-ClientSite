@@ -11,6 +11,7 @@ import './IndustryExpertise.css'
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const data = [
   {
@@ -53,7 +54,7 @@ const IndustryExpertise = () => {
   }, []);
 
   return (
-    <div id="industries" className=" py-[180px] lg:mx-auto md:mx-7 sm: mx-4 ">
+    <div className=" py-[180px] lg:mx-auto md:mx-7 sm: mx-4 ">
       <div
         style={{ fontFamily: "Open Sans, sans-serif" }}
         className=" lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4"
@@ -80,6 +81,7 @@ const IndustryExpertise = () => {
         >
           {data.map(({ icon, title }, index) => (
             <div key={index}>
+              <Link to="/ourServices">
             <div  className="relative group bg-white py-8 rounded-md shadow-md hover:shadow-lg
              "> 
             <div className="relative flex justify-center ">
@@ -94,6 +96,7 @@ const IndustryExpertise = () => {
               <hr className="hr-animation absolute bottom-0 left-0 right-0 h-[4px] transition-all duration-200 border-[#5A287F] bg-[#5A287F] z-10 opacity-0 group-hover:opacity-100" />
           
             </div>
+              </Link>
             </div>
           ))}
         </div>

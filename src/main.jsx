@@ -11,6 +11,7 @@ import Home from './Components/Pages/Home/Home';
 import OurServices from './Components/Pages/OurServices/OurServices';
 import AboutUs from './Components/Pages/AboutUs/AboutUs';
 import GetProposal from './Components/Pages/GetProposal/GetProposal';
+import Industries from './Components/Pages/Industries/Industries';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/ourServices",
         element: <OurServices />,
+      },
+      {
+        path: "/industries",
+        element: <Industries />,
       },
       {
         path: "/aboutUs",
