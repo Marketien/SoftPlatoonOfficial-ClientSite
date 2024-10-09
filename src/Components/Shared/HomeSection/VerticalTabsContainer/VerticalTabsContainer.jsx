@@ -9,6 +9,7 @@ import TabPanelInfo2 from "../TabPanelInfo/TabPanelInfo2";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import HomeCarousel from "../Section-2/HomeCarousel";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -59,7 +60,7 @@ export default function VerticalTabs() {
     <div className="my-[180px] ">
       {/* Tab section  for large device */}
       {/* <div className='lg:flex md:flex sm: overflow-x-auto justify-center'> */}
-      <div className=" md:overflow-x-hidden sm: overflow-x-auto px-5">
+      <div className=" px-5">
         <h1
           data-aos="fade-up"
           style={{ fontFamily: "Sumana,serif" }}
@@ -67,6 +68,8 @@ export default function VerticalTabs() {
         >
           Explore Our <span className="text-purple-900 ms-2 "> Offering</span>
         </h1>
+        {/* Tab section  */}
+<div className="lg:block md:hidden sm: hidden">
         <Box
           sx={{
             width: "100%",
@@ -236,6 +239,11 @@ export default function VerticalTabs() {
             Item Seven
           </TabPanel>
         </Box>
+</div>
+{/* Carousel Container  */}
+<div className="lg:hidden md:block sm: block">
+        <HomeCarousel/>
+      </div>
       </div>
     </div>
   );

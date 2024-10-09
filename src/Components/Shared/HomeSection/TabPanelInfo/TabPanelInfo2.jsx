@@ -18,9 +18,9 @@ const TabPanelInfo2 = () => {
     );
 
     return (
-        <div className="bg-white lg:h-full md:h-full sm:h-[850px] sm:max- lg:p-0 md:p-0 sm: p-5 ">
+        <div className="bg-white">
         {testingAndQAInfo && (
-          <div className="px-5"  style={{ fontFamily: "Open Sans,sans-serif" }}>
+          <div className="md:px-5 sm: px-2 md:py-0 sm: py-10 md:h-full sm: h-[1150px]"  style={{ fontFamily: "Open Sans,sans-serif" }}>
             <h2 style={{ fontFamily: "Ubuntu,sans-serif" }} className="font-bold text-2xl mt-8 text-purple-900">
               {testingAndQAInfo.TestingAndQA.title}
             </h2>
@@ -38,7 +38,7 @@ const TabPanelInfo2 = () => {
               )}
               </li>
               <li>
-              <img className="w-[250px] -mt-[50px]" src={image} alt="" />
+              <img className="lg:w-[250px] md:w-[200px] sm: w-0 -mt-[50px]" src={image} alt="" />
             </li>
             </ul>
           </div>

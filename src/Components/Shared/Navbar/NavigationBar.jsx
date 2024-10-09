@@ -265,8 +265,8 @@ const NavigationBar = () => {
       </div>
 
       {/* Whats AppLogo section  */}
-      <Link
-        to=""
+      <Link target='_blank'
+        to="https://wa.me/8801540380460"
         className=" bounce fixed bottom-5 right-5 
             flex items-center justify-center z-50 rounded-full w-[55px] hover:w-[60px] border-2 bg-green-500 border-border-white  text-white hover:text-gray-300"
       >

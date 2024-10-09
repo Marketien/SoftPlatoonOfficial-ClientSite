@@ -8,7 +8,9 @@ const Section2 = () => {
        sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4 "
     >
       {/* Vertical Tabs Container  */}
+      <div>
       <VerticalTabs />
+      </div>
     </div>
   );
 };
