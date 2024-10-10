@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import user3 from "../../../../../public/Images/user-3.jpg";
 import img1 from "../../../../../public/Client Logo File/Qalaat Al Khaleej-Logo-01.png";
 import img2 from "../../../../../public/Client Logo File/abroad1.png";
 import img3 from "../../../../../public/Client Logo File/abroad2.png";

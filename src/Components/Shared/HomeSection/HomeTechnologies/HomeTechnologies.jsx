@@ -30,7 +30,7 @@ import icon23 from "../../../../../public/TechIcons/20.Cpanel.png";
 // databases Icon-------------------------------------------------------------------
 import icon24 from "../../../../../public/TechIcons/21.microsoftSqlServer.png";
 import icon25 from "../../../../../public/TechIcons/22.mysql.png";
-import icon26 from "../../../../../public/TechIcons/23.azureSql.png";
+import icon26 from "../../../../../public/TechIcons/23.azureeSql.png";
 import icon27 from "../../../../../public/TechIcons/24.sqLite.png";
 import icon28 from "../../../../../public/TechIcons/22.1MongoDb.png";
 // Programming languages Icon-------------------------------------------------------------------
