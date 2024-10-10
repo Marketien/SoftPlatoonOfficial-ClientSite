@@ -112,8 +112,8 @@ export default function VerticalTabs() {
               {...a11yProps(0)}
               sx={{
                 color: "white",
-                padding: "20px",
-                marginTop: "30px",
+                padding: "18px",
+                marginTop: "45px",
                 width: "300px",
                 marginLeft: "30px",
                 backgroundColor: value === 0 ? "#FBF9F1" : "transparent",
@@ -125,7 +125,7 @@ export default function VerticalTabs() {
               {...a11yProps(1)}
               sx={{
                 color: "white",
-                padding: "20px",
+                padding: "18px",
                 marginTop: "10px",
                 width: "300px",
                 marginLeft: "30px",
@@ -138,7 +138,7 @@ export default function VerticalTabs() {
               {...a11yProps(2)}
               sx={{
                 color: "white",
-                padding: "20px",
+                padding: "18px",
                 marginTop: "10px",
                 width: "300px",
                 marginLeft: "30px",
@@ -151,7 +151,7 @@ export default function VerticalTabs() {
               {...a11yProps(3)}
               sx={{
                 color: "white",
-                padding: "20px",
+                padding: "18px",
                 marginTop: "10px",
                 width: "300px",
                 marginLeft: "30px",
@@ -164,7 +164,7 @@ export default function VerticalTabs() {
               {...a11yProps(4)}
               sx={{
                 color: "white",
-                padding: "20px",
+                padding: "18px",
                 marginTop: "10px",
                 width: "300px",
                 marginLeft: "30px",
@@ -177,7 +177,7 @@ export default function VerticalTabs() {
               {...a11yProps(5)}
               sx={{
                 color: "white",
-                padding: "20px",
+                padding: "18px",
                 marginTop: "10px",
                 width: "300px",
                 marginLeft: "30px",
@@ -190,7 +190,7 @@ export default function VerticalTabs() {
               {...a11yProps(6)}
               sx={{
                 color: "white",
-                padding: "20px",
+                padding: "18px",
                 marginTop: "10px",
                 width: "300px",
                 marginLeft: "30px",
@@ -203,7 +203,7 @@ export default function VerticalTabs() {
               {...a11yProps(7)}
               sx={{
                 color: "white",
-                padding: "20px",
+                padding: "18px",
                 marginTop: "10px",
                 width: "300px",
                 marginLeft: "30px",
