@@ -1,6 +1,6 @@
 
 
-const TabPanelInfo7 = () => {
+const TabPanelInfo8 = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const TabPanelInfo7 = () => {
     );
 };
 
-export default TabPanelInfo7;
+export default TabPanelInfo8;

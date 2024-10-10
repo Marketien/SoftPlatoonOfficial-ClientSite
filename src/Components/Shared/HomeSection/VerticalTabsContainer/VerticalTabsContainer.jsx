@@ -10,6 +10,12 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import HomeCarousel from "../Section-2/HomeCarousel";
+import TabPanelInfo3 from "../TabPanelInfo/TabPanelInfo3";
+import TabPanelInfo4 from "../TabPanelInfo/TabPanelInfo4";
+import TabPanelInfo5 from "../TabPanelInfo/TabPanelInfo5";
+import TabPanelInfo6 from "../TabPanelInfo/TabPanelInfo6";
+import TabPanelInfo7 from "../TabPanelInfo/TabPanelInfo7";
+import TabPanelInfo8 from "../TabPanelInfo/TabPanelInfo8";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -106,7 +112,7 @@ export default function VerticalTabs() {
               {...a11yProps(0)}
               sx={{
                 color: "white",
-                padding: "25px",
+                padding: "20px",
                 marginTop: "30px",
                 width: "300px",
                 marginLeft: "30px",
@@ -119,9 +125,10 @@ export default function VerticalTabs() {
               {...a11yProps(1)}
               sx={{
                 color: "white",
+                padding: "20px",
+                marginTop: "10px",
                 width: "300px",
                 marginLeft: "30px",
-                padding: "25px",
                 backgroundColor: value === 1 ? "#FBF9F1" : "transparent",
                 fontSize: "15px",
               }}
@@ -131,82 +138,76 @@ export default function VerticalTabs() {
               {...a11yProps(2)}
               sx={{
                 color: "white",
+                padding: "20px",
+                marginTop: "10px",
                 width: "300px",
                 marginLeft: "30px",
-                padding: "25px",
                 backgroundColor: value === 2 ? "#FBF9F1" : "transparent",
                 fontSize: "15px",
               }}
             />
             <Tab
-              label="UX/UI Design"
+              label="IT Consulting"
               {...a11yProps(3)}
               sx={{
                 color: "white",
+                padding: "20px",
+                marginTop: "10px",
                 width: "300px",
                 marginLeft: "30px",
-                padding: "25px",
                 backgroundColor: value === 3 ? "#FBF9F1" : "transparent",
                 fontSize: "15px",
               }}
             />
             <Tab
-              label="IT Consulting"
+              label="Data Analytics"
               {...a11yProps(4)}
               sx={{
                 color: "white",
+                padding: "20px",
+                marginTop: "10px",
                 width: "300px",
                 marginLeft: "30px",
-                padding: "25px",
                 backgroundColor: value === 4 ? "#FBF9F1" : "transparent",
                 fontSize: "15px",
               }}
             />
             <Tab
-              label="Data Analytics"
+              label="Help Desk Services"
               {...a11yProps(5)}
               sx={{
                 color: "white",
+                padding: "20px",
+                marginTop: "10px",
                 width: "300px",
                 marginLeft: "30px",
-                padding: "25px",
                 backgroundColor: value === 5 ? "#FBF9F1" : "transparent",
                 fontSize: "15px",
               }}
             />
             <Tab
-              label="Help Desk Services"
+              label="Infrastucture Services"
               {...a11yProps(6)}
               sx={{
                 color: "white",
+                padding: "20px",
+                marginTop: "10px",
                 width: "300px",
                 marginLeft: "30px",
-                padding: "25px",
                 backgroundColor: value === 6 ? "#FBF9F1" : "transparent",
                 fontSize: "15px",
               }}
             />
             <Tab
-              label="Infrastucture Services"
+              label="Cybersecurity Services"
               {...a11yProps(7)}
               sx={{
                 color: "white",
+                padding: "20px",
+                marginTop: "10px",
                 width: "300px",
                 marginLeft: "30px",
-                padding: "25px",
                 backgroundColor: value === 7 ? "#FBF9F1" : "transparent",
-                fontSize: "15px",
-              }}
-            />
-            <Tab
-              label="Cybersecurity Services"
-              {...a11yProps(8)}
-              sx={{
-                color: "white",
-                width: "300px",
-                marginLeft: "30px",
-                padding: "25px",
-                backgroundColor: value === 1 ? "#FBF9F1" : "transparent",
                 fontSize: "15px",
               }}
             />
@@ -218,25 +219,22 @@ export default function VerticalTabs() {
             <TabPanelInfo2 />
           </TabPanel>
           <TabPanel value={value} index={2}>
-            Item Three
+            <TabPanelInfo3 />
           </TabPanel>
           <TabPanel value={value} index={3}>
-            Item Four
+          <TabPanelInfo4 />
           </TabPanel>
           <TabPanel value={value} index={4}>
-            Item Five
+          <TabPanelInfo5 />
           </TabPanel>
           <TabPanel value={value} index={5}>
-            Item Six
+          <TabPanelInfo6 />
           </TabPanel>
           <TabPanel value={value} index={6}>
-            Item Seven
+          <TabPanelInfo7 />
           </TabPanel>
           <TabPanel value={value} index={7}>
-            Item Seven
-          </TabPanel>
-          <TabPanel value={value} index={8}>
-            Item Seven
+            <TabPanelInfo8 />
           </TabPanel>
         </Box>
 </div>

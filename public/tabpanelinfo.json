@@ -1,29 +1,103 @@
-[
+ [
   {
     "SoftwareDevelopment": {
       "title": "Software Development",
-      "paragraph": "A software development company with 34 years of business excellence, we can develop reliable, scalable and secure software solutions for any OS, browser and device. We bring together deep industry expertise and the latest IT advancements to deliver custom solutions and products that perfectly fit the needs and behavior of their users..",
+      "paragraph": "A software development company with +4 years of business excellence, we can develop reliable, scalable and secure software solutions for any OS, browser and device. We bring together deep industry expertise and the latest IT advancements to deliver custom solutions and products that perfectly fit the needs and behavior of their users..",
       "points": [
-        "Software consulting",
         "Software development outsourcing",
-        "Team augmentation",
         "Legacy software modernization",
+        "Cloud application development",
         "Custom software development",
         "Software product development",
-        "Cloud application development"
+        "Software consulting",
+        "Team augmentation"
       ]
     },
     "TestingAndQA": {
       "title": "Testing & QA",
       "paragraph": "We offer full-range QA and testing outsourcing services, can help to develop your QA or enhance the existing one, assist you in TCoE setup and evolution. We perform end-to-end testing of mobile, web and desktop application at each stage of the development lifecycle.",
       "points": [
-        "QA outsourcing",
-        "Security testing",
-        "Usability testing",
-        "Test automation",
-        "QA consulting",
+        "Performance testing",
         "Functional testing",
-        "Performance testing"
+        "Usability testing",
+        "Security testing",
+        "Test automation",
+        "QA outsourcing",
+        "QA consulting"
+      ]
+    },
+    "ApplicationServices": {
+      "title": "Application Services",
+      "paragraph": "Our experts help mid-sized and large firms build, test, protect, manage, migrate and optimize digital solutions ensuring they’re always up and running and achieve the optimal TCO.",
+      "points": [
+        "Application maintenance and support",
+        "Application security services",
+        "Application modernization",
+        "Application development",
+        "Application integration",
+        "Application management",
+        "Application testing"
+      ]
+    },
+    "ITConsulting": {
+      "title": "IT Consulting",
+      "paragraph": "Our experts can help to develop and implement an effective IT strategy, assist in smooth digital transformation and system integration as well as advise on improvements to your digital customer experience.",
+      "points": [
+        "Digital transformation consulting",
+        "IT service management consulting",
+        "Project management consulting",
+        "Enterprise IT consulting",
+        "Solution consulting",
+        "Platform consulting",
+        "User training"
+      ]
+    },
+    "DataAnalytics": {
+      "title": "Data Analytics",
+      "paragraph": "We support businesses in achieving fact-based decision-making by converting their historical and real-time, traditional and big data into actionable insights. Our services are tailored to make the raw data and the environment ready, as well as strengthen the business with advanced analytics capabilities.",
+      "points": [
+        "Machine and deep learning",
+        "Business intelligence",
+        "Data warehousing",
+        "Data management",
+        "Data science",
+        "Big data"
+      ]
+    },
+    "HelpDeskServices": {
+      "title": "Help Desk Services",
+      "paragraph": "Help desk services for your IT environment or software products. We take on solving diverse issues from answering application functionality questions to performing fixes and enhancements on the code level for improved adoption of software, its smooth functioning and increased end user satisfaction.",
+      "points": [
+        "Outsourced help desk for MSP",
+        "Help desk outsourcing",
+        "IT help desk services",
+        "NOC outsourcing"
+      ]
+    }, 
+    "InfrastructureServices": {
+      "title": "Infrastructure Services",
+      "paragraph": "We apply our 4+ years of experience to offer a full set of infrastructure services.we guarantee that cooperation with us does not pose any risks to our clients’ data security.",
+      "points": [
+        "DevOps consulting and implementation",
+        "Data center support and management",
+        "Cloud consulting and management",
+        "Networking management services",
+        "Virtual desktop consulting",
+        "implementation and support ",
+        "Managed IT support"
+      ]
+    },
+    "CybersecurityServices": {
+      "title": "Cybersecurity Services",
+      "paragraph": "Equipped with 4+ years of experience in information security and employing ISO 27001 certified information security management practices, we help to achieve the robust protection of the companies’ applications and networks.",
+      "points": [
+        "Information security consulting",
+        "Managed security services",
+        "Compliance assessment",
+        "Security code review",
+        "Penetration testing",
+        "Security assessment",
+        "Security testing"
       ]
     }
   }
