@@ -65,8 +65,8 @@ const HomeContact = () => {
             {/* <p>Browse <input className=' text-xs ' type="file" id="fileInput" /> to upload</p>  */}
             <div className="flex gap-2 mb-4">
               <input
-                name='files'
-                id="files"
+                name='file'
+                id="file"
                 type="file"
                 ref={fileInputRef}
                 style={{ display: "none" }}
