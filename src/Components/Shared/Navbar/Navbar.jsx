@@ -151,6 +151,7 @@ const Navbar = () => {
       <nav
       
         className={`
+        border border-black
         flex
         items-center
         justify-between
@@ -419,7 +420,7 @@ const Navbar = () => {
         <div
           onClick={scrollToTop}
           title="slide button"
-          className="fixed bottom-4 right-4 
+          className="fixed bottom-4 right-4
         flex items-center justify-center
         shadow-lg shadow-purple-900 z-50
          rounded-full w-[40px] h-[40px] border-2 bg-purple-900 border-border-white  text-white hover:text-gray-300"

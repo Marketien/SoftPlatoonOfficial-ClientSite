@@ -65,9 +65,9 @@ const Section1 = () => {
   };
 
   return (
-    <div data-aos="fade-down" className="bg-white py-[50px]">
+    <div data-aos="fade-down" className="bg-white py-[50px]  border border-black">
       <div
-        className=" my-[120px] lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4"
+        className=" my-[120px] lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-8"
       >
         <Slider ref={sliderRef} {...settings}>
           <img className=" sponseredLogo" src={logo1} alt="" />
