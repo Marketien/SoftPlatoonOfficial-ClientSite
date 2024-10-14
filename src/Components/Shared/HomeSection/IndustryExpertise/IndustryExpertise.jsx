@@ -54,7 +54,7 @@ const IndustryExpertise = () => {
   }, []);
 
   return (
-    <div className=" py-[180px] lg:mx-auto md:mx-7 sm: mx-4 ">
+    <div className=" py-[60px] lg:mx-auto md:mx-7 sm: mx-4 ">
       <div
         style={{ fontFamily: "Open Sans, sans-serif" }}
         className=" lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4"
@@ -64,7 +64,7 @@ const IndustryExpertise = () => {
           style={{ fontFamily: "Sumana, serif" }}
           className="font-bold text-5xl mb-5"
         >
-          Our Industry <span className="text-purple-900 ms-2 "> Expertise</span>
+          Our Industry <span className="text-purple-900 md:ms-2 ms-0"> Expertise</span>
         </h1>
         <p
           data-aos="fade-up"

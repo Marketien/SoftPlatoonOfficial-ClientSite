@@ -60,7 +60,7 @@ const SolutionDeliver = () => {
   }, []);
   
   return (
-    <div className="bg-white py-[180px]  ">
+    <div className="bg-white py-[60px]  ">
       <div
         style={{ fontFamily: "Open Sans, sans-serif" }}
         className=" lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:px-7 sm: px-4"
@@ -70,7 +70,7 @@ const SolutionDeliver = () => {
           style={{ fontFamily: "Sumana,serif" }}
           className="font-bold text-5xl mb-5"
         >
-          Solutions We <span className="text-purple-900 ms-2 "> Deliver</span>
+          Solutions We <span className="text-purple-900 md:ms-2 sm:0"> Deliver</span>
         </h1>
         <p
           data-aos="fade-up"

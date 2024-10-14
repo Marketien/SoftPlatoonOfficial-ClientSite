@@ -142,7 +142,7 @@ return() => window.removeEventListener("scroll", handleScroll) ;
                 </ul>
               </li>
             </h1>
-            <p className="text-start text-lg">
+            <p className="text-center text-lg">
               In our portfolio of 230+ created web apps, you will find
               solutions for efficient management of different business
               activities. We apply smart automation to streamline workflows
@@ -210,7 +210,7 @@ return() => window.removeEventListener("scroll", handleScroll) ;
                 </ul>
               </li>
             </h1>
-            <p className="text-start text-lg">
+            <p className="text-center text-lg">
               250+ businesses, governmental and non-profit organizations use
               the websites we’ve created for corporate presentation and brand
               building. We make sure our websites have an easy-to-use page
@@ -246,13 +246,8 @@ return() => window.removeEventListener("scroll", handleScroll) ;
                 </ul>
               </li>
             </h1>
-            <p className="text-start text-lg">
-              4 years in ecommerce development, we’ve grown the expertise from
-              entry-level shops for startups to custom ecommerce solutions
-              built for large-scale and high-growth businesses. We multiply
-              business efficiency by using scalable microservices
-              architectures and enabling high automation of all business
-              processes.
+            <p className="text-center text-lg">
+            With 4 years in eCommerce development, we've evolved from entry-level solutions for startups to custom platforms for large-scale businesses. Our focus on scalable microservices and high automation enhances business efficiency.
             </p>
           </div>
         </div>

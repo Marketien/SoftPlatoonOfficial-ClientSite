@@ -1,6 +1,12 @@
 import Slider from "react-slick";
 import TabPanelInfo1 from "../TabPanelInfo/TabPanelInfo1";
 import TabPanelInfo2 from "../TabPanelInfo/TabPanelInfo2";
+import TabPanelInfo3 from "../TabPanelInfo/TabPanelInfo3";
+import TabPanelInfo4 from "../TabPanelInfo/TabPanelInfo4";
+import TabPanelInfo5 from "../TabPanelInfo/TabPanelInfo5";
+import TabPanelInfo6 from "../TabPanelInfo/TabPanelInfo6";
+import TabPanelInfo7 from "../TabPanelInfo/TabPanelInfo7";
+import TabPanelInfo8 from "../TabPanelInfo/TabPanelInfo8";
 
 const HomeCarousel = () => {
   var settings = {
@@ -19,6 +25,24 @@ const HomeCarousel = () => {
        </div>
        <div className="bg-white">
           <TabPanelInfo2 />
+       </div>
+       <div className="bg-white">
+          <TabPanelInfo3 />
+       </div>
+       <div className="bg-white">
+          <TabPanelInfo4 />
+       </div>
+       <div className="bg-white">
+          <TabPanelInfo5 />
+       </div>
+       <div className="bg-white">
+          <TabPanelInfo6 />
+       </div>
+       <div className="bg-white">
+          <TabPanelInfo7 />
+       </div>
+       <div className="bg-white">
+          <TabPanelInfo8 />
        </div>
         
       </Slider>

@@ -255,7 +255,7 @@ const HomeTechnologies = () => {
   }, []);
 
   return (
-    <div className=" py-[180px] lg:mx-auto md:mx-7 sm: mx-4 ">
+    <div className=" py-[60px] lg:mx-auto md:mx-7 sm: mx-4 ">
       <div
         style={{ fontFamily: "Open Sans, sans-serif" }}
         className=" lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4"
@@ -266,7 +266,7 @@ const HomeTechnologies = () => {
           className="font-bold text-5xl mb-5 leading-[60px]"
         >
           Technologies and Platforms <br /> 
-          <span className="text-purple-900 ms-2 "> We Work With</span>
+          <span className="text-purple-900 md:ms-2 sm:0"> We Work With</span>
         </h1>
 
         <div

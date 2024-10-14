@@ -70,9 +70,9 @@ export default function VerticalTabs() {
         <h1
           data-aos="fade-up"
           style={{ fontFamily: "Sumana,serif" }}
-          className="dafault-heading"
+          className="font-bold text-5xl mb-20 md:flex md:items-center"
         >
-          Explore Our <span className="text-purple-900 ms-2 "> Offering</span>
+         Explore Our<p className="text-purple-900 md:ms-2 sm: ms-0"> Offering</p>
         </h1>
         {/* Tab section  */}
 <div className="lg:block md:hidden sm: hidden">

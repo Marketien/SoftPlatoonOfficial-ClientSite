@@ -62,7 +62,7 @@ const FeaturedInsights = () => {
   };
 
   return (
-    <div className="bg-white py-[180px] ">
+    <div className="bg-white py-[60px] ">
       <div
         style={{ fontFamily: "Open Sans, sans-serif" }}
         className=" lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:px-7 sm: px-4"

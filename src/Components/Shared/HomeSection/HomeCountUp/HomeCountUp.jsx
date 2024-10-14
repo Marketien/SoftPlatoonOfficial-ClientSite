@@ -13,11 +13,11 @@ const HomeCountUp = () => {
   return (
     <div
       style={{ fontFamily: "Open Sans, sans-serif" }}
-      className="my-[180px] lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4"
+      className="my-[60px] lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4"
     >
       <div
       data-aos="fade-up"
-      className="grid lg:grid-cols-4 md:grid-cols-2 sm: grid-cols-1 lg:text-start md:text-center sm: text-center
+      className="grid lg:grid-cols-4 md:grid-cols-2 sm: grid-cols-1 text-center
         lg:gap-5 md:gap-20 sm: gap-20">
         <div className="lg:border-r-2 border-purple-300">
             <span className=" text-5xl font-semibold text-purple-900">

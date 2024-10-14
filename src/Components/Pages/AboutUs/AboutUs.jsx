@@ -21,7 +21,7 @@ const AboutUs = () => {
             Your Partner for Project Success
           </p>
           <p
-            style={{ fontFamily: "Ubuntu,sans-serif" }}
+            
             className="text-lg my-5"
           >
             Founded in 2019, SoftPlatoon is a US-based provider of IT consulting

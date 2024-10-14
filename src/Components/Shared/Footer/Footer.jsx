@@ -38,7 +38,7 @@ const Footer = () => {
 
   <nav className="md:place-self-center md:justify-self-end">
     <div className="grid grid-flow-col gap-4">
-   <Link to="https://www.facebook.com/marketienofficial" target="_blank"><img className="w-[30px] h-[30px] hover:shadow-lg hover:shadow-purple-200 rounded-full" src={facebookLogo} alt="" /></Link> 
+   <Link to="/" target="_blank"><img className="w-[30px] h-[30px] hover:shadow-lg hover:shadow-purple-200 rounded-full" src={facebookLogo} alt="" /></Link> 
    {/* <a href="" target="_blank"><img className="w-[30px] h-[30px]" src={instagramLogo} alt="" /></a>  */}
    <Link href="" target="_blank"><img className="w-[30px] h-[30px] hover:shadow-lg hover:shadow-purple-200 rounded-full" src={linkedinLogo} alt="" /></Link> 
    {/* <a href="" target="_blank"><img className="w-[33px] h-[33px]" src={twitterLogo} alt="" /></a>  */}

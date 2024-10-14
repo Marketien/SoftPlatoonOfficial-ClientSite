@@ -21,7 +21,7 @@ const GetProposal = () => {
           Your Partner for Digital Success
           </p>
           <p
-            style={{ fontFamily: "Ubuntu,sans-serif" }}
+           
             className="text-lg my-5"
           >
             Since 2019, SoftPlatoon has been a reliable partner to over 230+ clients, driving digital transformation, implementing innovative software, and ensuring stable and cost-effective IT operations.

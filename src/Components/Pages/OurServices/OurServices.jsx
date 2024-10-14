@@ -25,7 +25,7 @@ const OurServices = () => {
             Your Vision, Our Digital Expertise
           </p>
           <p
-            style={{ fontFamily: "Ubuntu,sans-serif" }}
+           
             className="text-lg my-5"
           >
             Once a small product company, SoftPlatoon grew to become an IT
