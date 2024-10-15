@@ -5,7 +5,7 @@ const Section2 = () => {
     <div
       style={{ fontFamily: "Open Sans,sans-serif" }}
       className="bg-[#e7e7eb21] py-[1px] lg:max-w-6xl md:max-w-3xl
-       sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4 "
+       sm: max-w-sm"
     >
       {/* Vertical Tabs Container  */}
       <div>

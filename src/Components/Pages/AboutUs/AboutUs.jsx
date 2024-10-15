@@ -3,7 +3,7 @@ import img from "../../../../public/Images/AboutUs-removebg-preview.png";
 import CEO from "../../../../public/Images/Unknownclientjpg.jpg";
 const AboutUs = () => {
   return (
-    <div className="lg:mt-[90px] md:mt-[90px] sm: mt-[120px] bg-white">
+    <div className="lg:mt-[90px] md:mt-[90px] sm: mt-[80px] bg-white">
       {/* ---------------------------- Banner Section ----------------------------------- */}
       <div
         className="grid lg:grid-cols-2 md:grid-cols-1 sm: grid-cols-1 items-center
@@ -37,7 +37,7 @@ const AboutUs = () => {
       </div>
       {/* information text  */}
       <div className="lg:mx-32 md:mx-10 sm: mx-5 py-20 lg:flex md:flex sm: block gap-5 ">
-        <div className="w-[250px] h-[320px] p-5 bg-[#59287f1c] flex justify-center">
+        <div className="md:w-[250px] md:h-[320px] p-5 bg-[#59287f1c] flex justify-center">
           <div>
             <img className="w-[250px]" src={CEO} alt="" />
             <h1

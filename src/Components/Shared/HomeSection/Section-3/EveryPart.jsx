@@ -48,7 +48,7 @@ const EveryPart = () => {
               data-aos="fade-up"
               className="absolute md:top-[250px] lg:left-[445px] sm: top-0  lg:mx-0 md:mx-6 sm: mx-4"
             >
-              <div>
+              <div className="">
                 <h1
                   style={{ fontFamily: "Sumana,serif" }}
                   className=" text-5xl font-bold mt-5 leading-[60px]"
@@ -60,9 +60,9 @@ const EveryPart = () => {
                   Comprehensive care of your cloud or on-premises infrastructure{" "}
                   <br /> and applications :
                 </p>
-                <p className="mt-5 grid lg:grid-cols-2 md:grid-cols-2 sm: grid-cols-1">
+                <div className="mt-5 grid lg:grid-cols-2 md:grid-cols-2 sm: grid-cols-1">
                   {parts.map((part, index) => (
-                    <p key={index} className="flex mb-4 font-medium">
+                    <p key={index} className=" flex mb-4 font-medium">
                       <BsCheckCircleFill
                         size={15}
                         className="me-2 text-[#5A287F]"
@@ -72,7 +72,7 @@ const EveryPart = () => {
                       </span>
                     </p>
                   ))}
-                </p>
+                </div>
               </div>
             </div>
           </div>

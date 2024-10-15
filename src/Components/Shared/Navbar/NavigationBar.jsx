@@ -232,7 +232,7 @@ const NavigationBar = () => {
               {/* contact option  */}
               <li className="animate-pulse">
                 <Link
-                  to="/"
+                  to="/getProposal"
                   className=" text-white px-5 py-2 hover:text-purple-500 bg-purple-900"
                 >
                   Get Proposal

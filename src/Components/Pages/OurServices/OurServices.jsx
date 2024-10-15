@@ -7,7 +7,7 @@ const OurServices = () => {
 
 
   return (
-    <div className="lg:mt-[90px] md:mt-[90px] sm: mt-[120px] bg-white">
+    <div className="lg:mt-[90px] md:mt-[90px] sm: mt-[80px] bg-white">
       {/* ---------------------------- Banner Section ----------------------------------- */}
       <div
         className="grid lg:grid-cols-2 md:grid-cols-1 sm: grid-cols-1 items-center
@@ -35,7 +35,7 @@ const OurServices = () => {
           </p>
         </div>
         {/* image section  */}
-        <div>
+        <div className="py-5">
           <img src={img1} alt="" />
         </div>
       </div>

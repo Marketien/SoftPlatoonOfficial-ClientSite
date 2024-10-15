@@ -41,7 +41,7 @@ const ExploreServices = () => {
   }, []);
 
     return (
-        <div className=" bg-white py-[60px] ">
+        <div className=" bg-white py-[160px] ">
         <div
          data-aos="fade-down"
          className="lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4">
@@ -53,7 +53,7 @@ const ExploreServices = () => {
     
           {/* cards section */}
           <div
-          className="mt-[60px] mb-[80px] grid lg:grid-cols-5 md:grid-cols-2 sm:grid-cols-1 gap-5 ">
+          className="mt-[30px] mb-[80px] grid lg:grid-cols-5 md:grid-cols-2 sm:grid-cols-1 gap-5 ">
             {
             ExploreServicesData.map(({ icon, title, disc }) => (
               <div

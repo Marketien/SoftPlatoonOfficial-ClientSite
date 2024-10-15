@@ -4,7 +4,7 @@ import IndustryExpertise from '../../Shared/HomeSection/IndustryExpertise/Indust
 
 const Industries = () => {
     return (
-<div className="lg:mt-[90px] md:mt-[90px] sm: mt-[120px]">
+<div className="lg:mt-[90px] md:mt-[90px] sm: mt-[80px]">
         {/* ---------------------------- Banner Section ----------------------------------- */}
       <div
         className="grid lg:grid-cols-2 md:grid-cols-1 sm: grid-cols-1 items-center
@@ -14,7 +14,7 @@ const Industries = () => {
         <div>
           <h1
             style={{ fontFamily: "Sumana, serif" }}
-            className="font-bold text-5xl mb-2"
+            className="font-bold text-5xl mb-2 sm: pt-5"
           >
            Industries
           </h1>
@@ -29,7 +29,7 @@ const Industries = () => {
           </p>
         </div>
         {/* image section  */}
-        <div>
+        <div className='py-5'>
           <img src={img} alt="" />
         </div>
       </div>
