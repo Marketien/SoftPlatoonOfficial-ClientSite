@@ -24,7 +24,7 @@
 
 /* For small devices */
 @media (max-width: 576px) {
-    .react-tel-input .form-control {
+    .react-tel-input{
         height: 42px !important;
         width: 304px !important;
     }
