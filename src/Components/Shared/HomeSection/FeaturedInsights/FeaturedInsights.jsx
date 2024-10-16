@@ -39,8 +39,7 @@ const featuredData = [
   {
     image: img5,
     service: "Information Security",
-    title:
-      "BYOD Security Policy Best Practices: Safeguarding Employee Devices",
+    title: "BYOD Security Policy Best Practices: Safeguarding Employee Devices",
     disc: "Learn why a strong BYOD security policy is essential for remote and hybrid work and discover best practices for securing employee devices to protect your corporate data.",
   },
   {
@@ -53,7 +52,7 @@ const featuredData = [
 
 const FeaturedInsights = () => {
   useEffect(() => {
-    Aos.init({ duration: 1000 }); 
+    Aos.init({ duration: 1000 });
   }, []);
   const [showData, setShowData] = useState(3);
 
@@ -81,38 +80,41 @@ const FeaturedInsights = () => {
           style={{ fontFamily: "Sumana,serif" }}
           className="relative mt-10 grid lg:grid-cols-3 md:grid-cols-2 sm: grid-cols-1 gap-6"
         >
-          {featuredData.slice(0, showData).map(({ service, image, title, disc }, index) => (
-            <div
-              key={index}
-              style={{ fontFamily: "Ubuntu,sans-serif" }}
-              className="relative bg-gray-100 px-3 py-3 rounded-sm shadow-lg hover:shadow-xl"
-            >
-              <div className="mb-5">
-                <img src={image} alt="" />
-              </div>
-              <p className="text-sm text-purple-700 font-semibold uppercase mb-5 ">
-                {service}
-              </p>
-              <h1
-                style={{ fontFamily: "Open Sans,sans-serif" }}
-                className="font-bold text-lg mb-3"
-              >
-                {title}
-              </h1>
-              <p className="pb-10">{disc}</p>
+          {featuredData
+            .slice(0, showData)
+            .map(({ service, image, title, disc }, index) => (
               <div
-                title="Read More"
-                className="absolute bottom-2 right-3 py-3 "
+                key={index}
+                style={{ fontFamily: "Ubuntu,sans-serif" }}
+                className="relative bg-gray-100 px-3 py-3 rounded-sm shadow-lg hover:shadow-xl"
               >
-                <button className="flex items-center gap-1 text-purple-900 hover:text-purple-300 rounded-sm ps-2">
-                  <span>Read More</span>
-                  <span>
-                    <IoIosArrowRoundForward size={25} />
-                  </span>
-                </button>
+                <div className="mb-5">
+                  <img src={image} alt="" />
+                </div>
+                <p className="text-sm text-purple-700 font-semibold uppercase mb-5 ">
+                  {service}
+                </p>
+                <h1
+                  style={{ fontFamily: "Open Sans,sans-serif" }}
+                  className="font-bold text-lg mb-3"
+                >
+                  {title}
+                </h1>
+                <p className="pb-10">{disc}</p>
+                {/* Read More Button  */}
+                <div
+                  title="Read More"
+                  className="absolute bottom-2 right-3 py-3 "
+                >
+                  <button className="flex items-center gap-1 text-purple-900 hover:text-purple-300 rounded-sm ps-2">
+                    <span>Read More</span>
+                    <span>
+                      <IoIosArrowRoundForward size={25} />
+                    </span>
+                  </button>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
         </div>
         {/* Load More Button --------------- */}
         <div className="flex justify-center mt-20">
