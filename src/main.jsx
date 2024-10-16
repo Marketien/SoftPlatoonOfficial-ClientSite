@@ -15,6 +15,7 @@ import Industries from './Components/Pages/Industries/Industries';
 import WebAppsService from './Components/Pages/IndividualServices/WebAppsService';
 import SoftWareService from './Components/Pages/IndividualServices/SoftWareService';
 import ErpService from './Components/Pages/IndividualServices/ErpService';
+import SoftwareDevelopmentSweden from './Components/Pages/SoftwareDevelopmentSweden/SoftwareDevelopmentSweden';
 
 const router = createBrowserRouter([
   {
@@ -27,7 +28,7 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/ourServices",
+        path: "/our-services",
         element: <OurServices />,
       },
       {
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
       {
         path: "/getProposal",
         element: < GetProposal/>,
+      },
+      {
+        path: "/software-development-sweden",
+        element: < SoftwareDevelopmentSweden/>,
       },
     ],
   },

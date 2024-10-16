@@ -151,7 +151,7 @@ const NavigationBar = () => {
           >
             <li>
               <Link
-                to="/ourServices"
+                to="/our-services"
                 className="md:p-4 py-2 block uppercase hover:text-purple-500 "
               >
                 Our Services
@@ -198,7 +198,7 @@ const NavigationBar = () => {
             <ul className={` ${scrolled ? " text-white" : "text-black "} text-sm text-black text-center gap-3 leading-[70px] uppercase} `}>
               <li>
                 <Link
-                  to="/ourServices"
+                  to="/our-services"
                   className=" hover:text-purple-500 "
                 >
                   Our Services

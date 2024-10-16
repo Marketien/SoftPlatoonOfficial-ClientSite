@@ -1,4 +1,5 @@
 import img1 from "../../../../public/Images/ourService.png";
+import HomeContact from "../../Shared/HomeSection/HomeContact/HomeContact";
 import Testimonials from "../../Shared/HomeSection/Testimonials/Testimonials";
 import OSFullScale from "./OSFullScale";
 import OSProvide from "./OSProvide";
@@ -35,7 +36,7 @@ const OurServices = () => {
           </p>
         </div>
         {/* image section  */}
-        <div className="py-5">
+        <div className="py-5  md:flex justify-end sm: block">
           <img src={img1} alt="" />
         </div>
       </div>
@@ -46,6 +47,10 @@ const OurServices = () => {
         <Testimonials/>
         {/* ************************** FUll Scale Section *************************************** */}
         <OSFullScale/>
+        {/* ************************** Content Section *************************************** */}
+        <div className="mt-20">
+        <HomeContact/>
+        </div>
       </div>
     </div>
   );
