@@ -18,7 +18,7 @@ const HomeCarousel = () => {
   };
 
   return (
-    <div className="lg:max-w-6xl md:max-w-3xl sm: max-w-full lg:mx-auto md:px-7 sm: px-0">
+    <div className="lg:max-w-6xl md:max-w-3xl sm: max-w-full lg:mx-auto md:px-0 sm: px-0">
       <Slider {...settings}>
        <div className="bg-white">
           <TabPanelInfo1 />

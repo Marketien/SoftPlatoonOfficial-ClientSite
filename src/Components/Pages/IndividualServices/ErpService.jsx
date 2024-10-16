@@ -3,7 +3,7 @@
 const ErpService = () => {
     return (
         <div>
-            <h1>ErpService</h1>
+            <h1>Erp Service</h1>
         </div>
     );
 };

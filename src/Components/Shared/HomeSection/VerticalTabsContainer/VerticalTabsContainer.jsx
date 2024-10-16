@@ -63,10 +63,13 @@ export default function VerticalTabs() {
   };
 
   return (
-    <div className="my-[180px] ">
+    <div 
+    style={{ fontFamily: "Open Sans,sans-serif" }}
+     className="my-[180px] bg-[#e7e7eb21] "
+     >
       {/* Tab section  for large device */}
-      {/* <div className='lg:flex md:flex sm: overflow-x-auto justify-center'> */}
-      <div className=" px-5">
+      <div className=" px-5 py-[1px] lg:max-w-6xl md:max-w-3xl
+       sm: max-w-sm lg:mx-auto md:mx-0 sm: mx-0 ">
         <h1
           data-aos="fade-up"
           style={{ fontFamily: "Sumana,serif" }}

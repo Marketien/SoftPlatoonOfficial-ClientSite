@@ -22,18 +22,18 @@ const Home = () => {
       <Banner />
       {/*----------------- Home CountUp Section  -----------------*/}
       <HomeCountUp />
-      {/*----------------- Explore Our Popular Service -----------------*/}
+      {/*----------------- Explore  Popular Service -----------------*/}
       <ExploreServices />
-      {/* ----------------Explore Our Offering -------------*/}
+      {/* ----------------Explore  Offering -------------*/}
       <Section2 />
-      {/* ---------------Solution We Deliver -------------*/}
+      {/* ---------------Solution  -------------*/}
       <SolutionDeliver />
-      {/* --------------- Our Industry Expertiser -------------*/}
+      {/* ---------------  Industry  -------------*/}
       <IndustryExpertise  />
-      {/*--------------- Every Part of Your IT Ecosystem.----------------- */}
+      {/*--------------- Every Part .----------------- */}
       {/* <Section3 /> */}
       <EveryPart />
-      {/*--------------- Technologies and Platforms We Work With.----------------- */}
+      {/*--------------- Technologies ----------------- */}
       <HomeTechnologies />
       {/* ---------------Featured Insights -------------*/}
       <FeaturedInsights />
