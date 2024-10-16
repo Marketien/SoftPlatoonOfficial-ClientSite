@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import img1 from "../../../../public/Images/Software.png";
+import OurServiceSweden from "./OurServiceSweden";
 
 const SoftwareDevelopmentSweden = () => {
   return (
@@ -34,7 +35,13 @@ const SoftwareDevelopmentSweden = () => {
           <img src={img1} alt="" />
         </div>
       </div>
-      <div className="lg:mx-32 md:mx-10 sm: mx-5 py-20"></div>
+      {/* Content section  */}
+        <div className="flex justify-center">
+      <div className="lg:mx-52 md:mx-10 sm: mx-5 py-20">
+{/* Our service seciton  */}
+<OurServiceSweden/>
+        </div>
+      </div>
     </div>
   );
 };
