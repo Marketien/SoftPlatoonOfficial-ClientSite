@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import img1 from "../../../../public/Images/Software.png";
-import OurServiceSweden from "./OurServiceSweden";
+import OurServiceSweden from "./OurServiceSweden/OurServiceSweden";
 
 const SoftwareDevelopmentSweden = () => {
   return (
-    <div className="lg:mt-[90px] md:mt-[90px] sm: mt-[80px] bg-white">
+    <div className="lg:mt-[90px] md:mt-[90px] sm: mt-[80px] bg-[#59287f1c]">
       {/* ---------------------------- Banner Section ----------------------------------- */}
       <div
         className="grid lg:grid-cols-2 md:grid-cols-1 sm: grid-cols-1 items-center
