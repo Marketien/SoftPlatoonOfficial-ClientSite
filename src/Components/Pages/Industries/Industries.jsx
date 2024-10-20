@@ -1,4 +1,5 @@
 import img from '../../../../public/Images/Industry-Softplatoon-01.png'
+import HomeContact from '../../Shared/HomeSection/HomeContact/HomeContact';
 
 import IndustryExpertise from '../../Shared/HomeSection/IndustryExpertise/IndustryExpertise';
 
@@ -29,11 +30,12 @@ const Industries = () => {
           </p>
         </div>
         {/* image section  */}
-        <div className='py-5'>
+        <div className='py-5 md:flex justify-end sm: block'>
           <img src={img} alt="" />
         </div>
       </div>
           <IndustryExpertise/>  
+          <HomeContact/>
         </div>
     );
 };

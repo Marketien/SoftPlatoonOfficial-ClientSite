@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import img from "../../../../public/Images/AboutUs-removebg-preview.png";
 import CEO from "../../../../public/Images/Unknownclientjpg.jpg";
+import HomeContact from "../../Shared/HomeSection/HomeContact/HomeContact";
 const AboutUs = () => {
   return (
     <div className="lg:mt-[90px] md:mt-[90px] sm: mt-[80px] bg-white">
@@ -31,7 +32,7 @@ const AboutUs = () => {
           </p>
         </div>
         {/* image section  */}
-        <div>
+        <div className="py-5 md:flex justify-end sm: block">
           <img src={img} alt="" />
         </div>
       </div>
@@ -92,6 +93,8 @@ const AboutUs = () => {
           </p>
         </div>
       </div>
+      {/* Contact section  */}
+      <HomeContact/>
     </div>
   );
 };

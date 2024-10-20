@@ -28,7 +28,7 @@ const GetProposal = () => {
           </p>
         </div>
         {/* image section  */}
-        <div>
+        <div className="py-5 md:flex justify-end sm: block">
           <img src={img1} alt="" />
         </div>
       </div>

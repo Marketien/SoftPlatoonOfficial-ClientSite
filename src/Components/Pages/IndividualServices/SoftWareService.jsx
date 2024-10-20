@@ -27,7 +27,7 @@ const SoftWareService = () => {
             </p>
           </div>
           {/* image section  */}
-          <div className="py-5">
+          <div className="py-5 ">
             <img src={img1} alt="" />
           </div>
         </div>

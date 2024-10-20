@@ -3,6 +3,8 @@ import img1 from "../../../../public/Images/Software.png";
 import OurServiceSweden from "./OurServiceSweden/OurServiceSweden";
 import RecentProjectSweden from "./RecentProjectSweden/RecentProjectSweden";
 import HomeTechnologies from "../../Shared/HomeSection/HomeTechnologies/HomeTechnologies";
+import QuestionAnswer from "../../Shared/HomeSection/FAQ/QuestionAnswer";
+import HomeContact from "../../Shared/HomeSection/HomeContact/HomeContact";
 
 const SoftwareDevelopmentSweden = () => {
   return (
@@ -38,7 +40,7 @@ const SoftwareDevelopmentSweden = () => {
           </button>
         </div>
         {/* image section  */}
-        <div className="py-5">
+        <div className="py-5 md:flex justify-end sm: block">
           <img src={img1} alt="" />
         </div>
       </div>
@@ -54,6 +56,14 @@ const SoftwareDevelopmentSweden = () => {
       {/* Recent Projects seciton  */}
       <div className=" py-20">
         <HomeTechnologies />
+      </div>
+      {/* FAQ seciton  */}
+      <div className="bg-white py-20">
+        < QuestionAnswer/>
+      </div>
+      {/*  Contact seciton  */}
+      <div className=" py-0">
+        < HomeContact href="#contact"/>
       </div>
     </div>
   );

@@ -36,7 +36,7 @@ const OurServices = () => {
           </p>
         </div>
         {/* image section  */}
-        <div className="py-5  md:flex justify-end sm: block">
+        <div className="py-5 md:flex justify-end sm: block">
           <img src={img1} alt="" />
         </div>
       </div>
