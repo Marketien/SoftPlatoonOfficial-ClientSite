@@ -2,10 +2,11 @@ import { Link } from "react-router-dom";
 import img1 from "../../../../public/Images/Software.png";
 import OurServiceSweden from "./OurServiceSweden/OurServiceSweden";
 import RecentProjectSweden from "./RecentProjectSweden/RecentProjectSweden";
+import HomeTechnologies from "../../Shared/HomeSection/HomeTechnologies/HomeTechnologies";
 
 const SoftwareDevelopmentSweden = () => {
   return (
-    <div className="lg:mt-[90px] md:mt-[90px] sm: mt-[80px]">
+    <div className="lg:mt-[90px] md:mt-[90px] sm: mt-[80px] overflow-x-hidden">
       {/* ---------------------------- Banner Section ----------------------------------- */}
       <div
         className="grid lg:grid-cols-2 md:grid-cols-1 sm: grid-cols-1 items-center
@@ -49,6 +50,10 @@ const SoftwareDevelopmentSweden = () => {
       {/* Recent Projects seciton  */}
       <div className="bg-white py-20">
         <RecentProjectSweden />
+      </div>
+      {/* Recent Projects seciton  */}
+      <div className=" py-20">
+        <HomeTechnologies />
       </div>
     </div>
   );

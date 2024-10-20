@@ -18,7 +18,7 @@ import TestingQA from "../../Shared/HomeSection/TestingQA/TestingQA";
 
 const Home = () => {
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Banner />
       {/*----------------- Home CountUp Section  -----------------*/}
       <HomeCountUp />
@@ -55,7 +55,7 @@ const Home = () => {
       <QuestionAnswer />
       {/* --------------- Contact Us --------------- */}
       <HomeContact href="#contact" />
-    </>
+    </div>
   );
 };
 

@@ -3,7 +3,7 @@
 import icon1 from "../../../../../public/TechIcons/1.NodeJs.png";
 import icon2 from "../../../../../public/TechIcons/2.Php.png";
 import icon3 from "../../../../../public/TechIcons/3.C++.png";
-import icon4 from "../../../../../public/TechIcons/3.1ExpressJs.png";
+import icon4 from "../../../../../public/TechIcons/Express.png";
 import icon5 from "../../../../../public/TechIcons/4.laravel.png";
 // FrontEndIcon-------------------------------------------------------------------
 import icon6 from "../../../../../public/TechIcons/6.Html.png";
@@ -265,7 +265,7 @@ const HomeTechnologies = () => {
           style={{ fontFamily: "Sumana,serif" }}
           className="font-bold text-5xl mb-5 leading-[60px]"
         >
-          Technologies and Platforms <br /> 
+          Technologies 
           <span className="text-purple-900 md:ms-2 sm:0"> We Work With</span>
         </h1>
 
@@ -277,10 +277,10 @@ const HomeTechnologies = () => {
           <div>
           {/*---------------------------------- Web Icon Section-----------------------------------  */}
           <div className="px-3 py-3 mb-10">
-            <h1 className="font-semibold text-3xl mb-7">Web</h1>
+            <h1 className="font-semibold text-3xl underline mb-7">Web</h1>
             <div className="flex justify-center">
             <div>
-            <p className=" text-xl text-gray-500 uppercase mb-3">Back end</p>
+            <p className=" text-xl text-purple-500  uppercase mb-3">Back end</p>
             <div className="lg:flex md:grid md:grid-cols-4 sm: grid sm: grid-cols-3 gap-2 mb-5">
               {BackEndIcon.map(({ icon, title }, index) => (
                 <div
@@ -288,11 +288,11 @@ const HomeTechnologies = () => {
                   key={index}
                   className="flex justify-center items-center gap-5 bg-white hover:bg-[#59287f1c]"
                 >
-                  <img className="w-[100px] p-1" src={icon} alt="" />
-                </div>
+                  <img className=" w-[100px] p-1" src={icon} alt="" />
+                  </div>
               ))}
             </div>
-            <p className=" text-xl text-gray-500 uppercase mb-3">Front end</p>
+            <p className=" text-xl text-purple-500  uppercase mb-3">Front end</p>
             <div className="lg:flex md:grid md:grid-cols-4 sm: grid sm: grid-cols-3 gap-2 ">
               {FrontEndIcon.map(({ icon, title }, index) => (
                 <div
@@ -309,7 +309,7 @@ const HomeTechnologies = () => {
           </div>
           {/*---------------------------------- Mobile Icon Section-----------------------------------  */}
           <div className="px-3 py-3 mb-10">
-            <h1 className="font-semibold text-3xl mb-2">Mobile</h1>
+            <h1 className="font-semibold text-3xl underline mb-2">Mobile</h1>
             <div className="lg:flex lg:justify-center md:grid md:grid-cols-4 sm: grid sm: grid-cols-3 gap-2">
               {MobileIcon.map(({ icon, title }, index) => (
                 <div
@@ -324,7 +324,7 @@ const HomeTechnologies = () => {
           </div>
           {/*---------------------------------- Desktop Icon Section-----------------------------------  */}
           <div className="px-3 py-3 mb-10">
-            <h1 className="font-semibold text-3xl mb-2">Desktop</h1>
+            <h1 className="font-semibold text-3xl underline mb-2">Desktop</h1>
             <div className="lg:flex lg:justify-center md:grid md:grid-cols-4 sm: grid sm: grid-cols-3 gap-2">
               {DesktopIcon.map(({ icon, title }, index) => (
                 <div
@@ -339,7 +339,7 @@ const HomeTechnologies = () => {
           </div>
           {/*---------------------------------- Cloud Icon Section-----------------------------------  */}
           <div className="px-3 py-3 mb-10">
-            <h1 className="font-semibold text-3xl mb-2">Clouds</h1>
+            <h1 className="font-semibold text-3xl underline mb-2">Clouds</h1>
             <div className="lg:flex lg:justify-center md:grid md:grid-cols-4 sm: grid sm: grid-cols-3 gap-2">
               {CloudIcon.map(({ icon, title }, index) => (
                 <div
@@ -354,7 +354,7 @@ const HomeTechnologies = () => {
           </div>
           {/*---------------------------------- Database Icon Section-----------------------------------  */}
           <div className="px-3 py-3 mb-10">
-            <h1 className="font-semibold text-3xl mb-2">Database</h1>
+            <h1 className="font-semibold text-3xl underline mb-2">Database</h1>
             <div className="lg:flex lg:justify-center md:grid md:grid-cols-4 sm: grid sm: grid-cols-3 gap-2">
               {DataBaseIcon.map(({ icon, title }, index) => (
                 <div
@@ -362,15 +362,15 @@ const HomeTechnologies = () => {
                   key={index}
                   className="flex justify-start items-center gap-5 bg-white hover:bg-[#59287f1c]"
                 >
-                  <img className="w-[100px] p-2" src={icon} alt="" />
+                  <img className="w-[120px] p-2" src={icon} alt="" />
                 </div>
               ))}
             </div>
           </div>
           {/*---------------------------------- Machine learning Icon Section-----------------------------------  */}
           <div className="px-3 py-3 mb-10">
-            <h1 className="font-semibold text-3xl mb-7">Machine learning</h1>
-            <p className=" text-lg text-gray-500 uppercase mb-3">
+            <h1 className="font-semibold text-3xl underline mb-7">Machine learning</h1>
+            <p className=" text-lg text-purple-500  uppercase mb-3">
               Programming languages
             </p>
             <div className="lg:flex lg:justify-center md:grid md:grid-cols-4 sm: grid sm: grid-cols-3 gap-2 mb-5">
@@ -380,26 +380,26 @@ const HomeTechnologies = () => {
                   key={index}
                   className="flex justify-start items-center gap-5 bg-white hover:bg-[#59287f1c]"
                 >
-                  <img className="w-[100px] p-1" src={icon} alt="" />
+                  <img className="w-[120px] p-1" src={icon} alt="" />
                 </div>
               ))}
             </div>
-            <p className=" text-lg text-gray-500 uppercase mb-3">Frameworks</p>
+            <p className=" text-lg text-purple-500  uppercase mb-3">Frameworks</p>
             <div className="lg:flex lg:justify-center md:grid md:grid-cols-4 sm: grid sm: grid-cols-3 gap-2 ">
               {FrameworkIcon.map(({ icon, title }, index) => (
                 <div
                   title={title}
                   key={index}
-                  className="flex justify-start items-center gap-5 w-[80px] h-[70px] bg-white hover:bg-[#59287f1c]"
+                  className="flex justify-start items-center gap-5  bg-white hover:bg-[#59287f1c]"
                 >
-                  <img className="w-[100px] p-4" src={icon} alt="" />
+                  <img className="w-[120px] p-4" src={icon} alt="" />
                 </div>
               ))}
             </div>
           </div>
           {/*---------------------------------- DevOps Icon Section-----------------------------------  */}
           <div className="px-3 py-3 mb-10">
-            <h1 className="font-semibold text-3xl mb-8">DevOps</h1>
+            <h1 className="font-semibold text-3xl underline mb-8">DevOps</h1>
             <div className="lg:flex lg:justify-center md:grid md:grid-cols-4 sm: grid sm: grid-cols-3 gap-2">
               {DevOpsIcon.map(({ icon, title }, index) => (
                 <div
@@ -407,14 +407,14 @@ const HomeTechnologies = () => {
                   key={index}
                   className="flex justify-start items-center gap-5 bg-white hover:bg-[#59287f1c]"
                 >
-                  <img className="w-[100px] p-2" src={icon} alt="" />
+                  <img className="w-[150px] p-2" src={icon} alt="" />
                 </div>
               ))}
             </div>
           </div>
           {/*---------------------------------- Information Security Icon Section-----------------------------------  */}
           <div className="px-3 py-3">
-            <h1 className="font-semibold text-3xl mb-8">Information Security</h1>
+            <h1 className="font-semibold text-3xl underline mb-8">Information Security</h1>
             <div className="lg:flex lg:justify-center md:grid md:grid-cols-4 sm: grid sm: grid-cols-3 gap-2">
               {SecurityIcon.map(({ icon, title }, index) => (
                 <div

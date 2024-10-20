@@ -279,7 +279,7 @@ const RecentProjectSweden = () => {
       </div>
 
       {/* Load More Button --------------- */}
-      <div className="flex justify-center mt-[50px]">
+      <div className="flex justify-center mt-[30px]">
         <button
           className="border-2 border-purple-900 hover:border-purple-500 
             text-purple-900 hover:text-purple-500 hover:bg-gray-100
