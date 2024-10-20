@@ -107,7 +107,7 @@ const  SwedenTab = () =>{
               sx={{
                 color: "white",
                 padding: "18px",
-                marginTop: "45px",
+                marginTop: "80px",
                 width: "300px",
                 marginLeft: "30px",
                 backgroundColor: value === 0 ? "#FBF9F1" : "transparent",

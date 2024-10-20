@@ -71,7 +71,7 @@ export default function VerticalTabs() {
       <div className=" px-5 py-[1px] lg:max-w-6xl md:max-w-3xl
        sm: max-w-sm lg:mx-auto md:mx-0 sm: mx-0 ">
         <h1
-          data-aos="fade-up"
+          data-aos="zoom-in"
           style={{ fontFamily: "Sumana,serif" }}
           className="font-bold text-5xl mb-20 md:flex md:items-center"
         >
@@ -89,7 +89,7 @@ export default function VerticalTabs() {
             borderRadius: "5px",
             height: { lg: 600, md: 730, sm: 730 },
           }}
-          data-aos="fade-up"
+          data-aos="zoom-in"
         >
           <Tabs
             orientation="vertical"

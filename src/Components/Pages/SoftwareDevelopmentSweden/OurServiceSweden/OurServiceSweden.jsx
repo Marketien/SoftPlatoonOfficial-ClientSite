@@ -3,8 +3,8 @@ import SwedenTab from "./SwedenTab";
 
 const OurServiceSweden = () => {
     return (
-        <div className="px-3 py-5  lg:max-w-6xl md:max-w-3xl
-       sm: max-w-sm">
+        <div className="px-3 py-5 lg:max-w-6xl md:max-w-3xl
+       sm: max-w-sm mx-auto ">
           <h1
         style={{ fontFamily: "Sumana, serif" }}
         className=" font-bold text-5xl mb-2 lg:mx-auto md:mx-4 sm: mx-4"

@@ -45,13 +45,13 @@ const HomeContact = () => {
   };
 
   return (
-    <div id="contact" className="bg-gray-100 py-[60px] ">
+    <div id="contact" className="bg-white py-[60px] ">
       <div
         style={{ fontFamily: "Open Sans, sans-serif" }}
         className=" lg:max-w-6xl md:max-w-3xl sm:max-w-sm lg:mx-auto md:px-7 sm:px-4"
       >
         <div data-aos="fade-up" style={{ fontFamily: "Ubuntu,serif" }}>
-          <form ref={form} onSubmit={sendEmail} className="bg-white px-5 py-5">
+          <form ref={form} onSubmit={sendEmail} className="border shadow-lg rounded-md px-5 py-5">
             <h1 className="text-xl mb-3">Need A Consultation? </h1>
             <p className="mb-4">
               Drop us a line! We are here to answer your questions 24/7.

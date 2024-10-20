@@ -45,12 +45,12 @@ const Home = () => {
       <Section4 />
       {/*---------------- PRICING PLAN------------- */}
       {/* <Section5 /> */}
-      {/*---------------Testing & QA----------------  */}
-      <TestingQA />
-      {/*---------------our client----------------  */}
-      <Section6 />
       {/* ---------------Slider section --------------- */}
       <Section1 />
+      {/*---------------our client----------------  */}
+      <Section6 />
+      {/*---------------Testing & QA----------------  */}
+      <TestingQA />
       {/* --------------- Frequently Asked Questions --------------- */}
       <QuestionAnswer />
       {/* --------------- Contact Us --------------- */}
