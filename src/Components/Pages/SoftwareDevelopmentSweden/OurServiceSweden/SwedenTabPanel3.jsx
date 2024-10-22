@@ -3,7 +3,8 @@ const SwedenTabPanel3 = ({ language }) => {
   return (
     <div className=" bg-white ">
       <div
-        className="md:px-5 sm: px-4 md:py-0 sm: py-10 lg:h-full md:h-[600px] sm: h-[750px]"
+        className={`md:px-5 sm: px-4 md:py-0 sm: pb-20 lg:h-full md:h-[600px]
+        ${language === "sv" ? "sm: h-[950px]" : " sm: h-[880px]"}`}
         style={{ fontFamily: "Open Sans,sans-serif" }}
       >
         <h2
