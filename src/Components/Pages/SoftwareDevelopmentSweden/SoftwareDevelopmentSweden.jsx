@@ -6,6 +6,7 @@ import HomeTechnologies from "../../Shared/HomeSection/HomeTechnologies/HomeTech
 import QuestionAnswer from "../../Shared/HomeSection/FAQ/QuestionAnswer";
 import HomeContact from "../../Shared/HomeSection/HomeContact/HomeContact";
 import { useState } from "react";
+import DevelopmentProcessSweden from "./DevelopmentProcessSweden/DevelopmentProcessSweden";
 
 const SoftwareDevelopmentSweden = () => {
   const [language, setLanguage] = useState("sv");
@@ -68,7 +69,11 @@ const SoftwareDevelopmentSweden = () => {
       <div className="bg-white py-20">
         <RecentProjectSweden language={language} />
       </div>
-      {/* Recent Projects seciton  */}
+      {/* Projects Process seciton  */}
+      <div className="bg-white py-20">
+        <DevelopmentProcessSweden language={language} />
+      </div>
+      {/* Home Technologies seciton  */}
       <div className=" py-20">
         <HomeTechnologies language={language} />
       </div>
@@ -81,19 +86,19 @@ const SoftwareDevelopmentSweden = () => {
         <HomeContact href="#contact" language={language} />
       </div>
  {/* ---------------------------- Translate Modal ----------------------------------- */}
-        <div className="fixed bottom-20 right-4 bg-white shadow-lg rounded-md p-1">
-        <p className="text-sm font-semibold mb-1 ">Translate</p>
+        <div className="fixed bottom-20 right-4 bg-[#5A287F] shadow-lg rounded-md p-1">
+        <p className="text-sm font-semibold mb-1 text-white">Translate</p>
         <div className="">
           <button
             onClick={() => handleLanguageChange("sv")}
-            className={`btn btn-xs mb-1 ${language === "en" ? "" : "bg-gray-400"}`}
+            className={`btn btn-xs mb-1 ${language === "en" ? "" : "bg-black text-white"}`}
           >
             Swedish
           </button>
           <br />
           <button
             onClick={() => handleLanguageChange("en")}
-            className={`btn btn-xs mb-1 ${language === "sv" ? "" : "bg-gray-400"}`}
+            className={`btn btn-xs mb-1 ${language === "sv" ? "" : "bg-black text-white"}`}
           >
             English
           </button> 
