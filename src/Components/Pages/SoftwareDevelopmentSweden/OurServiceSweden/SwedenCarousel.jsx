@@ -3,9 +3,8 @@ import SwedenTabPanel1 from "./SwedenTabPanel1";
 import SwedenTabPanel2 from "./SwedenTabPanel2";
 import SwedenTabPanel3 from "./SwedenTabPanel3";
 import SwedenTabPanel4 from "./SwedenTabPanel4";
-import SwedenTabPanel5 from "./SwedenTabPanel5";
 
-const SwedenCarousel = () => {
+const SwedenCarousel = ({language}) => {
 
     var settings = {
         dots: true,
@@ -19,19 +18,16 @@ const SwedenCarousel = () => {
         <div className="lg:max-w-6xl md:max-w-3xl sm: max-w-full lg:mx-auto md:px-0 sm: px-0">
         <Slider {...settings}>
          <div className="bg-white">
-            <SwedenTabPanel1 />
+            <SwedenTabPanel1  language={language}/>
          </div>
          <div className="bg-white">
-            <SwedenTabPanel2 />
+            <SwedenTabPanel2  language={language}/>
          </div>
          <div className="bg-white">
-            <SwedenTabPanel3 />
+            <SwedenTabPanel3  language={language}/>
          </div>
          <div className="bg-white">
-            <SwedenTabPanel4 />
-         </div>
-         <div className="bg-white">
-            <SwedenTabPanel5 />
+            <SwedenTabPanel4  language={language}/>
          </div>
         </Slider>
       </div>

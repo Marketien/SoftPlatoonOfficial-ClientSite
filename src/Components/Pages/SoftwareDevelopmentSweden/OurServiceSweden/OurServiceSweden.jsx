@@ -1,5 +1,5 @@
 import SwedenTab from "./SwedenTab";
-
+// eslint-disable-next-line react/prop-types
 const OurServiceSweden = ({ language }) => {
   console.log("language", language);
   return (

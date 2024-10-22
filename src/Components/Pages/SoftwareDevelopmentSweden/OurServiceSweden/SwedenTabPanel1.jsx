@@ -1,4 +1,5 @@
-const SwedenTabPanel1 = ({ language }) => {
+// eslint-disable-next-line react/prop-types
+const SwedenTabPanel1 = ({language}) => {
   return (
     <div className=" bg-white ">
       <div

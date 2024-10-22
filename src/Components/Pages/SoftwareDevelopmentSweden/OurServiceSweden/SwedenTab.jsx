@@ -51,7 +51,7 @@ function a11yProps(index) {
     "aria-controls": `vertical-tabpanel-${index}`,
   };
 }
-
+// eslint-disable-next-line react/prop-types
 const  SwedenTab = ({language}) =>{
   const [value, setValue] = React.useState(0);
 
@@ -168,7 +168,7 @@ const  SwedenTab = ({language}) =>{
 </div>
 {/* Carousel Container  */}
 <div className="lg:hidden md:block sm: block">
-        <SwedenCarousel/>
+        <SwedenCarousel language={language}/>
       </div>
       </div>
     </div>
