@@ -1,10 +1,10 @@
 import "./Banner.css";
 import { useEffect, useState } from "react";
-// import banner1 from "../../../../../public/Images/a-3d-render-of-a-software-development-environment--4IjFUU9vR0KpGIE3cXgQMg-fLOzlBifRIWgg1V0nkGmAQ.jpeg";
-// import banner2 from "../../../../../public/Images/a-3d-render-of-a-software-development-scene-there--2MQ1-NpBSLWeevz8VVtm_w-fLOzlBifRIWgg1V0nkGmAQ.jpeg";
-// import banner3 from "../../../../../public/Images/a-3d-render-of-a-software-development-workspace-th-7mWCpoyrQL-TzcfSkq0QDQ-fLOzlBifRIWgg1V0nkGmAQ.jpeg";
-// import banner4 from "../../../../../public/Images/a-3d-render-of-a-software-development-workspace-th-YuEotx1cSk-ZREBRjRxXwg-fLOzlBifRIWgg1V0nkGmAQ.jpeg";
-import BannerVideo from '../../../../../public/Images/bannerVIdeo.mp4'
+// import banner1 from "../../../../assets/Images/a-3d-render-of-a-software-development-environment--4IjFUU9vR0KpGIE3cXgQMg-fLOzlBifRIWgg1V0nkGmAQ.jpeg";
+// import banner2 from "../../../../assets/Images/a-3d-render-of-a-software-development-scene-there--2MQ1-NpBSLWeevz8VVtm_w-fLOzlBifRIWgg1V0nkGmAQ.jpeg";
+// import banner3 from "../../../../assets/Images/a-3d-render-of-a-software-development-workspace-th-7mWCpoyrQL-TzcfSkq0QDQ-fLOzlBifRIWgg1V0nkGmAQ.jpeg";
+// import banner4 from "../../../../assets/Images/a-3d-render-of-a-software-development-workspace-th-YuEotx1cSk-ZREBRjRxXwg-fLOzlBifRIWgg1V0nkGmAQ.jpeg";
+import BannerVideo from '../../../../assets/Images/bannerVIdeo.mp4'
 import { TypeAnimation } from "react-type-animation";
 
 const Banner = () => {

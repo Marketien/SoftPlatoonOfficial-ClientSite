@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import logo from "../../../../public/Icons/LogoSoftPlatoonjpg-removebg-preview.png";
-import facebookLogo from "../../../../public/Icons/facebook.png";
-import linkedinLogo from "../../../../public/Icons/linkedin.png";
+import logo from "../../../assets/Icons/LogoSoftPlatoonjpg-removebg-preview.png";
+import facebookLogo from "../../../assets/Icons/facebook.png";
+import linkedinLogo from "../../../assets/Icons/linkedin.png";
 
 const Footer = () => {
   return (

@@ -1,11 +1,11 @@
 import { Carousel } from "@material-tailwind/react";
-import img1 from "../../../../../../public/QalatAlKhaleej/1.png";
-import img2 from "../../../../../../public/QalatAlKhaleej/4.png";
-import img3 from "../../../../../../public/QalatAlKhaleej/5.png";
-import img4 from "../../../../../../public/QalatAlKhaleej/8.png";
-import img5 from "../../../../../../public/QalatAlKhaleej/14.png";
-import img6 from "../../../../../../public/QalatAlKhaleej/15.png";
-import img7 from "../../../../../../public/QalatAlKhaleej/16.png";
+import img1 from "../../../../../assets/QalatAlKhaleej/1.png";
+import img2 from "../../../../../assets/QalatAlKhaleej/4.png";
+import img3 from "../../../../../assets/QalatAlKhaleej/5.png";
+import img4 from "../../../../../assets/QalatAlKhaleej/8.png";
+import img5 from "../../../../../assets/QalatAlKhaleej/14.png";
+import img6 from "../../../../../assets/QalatAlKhaleej/15.png";
+import img7 from "../../../../../assets/QalatAlKhaleej/16.png";
 
 const CarouselTransition = () => {
   return (

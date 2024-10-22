@@ -1,9 +1,9 @@
-import img1 from "../../../../../public/Images/is1.png";
-import img2 from "../../../../../public/Images/is2.png";
-import img3 from "../../../../../public/Images/is3.png";
-import img4 from "../../../../../public/Images/is4.png";
-import img5 from "../../../../../public/Images/is5.png";
-import img6 from "../../../../../public/Images/is6.png";
+import img1 from "../../../../assets/Images/is1.png";
+import img2 from "../../../../assets/Images/is2.png";
+import img3 from "../../../../assets/Images/is3.png";
+import img4 from "../../../../assets/Images/is4.png";
+import img5 from "../../../../assets/Images/is5.png";
+import img6 from "../../../../assets/Images/is6.png";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import Aos from "aos";
 import "aos/dist/aos.css";

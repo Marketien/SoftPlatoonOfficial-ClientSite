@@ -1,5 +1,5 @@
 import { BsCheckCircleFill } from "react-icons/bs";
-import icon from "../../../../../public/Images/3d presentation.jpeg";
+import icon from "../../../../assets/Images/3d presentation.jpeg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 

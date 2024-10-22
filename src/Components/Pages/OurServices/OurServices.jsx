@@ -1,4 +1,4 @@
-import img1 from "../../../../public/Images/ourService.png";
+import img1 from "../../../assets/Images/ourService.png";
 import HomeContact from "../../Shared/HomeSection/HomeContact/HomeContact";
 import Testimonials from "../../Shared/HomeSection/Testimonials/Testimonials";
 import OSFullScale from "./OSFullScale";

@@ -1,4 +1,4 @@
-import img1 from '../../../../public/Images/ERP.png'
+import img1 from '../../../assets/Images/ERP.png'
 
 const ErpService = () => {
     return (

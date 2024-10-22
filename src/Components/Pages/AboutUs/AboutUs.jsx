@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import img from "../../../../public/Images/AboutUs-removebg-preview.png";
-import CEO from "../../../../public/Images/Unknownclientjpg.jpg";
+import img from "../../../assets/Images/AboutUs-removebg-preview.png";
+import CEO from "../../../assets/Images/Unknownclientjpg.jpg";
 import HomeContact from "../../Shared/HomeSection/HomeContact/HomeContact";
 const AboutUs = () => {
   return (

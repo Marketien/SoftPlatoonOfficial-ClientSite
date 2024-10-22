@@ -1,56 +1,56 @@
-// import icon from '../../../../../public/TechIcons' ;
+// import icon from '../../../../assets/TechIcons' ;
 // BackEndIcon-------------------------------------------------------------------
-import icon1 from "../../../../../public/TechIcons/1.NodeJs.png";
-import icon2 from "../../../../../public/TechIcons/2.Php.png";
-import icon3 from "../../../../../public/TechIcons/3.C++.png";
-import icon4 from "../../../../../public/TechIcons/Express.png";
-import icon5 from "../../../../../public/TechIcons/4.laravel.png";
+import icon1 from "../../../../assets/TechIcons/1.NodeJs.png";
+import icon2 from "../../../../assets/TechIcons/2.Php.png";
+import icon3 from "../../../../assets/TechIcons/3.C++.png";
+import icon4 from "../../../../assets/TechIcons/Express.png";
+import icon5 from "../../../../assets/TechIcons/4.laravel.png";
 // FrontEndIcon-------------------------------------------------------------------
-import icon6 from "../../../../../public/TechIcons/6.Html.png";
-import icon7 from "../../../../../public/TechIcons/5.Css.png";
-import icon8 from "../../../../../public/TechIcons/7.JavaSctipt.png";
-import icon9 from "../../../../../public/TechIcons/7.1TypeScript.png";
-import icon10 from "../../../../../public/TechIcons/8.React.png";
-import icon11 from "../../../../../public/TechIcons/9.NextJs.png";
-import icon12 from "../../../../../public/TechIcons/10.VueJs.png";
+import icon6 from "../../../../assets/TechIcons/6.Html.png";
+import icon7 from "../../../../assets/TechIcons/5.Css.png";
+import icon8 from "../../../../assets/TechIcons/7.JavaSctipt.png";
+import icon9 from "../../../../assets/TechIcons/7.1TypeScript.png";
+import icon10 from "../../../../assets/TechIcons/8.React.png";
+import icon11 from "../../../../assets/TechIcons/9.NextJs.png";
+import icon12 from "../../../../assets/TechIcons/10.VueJs.png";
 // MobileIcon-------------------------------------------------------------------
-import icon13 from "../../../../../public/TechIcons/11.Ios.png";
-import icon14 from "../../../../../public/TechIcons/12.Android.png";
-import icon15 from "../../../../../public/TechIcons/12.1React Native.png";
-import icon16 from "../../../../../public/TechIcons/13.flutter.png";
+import icon13 from "../../../../assets/TechIcons/11.Ios.png";
+import icon14 from "../../../../assets/TechIcons/12.Android.png";
+import icon15 from "../../../../assets/TechIcons/12.1React Native.png";
+import icon16 from "../../../../assets/TechIcons/13.flutter.png";
 // DesktopIcon-------------------------------------------------------------------
-import icon17 from "../../../../../public/TechIcons/14.CSharp.png";
-import icon18 from "../../../../../public/TechIcons/15.ElectronJs.png";
+import icon17 from "../../../../assets/TechIcons/14.CSharp.png";
+import icon18 from "../../../../assets/TechIcons/15.ElectronJs.png";
 // CloudsIcon-------------------------------------------------------------------
-import icon19 from "../../../../../public/TechIcons/16.Aws.png";
-import icon20 from "../../../../../public/TechIcons/17.GoogleCloud.png";
-import icon21 from "../../../../../public/TechIcons/18.Hostinger.png";
-import icon22 from "../../../../../public/TechIcons/19.NameCheap.png";
-import icon23 from "../../../../../public/TechIcons/20.Cpanel.png";
+import icon19 from "../../../../assets/TechIcons/16.Aws.png";
+import icon20 from "../../../../assets/TechIcons/17.GoogleCloud.png";
+import icon21 from "../../../../assets/TechIcons/18.Hostinger.png";
+import icon22 from "../../../../assets/TechIcons/19.NameCheap.png";
+import icon23 from "../../../../assets/TechIcons/20.Cpanel.png";
 // databases Icon-------------------------------------------------------------------
-import icon24 from "../../../../../public/TechIcons/21.microsoftSqlServer.png";
-import icon25 from "../../../../../public/TechIcons/22.mysql.png";
-import icon26 from "../../../../../public/TechIcons/23.azureeSql.png";
-import icon27 from "../../../../../public/TechIcons/24.sqLite.png";
-import icon28 from "../../../../../public/TechIcons/22.1MongoDb.png";
+import icon24 from "../../../../assets/TechIcons/21.microsoftSqlServer.png";
+import icon25 from "../../../../assets/TechIcons/22.mysql.png";
+import icon26 from "../../../../assets/TechIcons/23.azureeSql.png";
+import icon27 from "../../../../assets/TechIcons/24.sqLite.png";
+import icon28 from "../../../../assets/TechIcons/22.1MongoDb.png";
 // Programming languages Icon-------------------------------------------------------------------
-import icon29 from "../../../../../public/TechIcons/25.Phython.png";
-import icon30 from "../../../../../public/TechIcons/26.Matlab.png";
+import icon29 from "../../../../assets/TechIcons/25.Phython.png";
+import icon30 from "../../../../assets/TechIcons/26.Matlab.png";
 // Frameworks Icon-------------------------------------------------------------------
-import icon31 from "../../../../../public/TechIcons/27.MxNet.png";
-import icon32 from "../../../../../public/TechIcons/28.TensorFlow.png";
-import icon33 from "../../../../../public/TechIcons/29.Keras.png";
-import icon34 from "../../../../../public/TechIcons/30.OpenCv.png";
+import icon31 from "../../../../assets/TechIcons/27.MxNet.png";
+import icon32 from "../../../../assets/TechIcons/28.TensorFlow.png";
+import icon33 from "../../../../assets/TechIcons/29.Keras.png";
+import icon34 from "../../../../assets/TechIcons/30.OpenCv.png";
 // DevOps Icon-------------------------------------------------------------------
-import icon35 from "../../../../../public/TechIcons/31.docker.png";
-import icon36 from "../../../../../public/TechIcons/32.AwsDeveloperTools.png";
-import icon37 from "../../../../../public/TechIcons/33.GoogleDeveloperTools.png";
-import icon38 from "../../../../../public/TechIcons/34.Firebase.png";
+import icon35 from "../../../../assets/TechIcons/31.docker.png";
+import icon36 from "../../../../assets/TechIcons/32.AwsDeveloperTools.png";
+import icon37 from "../../../../assets/TechIcons/33.GoogleDeveloperTools.png";
+import icon38 from "../../../../assets/TechIcons/34.Firebase.png";
 // Security Icon-------------------------------------------------------------------
-import icon39 from "../../../../../public/TechIcons/35.CloudFlare.png";
-import icon40 from "../../../../../public/TechIcons/36.Siege.png";
-import icon41 from "../../../../../public/TechIcons/37.NMap.png";
-import icon42 from "../../../../../public/TechIcons/38.WireShark.png";
+import icon39 from "../../../../assets/TechIcons/35.CloudFlare.png";
+import icon40 from "../../../../assets/TechIcons/36.Siege.png";
+import icon41 from "../../../../assets/TechIcons/37.NMap.png";
+import icon42 from "../../../../assets/TechIcons/38.WireShark.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";

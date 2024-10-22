@@ -1,11 +1,11 @@
 import "./Section4.css";
 import "react-tabs/style/react-tabs.css";
-import icon1 from "../../../../../public/Icons/cubel (1).png";
-import icon2 from "../../../../../public/Icons/artificial-intelligence.png";
-import icon3 from "../../../../../public/Icons/vision.png";
-import icon4 from "../../../../../public/Icons/innovation.png";
-import icon5 from "../../../../../public/Icons/blockchain.png";
-import icon6 from "../../../../../public/Icons/virtual-support.png";
+import icon1 from "../../../../assets/Icons/cubel (1).png";
+import icon2 from "../../../../assets/Icons/artificial-intelligence.png";
+import icon3 from "../../../../assets/Icons/vision.png";
+import icon4 from "../../../../assets/Icons/innovation.png";
+import icon5 from "../../../../assets/Icons/blockchain.png";
+import icon6 from "../../../../assets/Icons/virtual-support.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";

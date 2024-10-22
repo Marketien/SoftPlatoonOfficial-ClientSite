@@ -1,5 +1,5 @@
 import HomeContact from "../../Shared/HomeSection/HomeContact/HomeContact";
-import img1 from "../../../../public/Images/Office Presentation-01.png"
+import img1 from "../../../assets/Images/Office Presentation-01.png"
 
 const GetProposal = () => {
     return (

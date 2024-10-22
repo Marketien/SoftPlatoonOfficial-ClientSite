@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { BsCheckCircleFill } from "react-icons/bs";
-import image from "../../../../../public/Icons/web page-06.png";
+import image from "../../../../assets/Icons/web page-06.png";
 
 const TabPanelInfo8 = () => {
 

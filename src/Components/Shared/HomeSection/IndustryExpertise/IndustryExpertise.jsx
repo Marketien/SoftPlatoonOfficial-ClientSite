@@ -1,11 +1,11 @@
-import icon1 from "../../../../../public/industry_icons/HealthCare.png";
-import icon2 from "../../../../../public/industry_icons/E Commerce.png";
-import icon3 from "../../../../../public/industry_icons/Education.png";
-import icon4 from "../../../../../public/industry_icons/Hospitality.png";
-import icon5 from "../../../../../public/industry_icons/Automative.png";
-import icon6 from "../../../../../public/industry_icons/Professional Services.png";
-import icon7 from "../../../../../public/industry_icons/Logistics & Transporation.png";
-import icon8 from "../../../../../public/industry_icons/Business Automation.png";
+import icon1 from "../../../../assets/industry_icons/HealthCare.png";
+import icon2 from "../../../../assets/industry_icons/E Commerce.png";
+import icon3 from "../../../../assets/industry_icons/Education.png";
+import icon4 from "../../../../assets/industry_icons/Hospitality.png";
+import icon5 from "../../../../assets/industry_icons/Automative.png";
+import icon6 from "../../../../assets/industry_icons/Professional Services.png";
+import icon7 from "../../../../assets/industry_icons/Logistics & Transporation.png";
+import icon8 from "../../../../assets/industry_icons/Business Automation.png";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import './IndustryExpertise.css'
 import Aos from "aos";

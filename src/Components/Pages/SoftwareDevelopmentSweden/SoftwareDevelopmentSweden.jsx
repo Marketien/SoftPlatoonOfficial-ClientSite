@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import img1 from "../../../../public/Images/Software.png";
+import img1 from "../../../assets/Images/Software.png";
 import OurServiceSweden from "./OurServiceSweden/OurServiceSweden";
 import RecentProjectSweden from "./RecentProjectSweden/RecentProjectSweden";
 import HomeTechnologies from "../../Shared/HomeSection/HomeTechnologies/HomeTechnologies";

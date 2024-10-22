@@ -1,12 +1,12 @@
 import './OurServices.css'
-import icon1 from "../../../../public/OurServices/fullScaleIcons/Business analysis.png";
-import icon2 from "../../../../public/OurServices/fullScaleIcons/UX and UI design.png";
-import icon3 from "../../../../public/OurServices/fullScaleIcons/Front-end development.png";
-import icon4 from "../../../../public/OurServices/fullScaleIcons/Back-end development.png";
-import icon5 from "../../../../public/OurServices/fullScaleIcons/Integration.png";
-import icon6 from "../../../../public/OurServices/fullScaleIcons/Testing and QA.png";
-import icon7 from "../../../../public/OurServices/fullScaleIcons/Help desk.png";
-import icon8 from "../../../../public/OurServices/fullScaleIcons/Continuous support and evolution.png";
+import icon1 from "../../../assets/OurServices/fullScaleIcons/Business analysis.png";
+import icon2 from "../../../assets/OurServices/fullScaleIcons/UX and UI design.png";
+import icon3 from "../../../assets/OurServices/fullScaleIcons/Front-end development.png";
+import icon4 from "../../../assets/OurServices/fullScaleIcons/Back-end development.png";
+import icon5 from "../../../assets/OurServices/fullScaleIcons/Integration.png";
+import icon6 from "../../../assets/OurServices/fullScaleIcons/Testing and QA.png";
+import icon7 from "../../../assets/OurServices/fullScaleIcons/Help desk.png";
+import icon8 from "../../../assets/OurServices/fullScaleIcons/Continuous support and evolution.png";
 
 const fullScaleeData = [
   {

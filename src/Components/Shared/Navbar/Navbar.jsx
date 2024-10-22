@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import homeLogo from "../../../../public/Icons/Untitled-4-02.png";
-import scrolledLogo from "../../../../public/Icons/Untitled-4-01.png";
-import bangladesh from "../../../../public/Icons/Bangladesh.jpg";
+import homeLogo from "../../../assets/Icons/Untitled-4-02.png";
+import scrolledLogo from "../../../assets/Icons/Untitled-4-01.png";
+import bangladesh from "../../../assets/Icons/Bangladesh.jpg";
 import { useEffect, useRef, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { CgMail } from "react-icons/cg";

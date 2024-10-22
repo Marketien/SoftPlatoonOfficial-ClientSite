@@ -1,4 +1,4 @@
-import img1 from '../../../../public/Images/Software.png'
+import img1 from '../../../assets/Images/Software.png'
 
 const SoftWareService = () => {
     return (

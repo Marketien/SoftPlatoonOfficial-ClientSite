@@ -1,4 +1,4 @@
-import img from '../../../../public/Images/Industry-Softplatoon-01.png'
+import img from '../../../assets/Images/Industry-Softplatoon-01.png'
 import HomeContact from '../../Shared/HomeSection/HomeContact/HomeContact';
 
 import IndustryExpertise from '../../Shared/HomeSection/IndustryExpertise/IndustryExpertise';

@@ -1,4 +1,4 @@
-import bgImg from "../../../../../public/Images/web page-08.png";
+import bgImg from "../../../../assets/Images/web page-08.png";
 import { BsCheckCircleFill } from "react-icons/bs";
 import Aos from "aos";
 import "aos/dist/aos.css";

@@ -1,10 +1,10 @@
 import './SuccessStories.css'
-import img1 from  '../../../../../public/Images/story1.png' ;
-import img2 from  '../../../../../public/Images/story2.png' ;
-import img3 from  '../../../../../public/Images/story3.png' ;
-import img4 from  '../../../../../public/Images/story4.png' ;
-import img5 from  '../../../../../public/Images/story5.png' ;
-import img6 from  '../../../../../public/Images/story6.png' ;
+import img1 from  '../../../../assets/Images/story1.png' ;
+import img2 from  '../../../../assets/Images/story2.png' ;
+import img3 from  '../../../../assets/Images/story3.png' ;
+import img4 from  '../../../../assets/Images/story4.png' ;
+import img5 from  '../../../../assets/Images/story5.png' ;
+import img6 from  '../../../../assets/Images/story6.png' ;
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { useEffect, useState } from 'react';
 import Aos from "aos";

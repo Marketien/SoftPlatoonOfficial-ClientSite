@@ -1,4 +1,4 @@
-import img1 from '../../../../public/Images/Web App.png'
+import img1 from '../../../assets/Images/Web App.png'
 
 
 const WebAppsService = () => {
