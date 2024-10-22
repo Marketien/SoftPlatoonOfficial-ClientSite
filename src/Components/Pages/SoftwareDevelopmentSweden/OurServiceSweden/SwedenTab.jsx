@@ -7,12 +7,10 @@ import Box from "@mui/material/Box";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import HomeCarousel from "../../../Shared/HomeSection/Section-2/HomeCarousel";
 import SwedenTabPanel1 from "./SwedenTabPanel1";
 import SwedenTabPanel2 from "./SwedenTabPanel2";
 import SwedenTabPanel3 from "./SwedenTabPanel3";
 import SwedenTabPanel4 from "./SwedenTabPanel4";
-import SwedenTabPanel5 from "./SwedenTabPanel5";
 import SwedenCarousel from "./SwedenCarousel";
 
 
@@ -54,7 +52,7 @@ function a11yProps(index) {
   };
 }
 
-const  SwedenTab = () =>{
+const  SwedenTab = ({language}) =>{
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -102,7 +100,7 @@ const  SwedenTab = () =>{
             }}
           >
             <Tab
-              label="Software Developement"
+              label= {language === "sv" ? "Skräddarsydda Programvarulösningar" : "Custom Software Solutions"}
               {...a11yProps(0)}
               sx={{
                 color: "white",
@@ -115,7 +113,7 @@ const  SwedenTab = () =>{
               }}
             />
             <Tab
-              label="Testing & QA"
+              label= {language === "sv" ? "Företag Programvaruutveckling" : "Enterprise Software Development"}
               {...a11yProps(1)}
               sx={{
                 color: "white",
@@ -128,7 +126,7 @@ const  SwedenTab = () =>{
               }}
             />
             <Tab
-              label="Application Service"
+              label={language === "sv" ? "Molnbaserade programvarulösningar" : "Cloud-Based Software Solutions"}
               {...a11yProps(2)}
               sx={{
                 color: "white",
@@ -141,7 +139,7 @@ const  SwedenTab = () =>{
               }}
             />
             <Tab
-              label="IT Consulting"
+              label={language === "sv" ? "Tjänster för programvaruintegration" : "Software Integration Services"}
               {...a11yProps(3)}
               sx={{
                 color: "white",
@@ -153,34 +151,18 @@ const  SwedenTab = () =>{
                 fontSize: "15px",
               }}
             />
-            <Tab
-              label="Data Analytics"
-              {...a11yProps(4)}
-              sx={{
-                color: "white",
-                padding: "18px",
-                marginTop: "10px",
-                width: "300px",
-                marginLeft: "30px",
-                backgroundColor: value === 4 ? "#FBF9F1" : "transparent",
-                fontSize: "15px",
-              }}
-            />
           </Tabs>
           <TabPanel value={value} index={0}>
-            <SwedenTabPanel1/>
+            <SwedenTabPanel1 language={language}/>
           </TabPanel>
           <TabPanel value={value} index={1}>
-            <SwedenTabPanel2 />
+            <SwedenTabPanel2 language={language}/>
           </TabPanel>
           <TabPanel value={value} index={2}>
-            < SwedenTabPanel3/>
+            < SwedenTabPanel3 language={language}/>
           </TabPanel>
           <TabPanel value={value} index={3}>
-          <SwedenTabPanel4 />
-          </TabPanel>
-          <TabPanel value={value} index={4}>
-          <SwedenTabPanel5 />
+          <SwedenTabPanel4 language={language}/>
           </TabPanel>
         </Box>
 </div>
