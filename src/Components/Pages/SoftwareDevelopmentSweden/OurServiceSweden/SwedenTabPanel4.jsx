@@ -9,7 +9,7 @@ const SwedenTabPanel4 = ({language}) => {
               style={{ fontFamily: "Ubuntu,sans-serif" }}
               className="font-bold text-2xl mt-8 text-purple-900"
             >
-              {language === "sv" ? "" : ""}
+              {language === "sv" ? "Tjänster för programvaruintegration" : "Software Integration Services"}
             </h2>
             <p className="font-medium md:text-lg sm: text-md leading-8 mt-5">
             {language === "sv" ? "" : ""}
