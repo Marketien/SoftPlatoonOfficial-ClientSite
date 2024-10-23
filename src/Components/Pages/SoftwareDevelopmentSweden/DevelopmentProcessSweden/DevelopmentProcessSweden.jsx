@@ -61,7 +61,7 @@ const DevelopmentProcessSweden = ({ language }) => {
             </>
           )}
         </h1>
-        <p className="text-xl font-semibold">
+        <p className="text-xl">
           {language === "sv"
             ? "Vi på Soft Platoon tror på en strukturerad metod för programvaruutveckling som säkerställer kvalitet, effektivitet och anpassning till våra kunders mål. Vår process omfattar fyra nyckelstadier: Konsultation och Planering, Design och Prototyping, Utveckling och Testning samt Implementering och Underhåll. Varje fas är utformad för att leverera skräddarsydda lösningar som uppfyller dina unika affärsbehov."
             : "We at Soft Platoon believe in a structured approach to software development that ensures quality, efficiency, and alignment with our clients' goals. Our process comprises four key stages: Consultation and Planning, Design and Prototyping, Development and Testing, and Deployment and Maintenance. Each phase is designed to deliver tailored solutions that meet your unique business needs."}

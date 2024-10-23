@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 import img1 from "../../../assets/Images/Software.png";
 import OurServiceSweden from "./OurServiceSweden/OurServiceSweden";
 import RecentProjectSweden from "./RecentProjectSweden/RecentProjectSweden";
-import HomeTechnologies from "../../Shared/HomeSection/HomeTechnologies/HomeTechnologies";
 import QuestionAnswer from "../../Shared/HomeSection/FAQ/QuestionAnswer";
 import HomeContact from "../../Shared/HomeSection/HomeContact/HomeContact";
 import { useState } from "react";
 import DevelopmentProcessSweden from "./DevelopmentProcessSweden/DevelopmentProcessSweden";
+import TechWeUse from "./TechWeUse/TechWeUse";
 
 const SoftwareDevelopmentSweden = () => {
   const [language, setLanguage] = useState("sv");
@@ -54,7 +54,7 @@ const SoftwareDevelopmentSweden = () => {
           </button>
         </div>
         {/* image section  */}
-        <div className="py-5">
+        <div className="flex md:justify-end py-5">
           <img src={img1} alt="" />
         </div>
       </div>
@@ -70,15 +70,15 @@ const SoftwareDevelopmentSweden = () => {
         <RecentProjectSweden language={language} />
       </div>
       {/* Projects Process seciton  */}
-      <div className="bg-white py-20">
+      <div className=" py-20">
         <DevelopmentProcessSweden language={language} />
       </div>
-      {/* Home Technologies seciton  */}
-      <div className=" py-20">
-        <HomeTechnologies language={language} />
+      {/*  Technologies  Use seciton  */}
+      <div className="bg-white py-20">
+        <TechWeUse language={language} />
       </div>
       {/* FAQ seciton  */}
-      <div className="bg-white py-20">
+      <div className="py-20">
         <QuestionAnswer language={language} />
       </div>
       {/*  Contact seciton  */}
