@@ -10,6 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Loading from "../../Loading/Loading";
 
 const HomeContact = () => {
+  
   const [isLoading, setLoading] = useState(false);
   const [contact, setContact] = useState("");
   const form = useRef();
@@ -30,13 +31,13 @@ const HomeContact = () => {
       .then(
         () => {
           toast.success("Email Sent Successfully!", {
-            position: "top-right",
+            position: "top-center",
           });
           setLoading(false);
         },
         (error) => {
           toast.error("Error: " + error.text, {
-            position: "top-right",
+            position: "top-center",
           });
           setLoading(false);
           console.log(error);

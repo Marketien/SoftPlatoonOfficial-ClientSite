@@ -186,7 +186,7 @@ const RecentProjectSweden = () => {
   return (
     <div
       className="px-3 py-5 lg:max-w-6xl md:max-w-3xl
-       sm: max-w-sm mx-auto "
+       sm: max-w-sm mx-auto md:text-start sm: text-center"
     >
       <h1
         style={{ fontFamily: "Sumana, serif" }}

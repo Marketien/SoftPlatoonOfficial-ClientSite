@@ -8,6 +8,7 @@ import { useState } from "react";
 import DevelopmentProcessSweden from "./DevelopmentProcessSweden/DevelopmentProcessSweden";
 import TechWeUse from "./TechWeUse/TechWeUse";
 import SwedenFAQ from "./SwedenFAQ/SwedenFAQ";
+import SwedenContact from "./SwedenContact/SwedenContact";
 
 const SoftwareDevelopmentSweden = () => {
   const [language, setLanguage] = useState("sv");
@@ -23,7 +24,7 @@ const SoftwareDevelopmentSweden = () => {
       {/* ---------------------------- Banner Section ----------------------------------- */}
       <div
         className="relative grid lg:grid-cols-2 md:grid-cols-1 sm: grid-cols-1 items-center
-          lg:px-32 md:px-10 sm: px-5 py-10 bg-[#5A287F] text-white"
+          lg:px-32 md:px-10 sm: px-5 py-10 bg-[#5A287F] text-white md:text-start sm: text-center"
       >
         {/* title section  */}
         <div>
@@ -83,8 +84,8 @@ const SoftwareDevelopmentSweden = () => {
         <SwedenFAQ language={language} />
       </div>
       {/*  Contact seciton  */}
-      <div className=" py-0">
-        <HomeContact href="#contact" language={language} />
+      <div className="bg-white py-0">
+        <SwedenContact language={language} />
       </div>
  {/* ---------------------------- Translate Modal ----------------------------------- */}
         <div className="fixed bottom-20 right-4 bg-[#5A287F] shadow-lg rounded-md p-1">
