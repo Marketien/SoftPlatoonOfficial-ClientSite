@@ -7,6 +7,9 @@ import img5 from "../../../../../src/assets/TechIcons/react.png";
 import img6 from "../../../../../src/assets/TechIcons/angular.png";
 import img7 from "../../../../../src/assets/TechIcons/10.VueJs.png";
 import img8 from "../../../../../src/assets/TechIcons/django-icon.png";
+import img9 from "../../../../../src/assets/TechIcons/Amazon_Web_Services-Logo.png" ;
+import img10 from "../../../../../src/assets/TechIcons/Microsoft_Azure.png";
+import img11 from "../../../../../src/assets/TechIcons/17.GoogleCloud.png";
 import { IoIosArrowDown } from "react-icons/io";
 
 const programmingLang = [
@@ -45,7 +48,7 @@ const programmingLang = [
 ];
 const frameworks = [
   {
-    img: img1,
+    img: img5,
     title: "ReactJs",
     svDisc:
       "Som ett av de mest populära JavaScript-biblioteken möjliggör React att vi kan skapa dynamiska användargränssnitt som förbättrar användarupplevelsen",
@@ -53,7 +56,7 @@ const frameworks = [
       "As one of the most popular JavaScript libraries, React enables us to create dynamic user interfaces that enhance user experience.",
   },
   {
-    img: img2,
+    img: img6,
     title: "AngularJs",
     svDisc:
       "Detta ramverk hjälper oss att bygga skalbara och underhållsvänliga enkelsidiga applikationer, vilket säkerställer en smidig upplevelse för användarna.",
@@ -61,13 +64,15 @@ const frameworks = [
       "This framework helps us build scalable and maintainable single-page applications, ensuring a smooth experience for users.",
   },
   {
-    img: img3,
+    img: img7,
     title: "VueJs",
-    svDisc: "Vue.js är mycket uppskattat för sin prestanda och enkla integration med befintliga projekt.",
-    enDisc: "Vue.js is widely appreciated for its performance and ease of integration with existing projects.",
+    svDisc:
+      "Vue.js är mycket uppskattat för sin prestanda och enkla integration med befintliga projekt.",
+    enDisc:
+      "Vue.js is widely appreciated for its performance and ease of integration with existing projects.",
   },
   {
-    img: img4,
+    img: img8,
     title: "Django",
     svDisc:
       "Även om det främst är ett backend-ramverk, tillåter Django snabb utveckling och ren, pragmatisk design, vilket gör det till ett utmärkt val för att bygga komplexa webbapplikationer.",
@@ -75,17 +80,54 @@ const frameworks = [
       "While primarily a backend framework, Django allows for rapid development and clean, pragmatic design, making it an excellent choice for building complex web applications.",
   },
 ];
+const clouds = [
+  {
+    img: img9,
+    title: "Amazon Web Services",
+    svDisc:
+      "Med sitt omfattande utbud av molntjänster gör AWS det möjligt för oss att bygga säkra, skalbara och flexibla applikationer som uppfyller dina affärskrav.",
+    enDisc:
+      "With its comprehensive suite of cloud services, AWS allows us to build secure, scalable, and flexible applications that meet your business requirements.",
+  },
+  {
+    img: img10,
+    title: "Azure",
+    svDisc:
+      "Som Microsofts molnplattform erbjuder Azure kraftfulla verktyg för utveckling, testning och implementering av applikationer, vilket säkerställer sömlös integration med befintliga system.",
+    enDisc:
+      "As Microsoft’s cloud platform, Azure offers powerful tools for developing, testing, and deploying applications, ensuring seamless integration with existing systems.",
+  },
+  {
+    img: img11,
+    title: "Google Cloud",
+    svDisc:
+      "Känd för sina dataanalys- och maskininlärningsfunktioner, gör Google Cloud det möjligt för oss att skapa datadrivna applikationer som ger värdefulla insikter.",
+    enDisc:
+      "Known for its data analytics and machine learning capabilities, Google Cloud enables us to create data-driven applications that provide valuable insights.",
+  },
+];
 
 // eslint-disable-next-line react/prop-types
 const TechWeUse = ({ language }) => {
-  const [open, setOpen] = useState(null);
+  const [openPl, setOpenPl] = useState(null);
+  const [openFr, setOpenFr] = useState(null);
+  const [openCl, setOpenCl] = useState(null);
 
   const dropdownPL = (index) => {
-    if (open === index) {
-      setOpen(null);
-    } else {
-      setOpen(index);
-    }
+    setOpenFr(null);
+    setOpenCl(null);
+    setOpenPl((prevIndex) => (prevIndex === index ? null : index));
+  };
+
+  const dropdownFr = (index) => {
+    setOpenPl(null);
+    setOpenCl(null);
+    setOpenFr((prevIndex) => (prevIndex === index ? null : index));
+  };
+  const dropdownCl = (index) => {
+    setOpenPl(null);
+    setOpenFr(null);
+    setOpenCl((prevIndex) => (prevIndex === index ? null : index));
   };
 
   return (
@@ -158,7 +200,7 @@ const TechWeUse = ({ language }) => {
                   <span>{language === "sv" ? <>{title}</> : <>{title}</>}</span>{" "}
                   <IoIosArrowDown />
                 </div>
-                {open === index ? (
+                {openPl === index ? (
                   <div className="border border-gray-200 max-w-sm rounded-md p-2 ">
                     <p style={{ fontFamily: "Ubuntu,sans-serif" }}>
                       {language === "sv" ? <>{svDisc}</> : <>{enDisc}</>}
@@ -175,19 +217,19 @@ const TechWeUse = ({ language }) => {
         <div className="mt-8">
           <h1 className="font-semibold text-2xl">
             {language === "sv"
-              ? "Programmering sspråk "
-              : "Programming Languages "}
+              ? "Frontend ramverk "
+              : "Frontend Frameworks "}
           </h1>
           <p
             className="text-lg mt-3 "
             style={{ fontFamily: "Ubuntu,sans-serif" }}
           >
             {language === "sv"
-              ? "Vi använder en mängd olika programmeringsspråk för att bygga robusta applikationer, inklusive:"
-              : "We utilize a variety of programming languages to build robust applications, including:"}
+              ? "Vår frontend-utvecklingsexpertis inkluderar:"
+              : "Our frontend development expertise includes:"}
           </p>
           <div className="grid lg:grid-cols-4 md:grid-cols-3 sm: grid-cols-1 gap-3 mt-5">
-            {programmingLang.map(({ img, title, svDisc, enDisc }, index) => (
+            {frameworks.map(({ img, title, svDisc, enDisc }, index) => (
               <div key={index}>
                 <div className="flex items-center md:justify-start sm: justify-center gap-2 mt-2">
                   <div>
@@ -198,7 +240,7 @@ const TechWeUse = ({ language }) => {
                     />
                   </div>
                   <div
-                    onClick={() => dropdownPL(index)}
+                    onClick={() => dropdownFr(index)}
                     className="font-semibold md:flex sm: hidden items-center gap-2 "
                   >
                     <span>
@@ -208,13 +250,69 @@ const TechWeUse = ({ language }) => {
                   </div>
                 </div>
                 <div
-                  onClick={() => dropdownPL(index)}
+                  onClick={() => dropdownFr(index)}
                   className=" font-semibold md:hidden items-center sm: flex justify-center mt-3"
                 >
                   <span>{language === "sv" ? <>{title}</> : <>{title}</>}</span>{" "}
                   <IoIosArrowDown />
                 </div>
-                {open === index ? (
+                {openFr === index ? (
+                  <div className="border border-gray-200 max-w-sm rounded-md p-2 ">
+                    <p style={{ fontFamily: "Ubuntu,sans-serif" }}>
+                      {language === "sv" ? <>{svDisc}</> : <>{enDisc}</>}
+                    </p>
+                  </div>
+                ) : (
+                  <></>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+        {/* <<<<<<<<<<<<< Cloud Technologies  section >>>>>>>>>>>> */}
+        <div className="mt-8">
+          <h1 className="font-semibold text-2xl">
+            {language === "sv"
+              ? "Molnteknologier"
+              : "Cloud Technologies"}
+          </h1>
+          <p
+            className="text-lg mt-3 "
+            style={{ fontFamily: "Ubuntu,sans-serif" }}
+          >
+            {language === "sv"
+              ? "För molnbaserade lösningar använder vi kraften från ledande molnplattformar:"
+              : "For cloud-based solutions, we harness the power of leading cloud platforms:"}
+          </p>
+          <div className="grid lg:grid-cols-4 md:grid-cols-3 sm: grid-cols-1 gap-3 mt-5">
+            {clouds.map(({ img, title, svDisc, enDisc }, index) => (
+              <div key={index}>
+                <div className="flex items-center md:justify-start sm: justify-center gap-2 mt-2">
+                  <div>
+                    <img
+                      className="w-[60px] bg-gray-200 rounded-md"
+                      src={img}
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    onClick={() => dropdownCl(index)}
+                    className="font-semibold md:flex sm: hidden items-center gap-2 "
+                  >
+                    <span>
+                      {language === "sv" ? <>{title}</> : <>{title}</>}
+                    </span>{" "}
+                    <IoIosArrowDown />
+                  </div>
+                </div>
+                <div
+                  onClick={() => dropdownCl(index)}
+                  className=" font-semibold md:hidden items-center sm: flex justify-center mt-3"
+                >
+                  <span>{language === "sv" ? <>{title}</> : <>{title}</>}</span>{" "}
+                  <IoIosArrowDown />
+                </div>
+                {openCl === index ? (
                   <div className="border border-gray-200 max-w-sm rounded-md p-2 ">
                     <p style={{ fontFamily: "Ubuntu,sans-serif" }}>
                       {language === "sv" ? <>{svDisc}</> : <>{enDisc}</>}
