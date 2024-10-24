@@ -55,6 +55,7 @@ const SwedenContact = ({ language }) => {
         className=" lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4"
       >
         <h1
+        data-aos="fade-right"
           style={{ fontFamily: "Sumana,serif" }}
           className="font-bold text-5xl mb-5"
         >
@@ -70,12 +71,12 @@ const SwedenContact = ({ language }) => {
             </>
           )}
         </h1>
-        <p className="text-xl">
+        <p data-aos="fade-right" className="text-xl">
           {language === "sv"
             ? "Vill du förvandla ditt företag med skräddarsydda programvarulösningar? Här på Soft Platoon är vårt team av experter inom programvaruutveckling i Sverige redo att hjälpa dig navigera genom teknikens komplexitet och leverera anpassade lösningar."
             : "Would you like to transform your business with custom software solutions? Here at Soft Platoon, our team of expert software developer Sweden team is here to help you navigate the complexities of technology and deliver tailored solutions."}
         </p>
-        <p className="text-xl mt-3">
+        <p data-aos="fade-right" className="text-xl mt-3">
           {language === "sv"
             ? "Oavsett om du vill bygga en ny applikation, integrera befintliga system eller utforska molnbaserade programvarulösningar, finns vi här för att hjälpa dig varje steg på vägen."
             : "Whether you’re looking to build a new application, integrate existing systems, or explore cloud-based software solutions, we’re here to assist you every step of the way."}

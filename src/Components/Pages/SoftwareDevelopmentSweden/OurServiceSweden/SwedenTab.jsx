@@ -1,12 +1,12 @@
 import * as React from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 import SwedenTabPanel1 from "./SwedenTabPanel1";
 import SwedenTabPanel2 from "./SwedenTabPanel2";
 import SwedenTabPanel3 from "./SwedenTabPanel3";

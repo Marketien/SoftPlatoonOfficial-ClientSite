@@ -1,4 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import img1 from "../../../../../src/assets/TechIcons/phython.png";
 import img2 from "../../../../../src/assets/TechIcons/javaa.png";
 import img3 from "../../../../../src/assets/TechIcons/Microsoft_.NET_logo.svg.png";
@@ -109,6 +111,9 @@ const clouds = [
 
 // eslint-disable-next-line react/prop-types
 const TechWeUse = ({ language }) => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   const [openPl, setOpenPl] = useState(null);
   const [openFr, setOpenFr] = useState(null);
   const [openCl, setOpenCl] = useState(null);
@@ -137,6 +142,7 @@ const TechWeUse = ({ language }) => {
         className=" lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4"
       >
         <h1
+          data-aos="fade-right"
           style={{ fontFamily: "Sumana,serif" }}
           className="font-bold text-5xl mb-5"
         >
@@ -152,176 +158,184 @@ const TechWeUse = ({ language }) => {
             </>
           )}
         </h1>
-        <p className="text-xl">
+        <p data-aos="fade-right" className="text-xl">
           {language === "sv"
             ? "Vårt mål på Soft Platoon är att erbjuda innovativa, effektiva och skalbara mjukvarulösningar anpassade till dina affärsbehov genom att utnyttja moderna teknologier. Vårt team av expertutvecklare är kunniga i ett brett utbud av programmeringsspråk, ramverk och verktyg som säkerställer högkvalitativa resultat för varje projekt."
             : "Our goal at Soft Platoon is to provide you with innovative, efficient, and scalable software solutions tailored to your business needs by leveraging modern technologies. Our team of expert developers is proficient in a range of programming languages, frameworks, and tools that ensure high-quality results for every project."}
         </p>
-{/* <<<<<<<<<<<<< Programming Language  section >>>>>>>>>>>> */}
-        <div className="mt-8">
-          <h1 className="font-semibold text-2xl">
-            {language === "sv"
-              ? "Programmering sspråk "
-              : "Programming Languages "}
-          </h1>
-          <p
-            className="text-lg mt-3 "
-            style={{ fontFamily: "Ubuntu,sans-serif" }}
-          >
-            {language === "sv"
-              ? "Vi använder en mängd olika programmeringsspråk för att bygga robusta applikationer, inklusive:"
-              : "We utilize a variety of programming languages to build robust applications, including:"}
-          </p>
-          <div className="grid lg:grid-cols-4 md:grid-cols-3 sm: grid-cols-1 gap-3 mt-5">
-            {programmingLang.map(({ img, title, svDisc, enDisc }, index) => (
-              <div key={index}>
-                <div className="flex items-center md:justify-start sm: justify-center gap-2 mt-2">
-                  <div>
-                    <img
-                      className="w-[60px] bg-gray-200 rounded-md"
-                      src={img}
-                      alt=""
-                    />
+        <div data-aos="zoom-in">
+          {/* <<<<<<<<<<<<< Programming Language  section >>>>>>>>>>>> */}
+          <div className="mt-8">
+            <h1 className="font-semibold text-2xl">
+              {language === "sv"
+                ? "Programmering sspråk "
+                : "Programming Languages "}
+            </h1>
+            <p
+              className="text-lg mt-3 "
+              style={{ fontFamily: "Ubuntu,sans-serif" }}
+            >
+              {language === "sv"
+                ? "Vi använder en mängd olika programmeringsspråk för att bygga robusta applikationer, inklusive:"
+                : "We utilize a variety of programming languages to build robust applications, including:"}
+            </p>
+            <div className="grid lg:grid-cols-4 md:grid-cols-3 sm: grid-cols-1 gap-3 mt-5">
+              {programmingLang.map(({ img, title, svDisc, enDisc }, index) => (
+                <div key={index}>
+                  <div className="flex items-center md:justify-start sm: justify-center gap-2 mt-2">
+                    <div>
+                      <img
+                        className="w-[60px] bg-gray-200 rounded-md"
+                        src={img}
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      onClick={() => dropdownPL(index)}
+                      className="font-semibold md:flex sm: hidden items-center gap-2 "
+                    >
+                      <span>
+                        {language === "sv" ? <>{title}</> : <>{title}</>}
+                      </span>{" "}
+                      <IoIosArrowDown />
+                    </div>
                   </div>
                   <div
                     onClick={() => dropdownPL(index)}
-                    className="font-semibold md:flex sm: hidden items-center gap-2 "
+                    className=" font-semibold md:hidden items-center sm: flex justify-center mt-3"
                   >
                     <span>
                       {language === "sv" ? <>{title}</> : <>{title}</>}
                     </span>{" "}
                     <IoIosArrowDown />
                   </div>
+                  {openPl === index ? (
+                    <div className="border border-gray-200 max-w-sm rounded-md p-2 ">
+                      <p style={{ fontFamily: "Ubuntu,sans-serif" }}>
+                        {language === "sv" ? <>{svDisc}</> : <>{enDisc}</>}
+                      </p>
+                    </div>
+                  ) : (
+                    <></>
+                  )}
                 </div>
-                <div
-                  onClick={() => dropdownPL(index)}
-                  className=" font-semibold md:hidden items-center sm: flex justify-center mt-3"
-                >
-                  <span>{language === "sv" ? <>{title}</> : <>{title}</>}</span>{" "}
-                  <IoIosArrowDown />
-                </div>
-                {openPl === index ? (
-                  <div className="border border-gray-200 max-w-sm rounded-md p-2 ">
-                    <p style={{ fontFamily: "Ubuntu,sans-serif" }}>
-                      {language === "sv" ? <>{svDisc}</> : <>{enDisc}</>}
-                    </p>
-                  </div>
-                ) : (
-                  <></>
-                )}
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-{/* <<<<<<<<<<<<< FrontEnd Frameworks section >>>>>>>>>>>> */}
-        <div className="mt-8">
-          <h1 className="font-semibold text-2xl">
-            {language === "sv" ? "Frontend ramverk " : "Frontend Frameworks "}
-          </h1>
-          <p
-            className="text-lg mt-3 "
-            style={{ fontFamily: "Ubuntu,sans-serif" }}
-          >
-            {language === "sv"
-              ? "Vår frontend-utvecklingsexpertis inkluderar:"
-              : "Our frontend development expertise includes:"}
-          </p>
-          <div className="grid lg:grid-cols-4 md:grid-cols-3 sm: grid-cols-1 gap-3 mt-5">
-            {frameworks.map(({ img, title, svDisc, enDisc }, index) => (
-              <div key={index}>
-                <div className="flex items-center md:justify-start sm: justify-center gap-2 mt-2">
-                  <div>
-                    <img
-                      className="w-[60px] bg-gray-200 rounded-md"
-                      src={img}
-                      alt=""
-                    />
+          {/* <<<<<<<<<<<<< FrontEnd Frameworks section >>>>>>>>>>>> */}
+          <div className="mt-8">
+            <h1 className="font-semibold text-2xl">
+              {language === "sv" ? "Frontend ramverk " : "Frontend Frameworks "}
+            </h1>
+            <p
+              className="text-lg mt-3 "
+              style={{ fontFamily: "Ubuntu,sans-serif" }}
+            >
+              {language === "sv"
+                ? "Vår frontend-utvecklingsexpertis inkluderar:"
+                : "Our frontend development expertise includes:"}
+            </p>
+            <div className="grid lg:grid-cols-4 md:grid-cols-3 sm: grid-cols-1 gap-3 mt-5">
+              {frameworks.map(({ img, title, svDisc, enDisc }, index) => (
+                <div key={index}>
+                  <div className="flex items-center md:justify-start sm: justify-center gap-2 mt-2">
+                    <div>
+                      <img
+                        className="w-[60px] bg-gray-200 rounded-md"
+                        src={img}
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      onClick={() => dropdownFr(index)}
+                      className="font-semibold md:flex sm: hidden items-center gap-2 "
+                    >
+                      <span>
+                        {language === "sv" ? <>{title}</> : <>{title}</>}
+                      </span>{" "}
+                      <IoIosArrowDown />
+                    </div>
                   </div>
                   <div
                     onClick={() => dropdownFr(index)}
-                    className="font-semibold md:flex sm: hidden items-center gap-2 "
+                    className=" font-semibold md:hidden items-center sm: flex justify-center mt-3"
                   >
                     <span>
                       {language === "sv" ? <>{title}</> : <>{title}</>}
                     </span>{" "}
                     <IoIosArrowDown />
                   </div>
+                  {openFr === index ? (
+                    <div className="border border-gray-200 max-w-sm rounded-md p-2 ">
+                      <p style={{ fontFamily: "Ubuntu,sans-serif" }}>
+                        {language === "sv" ? <>{svDisc}</> : <>{enDisc}</>}
+                      </p>
+                    </div>
+                  ) : (
+                    <></>
+                  )}
                 </div>
-                <div
-                  onClick={() => dropdownFr(index)}
-                  className=" font-semibold md:hidden items-center sm: flex justify-center mt-3"
-                >
-                  <span>{language === "sv" ? <>{title}</> : <>{title}</>}</span>{" "}
-                  <IoIosArrowDown />
-                </div>
-                {openFr === index ? (
-                  <div className="border border-gray-200 max-w-sm rounded-md p-2 ">
-                    <p style={{ fontFamily: "Ubuntu,sans-serif" }}>
-                      {language === "sv" ? <>{svDisc}</> : <>{enDisc}</>}
-                    </p>
-                  </div>
-                ) : (
-                  <></>
-                )}
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-{/* <<<<<<<<<<<<< Cloud Technologies  section >>>>>>>>>>>> */}
-        <div className="mt-8">
-          <h1 className="font-semibold text-2xl">
-            {language === "sv" ? "Molnteknologier" : "Cloud Technologies"}
-          </h1>
-          <p
-            className="text-lg mt-3 "
-            style={{ fontFamily: "Ubuntu,sans-serif" }}
-          >
-            {language === "sv"
-              ? "För molnbaserade lösningar använder vi kraften från ledande molnplattformar:"
-              : "For cloud-based solutions, we harness the power of leading cloud platforms:"}
-          </p>
-          <div className="grid lg:grid-cols-4 md:grid-cols-3 sm: grid-cols-1 gap-3 mt-5">
-            {clouds.map(({ img, title, svDisc, enDisc }, index) => (
-              <div key={index}>
-                <div className="flex items-center md:justify-start sm: justify-center gap-2 mt-2">
-                  <div>
-                    <img
-                      className="w-[60px] bg-gray-200 rounded-md"
-                      src={img}
-                      alt=""
-                    />
+          {/* <<<<<<<<<<<<< Cloud Technologies  section >>>>>>>>>>>> */}
+          <div className="mt-8">
+            <h1 className="font-semibold text-2xl">
+              {language === "sv" ? "Molnteknologier" : "Cloud Technologies"}
+            </h1>
+            <p
+              className="text-lg mt-3 "
+              style={{ fontFamily: "Ubuntu,sans-serif" }}
+            >
+              {language === "sv"
+                ? "För molnbaserade lösningar använder vi kraften från ledande molnplattformar:"
+                : "For cloud-based solutions, we harness the power of leading cloud platforms:"}
+            </p>
+            <div className="grid lg:grid-cols-4 md:grid-cols-3 sm: grid-cols-1 gap-3 mt-5">
+              {clouds.map(({ img, title, svDisc, enDisc }, index) => (
+                <div key={index}>
+                  <div className="flex items-center md:justify-start sm: justify-center gap-2 mt-2">
+                    <div>
+                      <img
+                        className="w-[60px] bg-gray-200 rounded-md"
+                        src={img}
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      onClick={() => dropdownCl(index)}
+                      className="font-semibold md:flex sm: hidden items-center gap-2 "
+                    >
+                      <span>
+                        {language === "sv" ? <>{title}</> : <>{title}</>}
+                      </span>{" "}
+                      <IoIosArrowDown />
+                    </div>
                   </div>
                   <div
                     onClick={() => dropdownCl(index)}
-                    className="font-semibold md:flex sm: hidden items-center gap-2 "
+                    className=" font-semibold md:hidden items-center sm: flex justify-center mt-3"
                   >
                     <span>
                       {language === "sv" ? <>{title}</> : <>{title}</>}
                     </span>{" "}
                     <IoIosArrowDown />
                   </div>
+                  {openCl === index ? (
+                    <div className="border border-gray-200 max-w-sm rounded-md p-2 ">
+                      <p style={{ fontFamily: "Ubuntu,sans-serif" }}>
+                        {language === "sv" ? <>{svDisc}</> : <>{enDisc}</>}
+                      </p>
+                    </div>
+                  ) : (
+                    <></>
+                  )}
                 </div>
-                <div
-                  onClick={() => dropdownCl(index)}
-                  className=" font-semibold md:hidden items-center sm: flex justify-center mt-3"
-                >
-                  <span>{language === "sv" ? <>{title}</> : <>{title}</>}</span>{" "}
-                  <IoIosArrowDown />
-                </div>
-                {openCl === index ? (
-                  <div className="border border-gray-200 max-w-sm rounded-md p-2 ">
-                    <p style={{ fontFamily: "Ubuntu,sans-serif" }}>
-                      {language === "sv" ? <>{svDisc}</> : <>{enDisc}</>}
-                    </p>
-                  </div>
-                ) : (
-                  <></>
-                )}
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
-{/* Extra paragraph  */}
+        {/* Extra paragraph  */}
         <p className="mt-20 text-xl font-semibold">
           {language === "sv"
             ? "Genom att använda dessa moderna teknologier för mjukvaruutveckling i Sverige säkerställer vi att dina skräddarsydda mjukvarulösningar inte bara är effektiva, utan också skalbara och anpassningsbara. Om du behöver hjälp med en specifik teknikstack eller behöver en molnbaserad mjukvaruutvecklare i Sverige, är vårt team redo att assistera."

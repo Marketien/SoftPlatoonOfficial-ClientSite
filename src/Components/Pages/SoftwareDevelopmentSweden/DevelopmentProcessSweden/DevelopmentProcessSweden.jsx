@@ -1,3 +1,8 @@
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
+
 const data = [
   {
     svTitle: "Konsultation och Planering",
@@ -39,9 +44,14 @@ const data = [
 
 // eslint-disable-next-line react/prop-types
 const DevelopmentProcessSweden = ({ language }) => {
+  
+ useEffect(() => {
+  Aos.init({ duration: 1000 }); 
+}, []);
   return (
     <div className=" py-[60px] lg:mx-auto md:mx-7 sm: mx-4 md:text-start sm: text-center">
       <div
+      data-aos="fade-up"
         style={{ fontFamily: "Open Sans, sans-serif" }}
         className=" lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4"
       >

@@ -3,6 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import img1 from "../../../../assets/RecentPosts/AccountManagement/1.png";
 import img2 from "../../../../assets/RecentPosts/AccountManagement/9.png";
 import img3 from "../../../../assets/RecentPosts/AccountManagement/12.png";
@@ -34,6 +37,10 @@ import img28 from "../../../../assets/RecentPosts/Pos/18.png";
 import img29 from "../../../../assets/RecentPosts/Pos/31.png";
 
 const RecentProjectSweden = () => {
+
+  useEffect(() => {
+    Aos.init({ duration: 1000 }); 
+  }, []);
   const settings = {
     dots: true,
     infinite: true,
@@ -189,12 +196,14 @@ const RecentProjectSweden = () => {
        sm: max-w-sm mx-auto md:text-start sm: text-center"
     >
       <h1
+      data-aos="fade-right"
         style={{ fontFamily: "Sumana, serif" }}
         className=" font-bold text-5xl mb-2 lg:mx-auto md:mx-4 sm: mx-4"
       >
         Recent <span className="text-purple-800">Projects</span>
       </h1>
       <h3
+      data-aos="fade-right"
         style={{ fontFamily: "Ubuntu,sans-serif" }}
         className="text-lg my-5 lg:mx-auto md:mx-4 sm: mx-4"
       >
@@ -206,7 +215,7 @@ const RecentProjectSweden = () => {
       {/* ------------------------  Carousel Section ------------------------ */}
 
       {/* Project Account Management>>>>>>>>>>>>>>>> */}
-      <div className="my-10">
+      <div data-aos="zoom-in" className="my-10">
         <h1 className="mb-5 text-purple-800">Project Account Management:</h1>
         <Slider {...settings}>
           {accountMng.map(({ image, title }, index) => (
@@ -224,7 +233,7 @@ const RecentProjectSweden = () => {
         </Slider>
       </div>
       {/* ERP Management>>>>>>>>>>>>>>>> */}
-      <div className="my-10">
+      <div data-aos="zoom-in" className="my-10">
         <h1 className="mb-5 text-purple-800">Project ERP:</h1>
         <Slider {...settings}>
           {erpMng.map(({ image, title }, index) => (
@@ -242,7 +251,7 @@ const RecentProjectSweden = () => {
         </Slider>
       </div>
       {/* Movie Site>>>>>>>>>>>>>>>> */}
-      <div className="my-10">
+      <div data-aos="zoom-in" className="my-10">
         <h1 className="mb-5 text-purple-800">Project Movie Site:</h1>
         <Slider {...settings}>
           {movies.map(({ image, title }, index) => (
@@ -260,7 +269,7 @@ const RecentProjectSweden = () => {
         </Slider>
       </div>
       {/* Project Pos >>>>>>>>>>>>>>>> */}
-      <div className="my-10">
+      <div data-aos="zoom-in" className="my-10">
         <h1 className="mb-5 text-purple-800">Project POS:</h1>
         <Slider {...settings}>
           {pos.map(({ image, title }, index) => (
@@ -278,7 +287,7 @@ const RecentProjectSweden = () => {
         </Slider>
       </div>
 
-      {/* Load More Button --------------- */}
+      {/* Start Your Custom Software Button --------------- */}
       <div className="flex justify-center mt-[30px]">
         <button
           className="border-2 border-purple-900 hover:border-purple-500 
