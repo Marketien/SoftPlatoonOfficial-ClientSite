@@ -1,4 +1,5 @@
-import "../../../Shared/HomeSection/HomeContact/HomeContact.css";
+// import "../../../Shared/HomeSection/HomeContact/HomeContact.css";
+import "./SwedenContact.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useRef, useState } from "react";
