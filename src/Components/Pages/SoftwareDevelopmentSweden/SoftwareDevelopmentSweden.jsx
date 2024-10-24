@@ -7,6 +7,7 @@ import HomeContact from "../../Shared/HomeSection/HomeContact/HomeContact";
 import { useState } from "react";
 import DevelopmentProcessSweden from "./DevelopmentProcessSweden/DevelopmentProcessSweden";
 import TechWeUse from "./TechWeUse/TechWeUse";
+import SwedenFAQ from "./SwedenFAQ/SwedenFAQ";
 
 const SoftwareDevelopmentSweden = () => {
   const [language, setLanguage] = useState("sv");
@@ -79,7 +80,7 @@ const SoftwareDevelopmentSweden = () => {
       </div>
       {/* FAQ seciton  */}
       <div className="py-20">
-        <QuestionAnswer language={language} />
+        <SwedenFAQ language={language} />
       </div>
       {/*  Contact seciton  */}
       <div className=" py-0">

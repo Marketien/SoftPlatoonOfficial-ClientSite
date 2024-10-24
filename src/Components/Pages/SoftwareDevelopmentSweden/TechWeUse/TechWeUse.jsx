@@ -7,7 +7,7 @@ import img5 from "../../../../../src/assets/TechIcons/react.png";
 import img6 from "../../../../../src/assets/TechIcons/angular.png";
 import img7 from "../../../../../src/assets/TechIcons/10.VueJs.png";
 import img8 from "../../../../../src/assets/TechIcons/django-icon.png";
-import img9 from "../../../../../src/assets/TechIcons/Amazon_Web_Services-Logo.png" ;
+import img9 from "../../../../../src/assets/TechIcons/Amazon_Web_Services-Logo.png";
 import img10 from "../../../../../src/assets/TechIcons/Microsoft_Azure.png";
 import img11 from "../../../../../src/assets/TechIcons/17.GoogleCloud.png";
 import { IoIosArrowDown } from "react-icons/io";
@@ -157,7 +157,7 @@ const TechWeUse = ({ language }) => {
             ? "Vårt mål på Soft Platoon är att erbjuda innovativa, effektiva och skalbara mjukvarulösningar anpassade till dina affärsbehov genom att utnyttja moderna teknologier. Vårt team av expertutvecklare är kunniga i ett brett utbud av programmeringsspråk, ramverk och verktyg som säkerställer högkvalitativa resultat för varje projekt."
             : "Our goal at Soft Platoon is to provide you with innovative, efficient, and scalable software solutions tailored to your business needs by leveraging modern technologies. Our team of expert developers is proficient in a range of programming languages, frameworks, and tools that ensure high-quality results for every project."}
         </p>
-        {/* <<<<<<<<<<<<< Programming Language  section >>>>>>>>>>>> */}
+{/* <<<<<<<<<<<<< Programming Language  section >>>>>>>>>>>> */}
         <div className="mt-8">
           <h1 className="font-semibold text-2xl">
             {language === "sv"
@@ -213,12 +213,10 @@ const TechWeUse = ({ language }) => {
             ))}
           </div>
         </div>
-        {/* <<<<<<<<<<<<< FrontEnd Frameworks section >>>>>>>>>>>> */}
+{/* <<<<<<<<<<<<< FrontEnd Frameworks section >>>>>>>>>>>> */}
         <div className="mt-8">
           <h1 className="font-semibold text-2xl">
-            {language === "sv"
-              ? "Frontend ramverk "
-              : "Frontend Frameworks "}
+            {language === "sv" ? "Frontend ramverk " : "Frontend Frameworks "}
           </h1>
           <p
             className="text-lg mt-3 "
@@ -269,12 +267,10 @@ const TechWeUse = ({ language }) => {
             ))}
           </div>
         </div>
-        {/* <<<<<<<<<<<<< Cloud Technologies  section >>>>>>>>>>>> */}
+{/* <<<<<<<<<<<<< Cloud Technologies  section >>>>>>>>>>>> */}
         <div className="mt-8">
           <h1 className="font-semibold text-2xl">
-            {language === "sv"
-              ? "Molnteknologier"
-              : "Cloud Technologies"}
+            {language === "sv" ? "Molnteknologier" : "Cloud Technologies"}
           </h1>
           <p
             className="text-lg mt-3 "
@@ -325,6 +321,12 @@ const TechWeUse = ({ language }) => {
             ))}
           </div>
         </div>
+{/* Extra paragraph  */}
+        <p className="mt-20 text-xl font-semibold">
+          {language === "sv"
+            ? "Genom att använda dessa moderna teknologier för mjukvaruutveckling i Sverige säkerställer vi att dina skräddarsydda mjukvarulösningar inte bara är effektiva, utan också skalbara och anpassningsbara. Om du behöver hjälp med en specifik teknikstack eller behöver en molnbaserad mjukvaruutvecklare i Sverige, är vårt team redo att assistera."
+            : "By Using these modern technologies for software development in Sweden, we ensure that your custom software solutions are not only efficient, but also scalable and adaptable. If you need assistance with a specific technology stack or need a cloud-based software developer in Sweden, our team is ready to assist."}
+        </p>
       </div>
     </div>
   );
