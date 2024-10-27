@@ -9,8 +9,6 @@ import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Loading from "../../../Shared/Loading/Loading";
-import icon1 from '../../../../assets/Icons/email.png';
-import icon2 from '../../../../assets/Icons/phone-icon-938.png';
 
 
 const SwedenContact = ({ language }) => {
@@ -81,6 +79,12 @@ const SwedenContact = ({ language }) => {
           {language === "sv"
             ? "Oavsett om du vill bygga en ny applikation, integrera befintliga system eller utforska molnbaserade programvarulösningar, finns vi här för att hjälpa dig varje steg på vägen."
             : "Whether you’re looking to build a new application, integrate existing systems, or explore cloud-based software solutions, we’re here to assist you every step of the way."}
+        </p>
+        
+      <p data-aos="fade-right" className="text-xl mt-3">
+          {language === "sv"
+            ? "Kontakta oss idag för en kostnadsfri konsultation! Låt oss visa dig hur våra innovativa tillvägagångssätt kan förbättra dina affärsprocesser och driva tillväxt."
+            : "Get in touch with us today for a free consultation! Let us show you how our innovative approaches can enhance your business processes and drive growth."}
         </p>
       </div>
 {/*>>>>>>>>>>>>>>>>>  Contact form section <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  */}
@@ -162,22 +166,6 @@ const SwedenContact = ({ language }) => {
             </div>
           </form>
         </div>
-      <p className="text-xl mt-3">
-          {language === "sv"
-            ? "Kontakta oss idag för en kostnadsfri konsultation! Låt oss visa dig hur våra innovativa tillvägagångssätt kan förbättra dina affärsprocesser och driva tillväxt."
-            : "Get in touch with us today for a free consultation! Let us show you how our innovative approaches can enhance your business processes and drive growth."}
-        </p>
-      <p className="text-xl mt-3">
-          <span className="flex gap-2 items-center">
-            <span><img className="w-[25px]" src={icon1} alt="" /></span>
-            <span>+8801333836300</span>
-            </span>
-            <br />
-          <span className="flex gap-2 items-center -mt-3">
-            <span><img className="w-[25px]" src={icon2} alt="" /></span>
-            <span>info@softplatoon.com</span>
-            </span>
-        </p>
       </div>
       <ToastContainer />
     </div>

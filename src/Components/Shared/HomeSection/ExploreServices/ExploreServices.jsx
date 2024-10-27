@@ -41,13 +41,13 @@ const ExploreServices = () => {
   }, []);
 
     return (
-        <div className=" bg-white py-[160px] ">
+        <div className=" bg-white md:py-[160px] sm: py-[20px] ">
         <div
          data-aos="zoom-in"
          className="lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4">
            <h1 
             style={{ fontFamily: "Sumana,serif" }}
-           className="font-bold text-5xl md:flex md:items-center">
+           className="font-bold text-5xl md:flex md:items-center md:text-start sm: text-center">
             Explore Our Popular <p className='text-purple-900 md:ms-2 sm: ms-0'> Services</p>
            </h1>
     
@@ -62,7 +62,7 @@ const ExploreServices = () => {
                 className=" bg-[#59287f1c] shadow-lg shadow-[#2d253447]  rounded-md px-4 mb-3"
               >
                 <div className="flex justify-center mt-5 ms-3">
-                  <img className="w-[80px]" src={icon} alt={title} />
+                  <img className="w-[80px]" src={icon} alt={title} loading="lazy"  />
                 </div>
                 <div style={{ fontFamily: "Ubuntu,sans-serif" }} className="card-body">
                   <h2 className="text-center text-xl text-[#323738]">{title}</h2>

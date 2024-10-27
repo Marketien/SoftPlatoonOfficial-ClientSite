@@ -30,10 +30,10 @@ const SoftwareDevelopmentSweden = () => {
         <div>
           <h1
             style={{ fontFamily: "Sumana, serif" }}
-            className="font-bold text-5xl mb-2"
+            className="font-bold md:text-5xl sm: text-4xl mb-2"
           >
             {language === "sv"
-              ? "Mjukvaru utvecklare Sverige"
+              ? "Mjukvaruutvecklare Sverige"
               : "Software Developer Sweden"}
           </h1>
           <p style={{ fontFamily: "Ubuntu,sans-serif" }} className="text-xl ">

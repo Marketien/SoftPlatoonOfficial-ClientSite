@@ -57,11 +57,11 @@ const DevelopmentProcessSweden = ({ language }) => {
       >
         <h1
           style={{ fontFamily: "Sumana,serif" }}
-          className="font-bold text-5xl mb-5"
+          className="font-bold md:text-5xl sm: text-3xl mb-5"
         >
           {language === "sv" ? (
             <>
-              Vår Programvaru utvecklings
+              Vår Programvaruutvecklings
               <span className="text-purple-900 ms-1 "> process</span>
             </>
           ) : (

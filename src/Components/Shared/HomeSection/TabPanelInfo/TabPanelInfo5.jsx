@@ -1,16 +1,16 @@
 import { useEffect, useState } from "react";
 import { BsCheckCircleFill } from "react-icons/bs";
 import image from "../../../../assets/Icons/web page-06.png";
+import tabPanelData from "../../../../assets/tabpanelinfo.json";
 
 const TabPanelInfo5 = () => {
 
     const [tabInfos, setInfos] = useState([]);
+    
+useEffect(() => {
+  setInfos(tabPanelData);
+}, []);
 
-    useEffect(() => {
-      fetch(" tabpanelinfo.json ")
-        .then((res) => res.json())
-        .then((data) => setInfos(data));
-    }, []);
     const DataAnalytics = tabInfos.find(
         (info) => "DataAnalytics" in info
       );

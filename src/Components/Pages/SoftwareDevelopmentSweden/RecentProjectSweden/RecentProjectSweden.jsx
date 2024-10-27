@@ -36,10 +36,9 @@ import img27 from "../../../../assets/RecentPosts/Pos/12.png";
 import img28 from "../../../../assets/RecentPosts/Pos/18.png";
 import img29 from "../../../../assets/RecentPosts/Pos/31.png";
 
-const RecentProjectSweden = () => {
-
+const RecentProjectSweden = ({language}) => {
   useEffect(() => {
-    Aos.init({ duration: 1000 }); 
+    Aos.init({ duration: 1000 });
   }, []);
   const settings = {
     dots: true,
@@ -196,27 +195,25 @@ const RecentProjectSweden = () => {
        sm: max-w-sm mx-auto md:text-start sm: text-center"
     >
       <h1
-      data-aos="fade-right"
+        data-aos="fade-right"
         style={{ fontFamily: "Sumana, serif" }}
         className=" font-bold text-5xl mb-2 lg:mx-auto md:mx-4 sm: mx-4"
       >
-        Recent <span className="text-purple-800">Projects</span>
+        {language === "sv" ? (
+          <>
+            Senaste <span className="text-purple-800">projekt</span>
+          </>
+        ) : (
+          <>
+            Recent <span className="text-purple-800">Projects</span>
+          </>
+        )}
       </h1>
-      <h3
-      data-aos="fade-right"
-        style={{ fontFamily: "Ubuntu,sans-serif" }}
-        className="text-lg my-5 lg:mx-auto md:mx-4 sm: mx-4"
-      >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ab
-        repellendus animi distinctio laudantium quia iusto, nostrum perferendis,
-        id voluptatum, possimus beatae sunt voluptates porro qui a rerum quis
-        nisi?
-      </h3>
       {/* ------------------------  Carousel Section ------------------------ */}
 
       {/* Project Account Management>>>>>>>>>>>>>>>> */}
       <div data-aos="zoom-in" className="my-10">
-        <h1 className="mb-5 text-purple-800">Project Account Management:</h1>
+        <h1 className="mb-5 text-purple-800 text-xl">Project Account Management:</h1>
         <Slider {...settings}>
           {accountMng.map(({ image, title }, index) => (
             <div key={index} className="relative px-2">
@@ -234,7 +231,7 @@ const RecentProjectSweden = () => {
       </div>
       {/* ERP Management>>>>>>>>>>>>>>>> */}
       <div data-aos="zoom-in" className="my-10">
-        <h1 className="mb-5 text-purple-800">Project ERP:</h1>
+        <h1 className="mb-5 text-purple-800 text-xl">Project ERP:</h1>
         <Slider {...settings}>
           {erpMng.map(({ image, title }, index) => (
             <div key={index} className="relative px-2">
@@ -252,7 +249,7 @@ const RecentProjectSweden = () => {
       </div>
       {/* Movie Site>>>>>>>>>>>>>>>> */}
       <div data-aos="zoom-in" className="my-10">
-        <h1 className="mb-5 text-purple-800">Project Movie Site:</h1>
+        <h1 className="mb-5 text-purple-800 text-xl">Project Movie Site:</h1>
         <Slider {...settings}>
           {movies.map(({ image, title }, index) => (
             <div key={index} className="relative px-2">
@@ -270,7 +267,7 @@ const RecentProjectSweden = () => {
       </div>
       {/* Project Pos >>>>>>>>>>>>>>>> */}
       <div data-aos="zoom-in" className="my-10">
-        <h1 className="mb-5 text-purple-800">Project POS:</h1>
+        <h1 className="mb-5 text-purple-800 text-xl">Project POS:</h1>
         <Slider {...settings}>
           {pos.map(({ image, title }, index) => (
             <div key={index} className="relative px-2">
