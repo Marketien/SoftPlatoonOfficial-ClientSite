@@ -9,6 +9,7 @@ import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Loading from "../../../Shared/Loading/Loading";
+import { Link } from "react-router-dom";
 
 
 const SwedenContact = ({ language }) => {
@@ -60,13 +61,13 @@ const SwedenContact = ({ language }) => {
         >
           {language === "sv" ? (
             <>
-              för program varuutveck lingstjänster
-              <span className="text-purple-900 ms-1 "> Kontakta oss</span>
+             kontakt med bästa mjukvaruutvecklare 
+              <span className="text-purple-900 ms-1 "> sverige</span>
             </>
           ) : (
             <>
-              For Software Development Services
-              <span className="text-purple-900 ms-1 "> Contact With Us</span>
+              Contact With The Best Software Developer 
+              <span className="text-purple-900 ms-1 "> Sweden</span>
             </>
           )}
         </h1>
@@ -83,8 +84,8 @@ const SwedenContact = ({ language }) => {
         
       <p data-aos="fade-right" className="text-xl mt-3">
           {language === "sv"
-            ? "Kontakta oss idag för en kostnadsfri konsultation! Låt oss visa dig hur våra innovativa tillvägagångssätt kan förbättra dina affärsprocesser och driva tillväxt."
-            : "Get in touch with us today for a free consultation! Let us show you how our innovative approaches can enhance your business processes and drive growth."}
+            ? <><Link target="_blank" className="text-blue-400 underline" to="/getProposal">Kontakta oss idag</Link> för en kostnadsfri konsultation! Låt oss visa dig hur våra innovativa tillvägagångssätt kan förbättra dina affärsprocesser och driva tillväxt.</>
+            : <><Link target="_blank" className="text-blue-400 underline" to="/getProposal">Get in touch with us today</Link> for a free consultation! Let us show you how our innovative approaches can enhance your business processes and drive growth.</>}
         </p>
       </div>
 {/*>>>>>>>>>>>>>>>>>  Contact form section <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  */}

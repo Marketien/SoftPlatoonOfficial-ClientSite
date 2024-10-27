@@ -219,7 +219,7 @@ const RecentProjectSweden = ({language}) => {
             <div key={index} className="relative px-2">
               <img
                 src={image}
-                alt={`Project ${index + 1}`}
+                alt="mjukvaruutveckling sverige"
                 className="relative w-full rounded-lg shadow-lg"
               />
               <p className="absolute bottom-0 right-0 bg-black text-white rounded-md px-3 py-1 w-[90px] text-center">
@@ -237,7 +237,7 @@ const RecentProjectSweden = ({language}) => {
             <div key={index} className="relative px-2">
               <img
                 src={image}
-                alt={`Project ${index + 1}`}
+                alt="mjukvaruutvecklare-sverige"
                 className="relative w-full rounded-lg shadow-lg"
               />
               <p className="absolute bottom-0 right-0 bg-black text-white rounded-md px-3 py-1 w-[90px] text-center">
@@ -255,7 +255,7 @@ const RecentProjectSweden = ({language}) => {
             <div key={index} className="relative px-2">
               <img
                 src={image}
-                alt={`Project ${index + 1}`}
+                alt="anpassad-mjukvaruutveckling"
                 className="relative w-full rounded-lg shadow-lg"
               />
               <p className="absolute bottom-0 right-0 bg-black text-white rounded-md px-3 py-1 w-[90px] text-center">
@@ -273,7 +273,7 @@ const RecentProjectSweden = ({language}) => {
             <div key={index} className="relative px-2">
               <img
                 src={image}
-                alt={`Project ${index + 1}`}
+                alt=""
                 className="relative w-full rounded-lg shadow-lg"
               />
               <p className="absolute bottom-0 right-0 bg-black text-white rounded-md px-3 py-1 w-[90px] text-center">
