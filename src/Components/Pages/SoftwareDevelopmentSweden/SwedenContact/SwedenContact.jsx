@@ -12,6 +12,7 @@ import Loading from "../../../Shared/Loading/Loading";
 import { Link } from "react-router-dom";
 
 
+// eslint-disable-next-line react/prop-types
 const SwedenContact = ({ language }) => {
 
     const [isLoading, setLoading] = useState(false);

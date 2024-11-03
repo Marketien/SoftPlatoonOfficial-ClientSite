@@ -1,14 +1,15 @@
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import img1 from "../../../assets/Images/Software.png";
 import OurServiceSweden from "./OurServiceSweden/OurServiceSweden";
 import RecentProjectSweden from "./RecentProjectSweden/RecentProjectSweden";
-import QuestionAnswer from "../../Shared/HomeSection/FAQ/QuestionAnswer";
-import HomeContact from "../../Shared/HomeSection/HomeContact/HomeContact";
 import { useState } from "react";
 import DevelopmentProcessSweden from "./DevelopmentProcessSweden/DevelopmentProcessSweden";
 import TechWeUse from "./TechWeUse/TechWeUse";
 import SwedenFAQ from "./SwedenFAQ/SwedenFAQ";
 import SwedenContact from "./SwedenContact/SwedenContact";
+import translateLogo1 from "../../../assets/Icons/softplatoon-gradient-logo.png";
+import translateLogo2 from "../../../assets/Icons/softplatoon-white-logo.png";
 
 const SoftwareDevelopmentSweden = () => {
   const [language, setLanguage] = useState("sv");
@@ -21,6 +22,17 @@ const SoftwareDevelopmentSweden = () => {
 
   return (
     <div className="relative lg:mt-[90px] md:mt-[90px] sm: mt-[80px]">
+      <Helmet>
+        {/* <!-- asif vai er meta medicine  --> */}
+        <meta
+          name="google-site-verification"
+          content="AozOGZQgZ5urI6GXo8SrQXav88xvw1M5u8xXMDSs5Tg"
+        />
+        <meta
+          name="description"
+          content="Letar du efter experter på programvaruutveckling i Sverige? Soft Platoon erbjuder skräddarsydd programvaruutveckling, mobila lösningar och webb"
+        />
+      </Helmet>
       {/* ---------------------------- Banner Section ----------------------------------- */}
       <div
         className="relative grid lg:grid-cols-2 md:grid-cols-1 sm: grid-cols-1 items-center
@@ -64,7 +76,7 @@ const SoftwareDevelopmentSweden = () => {
       {/* Content section  */}
       <div className=" py-20 ">
         {/* Our service seciton  */}
-        <OurServiceSweden language={language}/>
+        <OurServiceSweden language={language} />
       </div>
       {/* Recent Projects seciton  */}
       <div className="bg-white py-20">
@@ -86,25 +98,43 @@ const SoftwareDevelopmentSweden = () => {
       <div className="bg-white py-0">
         <SwedenContact language={language} />
       </div>
- {/* ---------------------------- Translate Modal ----------------------------------- */}
-        <div className="fixed bottom-20 right-4 bg-[#5A287F] shadow-lg rounded-md p-1">
-        <p className="text-sm font-semibold mb-1 text-white">Translate</p>
-        <div className="">
-          <button
-            onClick={() => handleLanguageChange("sv")}
-            className={`btn btn-xs mb-1 ${language === "en" ? "" : "bg-black text-white"}`}
+
+   {/* ---------------------------- Translate Modal ----------------------------------- */}
+      <div className="fixed bottom-24 right-4 text-center ">
+        <div className=" bg-gradient-to-r from-[#5A287F] via-[#84207E]  to-[#723988] p-2 rounded-3xl mb-1">
+          <div
+          onClick={() => handleLanguageChange("sv")}
+          className={` flex justify-center items-center gap-1
+              rounded-full font-semibold py-1 px-2 ${
+            language === "en" ? "text-white" : "bg-white "
+          }`}
           >
-            Swedish
-          </button>
-          <br />
-          <button
-            onClick={() => handleLanguageChange("en")}
-            className={`btn btn-xs mb-1 ${language === "sv" ? "" : "bg-black text-white"}`}
+            <div>
+              <img className="w-[20px]" src= {language === "en" ? translateLogo2 : translateLogo1} alt="" />
+            </div>
+            <div>
+              <h1>Swedish</h1>
+            </div>
+          </div>
+        </div>
+        <div className=" bg-gradient-to-r from-[#5A287F] via-[#84207E]  to-[#723988] p-2 rounded-3xl">
+          <div
+           onClick={() => handleLanguageChange("en")}
+          className={` flex justify-center items-center gap-1
+              rounded-full font-semibold py-1 px-2 ${
+            language === "sv" ? "text-white" : "bg-white"
+          }`}
           >
-            English
-          </button> 
+            <div>
+              <img className="w-[20px]" src= {language === "en" ? translateLogo1 : translateLogo2} alt="" />
+            </div>
+            <div>
+              <h1>English</h1>
+            </div>
+          </div>
         </div>
       </div>
+   
     </div>
   );
 };

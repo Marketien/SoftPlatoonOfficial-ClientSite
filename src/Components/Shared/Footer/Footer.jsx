@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../../../assets/Icons/LogoSoftPlatoonjpg-removebg-preview.png";
+import logo from "../../../assets/Icons/softplatoon-gradient-logo.png";
 import facebookLogo from "../../../assets/Icons/facebook.png";
 import linkedinLogo from "../../../assets/Icons/linkedin.png";
 

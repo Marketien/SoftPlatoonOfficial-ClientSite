@@ -13,6 +13,7 @@ import img9 from "../../../../../src/assets/TechIcons/Amazon_Web_Services-Logo.p
 import img10 from "../../../../../src/assets/TechIcons/Microsoft_Azure.png";
 import img11 from "../../../../../src/assets/TechIcons/17.GoogleCloud.png";
 import { IoIosArrowDown } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const programmingLang = [
   {
@@ -160,8 +161,14 @@ const TechWeUse = ({ language }) => {
         </h1>
         <p data-aos="fade-right" className="text-xl">
           {language === "sv"
-            ? "Vårt mål på Soft Platoon är att erbjuda innovativa, effektiva och skalbara mjukvarulösningar anpassade till dina affärsbehov genom att utnyttja moderna teknologier. Vårt team av expertutvecklare är kunniga i ett brett utbud av programmeringsspråk, ramverk och verktyg som säkerställer högkvalitativa resultat för varje projekt."
-            : "Our goal at Soft Platoon is to provide you with innovative, efficient, and scalable software solutions tailored to your business needs by leveraging modern technologies. Our team of expert developers is proficient in a range of programming languages, frameworks, and tools that ensure high-quality results for every project."}
+            ? 
+            <>
+            Vårt mål på Soft Platoon är att erbjuda innovativa, effektiva och skalbara mjukvarulösningar anpassade till dina affärsbehov genom att utnyttja moderna teknologier. Vårt team av expertutvecklare är kunniga i ett brett utbud av <Link to="https://en.wikipedia.org/wiki/Programming_language" className="text-blue-500 hover:underline">programmeringsspråk</Link> , ramverk och verktyg som säkerställer högkvalitativa resultat för varje projekt.
+            </>
+            : <>
+            Our goal at Soft Platoon is to provide you with innovative, efficient, and scalable software solutions tailored to your business needs by leveraging modern technologies. Our team of expert developers is proficient in a range of <Link to="https://en.wikipedia.org/wiki/Programming_language" className="text-blue-500 hover:underline">programming languages</Link> , frameworks, and tools that ensure high-quality results for every project.
+            </>
+            }
         </p>
         <div data-aos="zoom-in">
           {/* <<<<<<<<<<<<< Programming Language  section >>>>>>>>>>>> */}

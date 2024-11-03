@@ -1,8 +1,8 @@
-import icon1 from "../../../../assets/Images/web page-01.png";
-import icon2 from "../../../../assets/Images/web page-02.png";
-import icon3 from "../../../../assets/Images/web page-03.png";
-import icon4 from "../../../../assets/Images/web page-05.png";
-import icon5 from "../../../../assets/Images/web page-04.png"; 
+import icon1 from "../../../../assets/Icons/web page-01.png";
+import icon2 from "../../../../assets/Icons/web page-02.png";
+import icon3 from "../../../../assets/Icons/web page-03.png";
+import icon4 from "../../../../assets/Icons/web page-05.png";
+import icon5 from "../../../../assets/Icons/web page-04.png"; 
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
