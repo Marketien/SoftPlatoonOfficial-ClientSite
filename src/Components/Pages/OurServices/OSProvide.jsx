@@ -109,6 +109,11 @@ const OSProvide = () => {
                     Demo_Hospital
                   </li>
                 </Link>
+                <Link target="blank" to="https://umrah.softplatoon.com/">
+                  <li className="hover:text-black hover:bg-white">
+                    Demo_Umrah
+                  </li>
+                </Link>
                 <Link target="blank" to="https://consultant.softplatoon.com/">
                   <li className="hover:text-black hover:bg-white">
                     Demo_Consultancy
