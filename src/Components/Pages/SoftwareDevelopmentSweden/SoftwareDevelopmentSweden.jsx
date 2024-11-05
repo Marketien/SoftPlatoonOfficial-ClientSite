@@ -1,4 +1,3 @@
-import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import img1 from "../../../assets/Images/Software.png";
 import OurServiceSweden from "./OurServiceSweden/OurServiceSweden";
@@ -22,17 +21,6 @@ const SoftwareDevelopmentSweden = () => {
 
   return (
     <div className="relative lg:mt-[90px] md:mt-[90px] sm: mt-[80px]">
-      <Helmet>
-        {/* <!-- asif vai er meta medicine  --> */}
-        <meta
-          name="google-site-verification"
-          content="AozOGZQgZ5urI6GXo8SrQXav88xvw1M5u8xXMDSs5Tg"
-        />
-        <meta
-          name="description"
-          content="Letar du efter experter på programvaruutveckling i Sverige? Soft Platoon erbjuder skräddarsydd programvaruutveckling, mobila lösningar och webb"
-        />
-      </Helmet>
       {/* ---------------------------- Banner Section ----------------------------------- */}
       <div
         className="relative grid lg:grid-cols-2 md:grid-cols-1 sm: grid-cols-1 items-center

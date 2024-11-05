@@ -56,7 +56,7 @@ const router = createBrowserRouter([
         element: < GetProposal/>,
       },
       {
-        path: "/abc",
+        path: "/Mjukvaruutvecklare-Sverige",
         element: < SoftwareDevelopmentSweden/>,
       },
     ],
