@@ -13,11 +13,9 @@ font 1: style={{ fontFamily: "Open Sans,sans-serif" }}
 font 2: style={{ fontFamily: "Ubuntu,sans-serif" }}
 font 2: style={{ fontFamily: "Sumana,serif" }}
 
-other classes:
-default-text-color,
-dafault-heading,
-default-margin
-
+  useEffect(() => {
+    document.title = "Softplatoon - Software Development Company in Bangladesh";
+  }, []);
 
 language={language}
 

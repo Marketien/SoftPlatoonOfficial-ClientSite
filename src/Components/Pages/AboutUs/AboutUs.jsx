@@ -2,7 +2,13 @@ import { Link } from "react-router-dom";
 import img from "../../../assets/Images/AboutUs-removebg-preview.png";
 import CEO from "../../../assets/Images/Unknownclientjpg.jpg";
 import HomeContact from "../../Shared/HomeSection/HomeContact/HomeContact";
+import { useEffect } from "react";
 const AboutUs = () => {
+
+  useEffect(() => {
+    document.title = "Softplatoon - About Us";
+  }, []);
+
   return (
     <div className="lg:mt-[90px] md:mt-[90px] sm: mt-[80px] bg-white">
       {/* ---------------------------- Banner Section ----------------------------------- */}

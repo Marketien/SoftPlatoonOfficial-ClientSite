@@ -1,7 +1,13 @@
 import HomeContact from "../../Shared/HomeSection/HomeContact/HomeContact";
 import img1 from "../../../assets/Images/Office Presentation-01.png"
+import { useEffect } from "react";
 
 const GetProposal = () => {
+
+  useEffect(() => {
+    document.title = "Softplatoon - Get Proposal";
+  }, []);
+
     return (
         <div className="lg:mt-[90px] md:mt-[90px] sm: mt-[120px]">
         {/* ---------------------------- Banner Section ----------------------------------- */}

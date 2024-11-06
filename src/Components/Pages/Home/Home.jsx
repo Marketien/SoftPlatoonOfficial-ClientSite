@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Banner from "../../Shared/HomeSection/Banner/Banner";
 import ExploreServices from "../../Shared/HomeSection/ExploreServices/ExploreServices";
 import QuestionAnswer from "../../Shared/HomeSection/FAQ/QuestionAnswer";
@@ -17,6 +18,11 @@ import SuccessStories from "../../Shared/HomeSection/SuccessStories/SuccessStori
 import TestingQA from "../../Shared/HomeSection/TestingQA/TestingQA";
 
 const Home = () => {
+
+  useEffect(() => {
+    document.title = "Softplatoon - Software Development Company in Bangladesh";
+  }, []);
+
   return (
     <>
       <Banner />

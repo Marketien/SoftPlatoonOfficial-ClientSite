@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import img1 from "../../../assets/Images/Software.png";
 import OurServiceSweden from "./OurServiceSweden/OurServiceSweden";
 import RecentProjectSweden from "./RecentProjectSweden/RecentProjectSweden";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import DevelopmentProcessSweden from "./DevelopmentProcessSweden/DevelopmentProcessSweden";
 import TechWeUse from "./TechWeUse/TechWeUse";
 import SwedenFAQ from "./SwedenFAQ/SwedenFAQ";
@@ -18,6 +18,9 @@ const SoftwareDevelopmentSweden = () => {
     setLanguage(lang);
     document.documentElement.lang = lang;
   };
+  useEffect(() => {
+    document.title = "bästa mjukvaruutvecklare sverige - Softplatoon";
+  }, []);
 
   return (
     <div className="relative lg:mt-[90px] md:mt-[90px] sm: mt-[80px]">
@@ -87,18 +90,22 @@ const SoftwareDevelopmentSweden = () => {
         <SwedenContact language={language} />
       </div>
 
-   {/* ---------------------------- Translate Modal ----------------------------------- */}
+      {/* ---------------------------- Translate Modal ----------------------------------- */}
       <div className="fixed bottom-24 right-4 text-center ">
         <div className=" bg-gradient-to-r from-[#5A287F] via-[#84207E]  to-[#723988] p-2 rounded-3xl mb-1">
           <div
-          onClick={() => handleLanguageChange("sv")}
-          className={` flex justify-center items-center gap-1
+            onClick={() => handleLanguageChange("sv")}
+            className={` flex justify-center items-center gap-1
               rounded-full font-semibold py-1 px-2 ${
-            language === "en" ? "text-white" : "bg-white "
-          }`}
+                language === "en" ? "text-white" : "bg-white "
+              }`}
           >
             <div>
-              <img className="w-[20px]" src= {language === "en" ? translateLogo2 : translateLogo1} alt="" />
+              <img
+                className="w-[20px]"
+                src={language === "en" ? translateLogo2 : translateLogo1}
+                alt=""
+              />
             </div>
             <div>
               <h1>Swedish</h1>
@@ -107,14 +114,18 @@ const SoftwareDevelopmentSweden = () => {
         </div>
         <div className=" bg-gradient-to-r from-[#5A287F] via-[#84207E]  to-[#723988] p-2 rounded-3xl">
           <div
-           onClick={() => handleLanguageChange("en")}
-          className={` flex justify-center items-center gap-1
+            onClick={() => handleLanguageChange("en")}
+            className={` flex justify-center items-center gap-1
               rounded-full font-semibold py-1 px-2 ${
-            language === "sv" ? "text-white" : "bg-white"
-          }`}
+                language === "sv" ? "text-white" : "bg-white"
+              }`}
           >
             <div>
-              <img className="w-[20px]" src= {language === "en" ? translateLogo1 : translateLogo2} alt="" />
+              <img
+                className="w-[20px]"
+                src={language === "en" ? translateLogo1 : translateLogo2}
+                alt=""
+              />
             </div>
             <div>
               <h1>English</h1>
@@ -122,7 +133,6 @@ const SoftwareDevelopmentSweden = () => {
           </div>
         </div>
       </div>
-   
     </div>
   );
 };

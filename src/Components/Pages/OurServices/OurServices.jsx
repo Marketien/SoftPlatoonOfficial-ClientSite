@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import img1 from "../../../assets/Images/ourService.png";
 import HomeContact from "../../Shared/HomeSection/HomeContact/HomeContact";
 import Testimonials from "../../Shared/HomeSection/Testimonials/Testimonials";
@@ -6,6 +7,9 @@ import OSProvide from "./OSProvide";
 
 const OurServices = () => {
 
+  useEffect(() => {
+    document.title = "Softplatoon - Our Services";
+  }, []);
 
   return (
     <div className="lg:mt-[90px] md:mt-[90px] sm: mt-[80px] bg-white">
