@@ -1,7 +1,14 @@
+import { useEffect } from 'react';
 import img1 from '../../../assets/Images/Web App.png'
+import Breadcrumb from '../../Hooks/BreadCrumb/BreadCrumb';
 
 
 const WebAppsService = () => {
+
+  useEffect(() => {
+    document.title = "Softplatoon - Web App Services";
+  }, []);
+
     return (
         <div className="lg:mt-[90px] md:mt-[90px] sm: mt-[80px] bg-white">
         {/* ---------------------------- Banner Section ----------------------------------- */}
@@ -32,6 +39,7 @@ const WebAppsService = () => {
             <img src={img1} alt="" />
           </div>
         </div>
+          <Breadcrumb/>
         <div className="lg:mx-32 md:mx-10 sm: mx-5 py-20">
         </div>
         </div>

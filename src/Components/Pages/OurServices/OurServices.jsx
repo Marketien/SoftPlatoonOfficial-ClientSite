@@ -4,6 +4,7 @@ import HomeContact from "../../Shared/HomeSection/HomeContact/HomeContact";
 import Testimonials from "../../Shared/HomeSection/Testimonials/Testimonials";
 import OSFullScale from "./OSFullScale";
 import OSProvide from "./OSProvide";
+import Breadcrumb from "../../Hooks/BreadCrumb/BreadCrumb";
 
 const OurServices = () => {
 
@@ -40,10 +41,12 @@ const OurServices = () => {
           </p>
         </div>
         {/* image section  */}
+        
         <div className="py-5 md:flex justify-end sm: block">
           <img src={img1} alt="" />
         </div>
       </div>
+        <Breadcrumb/>
       <div className="lg:mx-32 md:mx-10 sm: mx-5 py-20">
         {/* ************************** Provide Section *************************************** */}
        <OSProvide/>

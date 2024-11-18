@@ -32,15 +32,15 @@ const router = createBrowserRouter([
         element: <OurServices />,
       },
       {
-        path: "/webappServices",
+        path: "/web-app-Services",
         element: <WebAppsService />,
       },
       {
-        path: "/softwareServices",
+        path: "/software-Services",
         element: <SoftWareService />,
       },
       {
-        path: "/erpServices",
+        path: "/erp-Services",
         element: <ErpService />,
       },
       {

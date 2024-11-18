@@ -144,7 +144,7 @@ const OSProvide = () => {
           {/* Read More Button  */}
           <div title="Read More" className="absolute bottom-2 right-3 py-3 ">
             <button className="flex items-center gap-1 text-purple-900 hover:text-purple-300 rounded-sm ps-2">
-            <Link to="/webappServices">
+            <Link to="/web-app-Services">
               <button className="flex items-center gap-1 text-purple-900 hover:text-purple-300 rounded-sm ps-2">
                 <span>Read More</span>
                 <span>
@@ -216,7 +216,7 @@ const OSProvide = () => {
           </p>
           {/* Read More Button  */}
           <div title="Read More" className="absolute bottom-2 right-3 py-3 ">
-            <Link to="/softwareServices">
+            <Link to="/software-Services">
               <button className="flex items-center gap-1 text-purple-900 hover:text-purple-300 rounded-sm ps-2">
                 <span>Read More</span>
                 <span>
@@ -262,7 +262,7 @@ const OSProvide = () => {
           {/* Read More Button  */}
           <div title="Read More" className="absolute bottom-2 right-3 py-3 ">
             <button className="flex items-center gap-1 text-purple-900 hover:text-purple-300 rounded-sm ps-2">
-            <Link to="/erpServices">
+            <Link to="/erp-Services">
               <button className="flex items-center gap-1 text-purple-900 hover:text-purple-300 rounded-sm ps-2">
                 <span>Read More</span>
                 <span>
