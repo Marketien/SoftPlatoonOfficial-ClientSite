@@ -144,7 +144,7 @@ const OSProvide = () => {
           {/* Read More Button  */}
           <div title="Read More" className="absolute bottom-2 right-3 py-3 ">
             <button className="flex items-center gap-1 text-purple-900 hover:text-purple-300 rounded-sm ps-2">
-            <Link to="/web-app-Services">
+            <Link to="/our-services/web-app-Services">
               <button className="flex items-center gap-1 text-purple-900 hover:text-purple-300 rounded-sm ps-2">
                 <span>Read More</span>
                 <span>

@@ -4,10 +4,10 @@ import HomeContact from "../../Shared/HomeSection/HomeContact/HomeContact";
 import Testimonials from "../../Shared/HomeSection/Testimonials/Testimonials";
 import OSFullScale from "./OSFullScale";
 import OSProvide from "./OSProvide";
-import Breadcrumb from "../../Hooks/BreadCrumb/BreadCrumb";
+import { Link } from "react-router-dom";
+import Breadcrumb from "../../Hooks/Breadcrumb/Breadcrumb";
 
 const OurServices = () => {
-
   useEffect(() => {
     document.title = "Softplatoon - Our Services";
   }, []);
@@ -30,10 +30,7 @@ const OurServices = () => {
           <p style={{ fontFamily: "Ubuntu,sans-serif" }} className="text-xl ">
             Your Vision, Our Digital Expertise
           </p>
-          <p
-           
-            className="text-lg my-5"
-          >
+          <p className="text-lg my-5">
             Once a small product company, SoftPlatoon grew to become an IT
             partner with 4+ years in the field and 230+ successful projects.
             Now, we help other businesses across 30+ industries launch
@@ -41,22 +38,24 @@ const OurServices = () => {
           </p>
         </div>
         {/* image section  */}
-        
+
         <div className="py-5 md:flex justify-end sm: block">
           <img src={img1} alt="" />
         </div>
       </div>
-        <Breadcrumb/>
+      {/* BreadCumb section  */}
+      <Breadcrumb/>
+      {/* Main Content section  */}
       <div className="lg:mx-32 md:mx-10 sm: mx-5 py-20">
         {/* ************************** Provide Section *************************************** */}
-       <OSProvide/>
+        <OSProvide />
         {/* ************************** Testimonial Section *************************************** */}
-        <Testimonials/>
+        <Testimonials />
         {/* ************************** FUll Scale Section *************************************** */}
-        <OSFullScale/>
+        <OSFullScale />
         {/* ************************** Content Section *************************************** */}
         <div className="mt-20">
-        <HomeContact/>
+          <HomeContact />
         </div>
       </div>
     </div>
