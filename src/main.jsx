@@ -12,7 +12,7 @@ import OurServices from './Components/Pages/OurServices/OurServices';
 import AboutUs from './Components/Pages/AboutUs/AboutUs';
 import GetProposal from './Components/Pages/GetProposal/GetProposal';
 import Industries from './Components/Pages/Industries/Industries';
-import WebAppsService from './Components/Pages/IndividualServices/WebAppsService';
+import WebAppsService from './Components/Pages/IndividualServices/WebAppsService/WebAppsService';
 import SoftWareService from './Components/Pages/IndividualServices/SoftWareService';
 import ErpService from './Components/Pages/IndividualServices/ErpService';
 import SoftwareDevelopmentSweden from './Components/Pages/SoftwareDevelopmentSweden/SoftwareDevelopmentSweden';

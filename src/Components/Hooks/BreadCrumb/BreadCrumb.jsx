@@ -13,7 +13,7 @@ const Breadcrumb = () => {
 <ul className="max-w-md mx-auto py-2 flex gap-2 text-[#2E4053] md:text-[14px] sm:text-xs justify-center items-center">
         {/* Home Link */}
         <Link
-          to="/home"
+          to="/"
           className={`cursor-pointer flex items-center gap-1 p-2 ${
             pathname === "/home" && "text-[#723988] font-bold"
           }`}

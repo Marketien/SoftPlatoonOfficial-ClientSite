@@ -109,7 +109,7 @@ const NavigationBar = () => {
           px-4
           text-lg
           text-gray-700
-          shadow-md
+          shadow-sm
           shadow-gray-800
           fixed
           top-[50px]
@@ -186,7 +186,7 @@ const NavigationBar = () => {
             <li className="animate-pulse">
               <Link
                 to="/getProposal"
-                className="flex px-2 py-2 uppercase hover:text-black hover:bg-gray-300 text-white bg-[#501b79] rounded-sm"
+                className="flex px-2 py-2 uppercase hover:text-black hover:bg-gray-300 text-white bg-[#501b79] rounded-sm shadow-xl"
               >
                 Get Proposal
               </Link>
@@ -233,7 +233,7 @@ const NavigationBar = () => {
               <li className="animate-pulse">
                 <Link
                   to="/getProposal"
-                  className=" text-white px-5 py-2 hover:text-purple-500 bg-purple-900"
+                  className=" text-white px-5 py-2 hover:text-purple-500 bg-purple-900 "
                 >
                   Get Proposal
                 </Link>

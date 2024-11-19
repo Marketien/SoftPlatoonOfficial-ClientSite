@@ -1,6 +1,6 @@
-import icon1 from "../../../assets/OurServices/provideIcons/webApp.png";
-import icon2 from "../../../assets/OurServices/provideIcons/software.png";
-import icon3 from "../../../assets/OurServices/provideIcons/erp.png";
+import icon1 from "../../../assets/OurServices/webApp.png";
+import icon2 from "../../../assets/OurServices/software.png";
+import icon3 from "../../../assets/OurServices/erp.png";
 import { IoIosArrowDown } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
