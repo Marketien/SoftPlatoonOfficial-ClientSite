@@ -1,4 +1,3 @@
-import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -283,7 +282,6 @@ const RecentProjectSweden = ({language}) => {
           ))}
         </Slider>
       </div>
-
       {/* Start Your Custom Software Button --------------- */}
       <div className="flex justify-center mt-[30px]">
         <button

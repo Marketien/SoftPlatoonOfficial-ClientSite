@@ -19,7 +19,7 @@ const SoftwareDevelopmentSweden = () => {
     document.documentElement.lang = lang;
   };
   useEffect(() => {
-    document.title = "bästa mjukvaruutvecklare sverige - Softplatoon";
+    document.title = "Softplatoon- bästa mjukvaruutvecklare sverige";
   }, []);
 
   return (

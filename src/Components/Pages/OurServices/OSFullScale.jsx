@@ -81,7 +81,7 @@ const OSFullScale = () => {
             >
               {title}
             </h1>
-            <p className="text-start text-md">{disc}</p>
+            <p className="text-center text-md">{disc}</p>
             <hr className="hr-animation absolute top-0 left-0 right-0 h-[4px] transition-all duration-200 border-[#5A287F] bg-[#5A287F] z-10 opacity-0 group-hover:opacity-100" />
           </div>
           </div>

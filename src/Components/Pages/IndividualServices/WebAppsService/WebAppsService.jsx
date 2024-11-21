@@ -8,7 +8,7 @@ import Breadcrumb from "../../../Hooks/Breadcrumb/Breadcrumb";
 import OSFullScale from "../../OurServices/OSFullScale";
 import Testimonials from "../../../Shared/HomeSection/Testimonials/Testimonials";
 import HomeContact from "../../../Shared/HomeSection/HomeContact/HomeContact";
-import DemoProjects from "./DemoProjects/DemoProjects";
+import WebAppDemoProjects from "./WebAppDemoProjects/WebAppDemoProjects";
 
 const serviceData = [
   {
@@ -70,20 +70,26 @@ const WebAppsService = () => {
       <Breadcrumb />
       {/* main content section  */}
       <div className="lg:mx-32 md:mx-10 sm: mx-5 py-20">
-       {/* ************************** Our WebSolution  *************************************** */}
+        {/* ************************** Our WebSolution  *************************************** */}
         <div>
           <h1
             style={{ fontFamily: "Sumana, serif" }}
             className="font-bold text-5xl mb-2"
           >
-            Our Web 
+            Our Web
             <span className="text-purple-800 ms-2">Solution</span>
           </h1>
           <p
             style={{ fontFamily: "Ubuntu,sans-serif" }}
             className="text-lg my-5"
           >
-            The digital world is full of opportunities, but finding the right web solution can be challenging. That’s where we come in. <br /> From building seamless websites and automating processes to crafting personalized online experiences, <br /> we provide innovative solutions tailored to your unique needs. Let us help you unlock <br /> the full potential of the web for your business or personal project.
+            The digital world is full of opportunities, but finding the right
+            web solution can be challenging. That’s where we come in. <br />{" "}
+            From building seamless websites and automating processes to crafting
+            personalized online experiences, <br /> we provide innovative
+            solutions tailored to your unique needs. Let us help you unlock{" "}
+            <br /> the full potential of the web for your business or personal
+            project.
           </p>
           <div className="grid lg:grid-cols-4 md:grid-cols-2 sm: grid-cols-1 gap-8 mt-10">
             {serviceData.map(({ icon, title, disc }, index) => (
@@ -101,17 +107,17 @@ const WebAppsService = () => {
                   >
                     {title}
                   </h1>
-                  <p className="text-start text-md">{disc}</p>
+                  <p className="text-center text-md">{disc}</p>
                   <hr className="hr-animation absolute top-0 left-0 right-0 h-[4px] transition-all duration-200 border-[#5A287F] bg-[#5A287F] z-10 opacity-0 group-hover:opacity-100" />
                 </div>
               </div>
             ))}
           </div>
         </div>
-         {/* ************************** Demo Projects Section *************************************** */}
-          <DemoProjects/>
-         {/* ************************** FUll Scale Section *************************************** */}
-        <OSFullScale/>
+        {/* ************************** Demo Projects Section *************************************** */}
+        <WebAppDemoProjects />
+        {/* ************************** FUll Scale Section *************************************** */}
+        <OSFullScale />
         {/* ************************** Testimonial Section *************************************** */}
         <Testimonials />
         {/* ************************** Content Section *************************************** */}
