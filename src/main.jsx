@@ -16,7 +16,7 @@ import WebAppsService from './Components/Pages/IndividualServices/WebAppsService
 import SoftWareService from './Components/Pages/IndividualServices/SoftWareService';
 import ErpService from './Components/Pages/IndividualServices/ErpService';
 import SoftwareDevelopmentSweden from './Components/Pages/SoftwareDevelopmentSweden/SoftwareDevelopmentSweden';
-import WebAppDemoProjects from './Components/Pages/IndividualServices/WebAppsService/WebAppDemoProjects/WebAppDemoProjects';
+import WebAppDynamicPage from './Components/Pages/IndividualServices/WebAppsService/WebAppDemoProjects/WebAppDynamicPage';
 
 const router = createBrowserRouter([
   {
@@ -38,7 +38,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/our-services/web-app-Services/web-app-demos",
-        element: <WebAppDemoProjects />,
+        element: <WebAppDynamicPage />,
       },
       {
         path: "/software-Services",

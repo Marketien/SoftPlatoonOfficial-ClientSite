@@ -207,7 +207,7 @@ const WebAppDemoProjects = () => {
             {/* V See more.text */}
             <div className="mt-10 flex justify-center">
               <Link
-                to="/"
+                to="/our-services/web-app-Services/web-app-demos"
                 className="px-8 py-3 uppercase hover:text-black hover:bg-gray-300 text-white bg-[#501b79] rounded-sm"
               >
                 See more Details...

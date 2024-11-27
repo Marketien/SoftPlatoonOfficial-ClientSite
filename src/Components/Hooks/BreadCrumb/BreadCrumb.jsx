@@ -2,6 +2,7 @@ import { useLocation, Link } from "react-router-dom";
 // import SlashImg from "../../../assets/Icons/slash-logo.png";
 import { IoHome } from "react-icons/io5";
 import { IoIosArrowForward } from "react-icons/io";
+import { MdMiscellaneousServices } from "react-icons/md";
 import { FaServicestack } from "react-icons/fa";
 
 const Breadcrumb = () => {
@@ -10,7 +11,7 @@ const Breadcrumb = () => {
 
   return (
     <div className="bg-gray-200">
-<ul className="max-w-md mx-auto py-2 flex gap-2 text-[#2E4053] md:text-[14px] sm:text-xs justify-center items-center">
+<ul className="lg:max-w-5xl md:max-w-3xl sm: max-w-sm mx-auto py-2 flex gap-2 text-[#2E4053] md:text-[14px] sm: text-[8px] justify-center items-center">
         {/* Home Link */}
         <Link
           to="/"
@@ -35,7 +36,7 @@ const Breadcrumb = () => {
               }`}
             >
               <span>
-                <FaServicestack />
+                <MdMiscellaneousServices />
               </span>
               <span>Our Services</span>
             </Link>
@@ -57,6 +58,24 @@ const Breadcrumb = () => {
                 <FaServicestack />
               </span>
               <span>Web App Services</span>
+            </Link>
+          </>
+        )}
+        {/* Demo School Breadcrumb */}
+        {pathname.includes("/our-services/web-app-Services/web-app-demos") && (
+          <>
+            <IoIosArrowForward />
+            <Link
+              to="/our-services/web-app-Services/web-app-demos"
+              className={`cursor-pointer flex items-center gap-1 p-2 ${
+                pathname === "/our-services/web-app-Services/web-app-demos" &&
+                "text-[#723988] font-bold"
+              }`}
+            >
+              <span>
+                <FaServicestack />
+              </span>
+              <span>Demo School</span>
             </Link>
           </>
         )}
