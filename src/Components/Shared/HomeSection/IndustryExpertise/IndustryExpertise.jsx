@@ -54,7 +54,7 @@ const IndustryExpertise = () => {
   }, []);
 
   return (
-    <div className=" py-[60px]">
+    <div className=" py-[60px] bg-gray-100 text-black">
       <div
         style={{ fontFamily: "Open Sans, sans-serif" }}
         className=" lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4"

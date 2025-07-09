@@ -41,7 +41,7 @@ const ExploreServices = () => {
   }, []);
 
     return (
-        <div className=" bg-white md:py-[160px] sm: py-[20px] ">
+        <div className=" bg-white text-black md:py-[160px] sm: py-[20px] ">
         <div
          data-aos="zoom-in"
          className="lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4">

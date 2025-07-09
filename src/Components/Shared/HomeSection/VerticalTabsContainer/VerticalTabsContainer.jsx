@@ -65,7 +65,7 @@ export default function VerticalTabs() {
   return (
     <div 
     style={{ fontFamily: "Open Sans,sans-serif" }}
-     className="my-[180px] bg-[#e7e7eb21] "
+     className="py-[180px] text-black bg-gray-100"
      >
       {/* Tab section  for large device */}
       <div className=" px-5 py-[1px] lg:max-w-6xl md:max-w-3xl

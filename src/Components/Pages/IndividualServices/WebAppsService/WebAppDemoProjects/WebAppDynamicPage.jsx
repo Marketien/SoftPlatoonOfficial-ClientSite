@@ -5,7 +5,7 @@ import icon1 from "../../../../../assets/Icons/checked.png";
 import icon2 from "../../../../../assets/Icons/cancel.png";
 import icon3 from "../../../../../assets/OurServices/Business-Automation-Logo.png";
 import icon4 from "../../../../../assets/OurServices/E-commerce-Platform-Logo.png";
-import icon5 from "../../../../../assets/OurServices/Employee-Management-Logo.png"; 
+import icon5 from "../../../../../assets/OurServices/Employee-Management-Logo.png";
 import icon6 from "../../../../../assets/OurServices/Data-Driven-Logo.png";
 import { Link } from "react-router-dom";
 import SecureSuccess from "../../../../Shared/HomeSection/SecureSuccess/SecureSuccess";
@@ -292,16 +292,16 @@ const WebAppDynamicPage = () => {
           </div>
         </div>
         {/* Secure the Success ---------------------------------------------------------------------------- */}
-          <SecureSuccess />
-          {/*  Contact Us button section-------------------------------------------------------------------------  */}
-          <div className="flex justify-center">
-            <Link
-              to="/our-services/web-app-Services/web-app-demos"
-              className="px-8 py-3 uppercase hover:text-black hover:bg-gray-300 text-white bg-[#501b79] rounded-sm"
-            >
-              Want A Second opinion? Contact Us Now
-            </Link>
-          </div>
+        <SecureSuccess />
+        {/*  Contact Us button section-------------------------------------------------------------------------  */}
+        <div className="flex justify-center">
+          <Link
+            to="/our-services/web-app-Services/web-app-demos"
+            className="px-8 py-3 uppercase hover:text-black hover:bg-gray-300 text-white bg-[#501b79] rounded-sm"
+          >
+            Want A Second opinion? Contact Us Now
+          </Link>
+        </div>
       </div>
     </div>
   );

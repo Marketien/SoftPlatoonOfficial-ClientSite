@@ -11,9 +11,10 @@ const HomeCountUp = () => {
   }, []);
 
   return (
+    <div className="bg-gray-100 py-[60px]">
     <div
       style={{ fontFamily: "Open Sans, sans-serif" }}
-      className="my-[60px] lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4"
+      className=" lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4 "
     >
       <div
       data-aos="fade-up"
@@ -44,6 +45,7 @@ const HomeCountUp = () => {
           <h1 style={{ fontFamily: "Ubuntu,sans-serif" }} className="text-xl text-gray-500 mt-2">Industries Covered</h1>
         </div>
       </div>
+    </div>
     </div>
   );
 };
