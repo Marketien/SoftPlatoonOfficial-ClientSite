@@ -53,9 +53,10 @@ const Section4 = () => {
 
 
   return (
+    <div className="bg-gray-100 text-black py-[180px] ">
     <div
       style={{ fontFamily: "Open Sans,sans-serif" }}
-      className="my-[180px] lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4"
+      className="lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4"
     >
       <div 
        data-aos="fade-down">
@@ -181,6 +182,7 @@ const Section4 = () => {
         
         
       </div>
+    </div>
     </div>
   );
 };

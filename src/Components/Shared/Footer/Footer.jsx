@@ -6,12 +6,12 @@ import linkedinLogo from "../../../assets/Icons/linkedin.png";
 const Footer = () => {
   return (
     <div
-      style={{ fontFamily: "Open Sans,sans-serif" }} className="" >
+      style={{ fontFamily: "Open Sans,sans-serif" }} className="bg-gray-100 pt-20 text-black" >
         <div className=" lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-auto sm: mx-4">
 <footer className="footer p-10 text-base-content">
   <nav>
     <h6 className="footer-title text-[#84207E] text-xl">Services</h6>
-    <a className="link link-hover">Branding</a>
+    <a className="link link-hover ">Branding</a>
     <a className="link link-hover">Design</a>
     <a className="link link-hover">Marketing</a>
     <a className="link link-hover">Advertisement</a>

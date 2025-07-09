@@ -119,11 +119,6 @@ const OSProvide = () => {
                     Demo Travel & Booking
                   </li>
                 </Link>
-                <Link target="blank" to="">
-                  <li className="hover:text-black hover:bg-white">
-                    
-                  </li>
-                </Link>
                 <Link target="blank" to="https://umrah.softplatoon.com/">
                   <li className="hover:text-black hover:bg-white">
                     Demo_Umrah

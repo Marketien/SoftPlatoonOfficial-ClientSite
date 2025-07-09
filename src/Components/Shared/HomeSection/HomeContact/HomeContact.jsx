@@ -46,7 +46,7 @@ const HomeContact = () => {
   };
 
   return (
-    <div id="contact" className="bg-white py-[60px] ">
+    <div id="contact" className="bg-white text-black py-[60px] ">
       <div
         style={{ fontFamily: "Open Sans, sans-serif" }}
         className=" lg:max-w-6xl md:max-w-3xl sm:max-w-sm lg:mx-auto md:px-7 sm:px-4"
@@ -59,7 +59,7 @@ const HomeContact = () => {
             </p>
 
             <textarea
-              className="w-full h-[100px] border border-gray-300 px-3 py-2 mb-2 "
+              className="w-full h-[100px] border border-gray-300 bg-white text-black px-3 py-2 mb-2 "
               name="feedback"
               id="feedback"
               placeholder="How can I help you? "
@@ -67,14 +67,14 @@ const HomeContact = () => {
             <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-3">
               <input
                 required
-                className="border border-gray-300 px-3 py-2 w-full"
+                className="border border-gray-300 bg-white text-black px-3 py-2 w-full"
                 name="name"
                 id="name"
                 type="text"
                 placeholder="Full Name"
               />
               <input
-                className="border border-gray-300 px-3 py-2 w-full"
+                className="border border-gray-300 bg-white text-black px-3 py-2 w-full"
                 type="text"
                 name="company"
                 id="company"
@@ -82,7 +82,7 @@ const HomeContact = () => {
               />
               <input
                 required
-                className="border border-gray-300 px-3 py-2 w-full"
+                className="border border-gray-300 bg-white text-black px-3 py-2 w-full"
                 type="email"
                 name="email"
                 id="email"
@@ -91,7 +91,7 @@ const HomeContact = () => {
               <input
               hidden
                 required
-                className="border border-gray-300 px-3 py-2 w-full"
+                className="border border-gray-300 bg-white text-black px-3 py-2 w-full"
                 type="number"
                 name="phone"
                 id="phone"

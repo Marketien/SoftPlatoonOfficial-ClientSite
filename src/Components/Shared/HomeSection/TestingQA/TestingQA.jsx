@@ -11,7 +11,7 @@ const TestingQA = () => {
   }, []);
 
   return (
-    <div style={{ fontFamily: "Open Sans,sans-serif" }} className="bg-white py-[60px] ">
+    <div style={{ fontFamily: "Open Sans,sans-serif" }} className="bg-white text-black py-[60px] ">
       <h1 
       data-aos="fade-down"
         style={{ fontFamily: "Sumana,serif" }}

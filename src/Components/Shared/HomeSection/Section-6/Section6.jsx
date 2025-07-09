@@ -105,9 +105,8 @@ const companies = [
 ];
 
 const Section6 = () => {
-
   useEffect(() => {
-    Aos.init({ duration: 1000 }); 
+    Aos.init({ duration: 1000 });
   }, []);
 
   const [showAllData, setShowAllData] = useState(6);
@@ -117,154 +116,159 @@ const Section6 = () => {
   };
 
   return (
-    <div className=" my-[180px] lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4">
-      <h1
-        data-aos="fade-down"
-        style={{ fontFamily: "Sumana,serif" }}
-        className="text-center text-5xl font-bold mb-5"
-      >
-        Our
-        <span className="text-purple-900"> Clients</span>
-      </h1>
-      <h1
-        data-aos="fade-down"
-        style={{ fontFamily: "Open Sans,sans-serif" }}
-        className=" text-xl text-center leading-8 font-semibold "
-      >
-        Since 2019. For millions of users. We transform businesses with powerful
-        and adaptable
-        <br /> digital solutions that satisfy the needs of today and unlock the
-        opportunities of
-        <br />
-        tomorrow.
-      </h1>
+    <div className="bg-gray-100 text-black py-[180px]">
+      <div className=" lg:max-w-6xl md:max-w-3xl sm: max-w-sm lg:mx-auto md:mx-7 sm: mx-4">
+        <h1
+          data-aos="fade-down"
+          style={{ fontFamily: "Sumana,serif" }}
+          className="text-center text-5xl font-bold mb-5"
+        >
+          Our
+          <span className="text-purple-900"> Clients</span>
+        </h1>
+        <h1
+          data-aos="fade-down"
+          style={{ fontFamily: "Open Sans,sans-serif" }}
+          className=" text-xl text-center leading-8 font-semibold "
+        >
+          Since 2019. For millions of users. We transform businesses with
+          powerful and adaptable
+          <br /> digital solutions that satisfy the needs of today and unlock
+          the opportunities of
+          <br />
+          tomorrow.
+        </h1>
 
-      <div
-        data-aos="zoom-in"
-        style={{ fontFamily: "Open Sans,sans-serif" }}
-        className=" mt-[40px]"
-      >
-         {/* <<<<<<<<<<<<<<<<<<<< cards for large and medium device >>>>>>>>>>>>>>>>>>> */}
-        <div className="lg:grid md:grid lg:grid-cols-1 md:grid-cols-1 sm: hidden gap-5 mt-10 ">
-          {companies
-            .slice(0, showAllData)
-            .map(
-              (
-                {
-                  img,
-                  clientImg,
-                  companyName,
-                  clientName,
-                  position,
-                  ReviewText,
-                },
-                index
-              ) => (
-                <div
-                  key={index}
-                  className="w-full border-t-2 shadow-md hover:shadow-lg px-3 py-8 bg-white rounded-sm"
-                >
-                  <div className="flex gap-5 items-center">
-                    {/* ---------company image ------------  */}
-                    <div className="w-1/6">
-                      <img className="w-[100px] mb-2" src={img} alt="" />
-                      <h1 className="font-semibold hover:underline">
-                        {companyName}
-                      </h1>
-                    </div>
-                    {/* ---------------- other information ----------------- */}
-                    <div className="relative w-3/4">
-                      <div className="relative flex items-center  ">
-                        <div className="flex  gap-2 mb-5">
-                          <div>
-                            <img
-                              className="rounded-full w-[50px]"
-                              src={clientImg}
-                              alt=""
-                            />
-                          </div>
-                          <div>
-                            <h1 className="font-semibold">{clientName}</h1>
-                            <p
-                              style={{ fontFamily: "Ubuntu,sans-serif" }}
-                              className="text-gray-500"
-                            >
-                              {position}
-                            </p>
+        <div
+          data-aos="zoom-in"
+          style={{ fontFamily: "Open Sans,sans-serif" }}
+          className=" mt-[40px]"
+        >
+          {/* <<<<<<<<<<<<<<<<<<<< cards for large and medium device >>>>>>>>>>>>>>>>>>> */}
+          <div className="lg:grid md:grid lg:grid-cols-1 md:grid-cols-1 sm: hidden gap-5 mt-10 ">
+            {companies
+              .slice(0, showAllData)
+              .map(
+                (
+                  {
+                    img,
+                    clientImg,
+                    companyName,
+                    clientName,
+                    position,
+                    ReviewText,
+                  },
+                  index
+                ) => (
+                  <div
+                    key={index}
+                    className="w-full border-t-2 shadow-md hover:shadow-lg px-3 py-8 bg-white rounded-sm"
+                  >
+                    <div className="flex gap-5 items-center">
+                      {/* ---------company image ------------  */}
+                      <div className="w-1/6">
+                        <img className="w-[100px] mb-2" src={img} alt="" />
+                        <h1 className="font-semibold hover:underline">
+                          {companyName}
+                        </h1>
+                      </div>
+                      {/* ---------------- other information ----------------- */}
+                      <div className="relative w-3/4">
+                        <div className="relative flex items-center  ">
+                          <div className="flex  gap-2 mb-5">
+                            <div>
+                              <img
+                                className="rounded-full w-[50px]"
+                                src={clientImg}
+                                alt=""
+                              />
+                            </div>
+                            <div>
+                              <h1 className="font-semibold">{clientName}</h1>
+                              <p
+                                style={{ fontFamily: "Ubuntu,sans-serif" }}
+                                className="text-gray-500"
+                              >
+                                {position}
+                              </p>
+                            </div>
                           </div>
                         </div>
+                        <p style={{ fontFamily: "Ubuntu,sans-serif" }}>
+                          {ReviewText}
+                        </p>
+                        <div className="absolute top-0 -right-10 ">
+                          <img className="w-[120px]" src={rating} alt="" />
+                        </div>
                       </div>
-                      <p style={{ fontFamily: "Ubuntu,sans-serif" }}>
-                        {ReviewText}
-                      </p>
-                      <div className="absolute top-0 -right-10 ">
-                        <img className="w-[120px]" src={rating} alt="" />
+                    </div>
+                  </div>
+                )
+              )}
+          </div>
+          {/* <<<<<<<<<<<<<<<<<<<< cards for small device >>>>>>>>>>>>>>>>>>> */}
+          <div className="sm: grid lg:hidden md:hidden sm: grid-cols-1 gap-5 mt-10">
+            {companies
+              .slice(0, showAllData)
+              .map(
+                (
+                  {
+                    img,
+                    clientImg,
+                    companyName,
+                    clientName,
+                    position,
+                    ReviewText,
+                  },
+                  index
+                ) => (
+                  <div
+                    key={index}
+                    className="shadow-md border-t-2 px-3 py-8 bg-white"
+                  >
+                    <div className="flex justify-between items-center mb-2">
+                      <img className="w-[60px]" src={img} alt="" />
+                      <img className="w-[90px] h-[30px]" src={rating} alt="" />
+                    </div>
+                    <h1 className="font-semibold underline">{companyName}</h1>
+                    <div className="flex gap-2 my-5">
+                      <div>
+                        <img
+                          className="rounded-full w-[50px]"
+                          src={clientImg}
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <h1 className="font-semibold">{clientName}</h1>
+                        <p
+                          style={{ fontFamily: "Ubuntu,sans-serif" }}
+                          className="text-gray-500"
+                        >
+                          {position}
+                        </p>
                       </div>
                     </div>
+                    <p style={{ fontFamily: "Ubuntu,sans-serif" }}>
+                      {ReviewText}
+                    </p>
                   </div>
-                </div>
-              )
-            )}
-        </div>
-        {/* <<<<<<<<<<<<<<<<<<<< cards for small device >>>>>>>>>>>>>>>>>>> */}
-        <div className="sm: grid lg:hidden md:hidden sm: grid-cols-1 gap-5 mt-10">
-          {companies
-            .slice(0, showAllData)
-            .map(
-              (
-                {
-                  img,
-                  clientImg,
-                  companyName,
-                  clientName,
-                  position,
-                  ReviewText,
-                },
-                index
-              ) => (
-                <div key={index} className="shadow-md border-t-2 px-3 py-8 bg-white">
-                  <div className="flex justify-between items-center mb-2">
-                    <img className="w-[60px]" src={img} alt="" />
-                    <img className="w-[90px] h-[30px]" src={rating} alt="" />
-                  </div>
-                  <h1 className="font-semibold underline">{companyName}</h1>
-                  <div className="flex gap-2 my-5">
-                    <div>
-                      <img
-                        className="rounded-full w-[50px]"
-                        src={clientImg}
-                        alt=""
-                      />
-                    </div>
-                    <div>
-                      <h1 className="font-semibold">{clientName}</h1>
-                      <p
-                        style={{ fontFamily: "Ubuntu,sans-serif" }}
-                        className="text-gray-500"
-                      >
-                        {position}
-                      </p>
-                    </div>
-                  </div>
-                  <p style={{ fontFamily: "Ubuntu,sans-serif" }}>
-                    {ReviewText}
-                  </p>
-                </div>
-              )
-            )}
-        </div>
-        {/* Load More Button --------------- */}
-        <div className="flex justify-center mt-10">
-          {showAllData < companies.length && (
-            <button
-              onClick={handleLoadMore}
-              className="border-2 border-purple-900 hover:border-purple-500 
+                )
+              )}
+          </div>
+          {/* Load More Button --------------- */}
+          <div className="flex justify-center mt-10">
+            {showAllData < companies.length && (
+              <button
+                onClick={handleLoadMore}
+                className="border-2 border-purple-900 hover:border-purple-500 
             text-purple-900 hover:text-purple-500 hover:bg-gray-100
             rounded-sm px-8 py-2 text-lg font-semibold uppercase"
-            >
-              Load More
-            </button>
-          )}
+              >
+                Load More
+              </button>
+            )}
+          </div>
         </div>
       </div>
     </div>
